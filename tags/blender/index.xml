@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>blender on しさく</title>
+    <link>http://iimuz.github.io/scrapbook/tags/blender/</link>
+    <description>Recent content in blender on しさく</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-JP</language>
+    <lastBuildDate>Wed, 06 May 2015 00:00:00 +0900</lastBuildDate>
+    
+	<atom:link href="http://iimuz.github.io/scrapbook/tags/blender/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Blenderで流体シミュレーション</title>
+      <link>http://iimuz.github.io/scrapbook/softwaretool/blender/blenderfluidsimulation/</link>
+      <pubDate>Wed, 06 May 2015 00:00:00 +0900</pubDate>
+      
+      <guid>http://iimuz.github.io/scrapbook/softwaretool/blender/blenderfluidsimulation/</guid>
+      <description>Blenderで流体シミュレーションを試した時のメモ。
+概要 いろはメモ -Blender-: グラスに水を注いでみる 〈流体シミュレーション〉のページを参考に 流体シミュレーションの実験。
+泥水ぶちまけてる感じだが、きちんとマテリアルとかテクスチャとか勉強してないから。 レンダリングについては後回し。 シミュレーションできることが分かったので良い。
+
+Blender: GitHub: fluidSimulation
+流体シミュレーションの準備 とりあえず液体を注ぐものを作成する。
+法線方向を確認するためには、Edit modeでNキーで表示されるPropertiesから Mesh display -&amp;gt; Normals -&amp;gt; Display face normals as linesをONにする。
+
+流体の注ぎ口を作成 UV球を作成する。(これが水の発生源になる。) 作成したUV球に物理演算から流体を設定する。
+
+設定としては、以下の感じ。
+ タイプ: 流入口 ボリュームの初期化: 両方 流入速度: 適当に注ぎたい方向へ向ける  いろはメモ -Blender-: グラスに水を注いでみる 〈流体シミュレーション〉によると、 各項目の説明は以下。
+ 【流体のタイプ】 コントロール(Control) ： 流体の形状を変形させるようコントロール。 パーティクル(Particle) ： 飛沫。しずく・浮かぶ泡・トレーサー（霧みたいなもの）の3タイプがある。 流入口(Inflow) ： 液体が出てくる。給水栓。 流出口(Outflow) ： 液体が吸収されてなくなる。排水口。流入口とセットで使うとよいみたい。 障害物(Obstacle) ： 障害物。表面の滑り方（粘つき）を、滑る・滑らない・部分的に滑るの3タイプから選ぶ。 液体(Fluid) ： そこにあるだけの液体。流入口のように生成はされない。 ドメイン(Domain) ： 液体シミュレーションの領域。必ず必要。</description>
+    </item>
+    
+    <item>
+      <title>UnityとBlenderハンズオンの第3章を進めてみる</title>
+      <link>http://iimuz.github.io/scrapbook/softwaretool/blender/shizuokadevunityandblender03/</link>
+      <pubDate>Tue, 05 May 2015 00:00:00 +0900</pubDate>
+      
+      <guid>http://iimuz.github.io/scrapbook/softwaretool/blender/shizuokadevunityandblender03/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://yaju3d.hatenablog.jp/entry/2015/04/07/015641&#34;&gt;静岡Developers勉強会の「UnityとBlenderハンズオン第3章」の資料公開&lt;/a&gt;
+に沿って進めてみる。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>UnityとBlenderハンズオンの第2章を進めてみる</title>
+      <link>http://iimuz.github.io/scrapbook/softwaretool/blender/shizuokadevunityandblender02/</link>
+      <pubDate>Wed, 29 Apr 2015 00:00:00 +0900</pubDate>
+      
+      <guid>http://iimuz.github.io/scrapbook/softwaretool/blender/shizuokadevunityandblender02/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://yaju3d.hatenablog.jp/entry/2015/03/09/020956&#34;&gt;静岡Developers勉強会の「UnityとBlenderハンズオン第2章」の資料公開&lt;/a&gt;
+に沿って進めてみる。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>UnityとBlenderハンズオンの第1章を進めてみる</title>
+      <link>http://iimuz.github.io/scrapbook/softwaretool/blender/shizuokadevunityandblender01/</link>
+      <pubDate>Mon, 27 Apr 2015 00:00:00 +0900</pubDate>
+      
+      <guid>http://iimuz.github.io/scrapbook/softwaretool/blender/shizuokadevunityandblender01/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://www.slideshare.net/yaju88/unityblender1&#34;&gt;静岡Developers勉強会: UnityとBlenderハンズオン 第1章&lt;/a&gt;
+でUnityとBlenderの使い方を勉強する。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>BlenderでPythonスクリプトを利用する</title>
+      <link>http://iimuz.github.io/scrapbook/softwaretool/blender/blenderpythonscript/</link>
+      <pubDate>Sat, 25 Apr 2015 00:00:00 +0900</pubDate>
+      
+      <guid>http://iimuz.github.io/scrapbook/softwaretool/blender/blenderpythonscript/</guid>
+      <description>&lt;p&gt;BlenderでPythonを利用する。
+ついでに、Blenderの物理シミュレーションをpythonで作成する。
+作ったデータ: &lt;a href=&#34;https://github.com/iimuz/blenderTutorials/tree/develop/cubePhysicsEngine&#34;&gt;github: iimuz/blenderTutorials/cubePhysicsEngine&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Blenderコマンドの備忘録</title>
+      <link>http://iimuz.github.io/scrapbook/softwaretool/blender/blendersetting/</link>
+      <pubDate>Sat, 25 Apr 2015 00:00:00 +0900</pubDate>
+      
+      <guid>http://iimuz.github.io/scrapbook/softwaretool/blender/blendersetting/</guid>
+      <description>&lt;p&gt;Blenderでのコマンド備忘録&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Blenderの練習 000</title>
+      <link>http://iimuz.github.io/scrapbook/softwaretool/blender/blender/</link>
+      <pubDate>Tue, 14 Apr 2015 00:00:00 +0900</pubDate>
+      
+      <guid>http://iimuz.github.io/scrapbook/softwaretool/blender/blender/</guid>
+      <description>&lt;h2 id=&#34;目標&#34;&gt;目標&lt;/h2&gt;
+
+&lt;p&gt;とりあえず一週間位(実質初版完成まで2、3日)で、
+結婚式の余興のためにアニメーションを作成する必要がある。
+前回は、Adobe After Effects(?)で作成したが体験版の期間が終わったので、
+利用できなくなった。
+そこで、今回はBlenderのみでアニメーション作成したい。
+作りたいイメージは、以下のような感じ。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=wtKILj--9XY&amp;amp;feature=youtu.be&#34;&gt;Motion graphics line performance in Japan&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=dUB5gH41Qg0&amp;amp;feature=youtu.be&#34;&gt;映画風オープニングムービー・動画制作・動画素材・タイトル動画 0019&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=hriQaGUAJLU&amp;amp;feature=youtu.be&#34;&gt;『SMAP LIVE Opening』1991&amp;rsquo;97&amp;rsquo;98&amp;rsquo;99&amp;rsquo;00&amp;rsquo;01&amp;rsquo;02&amp;rsquo;03&amp;rsquo;05&amp;rsquo;06&amp;rsquo;08&amp;rsquo;10&amp;rsquo;12&amp;rsquo;ver&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

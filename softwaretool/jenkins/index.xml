@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Jenkins on しさく</title>
+    <link>http://iimuz.github.io/scrapbook/softwaretool/jenkins/</link>
+    <description>Recent content in Jenkins on しさく</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-JP</language>
+    <lastBuildDate>Wed, 14 Feb 2018 09:00:00 +0900</lastBuildDate>
+    
+	<atom:link href="http://iimuz.github.io/scrapbook/softwaretool/jenkins/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Jenkinsでのparallel処理</title>
+      <link>http://iimuz.github.io/scrapbook/softwaretool/jenkins/jenkins-parallel/</link>
+      <pubDate>Wed, 14 Feb 2018 09:00:00 +0900</pubDate>
+      
+      <guid>http://iimuz.github.io/scrapbook/softwaretool/jenkins/jenkins-parallel/</guid>
+      <description>jenkinsでpallalelしたときの挙動に関してです。 きちんと調べればわかるのかもしれませんが、動作させたときに起こった現象をまとめておきます。
+下記のようにnodeの下にparallelを記載した場合は、同一ノード中で処理が並列で実施されるようです。
+pipeline { agent { node { label &amp;quot;slave&amp;quot; } } stages { stage (&#39;hoge&#39;) { pallalel { stage (&#39;p1&#39;) { step { hoge } } stage (&#39;p2&#39;) { step { hoge } } } } } }  一方で、下記のようにステージにノードが含まれている場合は、複数ノードで並列で実施されるようです。
+pipeline { agent none stages { stage (&#39;hoge&#39;) { pallalel { stage (&#39;p1&#39;) { agent { node { label &amp;quot;slave&amp;quot; } } step { hoge } } stage (&#39;p2&#39;) { agent { node { label &amp;quot;slave&amp;quot; } } step { hoge } } } } } }  </description>
+    </item>
+    
+    <item>
+      <title>DockerでJenkinsのmasterとslaveを用意</title>
+      <link>http://iimuz.github.io/scrapbook/softwaretool/jenkins/jenkins/</link>
+      <pubDate>Sat, 12 Aug 2017 12:32:37 +0900</pubDate>
+      
+      <guid>http://iimuz.github.io/scrapbook/softwaretool/jenkins/jenkins/</guid>
+      <description>Jenkinsを利用したCI環境の構築 privateリポジトリなど個人用にCIを行うためにdockerを用いてjenkins環境を構築したときのメモです。
+master環境の構築 dockerhubに用意されているimageを利用しました。
+最終形のpluginと設定 pluginリスト
+ SSH Slaves plugin  slaveをssh接続で利用するために必要です。 これをいれないとノードの追加で&amp;rdquo;SSH経由でUnixマシンのスレーブエージェントを起動&amp;rdquo;という選択肢が出ませんでした。   dockerのjenkins設定
+master: image: jenkinsci/jenkins:latest environment: JAVA_OPTS: -Xmx1g JENKINS_OPTS: --prefix=/jenkins --httpPort=1313 volumes: - ./master:/var/jenkins_home:rw ports: - 1313:1313    slaveの設定画面         slave設定 今回は接続できることを確認するためなので、単にslaveを起動します。
+slave: image: jenkinsci/ssh-slave:latest expose: - 22 depends_on: - master 経過ログ プラグイン類は全てなしで初期設定を行いました。
+ただ、それだとslaveへの接続で&amp;rdquo;SSH経由でUnixマシンのスレーブエージェントを起動&amp;rdquo;という選択肢が現れなかったので、sshが選択できそうなプラグインのSSH Slaves pluginを導入して見ました。 最小構成の方法かどうかは不明ですが、とりあえず選択肢が現れたのでOKとします。
+masterからslaveへ接続できなくて詰まりました。 結局のところ、sshキーの認証をslave側で適切にできていなかったことが原因のようです。
+ masterでsshキーを作成(パスなどは設定せず)
+# master container $ ssh-keygen -t rsa slave側に ~/.</description>
+    </item>
+    
+  </channel>
+</rss>

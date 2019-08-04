@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>heroku on しさく</title>
+    <link>http://iimuz.github.io/scrapbook/tags/heroku/</link>
+    <description>Recent content in heroku on しさく</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-JP</language>
+    <lastBuildDate>Wed, 11 Nov 2015 00:00:00 +0900</lastBuildDate>
+    
+	<atom:link href="http://iimuz.github.io/scrapbook/tags/heroku/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>HerokuのFreeプランでアプリを最大限起動しっぱなしにする方法(1日18時間まで)</title>
+      <link>http://iimuz.github.io/scrapbook/softwaretool/heroku/hubotkeepalive/</link>
+      <pubDate>Wed, 11 Nov 2015 00:00:00 +0900</pubDate>
+      
+      <guid>http://iimuz.github.io/scrapbook/softwaretool/heroku/hubotkeepalive/</guid>
+      <description>&lt;p&gt;HerokuのFreeプランでは1日6時間のSleep時間が設けられているが、それ以外の時間は起動し続けるように設定する方法。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Herokuアカウントの作成方法</title>
+      <link>http://iimuz.github.io/scrapbook/softwaretool/heroku/herokusignup/</link>
+      <pubDate>Tue, 03 Nov 2015 00:00:00 +0900</pubDate>
+      
+      <guid>http://iimuz.github.io/scrapbook/softwaretool/heroku/herokusignup/</guid>
+      <description>&lt;p&gt;Hubotの動作用にHerokuのアカウントを登録したので、そのときやったことを覚書として残しておきます。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>HubotをHerokuで動かすまで</title>
+      <link>http://iimuz.github.io/scrapbook/softwaretool/heroku/hubotinheroku/</link>
+      <pubDate>Tue, 03 Nov 2015 00:00:00 +0900</pubDate>
+      
+      <guid>http://iimuz.github.io/scrapbook/softwaretool/heroku/hubotinheroku/</guid>
+      <description>&lt;p&gt;SlackにHubotを導入してChatOpsをやってみようと思ったので、その実行環境を整えるための準備についての覚書です。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

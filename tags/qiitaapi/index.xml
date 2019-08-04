@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>QiitaAPI on しさく</title>
+    <link>http://iimuz.github.io/scrapbook/tags/qiitaapi/</link>
+    <description>Recent content in QiitaAPI on しさく</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-JP</language>
+    <lastBuildDate>Sun, 18 Nov 2018 15:33:13 +0900</lastBuildDate>
+    
+	<atom:link href="http://iimuz.github.io/scrapbook/tags/qiitaapi/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Qiita API を利用して記事を投稿する</title>
+      <link>http://iimuz.github.io/scrapbook/programming/python/post-from-qiita-api/</link>
+      <pubDate>Sun, 18 Nov 2018 15:33:13 +0900</pubDate>
+      
+      <guid>http://iimuz.github.io/scrapbook/programming/python/post-from-qiita-api/</guid>
+      <description>はじめに Qiita API を利用してローカルの markdown ファイルを記事としてアップロードする python スクリプトを作成しました。作成したスクリプトのテストも兼ねて、作業内容をまとめてみます。
+ 投稿内容の作成 投稿用のヘッダ情報の作成 投稿処理 投稿後のレスポンス情報から ID 情報を取得 投稿内容が書かれたファイルのヘッダ部分に ID を追加  背景 以前から自分で書いたメモなどの単純なドキュメントファイルに関しては、一括して GitLab.com のプライベートリポジトリで管理していました。今回、 Qiita に投稿してみようと思ったのですが、 Qiita に投稿する内容は、都度書いて Qiita で管理するということも考えました。が、やはりローカル環境でテキストを書きたいということもあり、 Qiita API を活用して、ローカル環境から投稿するようにしました。まだまだ粗削りですが、とりあえず投稿して、記事を修正した場合は、修正版をコミットすることまではできました。
+$ python3 --version Python 3.6.6 投稿内容の作成 ローカルのファイル群は Hugo を活用しています。そのため、投稿する内容以外にヘッダ情報が付与されています。ここを活用して、 Qiita に投稿するヘッダ情報も管理するようにします。 今回は、下記のようなヘッダ情報と投稿内容を作成していると仮定します。
+(hoge.md)
++++ title = &amp;#34;テスト投稿&amp;#34; draft = true tags = [&amp;#34;test&amp;#34;] [qiita] coediting = false gist = false tweet = false id = &amp;#34;&amp;#34; +++ hogehoge 投稿用のヘッダ情報の作成 上記で作成した hoge.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Others on しさく</title>
+    <link>http://iimuz.github.io/scrapbook/others/</link>
+    <description>Recent content in Others on しさく</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-JP</language>
+    <lastBuildDate>Mon, 14 Sep 2015 00:00:00 +0900</lastBuildDate>
+    
+	<atom:link href="http://iimuz.github.io/scrapbook/others/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>近未来動画の寄せ集め</title>
+      <link>http://iimuz.github.io/scrapbook/others/futurevisionmovie/</link>
+      <pubDate>Mon, 14 Sep 2015 00:00:00 +0900</pubDate>
+      
+      <guid>http://iimuz.github.io/scrapbook/others/futurevisionmovie/</guid>
+      <description>ふと近未来動画を集めた時のメモ書き。
+概要 近未来動画って非常に面白いと思う。 コンセプトだし、そうなるわけじゃないかもしれないけど色々興味が湧く、 こうなったらいいなが入っていてワクワクするのがいい。
+たまに、おいおいって言いたくなるのもなんか笑って許せるところが、またコンセプト動画の良さでもあると思う。
+近未来動画 公開年代順に並べてみる。これはこれで、少しずつ変わっていそうで一気に流せたら時間の流れがわかりそう。 公開年代は、動画のアップロード日だったり、わかれば実際に作った年とか結構アバウトだけど。
+ Microsoft
+Microsoftは、カード型の端末がずっとメインに続いてる。 大きさが違ったり(タブレット見たいなサイズ)、新聞のようなものも出てくるけど、 基本、みんなが持ってるのはカード型のスマホが薄くなったような端末。
+ 2015/03/10 Microsoft: Productivity Feature Vision 2013/07/14 Microsoft&amp;rsquo;s Concept - Future vision 2010 2011/10/24 Productivity Future Vision (2009)  NTT
+ 2013/05/16 data for smart society(NTT DATA future vision) 2013/06/12 2025 the future of ICT  その他
+みんな、タブレットとスマホが大好きって感じ。 それ以外の面白デバイスは少ないなぁ。
+ 2015/05/10 Top 5 future Technology inventions: 2015 - 2050
+幾つかの動画からテクノロジーを集めてきた感じかな。
+ 2013/03/04 TOYOTA Introducing TOYOTA i-ROAD personal Mobility Vechicle</description>
+    </item>
+    
+    <item>
+      <title>docomo wifiがpcでも普通に使える</title>
+      <link>http://iimuz.github.io/scrapbook/others/docomowifi/</link>
+      <pubDate>Thu, 10 Sep 2015 00:00:00 +0900</pubDate>
+      
+      <guid>http://iimuz.github.io/scrapbook/others/docomowifi/</guid>
+      <description>&lt;p&gt;docomo wifi(spmode)が行われていたら普通に利用できたので、その時の接続メモ。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>色々なリンク(素材集など)</title>
+      <link>http://iimuz.github.io/scrapbook/others/materialslink/</link>
+      <pubDate>Mon, 27 Apr 2015 00:00:00 +0900</pubDate>
+      
+      <guid>http://iimuz.github.io/scrapbook/others/materialslink/</guid>
+      <description>&lt;p&gt;素材集など、何度も繰り返し利用するようなリンク集。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

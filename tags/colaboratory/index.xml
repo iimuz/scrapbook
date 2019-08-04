@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>colaboratory on しさく</title>
+    <link>http://iimuz.github.io/scrapbook/tags/colaboratory/</link>
+    <description>Recent content in colaboratory on しさく</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-JP</language>
+    <lastBuildDate>Sun, 03 Feb 2019 21:58:03 +0900</lastBuildDate>
+    
+	<atom:link href="http://iimuz.github.io/scrapbook/tags/colaboratory/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Colabratory に Cabocha をインストールする</title>
+      <link>http://iimuz.github.io/scrapbook/softwaretool/others/install-cabocha-in-colaboratory/</link>
+      <pubDate>Sun, 03 Feb 2019 21:58:03 +0900</pubDate>
+      
+      <guid>http://iimuz.github.io/scrapbook/softwaretool/others/install-cabocha-in-colaboratory/</guid>
+      <description>概要 現在、 自然言語処理 100 本ノック に取り組んでいます。その中で、構文解析に CaboCha を使う必要がありました。実行環境には Google Colaboratory を使っています。 Ubuntu 環境へのインストール方法などは、見つかったのですが Colaboratory 用のインストール方法が見つかりませんでした。もしかしたら、どこかに記載があるのかもしれませんが、今回は覚書のためにも残しておきます。 Ubuntu などへのインストールでは、ソースコードの修正が必要と書かれていましたが、私が試したバージョンと環境では不要でした。手順としては、下記のようになります。
+ MeCab のインストール CRF++ のインストール Cabocha のインストール  MeCab をインストールする 最初に MeCab をインストールします。ここまでは、色々な所にインストール方法が記載されていました。ただ、後半で swig が必要となるため、ここでインストールしてしまっています。
+!apt install -y \ curl \ file \ git \ libmecab-dev \ make \ mecab \ mecab-ipadic-utf8 \ swig \ xz-utils !pip install mecab-python3 CRF++ をインストールする 次に、 Cabocha の依存パッケージである CRF++ をインストールします。最新版の CRF++ はダウンロードページ(Google Drive)から取得できます。
+import os filename_crfpp = &amp;#39;crfpp.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,1531 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>しさく</title>
+    
+      <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="generator" content="Hugo 0.56.0-DEV" />
+<title>Gitのコマンド備忘録 :: しさく</title>
+<link rel="shortcut icon" href="/scrapbook/images/favicon.png" type="image/x-icon" />
+<link href="/scrapbook/css/font-awesome.min.css" rel="stylesheet">
+<link href="/scrapbook/css/nucleus.css" rel="stylesheet">
+<link href="/scrapbook/theme-flex/style.css" rel="stylesheet">
+
+<link rel="stylesheet" href="/scrapbook/css/bootstrap.min.css">
+<script src="/scrapbook/js/jquery-2.x.min.js"></script>
+<script type="text/javascript">
+      var baseurl = "http:\/\/iimuz.github.io\/scrapbook\/";
+</script>
+<meta name="description" content="">
+
+
+
+    
+  </head>
+  <body data-url="/scrapbook/softwaretool/git/gitcommand/">
+    
+      <header>
+  <div class="logo">
+    
+	
+  
+    <a class="baselink" href="http://iimuz.github.io/scrapbook/">しさく</a>
+  
+
+
+  </div>
+  <div class="burger"><a href="javascript:void(0);" style="font-size:15px;">&#9776;</a></div>
+    <nav class="shortcuts">
+            <li class="" role="">
+                <a href="http://iimuz.github.io/scrapbook/tags/"  rel="noopener">
+                  <i class='fas fa-tags'></i> <label>Tags</label>
+                </a>
+            </li>
+    </nav>
+</header>
+<article>
+  <aside>
+    <ul class="menu">
+          <li data-nav-id="/scrapbook/" class="dd-item">
+          <a href="/scrapbook/">
+            <i class="fa fa-fw fa-home"></i>
+          </a>
+          </li>
+    <li data-nav-id="/scrapbook/gcp/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/scrapbook/gcp/">Google Cloud Platform</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/scrapbook/gcp/google_photos_api/" class="dd-item">
+        <div>
+          <a href="/scrapbook/gcp/google_photos_api/">
+            Google Photoへの自動画像アップロード
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/scrapbook/gcp/gcp-resource-error/" class="dd-item">
+        <div>
+          <a href="/scrapbook/gcp/gcp-resource-error/">
+            GCP のインスタンス起動でエラーが発生する
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/scrapbook/gcp/gce_ssh_using_chrome/" class="dd-item">
+        <div>
+          <a href="/scrapbook/gcp/gce_ssh_using_chrome/">
+            chrome のみで GCE にアクセスする環境構築した時のメモ
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/scrapbook/machinelearning/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/scrapbook/machinelearning/">Machine Learning</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/scrapbook/machinelearning/unsupervisedanomalydetectionwithgenerativeadversarialnetworkstoguidemarkerdiscovery/" class="dd-item">
+        <div>
+          <a href="/scrapbook/machinelearning/unsupervisedanomalydetectionwithgenerativeadversarialnetworkstoguidemarkerdiscovery/">
+            Unsupervised Anomaly Detection with Generative Adversarial Networks to Guide Marker Discovery を読んで
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/scrapbook/softwaredev/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/scrapbook/softwaredev/">Software Development</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/scrapbook/softwaredev/russia-engineer-survival-guide/" class="dd-item">
+        <div>
+          <a href="/scrapbook/softwaredev/russia-engineer-survival-guide/">
+            Qiita: ロシアの天才ハッカーによる【新人エンジニアサバイバルガイド】を読んで
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/scrapbook/softwaredev/google-technical-guide/" class="dd-item">
+        <div>
+          <a href="/scrapbook/softwaredev/google-technical-guide/">
+            Qiita: [翻訳] 技術向上ガイド を読んで
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/scrapbook/softwaredev/97-things-that-programmers-should-know/" class="dd-item">
+        <div>
+          <a href="/scrapbook/softwaredev/97-things-that-programmers-should-know/">
+            プログラマが知るべき97のこと
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/scrapbook/others/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/scrapbook/others/">Others</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/scrapbook/others/futurevisionmovie/" class="dd-item">
+        <div>
+          <a href="/scrapbook/others/futurevisionmovie/">
+            近未来動画の寄せ集め
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/scrapbook/others/docomowifi/" class="dd-item">
+        <div>
+          <a href="/scrapbook/others/docomowifi/">
+            docomo wifiがpcでも普通に使える
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/scrapbook/others/materialslink/" class="dd-item">
+        <div>
+          <a href="/scrapbook/others/materialslink/">
+            色々なリンク(素材集など)
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/scrapbook/hardware/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/scrapbook/hardware/">Hardware</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+    <li data-nav-id="/scrapbook/hardware/raspberrypi/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/scrapbook/hardware/raspberrypi/">Raspberry Pi</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/scrapbook/hardware/raspberrypi/raspberrypy-cv2-dbuss-error/" class="dd-item">
+        <div>
+          <a href="/scrapbook/hardware/raspberrypi/raspberrypy-cv2-dbuss-error/">
+            RaspberryPi で cv2.imshow を利用したときに DBUS エラーが発生した場合の対処
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/scrapbook/hardware/raspberrypi/raspberrypi_static_ip/" class="dd-item">
+        <div>
+          <a href="/scrapbook/hardware/raspberrypi/raspberrypi_static_ip/">
+            RaspberryPiで静的IPを利用する
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/scrapbook/hardware/others/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/scrapbook/hardware/others/">Others</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/scrapbook/hardware/others/hddbackup/" class="dd-item">
+        <div>
+          <a href="/scrapbook/hardware/others/hddbackup/">
+            外部バックアップ用HDDの比較
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/scrapbook/hardware/others/macbook/" class="dd-item">
+        <div>
+          <a href="/scrapbook/hardware/others/macbook/">
+            MacBookとMacBook Airの比較
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/scrapbook/hardware/others/vrinputdevice/" class="dd-item">
+        <div>
+          <a href="/scrapbook/hardware/others/vrinputdevice/">
+            Occulus Riftの入力デバイスを調べた時のメモ
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/scrapbook/hardware/others/oculusriftshare/" class="dd-item">
+        <div>
+          <a href="/scrapbook/hardware/others/oculusriftshare/">
+            Oculus Rift DK2 で試したコンテンツ
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/scrapbook/hardware/others/oculusriftdk2setup/" class="dd-item">
+        <div>
+          <a href="/scrapbook/hardware/others/oculusriftdk2setup/">
+            Oculus Rift DK2のセットアップ
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/scrapbook/hardware/others/cyclocomputer/" class="dd-item">
+        <div>
+          <a href="/scrapbook/hardware/others/cyclocomputer/">
+            サイクルコンピュータの買い替え
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/scrapbook/hardware/others/oculusriftdk2/" class="dd-item">
+        <div>
+          <a href="/scrapbook/hardware/others/oculusriftdk2/">
+            Oculus Rift DK2を注文した
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/scrapbook/programming/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/scrapbook/programming/">Programming</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+    <li data-nav-id="/scrapbook/programming/cuda/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/scrapbook/programming/cuda/">CUDA</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/scrapbook/programming/cuda/cuda_atomic_function/" class="dd-item">
+        <div>
+          <a href="/scrapbook/programming/cuda/cuda_atomic_function/">
+            CUDA の atomic 関数
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/scrapbook/programming/bash/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/scrapbook/programming/bash/">Bash etc.</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/scrapbook/programming/bash/curl_cloud_not_resolve_host/" class="dd-item">
+        <div>
+          <a href="/scrapbook/programming/bash/curl_cloud_not_resolve_host/">
+            curl で Cloudn&#39;t resolve host エラーが出た時の対処法
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/scrapbook/programming/bash/ldd-shared-library/" class="dd-item">
+        <div>
+          <a href="/scrapbook/programming/bash/ldd-shared-library/">
+            linux 環境の場合は、共有ライブラリの依存関係は ldd コマンドで調べられる
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/scrapbook/programming/bash/bashcommand/" class="dd-item">
+        <div>
+          <a href="/scrapbook/programming/bash/bashcommand/">
+            bashコマンド
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/scrapbook/programming/powershell/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/scrapbook/programming/powershell/">Powershell</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/scrapbook/programming/powershell/download-using-powershell/" class="dd-item">
+        <div>
+          <a href="/scrapbook/programming/powershell/download-using-powershell/">
+            powershell でファイルをダウンロードする
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/scrapbook/programming/powershell/ps1-symboliclink/" class="dd-item">
+        <div>
+          <a href="/scrapbook/programming/powershell/ps1-symboliclink/">
+            powershell でシンボリックリンクを生成する
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/scrapbook/programming/powershell/new-psdrive/" class="dd-item">
+        <div>
+          <a href="/scrapbook/programming/powershell/new-psdrive/">
+            Enter-PSSession後のNew-PSDrive
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/scrapbook/programming/powershell/powershell-tcp/" class="dd-item">
+        <div>
+          <a href="/scrapbook/programming/powershell/powershell-tcp/">
+            powershell で tcp のテスト用にサーバとクライアントを用意する方法のメモ
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/scrapbook/programming/powershell/powershell-template/" class="dd-item">
+        <div>
+          <a href="/scrapbook/programming/powershell/powershell-template/">
+            powershellスクリプトを書くときのテンプレート
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/scrapbook/programming/powershell/windows-symlink-from-remote/" class="dd-item">
+        <div>
+          <a href="/scrapbook/programming/powershell/windows-symlink-from-remote/">
+            windowsでネットワークドライブからsymlinkを有効にする
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/scrapbook/programming/go/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/scrapbook/programming/go/">Go</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/scrapbook/programming/go/go-coverage/" class="dd-item">
+        <div>
+          <a href="/scrapbook/programming/go/go-coverage/">
+            Go 言語でテストカバレッジを可視化する
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/scrapbook/programming/go/golang-cross-build/" class="dd-item">
+        <div>
+          <a href="/scrapbook/programming/go/golang-cross-build/">
+            Golang でクロスビルドする Makefile の設定
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/scrapbook/programming/python/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/scrapbook/programming/python/">python</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/scrapbook/programming/python/post-from-qiita-api/" class="dd-item">
+        <div>
+          <a href="/scrapbook/programming/python/post-from-qiita-api/">
+            Qiita API を利用して記事を投稿する
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/scrapbook/programming/python/pythonwindows/" class="dd-item">
+        <div>
+          <a href="/scrapbook/programming/python/pythonwindows/">
+            virtualenvを利用したpython環境の構築(Windows編)
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/scrapbook/programming/python/matplotlib/" class="dd-item">
+        <div>
+          <a href="/scrapbook/programming/python/matplotlib/">
+            python3.4でmatplotlibを導入したらグラフ表示できない問題の対処法
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/scrapbook/programming/python/pythonenvironment/" class="dd-item">
+        <div>
+          <a href="/scrapbook/programming/python/pythonenvironment/">
+            Macでpython環境の構築
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/scrapbook/programming/cpp/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/scrapbook/programming/cpp/">C/C&#43;&#43;</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/scrapbook/programming/cpp/gcc-static-link/" class="dd-item">
+        <div>
+          <a href="/scrapbook/programming/cpp/gcc-static-link/">
+            gcc でライブラリを静的リンクする方法
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/scrapbook/programming/cpp/cpp-windows-memory-usage/" class="dd-item">
+        <div>
+          <a href="/scrapbook/programming/cpp/cpp-windows-memory-usage/">
+            windows で c&#43;&#43; を用いてメモリ使用量を取得する
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/scrapbook/programming/cpp/cpp-unique-ptr-deleter/" class="dd-item">
+        <div>
+          <a href="/scrapbook/programming/cpp/cpp-unique-ptr-deleter/">
+            c&#43;&#43; の std::unique_ptr におけるデリータ指定
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/scrapbook/programming/cpp/cpplogger/" class="dd-item">
+        <div>
+          <a href="/scrapbook/programming/cpp/cpplogger/">
+            C&#43;&#43;で利用できそうなLoggerを調べました
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/scrapbook/programming/js/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/scrapbook/programming/js/">JavaScript / HTML / CSS</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/scrapbook/programming/js/https-ssl-tls/" class="dd-item">
+        <div>
+          <a href="/scrapbook/programming/js/https-ssl-tls/">
+            httpsとSSLとTLSのメモ
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/scrapbook/programming/csharp/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/scrapbook/programming/csharp/">C#</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/scrapbook/programming/csharp/cs-cancellation-task/" class="dd-item">
+        <div>
+          <a href="/scrapbook/programming/csharp/cs-cancellation-task/">
+            C#でキャンセル処理を利用したタイムアウトの実現
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/scrapbook/programming/csharp/cs-async-await/" class="dd-item">
+        <div>
+          <a href="/scrapbook/programming/csharp/cs-async-await/">
+            C#におけるAysncとAwaitの動作に関して調べたときのメモ
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/scrapbook/programming/csharp/cs-tcp-client/" class="dd-item">
+        <div>
+          <a href="/scrapbook/programming/csharp/cs-tcp-client/">
+            C#においてTCPClientを利用したときのメモ
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/scrapbook/programming/tensorflow/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/scrapbook/programming/tensorflow/">Tensorflow</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/scrapbook/programming/tensorflow/bashonubuntuonwindows/" class="dd-item">
+        <div>
+          <a href="/scrapbook/programming/tensorflow/bashonubuntuonwindows/">
+            Bash On Ubuntu On WindowsのGPU利用は(現時点では)できないそうです
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/scrapbook/programming/java/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/scrapbook/programming/java/">Java</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/scrapbook/programming/java/javaenvironment/" class="dd-item">
+        <div>
+          <a href="/scrapbook/programming/java/javaenvironment/">
+            macにjava環境を構築した時のメモ
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/scrapbook/programming/ruby/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/scrapbook/programming/ruby/">Ruby</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/scrapbook/programming/ruby/rubyenvironment/" class="dd-item">
+        <div>
+          <a href="/scrapbook/programming/ruby/rubyenvironment/">
+            ruby環境
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/scrapbook/programming/markdown/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/scrapbook/programming/markdown/">Markdown</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/scrapbook/programming/markdown/markdown/" class="dd-item">
+        <div>
+          <a href="/scrapbook/programming/markdown/markdown/">
+            Markdown記法について
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/scrapbook/programming/competitiveprogramming/" class="dd-item
+        ">
+      <div>
+      <a href="/scrapbook/programming/competitiveprogramming/">Competitive Programming</a>
+      </div>
+    </li>
+    <li data-nav-id="/scrapbook/programming/julia/" class="dd-item
+        ">
+      <div>
+      <a href="/scrapbook/programming/julia/">Julia</a>
+      </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/scrapbook/skill/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/scrapbook/skill/">Skills</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+    <li data-nav-id="/scrapbook/skill/others/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/scrapbook/skill/others/">Others</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/scrapbook/skill/others/progrmlanguage/" class="dd-item">
+        <div>
+          <a href="/scrapbook/skill/others/progrmlanguage/">
+            今後学ぼうと考えているプログラム言語をまとめてみる
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/scrapbook/skill/chainer_tutorials/" class="dd-item
+        ">
+      <div>
+      <a href="/scrapbook/skill/chainer_tutorials/">Chainer Tutorial</a>
+      </div>
+    </li>
+    <li data-nav-id="/scrapbook/skill/coursera_gcp/" class="dd-item
+        ">
+      <div>
+      <a href="/scrapbook/skill/coursera_gcp/">Coursera GCP</a>
+      </div>
+    </li>
+    <li data-nav-id="/scrapbook/skill/medical_ai/" class="dd-item
+        ">
+      <div>
+      <a href="/scrapbook/skill/medical_ai/">Medical AI オンライン講座</a>
+      </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/scrapbook/softwaretool/" class="dd-item parent haschildren
+        ">
+      <div>
+      <a href="/scrapbook/softwaretool/">Software tools</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
+      </div>
+        <ul>
+    <li data-nav-id="/scrapbook/softwaretool/vscode/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/scrapbook/softwaretool/vscode/">VSCode</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/scrapbook/softwaretool/vscode/vscode-locale-error/" class="dd-item">
+        <div>
+          <a href="/scrapbook/softwaretool/vscode/vscode-locale-error/">
+            VSCode の Remote development で locale 警告が発生したときの対処
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/scrapbook/softwaretool/others/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/scrapbook/softwaretool/others/">Others</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/scrapbook/softwaretool/others/speaker_deck_slide_size/" class="dd-item">
+        <div>
+          <a href="/scrapbook/softwaretool/others/speaker_deck_slide_size/">
+            Speaker Deck のスライド埋め込み (Embed) でサイズ指定
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/scrapbook/softwaretool/others/install-spice-win/" class="dd-item">
+        <div>
+          <a href="/scrapbook/softwaretool/others/install-spice-win/">
+            Windows に SPICE のクライアントをインストールする
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/scrapbook/softwaretool/others/install-cabocha-in-colaboratory/" class="dd-item">
+        <div>
+          <a href="/scrapbook/softwaretool/others/install-cabocha-in-colaboratory/">
+            Colabratory に Cabocha をインストールする
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/scrapbook/softwaretool/others/install-windows-openssh-under-domain/" class="dd-item">
+        <div>
+          <a href="/scrapbook/softwaretool/others/install-windows-openssh-under-domain/">
+            Windows で OpenSSH をドメイン環境下でインストール
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/scrapbook/softwaretool/others/hugo-baseurl/" class="dd-item">
+        <div>
+          <a href="/scrapbook/softwaretool/others/hugo-baseurl/">
+            Hugo で baseurl を有効にする
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/scrapbook/softwaretool/others/cuda-vs-integration/" class="dd-item">
+        <div>
+          <a href="/scrapbook/softwaretool/others/cuda-vs-integration/">
+            windows10 環境で cuda &#43; visual studio integration のインストールが失敗する
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/scrapbook/softwaretool/others/vscode-vim/" class="dd-item">
+        <div>
+          <a href="/scrapbook/softwaretool/others/vscode-vim/">
+            VS Code 上で vim キーバインドの実現
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/scrapbook/softwaretool/others/change_windows_product_key/" class="dd-item">
+        <div>
+          <a href="/scrapbook/softwaretool/others/change_windows_product_key/">
+            windows のプロダクトキーを変更する
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/scrapbook/softwaretool/others/ghosttext/" class="dd-item">
+        <div>
+          <a href="/scrapbook/softwaretool/others/ghosttext/">
+            chrome のテキスト入力をローカルのエディタで行う
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/scrapbook/softwaretool/others/gmail-alias/" class="dd-item">
+        <div>
+          <a href="/scrapbook/softwaretool/others/gmail-alias/">
+            Gmailで&#43;付きのメールアドレスから送信する方法
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/scrapbook/softwaretool/others/cmd-vim-strange-cursor/" class="dd-item">
+        <div>
+          <a href="/scrapbook/softwaretool/others/cmd-vim-strange-cursor/">
+            windowsのコマンドプロンプトでdokcer &#43; vimを利用すると日本語を含む行で適切に表示されない
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/scrapbook/softwaretool/others/dockerfess/" class="dd-item">
+        <div>
+          <a href="/scrapbook/softwaretool/others/dockerfess/">
+            DockerでFessを動かします
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/scrapbook/softwaretool/others/electronenv/" class="dd-item">
+        <div>
+          <a href="/scrapbook/softwaretool/others/electronenv/">
+            Mac環境へのElectron導入方法
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/scrapbook/softwaretool/others/hubotscripttutorial/" class="dd-item">
+        <div>
+          <a href="/scrapbook/softwaretool/others/hubotscripttutorial/">
+            HubotのHello Worldスクリプトの作成方法
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/scrapbook/softwaretool/others/platformforit/" class="dd-item">
+        <div>
+          <a href="/scrapbook/softwaretool/others/platformforit/">
+            Gmailにはない開発環境を求めて
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/scrapbook/softwaretool/others/chocolatey/" class="dd-item">
+        <div>
+          <a href="/scrapbook/softwaretool/others/chocolatey/">
+            Windowsのパッケージ管理にchocolateyを導入したときのメモ
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/scrapbook/softwaretool/others/macpandocpdf/" class="dd-item">
+        <div>
+          <a href="/scrapbook/softwaretool/others/macpandocpdf/">
+            macでpandocを利用してpdfに変換しようとした時のトラブルメモ
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/scrapbook/softwaretool/others/macsettings/" class="dd-item">
+        <div>
+          <a href="/scrapbook/softwaretool/others/macsettings/">
+            Macbook 12インチ(1.1GHz)の設定
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/scrapbook/softwaretool/others/memoenvironment/" class="dd-item">
+        <div>
+          <a href="/scrapbook/softwaretool/others/memoenvironment/">
+            メモ環境
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/scrapbook/softwaretool/others/unitytutorial/" class="dd-item">
+        <div>
+          <a href="/scrapbook/softwaretool/others/unitytutorial/">
+            Unity導入
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/scrapbook/softwaretool/others/googlephotslink/" class="dd-item">
+        <div>
+          <a href="/scrapbook/softwaretool/others/googlephotslink/">
+            Google Photosの画像URLを原画像サイズで取得する方法
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/scrapbook/softwaretool/visualstudio/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/scrapbook/softwaretool/visualstudio/">Visual Studio</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/scrapbook/softwaretool/visualstudio/debugexception/" class="dd-item">
+        <div>
+          <a href="/scrapbook/softwaretool/visualstudio/debugexception/">
+            VS2010 のデバッグ時に例外発生時で中断する方法
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/scrapbook/softwaretool/qt/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/scrapbook/softwaretool/qt/">Qt</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/scrapbook/softwaretool/qt/qt-remote-debug/" class="dd-item">
+        <div>
+          <a href="/scrapbook/softwaretool/qt/qt-remote-debug/">
+            Qt におけるリモートデバッグ
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/scrapbook/softwaretool/qt/cdb-debug/" class="dd-item">
+        <div>
+          <a href="/scrapbook/softwaretool/qt/cdb-debug/">
+            CDB の使い方を調べた時のメモ
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/scrapbook/softwaretool/git/" class="dd-item parent haschildren
+        ">
+      <div>
+      <a href="/scrapbook/softwaretool/git/">git</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/scrapbook/softwaretool/git/proxy-using-git-for-windows/" class="dd-item">
+        <div>
+          <a href="/scrapbook/softwaretool/git/proxy-using-git-for-windows/">
+            Git for Windows で proxy を設定する
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/scrapbook/softwaretool/git/git-svn-for-strange-folder/" class="dd-item">
+        <div>
+          <a href="/scrapbook/softwaretool/git/git-svn-for-strange-folder/">
+            svn のリポジトリ構成がデフォルトではない場合における git svn コマンド
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/scrapbook/softwaretool/git/git-config-include-if/" class="dd-item">
+        <div>
+          <a href="/scrapbook/softwaretool/git/git-config-include-if/">
+            プロジェクト単位で git config の設定を変更する
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/scrapbook/softwaretool/git/encoding-git-for-windows/" class="dd-item">
+        <div>
+          <a href="/scrapbook/softwaretool/git/encoding-git-for-windows/">
+            git for windows の ターミナル出力で文字化けする場合の対処法
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/scrapbook/softwaretool/git/git-worktree/" class="dd-item">
+        <div>
+          <a href="/scrapbook/softwaretool/git/git-worktree/">
+            git worktree を用いた別作業ディレクトリの用意
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/scrapbook/softwaretool/git/stop-git-temp-diff/" class="dd-item">
+        <div>
+          <a href="/scrapbook/softwaretool/git/stop-git-temp-diff/">
+            gitで一時的に変更の検出を止める
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/scrapbook/softwaretool/git/close-issues-when-merge/" class="dd-item">
+        <div>
+          <a href="/scrapbook/softwaretool/git/close-issues-when-merge/">
+            GitHub の Issue をコミットのマージ時に自動でクローズする
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/scrapbook/softwaretool/git/travis-ci-blog/" class="dd-item">
+        <div>
+          <a href="/scrapbook/softwaretool/git/travis-ci-blog/">
+            Travis CIから更新する設定を行った時のメモ
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/scrapbook/softwaretool/git/gitcouldnotexecuteeditor/" class="dd-item">
+        <div>
+          <a href="/scrapbook/softwaretool/git/gitcouldnotexecuteeditor/">
+            gitでCould Not Execute Editorと言われた時の対処法
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/scrapbook/softwaretool/git/githubssh/" class="dd-item">
+        <div>
+          <a href="/scrapbook/softwaretool/git/githubssh/">
+            GitHubにSSHを利用して接続する
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/scrapbook/softwaretool/git/gitcommand/" class="dd-item active">
+        <div>
+          <a href="/scrapbook/softwaretool/git/gitcommand/">
+            Gitのコマンド備忘録
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/scrapbook/softwaretool/git/gitpagesandjekyll/" class="dd-item">
+        <div>
+          <a href="/scrapbook/softwaretool/git/gitpagesandjekyll/">
+            Jekyllでファイルを生成してGitHub Pagesにpush
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/scrapbook/softwaretool/git/git/" class="dd-item">
+        <div>
+          <a href="/scrapbook/softwaretool/git/git/">
+            Gitでyou are not humanと言われたら
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/scrapbook/softwaretool/git/gitpages/" class="dd-item">
+        <div>
+          <a href="/scrapbook/softwaretool/git/gitpages/">
+            Git Pagesを使ってMarkdownでメモする環境構築
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/scrapbook/softwaretool/hyper/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/scrapbook/softwaretool/hyper/">Hyper</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/scrapbook/softwaretool/hyper/hyper-sytle-reflesh/" class="dd-item">
+        <div>
+          <a href="/scrapbook/softwaretool/hyper/hyper-sytle-reflesh/">
+            Hyper で最終行付近が見切れる場合の対処法
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/scrapbook/softwaretool/hyper/reflesh-git-for-windows-on-hyper/" class="dd-item">
+        <div>
+          <a href="/scrapbook/softwaretool/hyper/reflesh-git-for-windows-on-hyper/">
+            Hyper のシェルとして git for windows を利用した場合の画面リフレッシュ方法
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/scrapbook/softwaretool/docker/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/scrapbook/softwaretool/docker/">Docker</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/scrapbook/softwaretool/docker/docker-kvm-privileged/" class="dd-item">
+        <div>
+          <a href="/scrapbook/softwaretool/docker/docker-kvm-privileged/">
+            docker 環境で KVM を利用する
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/scrapbook/softwaretool/docker/docker-kvm-windows/" class="dd-item">
+        <div>
+          <a href="/scrapbook/softwaretool/docker/docker-kvm-windows/">
+            KVM &#43; GPU Passthrough &#43; windows で仮想環境を構築
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/scrapbook/softwaretool/docker/dockerwindows/" class="dd-item">
+        <div>
+          <a href="/scrapbook/softwaretool/docker/dockerwindows/">
+            WindowsでDocker&#43;Hugoサーバを動作させる方法です
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/scrapbook/softwaretool/docker/docker/" class="dd-item">
+        <div>
+          <a href="/scrapbook/softwaretool/docker/docker/">
+            今更ながらにDockerについて調べてみました
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/scrapbook/softwaretool/docker/pythonenvwithdocker/" class="dd-item">
+        <div>
+          <a href="/scrapbook/softwaretool/docker/pythonenvwithdocker/">
+            Python開発環境をDockerで構築します
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/scrapbook/softwaretool/jenkins/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/scrapbook/softwaretool/jenkins/">Jenkins</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/scrapbook/softwaretool/jenkins/jenkins-parallel/" class="dd-item">
+        <div>
+          <a href="/scrapbook/softwaretool/jenkins/jenkins-parallel/">
+            Jenkinsでのparallel処理
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/scrapbook/softwaretool/jenkins/jenkins/" class="dd-item">
+        <div>
+          <a href="/scrapbook/softwaretool/jenkins/jenkins/">
+            DockerでJenkinsのmasterとslaveを用意
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/scrapbook/softwaretool/hugo/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/scrapbook/softwaretool/hugo/">Hugo</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/scrapbook/softwaretool/hugo/hugotex/" class="dd-item">
+        <div>
+          <a href="/scrapbook/softwaretool/hugo/hugotex/">
+            Hugoで数式を導入します
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/scrapbook/softwaretool/hugo/hugosetup/" class="dd-item">
+        <div>
+          <a href="/scrapbook/softwaretool/hugo/hugosetup/">
+            Hugoの初期設定
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/scrapbook/softwaretool/heroku/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/scrapbook/softwaretool/heroku/">heroku</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/scrapbook/softwaretool/heroku/hubotkeepalive/" class="dd-item">
+        <div>
+          <a href="/scrapbook/softwaretool/heroku/hubotkeepalive/">
+            HerokuのFreeプランでアプリを最大限起動しっぱなしにする方法(1日18時間まで)
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/scrapbook/softwaretool/heroku/herokusignup/" class="dd-item">
+        <div>
+          <a href="/scrapbook/softwaretool/heroku/herokusignup/">
+            Herokuアカウントの作成方法
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/scrapbook/softwaretool/heroku/hubotinheroku/" class="dd-item">
+        <div>
+          <a href="/scrapbook/softwaretool/heroku/hubotinheroku/">
+            HubotをHerokuで動かすまで
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/scrapbook/softwaretool/minecraft/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/scrapbook/softwaretool/minecraft/">Minecraft</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/scrapbook/softwaretool/minecraft/envforminecraftmodcreator/" class="dd-item">
+        <div>
+          <a href="/scrapbook/softwaretool/minecraft/envforminecraftmodcreator/">
+            Minecraftのmod作成環境を構築した時のメモ(Mac編)
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/scrapbook/softwaretool/minecraft/minecraftmods1_8/" class="dd-item">
+        <div>
+          <a href="/scrapbook/softwaretool/minecraft/minecraftmods1_8/">
+            Minecraft 1.8のmod構成メモ
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/scrapbook/softwaretool/minecraft/minecraftmods/" class="dd-item">
+        <div>
+          <a href="/scrapbook/softwaretool/minecraft/minecraftmods/">
+            Minecracft 1.7.10にmodを導入
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/scrapbook/softwaretool/minecraft/minecraftinvasionmod/" class="dd-item">
+        <div>
+          <a href="/scrapbook/softwaretool/minecraft/minecraftinvasionmod/">
+            Minecraftで侵略mod
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/scrapbook/softwaretool/minecraft/minecraftdqm4/" class="dd-item">
+        <div>
+          <a href="/scrapbook/softwaretool/minecraft/minecraftdqm4/">
+            Minecraft DQM IVの導入
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/scrapbook/softwaretool/homebrew/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/scrapbook/softwaretool/homebrew/">homebrew</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/scrapbook/softwaretool/homebrew/homebrewpermission/" class="dd-item">
+        <div>
+          <a href="/scrapbook/softwaretool/homebrew/homebrewpermission/">
+            Homebrewでnot writableがでた時の対処方法
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/scrapbook/softwaretool/homebrew/homebrew/" class="dd-item">
+        <div>
+          <a href="/scrapbook/softwaretool/homebrew/homebrew/">
+            homebrewでインストールした時に自動でbrewfileを更新する方法
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/scrapbook/softwaretool/atom/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/scrapbook/softwaretool/atom/">Atom</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/scrapbook/softwaretool/atom/shareatomsettings/" class="dd-item">
+        <div>
+          <a href="/scrapbook/softwaretool/atom/shareatomsettings/">
+            Atomの設定をGitHubを利用して共有する方法
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/scrapbook/softwaretool/atom/atomeditor/" class="dd-item">
+        <div>
+          <a href="/scrapbook/softwaretool/atom/atomeditor/">
+            Windows環境のエディタをAtomに乗り換えようかと思ったのでメモ
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/scrapbook/softwaretool/blender/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/scrapbook/softwaretool/blender/">Blender</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/scrapbook/softwaretool/blender/blenderfluidsimulation/" class="dd-item">
+        <div>
+          <a href="/scrapbook/softwaretool/blender/blenderfluidsimulation/">
+            Blenderで流体シミュレーション
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/scrapbook/softwaretool/blender/shizuokadevunityandblender03/" class="dd-item">
+        <div>
+          <a href="/scrapbook/softwaretool/blender/shizuokadevunityandblender03/">
+            UnityとBlenderハンズオンの第3章を進めてみる
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/scrapbook/softwaretool/blender/shizuokadevunityandblender02/" class="dd-item">
+        <div>
+          <a href="/scrapbook/softwaretool/blender/shizuokadevunityandblender02/">
+            UnityとBlenderハンズオンの第2章を進めてみる
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/scrapbook/softwaretool/blender/shizuokadevunityandblender01/" class="dd-item">
+        <div>
+          <a href="/scrapbook/softwaretool/blender/shizuokadevunityandblender01/">
+            UnityとBlenderハンズオンの第1章を進めてみる
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/scrapbook/softwaretool/blender/blenderpythonscript/" class="dd-item">
+        <div>
+          <a href="/scrapbook/softwaretool/blender/blenderpythonscript/">
+            BlenderでPythonスクリプトを利用する
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/scrapbook/softwaretool/blender/blendersetting/" class="dd-item">
+        <div>
+          <a href="/scrapbook/softwaretool/blender/blendersetting/">
+            Blenderコマンドの備忘録
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/scrapbook/softwaretool/blender/blender/" class="dd-item">
+        <div>
+          <a href="/scrapbook/softwaretool/blender/blender/">
+            Blenderの練習 000
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/scrapbook/softwaretool/jekyll/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/scrapbook/softwaretool/jekyll/">Jekyll</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/scrapbook/softwaretool/jekyll/jekyllsearch/" class="dd-item">
+        <div>
+          <a href="/scrapbook/softwaretool/jekyll/jekyllsearch/">
+            Jekyllでサイト内検索(Googleカスタム検索)を入れる
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/scrapbook/softwaretool/jekyll/jekylltips/" class="dd-item">
+        <div>
+          <a href="/scrapbook/softwaretool/jekyll/jekylltips/">
+            Jekyll Tips
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/scrapbook/softwaretool/jekyll/jekyllmorepost/" class="dd-item">
+        <div>
+          <a href="/scrapbook/softwaretool/jekyll/jekyllmorepost/">
+            Jekyllで&#39;続きを読む&#39;機能を導入
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/scrapbook/softwaretool/jekyll/jekyllpaginate/" class="dd-item">
+        <div>
+          <a href="/scrapbook/softwaretool/jekyll/jekyllpaginate/">
+            Jekyllのページネーション
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/scrapbook/softwaretool/jekyll/jekylltagcloud/" class="dd-item">
+        <div>
+          <a href="/scrapbook/softwaretool/jekyll/jekylltagcloud/">
+            Jekyllにタグクラウドをつける
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/scrapbook/softwaretool/jekyll/jekyllplugins/" class="dd-item">
+        <div>
+          <a href="/scrapbook/softwaretool/jekyll/jekyllplugins/">
+            Jekyllにプラグンインを導入する
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/scrapbook/softwaretool/vim/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/scrapbook/softwaretool/vim/">vim</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/scrapbook/softwaretool/vim/vimunfile/" class="dd-item">
+        <div>
+          <a href="/scrapbook/softwaretool/vim/vimunfile/">
+            vimがun~ファイルを作るようになった
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/scrapbook/softwaretool/colaboratory/" class="dd-item
+        ">
+      <div>
+      <a href="/scrapbook/softwaretool/colaboratory/">Google Colaboratory</a>
+      </div>
+    </li>
+    <li data-nav-id="/scrapbook/softwaretool/pointcloudlibrary/" class="dd-item
+        ">
+      <div>
+      <a href="/scrapbook/softwaretool/pointcloudlibrary/">Point Cloud Library</a>
+      </div>
+    </li>
+        </ul>
+    </li>
+
+
+
+
+    </ul>
+    <section>
+    </section>
+  </aside>
+  <section class="page">
+    
+    <div class="nav-select">
+      <center>Navigation : 
+        <select onchange="javascript:location.href = this.value;">
+          
+    <option value="/scrapbook/gcp/" >
+   Google Cloud Platform</option>
+    <option value="/scrapbook/machinelearning/" >
+   Machine Learning</option>
+    <option value="/scrapbook/softwaredev/" >
+   Software Development</option>
+    <option value="/scrapbook/others/" >
+   Others</option>
+    <option value="/scrapbook/hardware/" >
+   Hardware</option>
+    <option value="/scrapbook/programming/" >
+   Programming</option>
+    <option value="/scrapbook/skill/" >
+   Skills</option>
+    <option value="/scrapbook/softwaretool/" >
+   Software tools</option> 
+    <option value="/scrapbook/softwaretool/vscode/" >
+  - 
+   VSCode</option>
+    <option value="/scrapbook/softwaretool/others/" >
+  - 
+   Others</option>
+    <option value="/scrapbook/softwaretool/visualstudio/" >
+  - 
+   Visual Studio</option>
+    <option value="/scrapbook/softwaretool/qt/" >
+  - 
+   Qt</option>
+    <option value="/scrapbook/softwaretool/git/" >
+  - 
+   git</option> 
+      <option value="/scrapbook/softwaretool/git/proxy-using-git-for-windows/" >-- Git for Windows で proxy を設定する</option>
+      <option value="/scrapbook/softwaretool/git/git-svn-for-strange-folder/" >-- svn のリポジトリ構成がデフォルトではない場合における git svn コマンド</option>
+      <option value="/scrapbook/softwaretool/git/git-config-include-if/" >-- プロジェクト単位で git config の設定を変更する</option>
+      <option value="/scrapbook/softwaretool/git/encoding-git-for-windows/" >-- git for windows の ターミナル出力で文字化けする場合の対処法</option>
+      <option value="/scrapbook/softwaretool/git/git-worktree/" >-- git worktree を用いた別作業ディレクトリの用意</option>
+      <option value="/scrapbook/softwaretool/git/stop-git-temp-diff/" >-- gitで一時的に変更の検出を止める</option>
+      <option value="/scrapbook/softwaretool/git/close-issues-when-merge/" >-- GitHub の Issue をコミットのマージ時に自動でクローズする</option>
+      <option value="/scrapbook/softwaretool/git/travis-ci-blog/" >-- Travis CIから更新する設定を行った時のメモ</option>
+      <option value="/scrapbook/softwaretool/git/gitcouldnotexecuteeditor/" >-- gitでCould Not Execute Editorと言われた時の対処法</option>
+      <option value="/scrapbook/softwaretool/git/githubssh/" >-- GitHubにSSHを利用して接続する</option>
+      <option value="/scrapbook/softwaretool/git/gitcommand/"  selected>-- Gitのコマンド備忘録</option>
+      <option value="/scrapbook/softwaretool/git/gitpagesandjekyll/" >-- Jekyllでファイルを生成してGitHub Pagesにpush</option>
+      <option value="/scrapbook/softwaretool/git/git/" >-- Gitでyou are not humanと言われたら</option>
+      <option value="/scrapbook/softwaretool/git/gitpages/" >-- Git Pagesを使ってMarkdownでメモする環境構築</option>
+  
+    <option value="/scrapbook/softwaretool/hyper/" >
+  - 
+   Hyper</option>
+    <option value="/scrapbook/softwaretool/docker/" >
+  - 
+   Docker</option>
+    <option value="/scrapbook/softwaretool/jenkins/" >
+  - 
+   Jenkins</option>
+    <option value="/scrapbook/softwaretool/hugo/" >
+  - 
+   Hugo</option>
+    <option value="/scrapbook/softwaretool/heroku/" >
+  - 
+   heroku</option>
+    <option value="/scrapbook/softwaretool/minecraft/" >
+  - 
+   Minecraft</option>
+    <option value="/scrapbook/softwaretool/homebrew/" >
+  - 
+   homebrew</option>
+    <option value="/scrapbook/softwaretool/atom/" >
+  - 
+   Atom</option>
+    <option value="/scrapbook/softwaretool/blender/" >
+  - 
+   Blender</option>
+    <option value="/scrapbook/softwaretool/jekyll/" >
+  - 
+   Jekyll</option>
+    <option value="/scrapbook/softwaretool/vim/" >
+  - 
+   vim</option>
+    <option value="/scrapbook/softwaretool/colaboratory/" >
+  - 
+   Google Colaboratory</option>
+    <option value="/scrapbook/softwaretool/pointcloudlibrary/" >
+  - 
+   Point Cloud Library</option>
+  
+
+
+
+        </select>
+      </center>
+    </div>
+      <div>
+        <div class="searchbox">
+          <input data-search-input id="search-by" type="text" placeholder="Search...">
+        </div>
+        <script type="text/javascript" src="/scrapbook/js/lunr.min.js"></script>
+        <script type="text/javascript" src="/scrapbook/js/auto-complete.js"></script>
+        <link href="/scrapbook/css/auto-complete.css" rel="stylesheet">
+        <script type="text/javascript">
+          
+              var baseurl = "http:\/\/iimuz.github.io\/scrapbook\/";
+          
+        </script>
+        <script type="text/javascript" src="/scrapbook/js/search.js"></script>
+      </div>
+    
+
+    <h1>Gitのコマンド備忘録</h1>
+    
+
+    
+    <p>gitのコマンドをよく忘れるので、利用するときに調べたらここに記載する。</p>
+
+<h2 id="コマンド">コマンド</h2>
+
+<h3 id="cloneする">cloneする</h3>
+
+<p><a href="http://git-scm.com/book/ja/v1/Git-%E3%81%AE%E5%9F%BA%E6%9C%AC-Git-%E3%83%AA%E3%83%9D%E3%82%B8%E3%83%88%E3%83%AA%E3%81%AE%E5%8F%96%E5%BE%97">git: 2.1 Gitの基本 - Gitリポジトリの取得</a>を参考にすると、
+カレントディレクトリにフォルダを自動で作成してcloneする場合は、以下の方法。</p>
+
+<pre><code>git clone &lt;url&gt;;
+</code></pre>
+
+<p>もし、cloneするディレクトリを指定する場合は、以下の方法でhogeフォルダに作成できる。</p>
+
+<pre><code>git clone &lt;url&gt; ./hoge;
+</code></pre>
+
+<p>さらにブランチも指定したいならば、
+<a href="http://qiita.com/icoxfog417/items/5776e0f0f758f0f0e48a">Qiita: リモートから特定のブランチを指定してcloneする</a>
+を参考にすると、以下の方法で可能。</p>
+
+<pre><code>git clone -b &lt;ブランチ名&gt; &lt;url&gt;;
+</code></pre>
+
+<p>urlは、githubなら、対象リポジトリまで行って、
+右のサイドバーにある*HTTPS clone URL*というところをポチッすれば
+URLがクリップボードにコピーされる。</p>
+
+<h3 id="branchを作成する">branchを作成する</h3>
+
+<p><a href="http://www.backlog.jp/git-guide/stepup/stepup2_2.html">サルでもわかるGit入門: 1. ブランチを作成する</a>を参考に。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git branch &lt;ブランチ名&gt;;</code></pre></div>
+<h3 id="pushする">pushする</h3>
+
+<p>初回のみ以下の方法で紐付が必要。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git push -u origin &lt;ブランチ名&gt;;</code></pre></div>
+<p>2回目以降は、以下でできる。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git push;</code></pre></div>
+<h3 id="mergeする">mergeする</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git merge &lt;ブランチ名&gt;;</code></pre></div>
+<h3 id="ステージにaddしたデータの削除">ステージにaddしたデータの削除</h3>
+
+<p><a href="http://d.hatena.ne.jp/mrgoofy33/20100910/1284068244">hogehoge foobar Blog Style5: git addでステージングしたファイルをアンステージング(キャンセル)する</a>
+を参考に、キャッシュのみ削除する場合は以下。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git rm --cache ./hoge.txt</code></pre></div>
+<p>ファイルごと削除する場合は以下。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git rm ./hoge.txt</code></pre></div>
+<h3 id="サブモジュールの追加">サブモジュールの追加</h3>
+
+<p>サブモジュールとして取り込む。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git submodule https://github.com/hoge hoge</code></pre></div>
+<h3 id="リモートのアドレスを調べる">リモートのアドレスを調べる</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git remote -v</code></pre></div>
+<h2 id="参考資料">参考資料</h2>
+
+<ul>
+<li><a href="http://git-scm.com/book/ja/v1/Git-%E3%81%AE%E5%9F%BA%E6%9C%AC-Git-%E3%83%AA%E3%83%9D%E3%82%B8%E3%83%88%E3%83%AA%E3%81%AE%E5%8F%96%E5%BE%97">git: 2.1 Gitの基本 - Gitリポジトリの取得</a></li>
+<li><a href="http://qiita.com/icoxfog417/items/5776e0f0f758f0f0e48a">Qiita: リモートから特定のブランチを指定してcloneする</a></li>
+<li><a href="http://www.backlog.jp/git-guide/stepup/stepup2_2.html">サルでもわかるGit入門: 1. ブランチを作成する</a></li>
+<li><a href="http://d.hatena.ne.jp/mrgoofy33/20100910/1284068244">hogehoge foobar Blog Style5: git addでステージングしたファイルをアンステージング(キャンセル)する</a></li>
+</ul>
+
+
+    
+        <div class="chevrons">
+    <div id="navigation">
+</div>
+  </div>
+
+  </section>
+</article>
+
+<footer>
+
+<div class="footline">
+    
+    <div class="tags"> 
+      
+        <a class="label label-default" href="http://iimuz.github.io/scrapbook/tags/git">git</a>
+      
+    </div>
+    
+
+    
+
+    
+    <div class="date">
+        <i class='fa fa-calendar'></i> Last update on 04/08/2019
+    </div>
+    
+
+    
+  </div>
+
+
+	<div>
+
+
+  
+    
+  
+
+
+
+	</div>
+</footer>
+
+<script src="/scrapbook/js/clipboard.min.js"></script>
+
+<link href="/scrapbook/css/featherlight.min.css" rel="stylesheet">
+<script src="/scrapbook/js/featherlight.min.js"></script>
+
+
+
+<script src="/scrapbook/theme-flex/script.js"></script>
+
+
+    
+
+    
+    
+
+    
+
+    
+  </body>
+</html>

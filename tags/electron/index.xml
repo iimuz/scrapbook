@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>electron on しさく</title>
+    <link>http://iimuz.github.io/scrapbook/tags/electron/</link>
+    <description>Recent content in electron on しさく</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-JP</language>
+    <lastBuildDate>Mon, 28 Dec 2015 00:00:00 +0900</lastBuildDate>
+    
+	<atom:link href="http://iimuz.github.io/scrapbook/tags/electron/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Mac環境へのElectron導入方法</title>
+      <link>http://iimuz.github.io/scrapbook/softwaretool/others/electronenv/</link>
+      <pubDate>Mon, 28 Dec 2015 00:00:00 +0900</pubDate>
+      
+      <guid>http://iimuz.github.io/scrapbook/softwaretool/others/electronenv/</guid>
+      <description>&lt;p&gt;Mac(El Capitan)へのElectron + coffee-script環境の導入手順。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

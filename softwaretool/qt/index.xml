@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Qt on しさく</title>
+    <link>http://iimuz.github.io/scrapbook/softwaretool/qt/</link>
+    <description>Recent content in Qt on しさく</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-JP</language>
+    <lastBuildDate>Wed, 06 Feb 2019 21:38:27 +0900</lastBuildDate>
+    
+	<atom:link href="http://iimuz.github.io/scrapbook/softwaretool/qt/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Qt におけるリモートデバッグ</title>
+      <link>http://iimuz.github.io/scrapbook/softwaretool/qt/qt-remote-debug/</link>
+      <pubDate>Wed, 06 Feb 2019 21:38:27 +0900</pubDate>
+      
+      <guid>http://iimuz.github.io/scrapbook/softwaretool/qt/qt-remote-debug/</guid>
+      <description>Qt Creator を利用した場合にリモートデバッグを行うこと自体は公式に方法がああります。
+Launching the Debugger
+サンプルの OpenGL を利用していると思われるプロジェクトでリモートデバッグできることを確認しました。 下記のような用語を用いるとします。
+ ホスト PC: 開発した exe を実行する PC  exe の実行に必要なバイナリやインストールのみを実行  サーバ PC: 開発用環境を構築した PC  ビルドするために QtCreator や Visual Studio をインストール   事前条件として下記の作業を行っています。
+ ホスト PC  Visual Studio Professional 2013 Update5 のインストール QtCreator 5.6.4 のインストール Windows SDK のインストール(他のチェックボックスはすべて外しています。)  サーバ PC  Windows SDK の Remote Debugger ツールをインストール(他のチェックボックスはすべて外しています。) サーバ PC の qtcreatorcdbext.dll (32bit or 64bit) を任意のディレクトリ (qtlib) へコピー   その上で下記のような手順でデバッガを起動します。</description>
+    </item>
+    
+    <item>
+      <title>CDB の使い方を調べた時のメモ</title>
+      <link>http://iimuz.github.io/scrapbook/softwaretool/qt/cdb-debug/</link>
+      <pubDate>Sat, 02 Feb 2019 21:45:10 +0900</pubDate>
+      
+      <guid>http://iimuz.github.io/scrapbook/softwaretool/qt/cdb-debug/</guid>
+      <description>Qt で開発されているソフトウェアのデバッグ作業で調べたので、メモしておきます。 単にデバッグ実行するだけであれば、 Qt の開発環境をデバッグ実行するだけなので、意識する事はないと思います。 今回は開発環境が入っている PC では実行できなかったため、 リモート PC で実行して開発環境からチェックするということを行いました。 Visual Studio だと、開発環境からリモートの操作ができるのですが、 Qt 開発環境の場合は、リモート PC のコマンドラインからステップ実行などをする必要がありました。 ブレークポイントの設定などは Qt 環境からできますが、 なぜか、一回止めると、再度進めるためにはコマンドラインの入力待ちになってしまいました。 変数のチェックとかは、 Qt 開発環境からできます。
+cdb/Windbgの使い方のメモ にまとめられていました。
+コマンド一覧の取得は単純に ? でできます。
+0:000&amp;gt; ?  実行関連
+順にgdbにおけるcontinue、nexti（関数の中に入らない）、stepi（関数の中に入る）、finish（リターンするまで進める）に対応する。
+ 0:000&amp;gt; g 0:000&amp;gt; p 0:000&amp;gt; t 0:000&amp;gt; gu</description>
+    </item>
+    
+  </channel>
+</rss>

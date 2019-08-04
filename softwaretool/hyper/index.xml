@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hyper on しさく</title>
+    <link>http://iimuz.github.io/scrapbook/softwaretool/hyper/</link>
+    <description>Recent content in Hyper on しさく</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-JP</language>
+    <lastBuildDate>Mon, 22 Oct 2018 18:38:11 +0900</lastBuildDate>
+    
+	<atom:link href="http://iimuz.github.io/scrapbook/softwaretool/hyper/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Hyper で最終行付近が見切れる場合の対処法</title>
+      <link>http://iimuz.github.io/scrapbook/softwaretool/hyper/hyper-sytle-reflesh/</link>
+      <pubDate>Mon, 22 Oct 2018 18:38:11 +0900</pubDate>
+      
+      <guid>http://iimuz.github.io/scrapbook/softwaretool/hyper/hyper-sytle-reflesh/</guid>
+      <description>Hyper を利用している場合に、たまに最終行付近が見切れることがあります。 どうも、タブを追加したときに一段下がる動作をするのですが、 この時に描画範囲がうまくリセットされないために起こっているようです。 Ctrl + L とかで再描画してもダメな場合が多かったですが、 単に Window サイズを変更してあげると、描画サイズのリセットがかかるようです。
+Windows とかの場合は、 Win + ↓ とかを押して、 いったん画面サイズを小さくしてから Win + ↑ とかで最大化すると正常に描画されます。</description>
+    </item>
+    
+    <item>
+      <title>Hyper のシェルとして git for windows を利用した場合の画面リフレッシュ方法</title>
+      <link>http://iimuz.github.io/scrapbook/softwaretool/hyper/reflesh-git-for-windows-on-hyper/</link>
+      <pubDate>Wed, 17 Oct 2018 19:09:33 +0900</pubDate>
+      
+      <guid>http://iimuz.github.io/scrapbook/softwaretool/hyper/reflesh-git-for-windows-on-hyper/</guid>
+      <description>hyper.js に下記のようにターミナルの設定を入れるといいようです。
+env: { TERM: &amp;#39;msys&amp;#39;, },  Hyper の起動時に cmd と powershell なども選択して起動できるようにしているため、 起動するシェルによって TERM の設定を変えなければいけないような気がします。 powershell と cmd の範囲では、 TERM に msys を設定したままでも、普通に動いているように見えます。 WSL と Git for Windows の両方を選択する状況は発生していないため、 これは設定しっぱなしでもよいのかもしれません。
+参考情報: &amp;ldquo;clear&amp;rdquo; broken on Windows when using with Git BASH</description>
+    </item>
+    
+  </channel>
+</rss>

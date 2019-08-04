@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>CUDA on しさく</title>
+    <link>http://iimuz.github.io/scrapbook/programming/cuda/</link>
+    <description>Recent content in CUDA on しさく</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-JP</language>
+    <lastBuildDate>Mon, 08 Apr 2019 02:19:34 +0000</lastBuildDate>
+    
+	<atom:link href="http://iimuz.github.io/scrapbook/programming/cuda/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>CUDA の atomic 関数</title>
+      <link>http://iimuz.github.io/scrapbook/programming/cuda/cuda_atomic_function/</link>
+      <pubDate>Mon, 08 Apr 2019 02:19:34 +0000</pubDate>
+      
+      <guid>http://iimuz.github.io/scrapbook/programming/cuda/cuda_atomic_function/</guid>
+      <description>CUDA の atomic 関数では、 CUDA Kernel 内において、 他のスレッドとは排他的に読み書き処理が可能となります。 atomicAdd や atomicSub などの基本的な関数は一通り用意されています。
+ただし、 公式ドキュメント には、注意点として下記が書かれています。
+ Atomic functions do not act as memory fences and do not imply synchronization or ordering constraints for memory operations
+ Memory funces や同期、制御順に関する制約は行わないです。
+ Atomic functions can only be used in device functions.
+ atomic 関数は、デバイス関数の中でのみ有効となります。</description>
+    </item>
+    
+  </channel>
+</rss>
