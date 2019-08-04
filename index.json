@@ -35,18 +35,18 @@
 	"content": "  last modified at August 4, 2019, created at July 28, 2019 RaspberryPi で cv2.imshow を利用したときに DBUS エラーが発生した場合の対処   last modified at August 4, 2019, created at June 9, 2019 RaspberryPiで静的IPを利用する   "
 },
 {
+	"uri": "http://iimuz.github.io/scrapbook/tags/raspberrypi/",
+	"title": "RaspberryPi",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
 	"uri": "http://iimuz.github.io/scrapbook/hardware/raspberrypi/raspberrypy-cv2-dbuss-error/",
 	"title": "RaspberryPi で cv2.imshow を利用したときに DBUS エラーが発生した場合の対処",
 	"tags": ["raspberrypi"],
 	"description": "",
 	"content": "RaspberryPi の環境で cv2 の imshow 関数を利用したところ、下記のエラーが発生した。\nWARNING **: Error retrieving accessibility bus address: org.freedesktop.DBus.Error.ServiceUnknown: The name org.a11y.Bus was not provided by any .service files 対処法としては、下記のようにパッケージを追加すればよいようです。\nsudo apt-get install at-spi2-core  [solved ]Warning **: Error retrieving accessibility bus address  "
-},
-{
-	"uri": "http://iimuz.github.io/scrapbook/tags/raspberrypi/",
-	"title": "raspberrypi",
-	"tags": [],
-	"description": "",
-	"content": ""
 },
 {
 	"uri": "http://iimuz.github.io/scrapbook/hardware/raspberrypi/raspberrypi_static_ip/",
