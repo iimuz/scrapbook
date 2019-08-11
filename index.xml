@@ -1042,15 +1042,6 @@ Microsoftは、カード型の端末がずっとメインに続いてる。 大�
     </item>
     
     <item>
-      <title>docomo wifiがpcでも普通に使える</title>
-      <link>http://iimuz.github.io/scrapbook/others/docomowifi/</link>
-      <pubDate>Thu, 10 Sep 2015 00:00:00 +0900</pubDate>
-      
-      <guid>http://iimuz.github.io/scrapbook/others/docomowifi/</guid>
-      <description>&lt;p&gt;docomo wifi(spmode)が行われていたら普通に利用できたので、その時の接続メモ。&lt;/p&gt;</description>
-    </item>
-    
-    <item>
       <title>macでpandocを利用してpdfに変換しようとした時のトラブルメモ</title>
       <link>http://iimuz.github.io/scrapbook/softwaretool/others/macpandocpdf/</link>
       <pubDate>Thu, 03 Sep 2015 00:00:00 +0900</pubDate>
@@ -1433,8 +1424,8 @@ sshキーを利用してアクセスする方法。&lt;/p&gt;</description>
       <pubDate>Sat, 25 Apr 2015 00:00:00 +0900</pubDate>
       
       <guid>http://iimuz.github.io/scrapbook/programming/bash/bashcommand/</guid>
-      <description> bashコマンドの備忘録。
-ls系  再帰ls  find -type f;  ディレクトリ以下の再帰で指定したファイルを削除する  rm $(find -type f | grep hoge); 参考資料  俺的備忘録 ~なんかいろいろ~: lsコマンドで覚えておきたい使い方16個(+2個)  </description>
+      <description> bash コマンドの備忘録。
+ 再帰 ls: find -type f ディレクトリ以下の再帰で指定したファイルを削除する: rm $(find -type f | grep hoge); ntp を使わず http で時刻合わせ: sudo date --set @&amp;quot;$(wget -q https://ntp-a1.nict.go.jp/cgi-bin/jst -O - | sed -n 4p | cut -d. -f1)&amp;quot;  参考資料  俺的備忘録 ~なんかいろいろ~: ls コマンドで覚えておきたい使い方 16 個(+2 個) ntp を使わずに時刻を合わせるワンライナー（Proxy 環境下でも安心）  </description>
     </item>
     
     <item>

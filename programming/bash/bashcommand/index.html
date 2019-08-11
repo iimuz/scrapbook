@@ -138,13 +138,6 @@
           </a>
         </div>
     </li>
-      <li data-nav-id="/scrapbook/others/docomowifi/" class="dd-item">
-        <div>
-          <a href="/scrapbook/others/docomowifi/">
-            docomo wifiがpcでも普通に使える
-          </a>
-        </div>
-    </li>
       <li data-nav-id="/scrapbook/others/materialslink/" class="dd-item">
         <div>
           <a href="/scrapbook/others/materialslink/">
@@ -1381,22 +1374,19 @@
     
     
 
-<p>bashコマンドの備忘録。</p>
-
-<h2 id="ls系">ls系</h2>
+<p>bash コマンドの備忘録。</p>
 
 <ul>
-<li>再帰ls</li>
+<li>再帰 ls: <code>find -type f</code></li>
+<li>ディレクトリ以下の再帰で指定したファイルを削除する: <code>rm $(find -type f | grep hoge);</code></li>
+<li>ntp を使わず http で時刻合わせ: <code>sudo date --set @&quot;$(wget -q https://ntp-a1.nict.go.jp/cgi-bin/jst -O - | sed -n 4p | cut -d. -f1)&quot;</code></li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">find -type f;</code></pre></div>
-<ul>
-<li>ディレクトリ以下の再帰で指定したファイルを削除する</li>
-</ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">rm <span style="color:#66d9ef">$(</span>find -type f | grep hoge<span style="color:#66d9ef">)</span>;</code></pre></div>
+
 <h2 id="参考資料">参考資料</h2>
 
 <ul>
-<li><a href="http://orebibou.com/2014/07/ls%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89%E3%81%A7%E8%A6%9A%E3%81%88%E3%81%A6%E3%81%8A%E3%81%8D%E3%81%9F%E3%81%84%E3%81%93%E3%81%A816%E5%80%8B/">俺的備忘録 ~なんかいろいろ~: lsコマンドで覚えておきたい使い方16個(+2個)</a></li>
+<li><a href="https://orebibou.com/2014/07/lsコマンドで覚えておきたいこと16個/">俺的備忘録 ~なんかいろいろ~: ls コマンドで覚えておきたい使い方 16 個(+2 個)</a></li>
+<li><a href="https://qiita.com/pankona/items/258fed78c168918a8ad2">ntp を使わずに時刻を合わせるワンライナー（Proxy 環境下でも安心）</a></li>
 </ul>
 
 

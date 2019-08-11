@@ -35,18 +35,18 @@
 	"content": "  last modified at August 11, 2019, created at July 28, 2019 RaspberryPi で cv2.imshow を利用したときに DBUS エラーが発生した場合の対処   last modified at August 11, 2019, created at June 9, 2019 RaspberryPiで静的IPを利用する   "
 },
 {
+	"uri": "http://iimuz.github.io/scrapbook/tags/raspberrypi/",
+	"title": "RaspberryPi",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
 	"uri": "http://iimuz.github.io/scrapbook/hardware/raspberrypi/raspberrypy-cv2-dbuss-error/",
 	"title": "RaspberryPi で cv2.imshow を利用したときに DBUS エラーが発生した場合の対処",
 	"tags": ["raspberrypi"],
 	"description": "",
 	"content": "RaspberryPi の環境で cv2 の imshow 関数を利用したところ、下記のエラーが発生した。\nWARNING **: Error retrieving accessibility bus address: org.freedesktop.DBus.Error.ServiceUnknown: The name org.a11y.Bus was not provided by any .service files 対処法としては、下記のようにパッケージを追加すればよいようです。\nsudo apt-get install at-spi2-core  [solved ]Warning **: Error retrieving accessibility bus address  "
-},
-{
-	"uri": "http://iimuz.github.io/scrapbook/tags/raspberrypi/",
-	"title": "raspberrypi",
-	"tags": [],
-	"description": "",
-	"content": ""
 },
 {
 	"uri": "http://iimuz.github.io/scrapbook/hardware/raspberrypi/raspberrypi_static_ip/",
@@ -928,7 +928,7 @@
 	"title": "Others",
 	"tags": [],
 	"description": "",
-	"content": "  last modified at August 11, 2019, created at September 14, 2015 近未来動画の寄せ集め   last modified at August 11, 2019, created at September 10, 2015 docomo wifiがpcでも普通に使える   last modified at August 11, 2019, created at April 27, 2015 色々なリンク(素材集など)   "
+	"content": "  last modified at August 11, 2019, created at September 14, 2015 近未来動画の寄せ集め   last modified at August 11, 2019, created at April 27, 2015 色々なリンク(素材集など)   "
 },
 {
 	"uri": "http://iimuz.github.io/scrapbook/others/futurevisionmovie/",
@@ -936,13 +936,6 @@
 	"tags": [],
 	"description": "",
 	"content": " ふと近未来動画を集めた時のメモ書き。\n概要 近未来動画って非常に面白いと思う。 コンセプトだし、そうなるわけじゃないかもしれないけど色々興味が湧く、 こうなったらいいなが入っていてワクワクするのがいい。\nたまに、おいおいって言いたくなるのもなんか笑って許せるところが、またコンセプト動画の良さでもあると思う。\n近未来動画 公開年代順に並べてみる。これはこれで、少しずつ変わっていそうで一気に流せたら時間の流れがわかりそう。 公開年代は、動画のアップロード日だったり、わかれば実際に作った年とか結構アバウトだけど。\n Microsoft\nMicrosoftは、カード型の端末がずっとメインに続いてる。 大きさが違ったり(タブレット見たいなサイズ)、新聞のようなものも出てくるけど、 基本、みんなが持ってるのはカード型のスマホが薄くなったような端末。\n 2015/03/10 Microsoft: Productivity Feature Vision 2013/07/14 Microsoft\u0026rsquo;s Concept - Future vision 2010 2011/10/24 Productivity Future Vision (2009)  NTT\n 2013/05/16 data for smart society(NTT DATA future vision) 2013/06/12 2025 the future of ICT  その他\nみんな、タブレットとスマホが大好きって感じ。 それ以外の面白デバイスは少ないなぁ。\n 2015/05/10 Top 5 future Technology inventions: 2015 - 2050\n幾つかの動画からテクノロジーを集めてきた感じかな。\n 2013/03/04 TOYOTA Introducing TOYOTA i-ROAD personal Mobility Vechicle\n 2012/02/03 Corning A day made of Glass 2: Same day. Expanded Corning vision(2012)\n 2012/??/?? Openarch / Film\nなんか最初のシーンで目覚ましが写っている横に普通のアナログ時計がかけてあって笑ってしまった。 そこは、プロジェクタで写すんじゃないのか(笑)\n 2011/06/05 仏エアバス The future by Airbus - concept plane cabin\n   "
-},
-{
-	"uri": "http://iimuz.github.io/scrapbook/others/docomowifi/",
-	"title": "docomo wifiがpcでも普通に使える",
-	"tags": [],
-	"description": "",
-	"content": "docomo wifi(spmode)が行われていたら普通に利用できたので、その時の接続メモ。\n概要 カフェ入った時に、wifiを使いたいが、基本的にwifiスポット系は契約してないので、 スタバで諦めていたが、よくよく調べたらdocomo wifiが普通に利用できる契約になっていた。 docomo wifiに契約していなくても、spモードに登録していたら普通にpcからでも使えた。\n使い方は、docomoの回線につないで、 my docomoから回線のキーとID、パスを確認して入力すれば良い。\ndocomo wifiのつながる場所 調べるには、以下のアドレスにアクセスすればdocomo wifiのスポット検索ができる。 しかし、若干使いにくいので、とりあえず以下のアプリをスマホに導入した。 docomo wifiの他にsoftbankとかauとか絞り込み検索できるので、比較的便利。 ただ、やたら検索して通信しているような気がするんだが…。\n Wi-Fi Checker "
 },
 {
 	"uri": "http://iimuz.github.io/scrapbook/programming/java/",
@@ -1250,7 +1243,7 @@
 	"title": "bashコマンド",
 	"tags": ["bash"],
 	"description": "",
-	"content": " bashコマンドの備忘録。\nls系  再帰ls  find -type f;  ディレクトリ以下の再帰で指定したファイルを削除する  rm $(find -type f | grep hoge); 参考資料  俺的備忘録 ~なんかいろいろ~: lsコマンドで覚えておきたい使い方16個(+2個)  "
+	"content": " bash コマンドの備忘録。\n 再帰 ls: find -type f ディレクトリ以下の再帰で指定したファイルを削除する: rm $(find -type f | grep hoge); ntp を使わず http で時刻合わせ: sudo date --set @\u0026quot;$(wget -q https://ntp-a1.nict.go.jp/cgi-bin/jst -O - | sed -n 4p | cut -d. -f1)\u0026quot;  参考資料  俺的備忘録 ~なんかいろいろ~: ls コマンドで覚えておきたい使い方 16 個(+2 個) ntp を使わずに時刻を合わせるワンライナー（Proxy 環境下でも安心）  "
 },
 {
 	"uri": "http://iimuz.github.io/scrapbook/softwaretool/vim/",
