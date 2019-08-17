@@ -6,10 +6,21 @@
     <description>Recent content in Machine Learning on しさく</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-JP</language>
-    <lastBuildDate>Sun, 02 Sep 2018 11:27:34 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 13 Aug 2019 23:34:25 +0000</lastBuildDate>
     
 	<atom:link href="http://iimuz.github.io/scrapbook/machinelearning/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Benchmarking Model-Based Reinforcement Learning</title>
+      <link>http://iimuz.github.io/scrapbook/machinelearning/benchmarking-model-based-reinforcement-learning/</link>
+      <pubDate>Tue, 13 Aug 2019 23:34:25 +0000</pubDate>
+      
+      <guid>http://iimuz.github.io/scrapbook/machinelearning/benchmarking-model-based-reinforcement-learning/</guid>
+      <description>論文情報  title: Benchmarking Model-Based Reinforcement Learning author: Tingwu Wang, Xuchan Bao, Ignasi Clavera, Jerrick Hoang, Yeming Wen, Eric Langlois, Shunshi Zhang, Guodong Zhang, Pieter Abbeel, Jimmy Ba year: 2019/7/3 arxiv issue vanity Google Translate: vanity 比較データなど  どんなものか 強化学習の 14 手法に関して、同一のデータセットを利用して性能を比較した。
+   Figure 3: The relative performance with different planning horizon.         先行研究と比べてどこがすごいのか 従来は、各手法で優位性を述べており、同一のデータセットで比較し、 相対的な性能の優位性を適切に述べているものがなかった。
+技術や手法のキモどこか OpenAI Gym という強化学習用のデータセットを利用して、 15 の環境で評価している。 また、ノイズを加えた状態も評価している。</description>
+    </item>
     
     <item>
       <title>Unsupervised Anomaly Detection with Generative Adversarial Networks to Guide Marker Discovery を読んで</title>

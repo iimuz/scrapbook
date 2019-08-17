@@ -6,7 +6,7 @@
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <meta name="generator" content="Hugo 0.56.0-DEV" />
-<title>GCP のインスタンス起動でエラーが発生する :: しさく</title>
+<title>chrome のみで GCE にアクセスする環境構築した時のメモ :: しさく</title>
 <link rel="shortcut icon" href="/scrapbook/images/favicon.png" type="image/x-icon" />
 <link href="/scrapbook/css/font-awesome.min.css" rel="stylesheet">
 <link href="/scrapbook/css/nucleus.css" rel="stylesheet">
@@ -23,7 +23,7 @@
 
     
   </head>
-  <body data-url="/scrapbook/gcp/gcp-resource-error/">
+  <body data-url="/scrapbook/softwaretool/gcp/gce_ssh_using_chrome/">
     
       <header>
   <div class="logo">
@@ -52,42 +52,19 @@
             <i class="fa fa-fw fa-home"></i>
           </a>
           </li>
-    <li data-nav-id="/scrapbook/gcp/" class="dd-item parent haschildren
-        ">
-      <div>
-      <a href="/scrapbook/gcp/">Google Cloud Platform</a>
-            <i class="fa fa-angle-down fa-lg category-icon"></i>
-      </div>
-        <ul>
-      <li data-nav-id="/scrapbook/gcp/google_photos_api/" class="dd-item">
-        <div>
-          <a href="/scrapbook/gcp/google_photos_api/">
-            Google Photoへの自動画像アップロード
-          </a>
-        </div>
-    </li>
-      <li data-nav-id="/scrapbook/gcp/gcp-resource-error/" class="dd-item active">
-        <div>
-          <a href="/scrapbook/gcp/gcp-resource-error/">
-            GCP のインスタンス起動でエラーが発生する
-          </a>
-        </div>
-    </li>
-      <li data-nav-id="/scrapbook/gcp/gce_ssh_using_chrome/" class="dd-item">
-        <div>
-          <a href="/scrapbook/gcp/gce_ssh_using_chrome/">
-            chrome のみで GCE にアクセスする環境構築した時のメモ
-          </a>
-        </div>
-    </li>
-        </ul>
-    </li>
     <li data-nav-id="/scrapbook/machinelearning/" class="dd-item haschildren
         ">
       <div>
       <a href="/scrapbook/machinelearning/">Machine Learning</a><i class="fa fa-angle-right fa-lg category-icon"></i>
       </div>
         <ul>
+      <li data-nav-id="/scrapbook/machinelearning/benchmarking-model-based-reinforcement-learning/" class="dd-item">
+        <div>
+          <a href="/scrapbook/machinelearning/benchmarking-model-based-reinforcement-learning/">
+            Benchmarking Model-Based Reinforcement Learning
+          </a>
+        </div>
+    </li>
       <li data-nav-id="/scrapbook/machinelearning/unsupervisedanomalydetectionwithgenerativeadversarialnetworkstoguidemarkerdiscovery/" class="dd-item">
         <div>
           <a href="/scrapbook/machinelearning/unsupervisedanomalydetectionwithgenerativeadversarialnetworkstoguidemarkerdiscovery/">
@@ -103,6 +80,13 @@
       <a href="/scrapbook/softwaredev/">Software Development</a><i class="fa fa-angle-right fa-lg category-icon"></i>
       </div>
         <ul>
+      <li data-nav-id="/scrapbook/softwaredev/scrum_tools/" class="dd-item">
+        <div>
+          <a href="/scrapbook/softwaredev/scrum_tools/">
+            スクラム開発用ツール
+          </a>
+        </div>
+    </li>
       <li data-nav-id="/scrapbook/softwaredev/russia-engineer-survival-guide/" class="dd-item">
         <div>
           <a href="/scrapbook/softwaredev/russia-engineer-survival-guide/">
@@ -588,10 +572,11 @@
     </li>
         </ul>
     </li>
-    <li data-nav-id="/scrapbook/softwaretool/" class="dd-item haschildren
+    <li data-nav-id="/scrapbook/softwaretool/" class="dd-item parent haschildren
         ">
       <div>
-      <a href="/scrapbook/softwaretool/">Software tools</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      <a href="/scrapbook/softwaretool/">Software tools</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
       </div>
         <ul>
     <li data-nav-id="/scrapbook/softwaretool/vscode/" class="dd-item haschildren
@@ -604,6 +589,36 @@
         <div>
           <a href="/scrapbook/softwaretool/vscode/vscode-locale-error/">
             VSCode の Remote development で locale 警告が発生したときの対処
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/scrapbook/softwaretool/gcp/" class="dd-item parent haschildren
+        ">
+      <div>
+      <a href="/scrapbook/softwaretool/gcp/">Google Cloud Platform</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/scrapbook/softwaretool/gcp/google_photos_api/" class="dd-item">
+        <div>
+          <a href="/scrapbook/softwaretool/gcp/google_photos_api/">
+            Google Photoへの自動画像アップロード
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/scrapbook/softwaretool/gcp/gcp-resource-error/" class="dd-item">
+        <div>
+          <a href="/scrapbook/softwaretool/gcp/gcp-resource-error/">
+            GCP のインスタンス起動でエラーが発生する
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/scrapbook/softwaretool/gcp/gce_ssh_using_chrome/" class="dd-item active">
+        <div>
+          <a href="/scrapbook/softwaretool/gcp/gce_ssh_using_chrome/">
+            chrome のみで GCE にアクセスする環境構築した時のメモ
           </a>
         </div>
     </li>
@@ -1282,12 +1297,6 @@
       <center>Navigation : 
         <select onchange="javascript:location.href = this.value;">
           
-    <option value="/scrapbook/gcp/" >
-   Google Cloud Platform</option> 
-      <option value="/scrapbook/gcp/google_photos_api/" >- Google Photoへの自動画像アップロード</option>
-      <option value="/scrapbook/gcp/gcp-resource-error/"  selected>- GCP のインスタンス起動でエラーが発生する</option>
-      <option value="/scrapbook/gcp/gce_ssh_using_chrome/" >- chrome のみで GCE にアクセスする環境構築した時のメモ</option>
-  
     <option value="/scrapbook/machinelearning/" >
    Machine Learning</option>
     <option value="/scrapbook/softwaredev/" >
@@ -1301,7 +1310,69 @@
     <option value="/scrapbook/skill/" >
    Skills</option>
     <option value="/scrapbook/softwaretool/" >
-   Software tools</option>
+   Software tools</option> 
+    <option value="/scrapbook/softwaretool/vscode/" >
+  - 
+   VSCode</option>
+    <option value="/scrapbook/softwaretool/gcp/" >
+  - 
+   Google Cloud Platform</option> 
+      <option value="/scrapbook/softwaretool/gcp/google_photos_api/" >-- Google Photoへの自動画像アップロード</option>
+      <option value="/scrapbook/softwaretool/gcp/gcp-resource-error/" >-- GCP のインスタンス起動でエラーが発生する</option>
+      <option value="/scrapbook/softwaretool/gcp/gce_ssh_using_chrome/"  selected>-- chrome のみで GCE にアクセスする環境構築した時のメモ</option>
+  
+    <option value="/scrapbook/softwaretool/others/" >
+  - 
+   Others</option>
+    <option value="/scrapbook/softwaretool/visualstudio/" >
+  - 
+   Visual Studio</option>
+    <option value="/scrapbook/softwaretool/qt/" >
+  - 
+   Qt</option>
+    <option value="/scrapbook/softwaretool/git/" >
+  - 
+   git</option>
+    <option value="/scrapbook/softwaretool/hyper/" >
+  - 
+   Hyper</option>
+    <option value="/scrapbook/softwaretool/docker/" >
+  - 
+   Docker</option>
+    <option value="/scrapbook/softwaretool/jenkins/" >
+  - 
+   Jenkins</option>
+    <option value="/scrapbook/softwaretool/hugo/" >
+  - 
+   Hugo</option>
+    <option value="/scrapbook/softwaretool/heroku/" >
+  - 
+   heroku</option>
+    <option value="/scrapbook/softwaretool/minecraft/" >
+  - 
+   Minecraft</option>
+    <option value="/scrapbook/softwaretool/homebrew/" >
+  - 
+   homebrew</option>
+    <option value="/scrapbook/softwaretool/atom/" >
+  - 
+   Atom</option>
+    <option value="/scrapbook/softwaretool/blender/" >
+  - 
+   Blender</option>
+    <option value="/scrapbook/softwaretool/jekyll/" >
+  - 
+   Jekyll</option>
+    <option value="/scrapbook/softwaretool/vim/" >
+  - 
+   vim</option>
+    <option value="/scrapbook/softwaretool/colaboratory/" >
+  - 
+   Google Colaboratory</option>
+    <option value="/scrapbook/softwaretool/pointcloudlibrary/" >
+  - 
+   Point Cloud Library</option>
+  
 
 
 
@@ -1324,20 +1395,44 @@
       </div>
     
 
-    <h1>GCP のインスタンス起動でエラーが発生する</h1>
+    <h1>chrome のみで GCE にアクセスする環境構築した時のメモ</h1>
     
 
     
-    <p>GCP で作成したインスタンスを起動する場合に、
-下記のようなエラーが発生する場合があります。</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">Starting instance<span style="color:#f92672">(</span>s<span style="color:#f92672">)</span> ubuntu-dev...failed.
-ERROR: <span style="color:#f92672">(</span>gcloud.compute.instances.start<span style="color:#f92672">)</span> The zone <span style="color:#e6db74">&#39;projects/hoge/zones/asia-northeast1-b&#39;</span> does not have enough resources available to fulfill the request.  Try a different zone, or try again later.</code></pre></div>
-<p>プリエンプティブインスタンスである場合に、
-GCP 側で起動できないようにすることがあるようです。</p>
+    
 
-<p><a href="https://qiita.com/SoraKumo/items/e2d2a9413c7f09bef2f3">GCP(GCE)でプリエンプティブインスタンスが起動しない場合の対処法</a></p>
+<h1 id="概要">概要</h1>
 
-<p>上記情報によれば復活するまでに 2 日とかかかる場合もあるようです。</p>
+<p>アクセスするだけなら GCE は cloud console でできます。
+ポートフォワードしたい場合は、 secure shell という chrome アプリを利用すればできます。</p>
+
+<h1 id="フロー">フロー</h1>
+
+<ul>
+<li>GCE の cloud console でアクセス用のキーを作成(ssh-keygen)し、メタデータとして登録
+
+<ul>
+<li>本当はよくないかもしれないが、とりあえず動かしたいだけなら gce 用のキーがすでにあるのでそれで対応する。</li>
+</ul></li>
+<li>secure shell では public キーと pvivate キーの両方が必要となるため、両方ダウンロード</li>
+<li>ssh client として chrome app の secure shell を利用する。</li>
+<li>設定画面では、 user name と ip (外部IP)、port を指定する</li>
+<li>ID(Identify?)のところに pub と private の両方のキーを import する</li>
+<li>SSH 引数に -L 8888:localhost:8888</li>
+<li>gce 側で何かport 8888で待ち受けさせる(適当なweb serverを立てる)</li>
+<li>client pc 側でブラウザから localhost:8888 にアクセス</li>
+</ul>
+
+<h1 id="所感">所感</h1>
+
+<p>手元の端末の環境(Linux, Windows, Mac)によらず動かせるようにしたかったので試してみました。
+これで chromebook とかの安いPCに移行することができるかもしれません。
+(chromebook の開発者モードを利用するとかいろいろありそうですが、
+できれば通常モードの範囲でやりくりしたいのです。)</p>
+
+<p>ただし、 google cloud console の動作が環境のせいかもっさりしているので、
+常に chrome の secure shell を使ったほうがストレスは少ないかもしれません。
+(でもやっぱり日本語入力すると位置ずれが起こったりするのは若干我慢なのかもしれません。)</p>
 
 
 
@@ -1359,7 +1454,7 @@ GCP 側で起動できないようにすることがあるようです。</p>
 
     
     <div class="date">
-        <i class='fa fa-calendar'></i> Last update on 14/08/2019
+        <i class='fa fa-calendar'></i> Last update on 12/08/2019
     </div>
     
 

@@ -11,6 +11,26 @@
     
     
     <item>
+      <title>Benchmarking Model-Based Reinforcement Learning</title>
+      <link>http://iimuz.github.io/scrapbook/machinelearning/benchmarking-model-based-reinforcement-learning/</link>
+      <pubDate>Tue, 13 Aug 2019 23:34:25 +0000</pubDate>
+      
+      <guid>http://iimuz.github.io/scrapbook/machinelearning/benchmarking-model-based-reinforcement-learning/</guid>
+      <description>論文情報  title: Benchmarking Model-Based Reinforcement Learning author: Tingwu Wang, Xuchan Bao, Ignasi Clavera, Jerrick Hoang, Yeming Wen, Eric Langlois, Shunshi Zhang, Guodong Zhang, Pieter Abbeel, Jimmy Ba year: 2019/7/3 arxiv issue vanity Google Translate: vanity 比較データなど  どんなものか 強化学習の 14 手法に関して、同一のデータセットを利用して性能を比較した。
+   Figure 3: The relative performance with different planning horizon.         先行研究と比べてどこがすごいのか 従来は、各手法で優位性を述べており、同一のデータセットで比較し、 相対的な性能の優位性を適切に述べているものがなかった。
+技術や手法のキモどこか OpenAI Gym という強化学習用のデータセットを利用して、 15 の環境で評価している。 また、ノイズを加えた状態も評価している。</description>
+    </item>
+    
+    <item>
+      <title>スクラム開発用ツール</title>
+      <link>http://iimuz.github.io/scrapbook/softwaredev/scrum_tools/</link>
+      <pubDate>Thu, 08 Aug 2019 12:28:15 +0000</pubDate>
+      
+      <guid>http://iimuz.github.io/scrapbook/softwaredev/scrum_tools/</guid>
+      <description> スクラム開発におけるプロジェクト管理ツール比較  優良なら Jira 無料なら OpenProject  Redmine の Scrum プラグイン KPT には mindmap を使う事例もある  </description>
+    </item>
+    
+    <item>
       <title>VSCode の Remote development で locale 警告が発生したときの対処</title>
       <link>http://iimuz.github.io/scrapbook/softwaretool/vscode/vscode-locale-error/</link>
       <pubDate>Sun, 28 Jul 2019 08:00:10 +0000</pubDate>
@@ -43,10 +63,10 @@ sudo apt-get install at-spi2-core  [solved ]Warning **: Error retrieving accessi
     
     <item>
       <title>Google Photoへの自動画像アップロード</title>
-      <link>http://iimuz.github.io/scrapbook/gcp/google_photos_api/</link>
+      <link>http://iimuz.github.io/scrapbook/softwaretool/gcp/google_photos_api/</link>
       <pubDate>Sun, 02 Jun 2019 13:51:11 +0900</pubDate>
       
-      <guid>http://iimuz.github.io/scrapbook/gcp/google_photos_api/</guid>
+      <guid>http://iimuz.github.io/scrapbook/softwaretool/gcp/google_photos_api/</guid>
       <description> メモ  Google APIを利用可能にする  Get Started with REST 方法は2つ紹介されているが、今回はプロジェクトの設定なども行うため後者(B)の手法を利用した。 おそらく、こっちの方法の方がめんどくさい。  Go to the Google API Console. From the menu bar, select a project or create a new project. To open the Google API Library, from the Navigation menu, select APIs &amp;amp; Services &amp;gt; Library. Search for &amp;ldquo;Google Photos Library API&amp;rdquo;. Select the correct result and click Enable.   OAuth2認証用のjsonを取得する  今回の場合は、認証用jsonを利用してブラウザ経由でアクセス権を付与する。 ここで、アクセス権の付与にはブラウザが必要だが、今回はコンソール上に認証用のURLを出力し、 URLへは別の環境でアクセスし、認証用のtokenだけをコンソールから入力するようにしている。 これは、Raspberry Piで利用することが前提のため、UI付きの環境ではない可能性があるため。 SSHなどで入っていても対応できるようにするためです。   参考資料  [追記あり] Google Photos APIsでアルバム作成と写真のアップロード Google Photos API を使用した画像の自動アップロード nasu-tomoyuki/mugencamera  </description>
     </item>
     
@@ -225,10 +245,10 @@ $ hugo server --baseURL=http://yoursite.org/ \  --port=80 \  --appendPort=false 
     
     <item>
       <title>GCP のインスタンス起動でエラーが発生する</title>
-      <link>http://iimuz.github.io/scrapbook/gcp/gcp-resource-error/</link>
+      <link>http://iimuz.github.io/scrapbook/softwaretool/gcp/gcp-resource-error/</link>
       <pubDate>Mon, 19 Nov 2018 06:41:46 +0900</pubDate>
       
-      <guid>http://iimuz.github.io/scrapbook/gcp/gcp-resource-error/</guid>
+      <guid>http://iimuz.github.io/scrapbook/softwaretool/gcp/gcp-resource-error/</guid>
       <description>GCP で作成したインスタンスを起動する場合に、 下記のようなエラーが発生する場合があります。
 Starting instance(s) ubuntu-dev...failed. ERROR: (gcloud.compute.instances.start) The zone &amp;#39;projects/hoge/zones/asia-northeast1-b&amp;#39; does not have enough resources available to fulfill the request. Try a different zone, or try again later. プリエンプティブインスタンスである場合に、 GCP 側で起動できないようにすることがあるようです。
 GCP(GCE)でプリエンプティブインスタンスが起動しない場合の対処法
@@ -551,10 +571,10 @@ $ git commit --allow-empty -m &amp;#34;resolve #id&amp;#34; また、このク�
     
     <item>
       <title>chrome のみで GCE にアクセスする環境構築した時のメモ</title>
-      <link>http://iimuz.github.io/scrapbook/gcp/gce_ssh_using_chrome/</link>
+      <link>http://iimuz.github.io/scrapbook/softwaretool/gcp/gce_ssh_using_chrome/</link>
       <pubDate>Wed, 06 Jun 2018 16:53:55 +0900</pubDate>
       
-      <guid>http://iimuz.github.io/scrapbook/gcp/gce_ssh_using_chrome/</guid>
+      <guid>http://iimuz.github.io/scrapbook/softwaretool/gcp/gce_ssh_using_chrome/</guid>
       <description>概要 アクセスするだけなら GCE は cloud console でできます。 ポートフォワードしたい場合は、 secure shell という chrome アプリを利用すればできます。
 フロー  GCE の cloud console でアクセス用のキーを作成(ssh-keygen)し、メタデータとして登録  本当はよくないかもしれないが、とりあえず動かしたいだけなら gce 用のキーがすでにあるのでそれで対応する。  secure shell では public キーと pvivate キーの両方が必要となるため、両方ダウンロード ssh client として chrome app の secure shell を利用する。 設定画面では、 user name と ip (外部IP)、port を指定する ID(Identify?)のところに pub と private の両方のキーを import する SSH 引数に -L 8888:localhost:8888 gce 側で何かport 8888で待ち受けさせる(適当なweb serverを立てる) client pc 側でブラウザから localhost:8888 にアクセス  所感 手元の端末の環境(Linux, Windows, Mac)によらず動かせるようにしたかったので試してみました。 これで chromebook とかの安いPCに移行することができるかもしれません。 (chromebook の開発者モードを利用するとかいろいろありそうですが、 できれば通常モードの範囲でやりくりしたいのです。)</description>
     </item>
