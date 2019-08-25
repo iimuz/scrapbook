@@ -11,14 +11,14 @@
 	"title": "Machine Learning",
 	"tags": [],
 	"description": "",
-	"content": "  created at August 13, 2019, last modified at August 5, 2019 Benchmarking Model-Based Reinforcement Learning   created at September 2, 2018, last modified at August 5, 2019 Unsupervised Anomaly Detection with Generative Adversarial Networks to Guide Marker Discovery を読んで   "
+	"content": "  created at August 13, 2019, last modified at August 25, 2019 Benchmarking Model-Based Reinforcement Learning   created at September 2, 2018, last modified at August 25, 2019 Unsupervised Anomaly Detection with Generative Adversarial Networks to Guide Marker Discovery を読んで   "
 },
 {
 	"uri": "http://iimuz.github.io/scrapbook/softwaredev/",
 	"title": "Software Development",
 	"tags": [],
 	"description": "",
-	"content": "  created at August 8, 2019, last modified at August 5, 2019 スクラム開発用ツール   created at August 26, 2018, last modified at August 5, 2019 Qiita: ロシアの天才ハッカーによる【新人エンジニアサバイバルガイド】を読んで   created at August 24, 2018, last modified at August 5, 2019 Qiita: [翻訳] 技術向上ガイド を読んで   created at June 8, 2018, last modified at August 5, 2019 プログラマが知るべき97のこと   "
+	"content": "  created at August 8, 2019, last modified at August 25, 2019 スクラム開発用ツール   created at August 26, 2018, last modified at August 25, 2019 Qiita: ロシアの天才ハッカーによる【新人エンジニアサバイバルガイド】を読んで   created at August 24, 2018, last modified at August 25, 2019 Qiita: [翻訳] 技術向上ガイド を読んで   created at June 8, 2018, last modified at August 25, 2019 プログラマが知るべき97のこと   "
 },
 {
 	"uri": "http://iimuz.github.io/scrapbook/softwaredev/scrum_tools/",
@@ -39,7 +39,7 @@
 	"title": "VSCode",
 	"tags": [],
 	"description": "",
-	"content": "  created at July 28, 2019, last modified at August 5, 2019 VSCode の Remote development で locale 警告が発生したときの対処   "
+	"content": "  created at July 28, 2019, last modified at August 25, 2019 VSCode の Remote development で locale 警告が発生したときの対処   "
 },
 {
 	"uri": "http://iimuz.github.io/scrapbook/softwaretool/vscode/vscode-locale-error/",
@@ -60,7 +60,7 @@
 	"title": "Raspberry Pi",
 	"tags": [],
 	"description": "",
-	"content": "  created at July 28, 2019, last modified at August 5, 2019 RaspberryPi で cv2.imshow を利用したときに DBUS エラーが発生した場合の対処   created at June 9, 2019, last modified at August 5, 2019 RaspberryPiで静的IPを利用する   "
+	"content": "  created at July 28, 2019, last modified at August 25, 2019 RaspberryPi で cv2.imshow を利用したときに DBUS エラーが発生した場合の対処   created at June 9, 2019, last modified at August 25, 2019 RaspberryPiで静的IPを利用する   "
 },
 {
 	"uri": "http://iimuz.github.io/scrapbook/hardware/raspberrypi/raspberrypy-cv2-dbuss-error/",
@@ -88,7 +88,7 @@
 	"title": "Google Cloud Platform",
 	"tags": [],
 	"description": "",
-	"content": "  created at June 2, 2019, last modified at August 5, 2019 Google Photoへの自動画像アップロード   created at November 19, 2018, last modified at August 5, 2019 GCP のインスタンス起動でエラーが発生する   created at June 6, 2018, last modified at August 5, 2019 chrome のみで GCE にアクセスする環境構築した時のメモ   "
+	"content": "  created at June 2, 2019, last modified at August 25, 2019 Google Photoへの自動画像アップロード   created at November 19, 2018, last modified at August 25, 2019 GCP のインスタンス起動でエラーが発生する   created at June 6, 2018, last modified at August 25, 2019 chrome のみで GCE にアクセスする環境構築した時のメモ   "
 },
 {
 	"uri": "http://iimuz.github.io/scrapbook/softwaretool/gcp/google_photos_api/",
@@ -102,7 +102,7 @@
 	"title": "Others",
 	"tags": [],
 	"description": "",
-	"content": "  created at April 21, 2019, last modified at August 5, 2019 Speaker Deck のスライド埋め込み (Embed) でサイズ指定   created at February 6, 2019, last modified at August 5, 2019 Windows に SPICE のクライアントをインストールする   created at February 3, 2019, last modified at August 5, 2019 Colabratory に Cabocha をインストールする   created at December 22, 2018, last modified at August 5, 2019 Windows で OpenSSH をドメイン環境下でインストール   created at November 19, 2018, last modified at August 5, 2019 Hugo で baseurl を有効にする   created at September 17, 2018, last modified at August 5, 2019 windows10 環境で cuda \u0026#43; visual studio integration のインストールが失敗する   created at September 2, 2018, last modified at August 5, 2019 VS Code 上で vim キーバインドの実現   created at September 2, 2018, last modified at August 5, 2019 windows のプロダクトキーを変更する   created at September 2, 2018, last modified at August 5, 2019 chrome のテキスト入力をローカルのエディタで行う   created at January 28, 2018, last modified at August 5, 2019 Gmailで\u0026#43;付きのメールアドレスから送信する方法   created at December 3, 2017, last modified at August 5, 2019 windowsのコマンドプロンプトでdokcer \u0026#43; vimを利用すると日本語を含む行で適切に表示されない   created at December 4, 2016, last modified at August 5, 2019 DockerでFessを動かします   created at December 28, 2015, last modified at August 5, 2019 Mac環境へのElectron導入方法   created at November 3, 2015, last modified at August 5, 2019 HubotのHello Worldスクリプトの作成方法   created at November 1, 2015, last modified at August 5, 2019 Gmailにはない開発環境を求めて   created at October 3, 2015, last modified at August 5, 2019 Windowsのパッケージ管理にchocolateyを導入したときのメモ   created at September 3, 2015, last modified at August 5, 2019 macでpandocを利用してpdfに変換しようとした時のトラブルメモ   created at August 23, 2015, last modified at August 5, 2019 Macbook 12インチ(1.1GHz)の設定   created at August 23, 2015, last modified at August 5, 2019 メモ環境   created at April 26, 2015, last modified at August 5, 2019 Unity導入   created at April 25, 2015, last modified at August 5, 2019 Google Photosの画像URLを原画像サイズで取得する方法   "
+	"content": "  created at April 21, 2019, last modified at August 25, 2019 Speaker Deck のスライド埋め込み (Embed) でサイズ指定   created at February 6, 2019, last modified at August 25, 2019 Windows に SPICE のクライアントをインストールする   created at February 3, 2019, last modified at August 25, 2019 Colabratory に Cabocha をインストールする   created at December 22, 2018, last modified at August 25, 2019 Windows で OpenSSH をドメイン環境下でインストール   created at November 19, 2018, last modified at August 25, 2019 Hugo で baseurl を有効にする   created at September 17, 2018, last modified at August 25, 2019 windows10 環境で cuda \u0026#43; visual studio integration のインストールが失敗する   created at September 2, 2018, last modified at August 25, 2019 VS Code 上で vim キーバインドの実現   created at September 2, 2018, last modified at August 25, 2019 windows のプロダクトキーを変更する   created at September 2, 2018, last modified at August 25, 2019 chrome のテキスト入力をローカルのエディタで行う   created at January 28, 2018, last modified at August 25, 2019 Gmailで\u0026#43;付きのメールアドレスから送信する方法   created at December 3, 2017, last modified at August 25, 2019 windowsのコマンドプロンプトでdokcer \u0026#43; vimを利用すると日本語を含む行で適切に表示されない   created at December 4, 2016, last modified at August 25, 2019 DockerでFessを動かします   created at December 28, 2015, last modified at August 25, 2019 Mac環境へのElectron導入方法   created at November 3, 2015, last modified at August 25, 2019 HubotのHello Worldスクリプトの作成方法   created at November 1, 2015, last modified at August 25, 2019 Gmailにはない開発環境を求めて   created at October 3, 2015, last modified at August 25, 2019 Windowsのパッケージ管理にchocolateyを導入したときのメモ   created at September 3, 2015, last modified at August 25, 2019 macでpandocを利用してpdfに変換しようとした時のトラブルメモ   created at August 23, 2015, last modified at August 25, 2019 Macbook 12インチ(1.1GHz)の設定   created at August 23, 2015, last modified at August 25, 2019 メモ環境   created at April 26, 2015, last modified at August 25, 2019 Unity導入   created at April 25, 2015, last modified at August 25, 2019 Google Photosの画像URLを原画像サイズで取得する方法   "
 },
 {
 	"uri": "http://iimuz.github.io/scrapbook/softwaretool/others/speaker_deck_slide_size/",
@@ -116,7 +116,7 @@
 	"title": "CUDA",
 	"tags": [],
 	"description": "",
-	"content": "  created at April 8, 2019, last modified at August 5, 2019 CUDA の atomic 関数   "
+	"content": "  created at April 8, 2019, last modified at August 25, 2019 CUDA の atomic 関数   "
 },
 {
 	"uri": "http://iimuz.github.io/scrapbook/programming/cuda/cuda_atomic_function/",
@@ -137,7 +137,7 @@
 	"title": "Bash etc.",
 	"tags": [],
 	"description": "",
-	"content": "  created at April 6, 2019, last modified at August 5, 2019 curl で Cloudn\u0026#39;t resolve host エラーが出た時の対処法   created at October 16, 2018, last modified at August 5, 2019 linux 環境の場合は、共有ライブラリの依存関係は ldd コマンドで調べられる   created at April 25, 2015, last modified at August 5, 2019 bashコマンド   "
+	"content": "  created at April 6, 2019, last modified at August 25, 2019 curl で Cloudn\u0026#39;t resolve host エラーが出た時の対処法   created at October 16, 2018, last modified at August 25, 2019 linux 環境の場合は、共有ライブラリの依存関係は ldd コマンドで調べられる   created at April 25, 2015, last modified at August 25, 2019 bashコマンド   "
 },
 {
 	"uri": "http://iimuz.github.io/scrapbook/tags/bash/",
@@ -165,7 +165,7 @@
 	"title": "Visual Studio",
 	"tags": [],
 	"description": "",
-	"content": "  created at April 5, 2019, last modified at August 5, 2019 VS2010 のデバッグ時に例外発生時で中断する方法   "
+	"content": "  created at April 5, 2019, last modified at August 25, 2019 VS2010 のデバッグ時に例外発生時で中断する方法   "
 },
 {
 	"uri": "http://iimuz.github.io/scrapbook/tags/software/",
@@ -186,7 +186,7 @@
 	"title": "Qt",
 	"tags": [],
 	"description": "",
-	"content": "  created at February 6, 2019, last modified at August 5, 2019 Qt におけるリモートデバッグ   created at February 2, 2019, last modified at August 5, 2019 CDB の使い方を調べた時のメモ   "
+	"content": "  created at February 6, 2019, last modified at August 25, 2019 Qt におけるリモートデバッグ   created at February 2, 2019, last modified at August 25, 2019 CDB の使い方を調べた時のメモ   "
 },
 {
 	"uri": "http://iimuz.github.io/scrapbook/softwaretool/qt/qt-remote-debug/",
@@ -228,7 +228,7 @@
 	"title": "git",
 	"tags": [],
 	"description": "",
-	"content": "  created at February 2, 2019, last modified at August 5, 2019 Git for Windows で proxy を設定する   created at January 30, 2019, last modified at August 5, 2019 svn のリポジトリ構成がデフォルトではない場合における git svn コマンド   created at October 17, 2018, last modified at August 5, 2019 プロジェクト単位で git config の設定を変更する   created at October 17, 2018, last modified at August 5, 2019 git for windows の ターミナル出力で文字化けする場合の対処法   created at August 26, 2018, last modified at August 5, 2019 git worktree を用いた別作業ディレクトリの用意   created at August 3, 2018, last modified at August 5, 2019 gitで一時的に変更の検出を止める   created at June 7, 2018, last modified at August 5, 2019 GitHub の Issue をコミットのマージ時に自動でクローズする   created at March 3, 2018, last modified at August 5, 2019 Travis CIから更新する設定を行った時のメモ   created at December 29, 2015, last modified at August 5, 2019 gitでCould Not Execute Editorと言われた時の対処法   created at April 25, 2015, last modified at August 5, 2019 GitHubにSSHを利用して接続する   created at April 22, 2015, last modified at August 5, 2019 Gitのコマンド備忘録   created at April 20, 2015, last modified at August 5, 2019 Jekyllでファイルを生成してGitHub Pagesにpush   created at April 14, 2015, last modified at August 5, 2019 Gitでyou are not humanと言われたら   created at April 13, 2015, last modified at August 5, 2019 Git Pagesを使ってMarkdownでメモする環境構築   "
+	"content": "  created at February 2, 2019, last modified at August 25, 2019 Git for Windows で proxy を設定する   created at January 30, 2019, last modified at August 25, 2019 svn のリポジトリ構成がデフォルトではない場合における git svn コマンド   created at October 17, 2018, last modified at August 25, 2019 プロジェクト単位で git config の設定を変更する   created at October 17, 2018, last modified at August 25, 2019 git for windows の ターミナル出力で文字化けする場合の対処法   created at August 26, 2018, last modified at August 25, 2019 git worktree を用いた別作業ディレクトリの用意   created at August 3, 2018, last modified at August 25, 2019 gitで一時的に変更の検出を止める   created at June 7, 2018, last modified at August 25, 2019 GitHub の Issue をコミットのマージ時に自動でクローズする   created at March 3, 2018, last modified at August 25, 2019 Travis CIから更新する設定を行った時のメモ   created at December 29, 2015, last modified at August 25, 2019 gitでCould Not Execute Editorと言われた時の対処法   created at April 25, 2015, last modified at August 25, 2019 GitHubにSSHを利用して接続する   created at April 22, 2015, last modified at August 25, 2019 Gitのコマンド備忘録   created at April 20, 2015, last modified at August 25, 2019 Jekyllでファイルを生成してGitHub Pagesにpush   created at April 14, 2015, last modified at August 25, 2019 Gitでyou are not humanと言われたら   created at April 13, 2015, last modified at August 25, 2019 Git Pagesを使ってMarkdownでメモする環境構築   "
 },
 {
 	"uri": "http://iimuz.github.io/scrapbook/softwaretool/qt/cdb-debug/",
@@ -242,7 +242,7 @@
 	"title": "Powershell",
 	"tags": [],
 	"description": "",
-	"content": "  created at January 30, 2019, last modified at August 5, 2019 powershell でファイルをダウンロードする   created at August 26, 2018, last modified at August 5, 2019 powershell でシンボリックリンクを生成する   created at August 26, 2018, last modified at August 5, 2019 Enter-PSSession後のNew-PSDrive   created at March 2, 2018, last modified at August 5, 2019 powershell で tcp のテスト用にサーバとクライアントを用意する方法のメモ   created at January 13, 2018, last modified at August 5, 2019 powershellスクリプトを書くときのテンプレート   created at May 29, 2017, last modified at August 5, 2019 windowsでネットワークドライブからsymlinkを有効にする   "
+	"content": "  created at January 30, 2019, last modified at August 25, 2019 powershell でファイルをダウンロードする   created at August 26, 2018, last modified at August 25, 2019 powershell でシンボリックリンクを生成する   created at August 26, 2018, last modified at August 25, 2019 Enter-PSSession後のNew-PSDrive   created at March 2, 2018, last modified at August 25, 2019 powershell で tcp のテスト用にサーバとクライアントを用意する方法のメモ   created at January 13, 2018, last modified at August 25, 2019 powershellスクリプトを書くときのテンプレート   created at May 29, 2017, last modified at August 25, 2019 windowsでネットワークドライブからsymlinkを有効にする   "
 },
 {
 	"uri": "http://iimuz.github.io/scrapbook/programming/powershell/download-using-powershell/",
@@ -263,7 +263,7 @@
 	"title": "Go",
 	"tags": [],
 	"description": "",
-	"content": "  created at December 22, 2018, last modified at August 5, 2019 Go 言語でテストカバレッジを可視化する   created at October 22, 2018, last modified at August 5, 2019 Golang でクロスビルドする Makefile の設定   "
+	"content": "  created at December 22, 2018, last modified at August 25, 2019 Go 言語でテストカバレッジを可視化する   created at October 22, 2018, last modified at August 25, 2019 Golang でクロスビルドする Makefile の設定   "
 },
 {
 	"uri": "http://iimuz.github.io/scrapbook/programming/go/go-coverage/",
@@ -326,7 +326,7 @@
 	"title": "python",
 	"tags": [],
 	"description": "",
-	"content": "  created at November 18, 2018, last modified at August 5, 2019 Qiita API を利用して記事を投稿する   created at October 4, 2015, last modified at August 5, 2019 virtualenvを利用したpython環境の構築(Windows編)   created at October 3, 2015, last modified at August 5, 2019 python3.4でmatplotlibを導入したらグラフ表示できない問題の対処法   created at August 29, 2015, last modified at August 5, 2019 Macでpython環境の構築   "
+	"content": "  created at November 18, 2018, last modified at August 25, 2019 Qiita API を利用して記事を投稿する   created at October 4, 2015, last modified at August 25, 2019 virtualenvを利用したpython環境の構築(Windows編)   created at October 3, 2015, last modified at August 25, 2019 python3.4でmatplotlibを導入したらグラフ表示できない問題の対処法   created at August 29, 2015, last modified at August 25, 2019 Macでpython環境の構築   "
 },
 {
 	"uri": "http://iimuz.github.io/scrapbook/programming/go/golang-cross-build/",
@@ -340,7 +340,7 @@
 	"title": "Hyper",
 	"tags": [],
 	"description": "",
-	"content": "  created at October 22, 2018, last modified at August 5, 2019 Hyper で最終行付近が見切れる場合の対処法   created at October 17, 2018, last modified at August 5, 2019 Hyper のシェルとして git for windows を利用した場合の画面リフレッシュ方法   "
+	"content": "  created at October 22, 2018, last modified at August 25, 2019 Hyper で最終行付近が見切れる場合の対処法   created at October 17, 2018, last modified at August 25, 2019 Hyper のシェルとして git for windows を利用した場合の画面リフレッシュ方法   "
 },
 {
 	"uri": "http://iimuz.github.io/scrapbook/softwaretool/hyper/hyper-sytle-reflesh/",
@@ -375,7 +375,7 @@
 	"title": "C/C++",
 	"tags": [],
 	"description": "",
-	"content": "  created at October 16, 2018, last modified at August 5, 2019 gcc でライブラリを静的リンクする方法   created at September 8, 2018, last modified at August 5, 2019 windows で c\u0026#43;\u0026#43; を用いてメモリ使用量を取得する   created at September 2, 2018, last modified at August 5, 2019 c\u0026#43;\u0026#43; の std::unique_ptr におけるデリータ指定   created at November 16, 2016, last modified at August 5, 2019 C\u0026#43;\u0026#43;で利用できそうなLoggerを調べました   "
+	"content": "  created at October 16, 2018, last modified at August 25, 2019 gcc でライブラリを静的リンクする方法   created at September 8, 2018, last modified at August 25, 2019 windows で c\u0026#43;\u0026#43; を用いてメモリ使用量を取得する   created at September 2, 2018, last modified at August 25, 2019 c\u0026#43;\u0026#43; の std::unique_ptr におけるデリータ指定   created at November 16, 2016, last modified at August 25, 2019 C\u0026#43;\u0026#43;で利用できそうなLoggerを調べました   "
 },
 {
 	"uri": "http://iimuz.github.io/scrapbook/programming/cpp/gcc-static-link/",
@@ -403,7 +403,7 @@
 	"title": "Docker",
 	"tags": [],
 	"description": "",
-	"content": "  created at September 17, 2018, last modified at August 5, 2019 docker 環境で KVM を利用する   created at September 17, 2018, last modified at August 5, 2019 KVM \u0026#43; GPU Passthrough \u0026#43; windows で仮想環境を構築   created at November 26, 2016, last modified at August 5, 2019 WindowsでDocker\u0026#43;Hugoサーバを動作させる方法です   created at November 23, 2016, last modified at August 5, 2019 今更ながらにDockerについて調べてみました   created at November 23, 2016, last modified at August 5, 2019 Python開発環境をDockerで構築します   "
+	"content": "  created at September 17, 2018, last modified at August 25, 2019 docker 環境で KVM を利用する   created at September 17, 2018, last modified at August 25, 2019 KVM \u0026#43; GPU Passthrough \u0026#43; windows で仮想環境を構築   created at November 26, 2016, last modified at August 25, 2019 WindowsでDocker\u0026#43;Hugoサーバを動作させる方法です   created at November 23, 2016, last modified at August 25, 2019 今更ながらにDockerについて調べてみました   created at November 23, 2016, last modified at August 25, 2019 Python開発環境をDockerで構築します   "
 },
 {
 	"uri": "http://iimuz.github.io/scrapbook/softwaretool/docker/docker-kvm-privileged/",
@@ -466,7 +466,7 @@
 	"title": "JavaScript / HTML / CSS",
 	"tags": [],
 	"description": "",
-	"content": "  created at August 26, 2018, last modified at August 5, 2019 httpsとSSLとTLSのメモ   "
+	"content": "  created at August 26, 2018, last modified at August 25, 2019 httpsとSSLとTLSのメモ   "
 },
 {
 	"uri": "http://iimuz.github.io/scrapbook/programming/js/https-ssl-tls/",
@@ -508,7 +508,7 @@
 	"title": "C#",
 	"tags": [],
 	"description": "",
-	"content": "  created at August 26, 2018, last modified at August 5, 2019 C#でキャンセル処理を利用したタイムアウトの実現   created at March 2, 2018, last modified at August 5, 2019 C#におけるAysncとAwaitの動作に関して調べたときのメモ   created at March 2, 2018, last modified at August 5, 2019 C#においてTCPClientを利用したときのメモ   "
+	"content": "  created at August 26, 2018, last modified at August 25, 2019 C#でキャンセル処理を利用したタイムアウトの実現   created at March 2, 2018, last modified at August 25, 2019 C#におけるAysncとAwaitの動作に関して調べたときのメモ   created at March 2, 2018, last modified at August 25, 2019 C#においてTCPClientを利用したときのメモ   "
 },
 {
 	"uri": "http://iimuz.github.io/scrapbook/programming/csharp/cs-cancellation-task/",
@@ -585,7 +585,7 @@
 	"title": "Jenkins",
 	"tags": [],
 	"description": "",
-	"content": "  created at February 14, 2018, last modified at August 5, 2019 Jenkinsでのparallel処理   created at August 12, 2017, last modified at August 5, 2019 DockerでJenkinsのmasterとslaveを用意   "
+	"content": "  created at February 14, 2018, last modified at August 25, 2019 Jenkinsでのparallel処理   created at August 12, 2017, last modified at August 25, 2019 DockerでJenkinsのmasterとslaveを用意   "
 },
 {
 	"uri": "http://iimuz.github.io/scrapbook/softwaretool/jenkins/jenkins-parallel/",
@@ -683,7 +683,7 @@
 	"title": "Tensorflow",
 	"tags": [],
 	"description": "",
-	"content": "  created at November 20, 2016, last modified at August 5, 2019 Bash On Ubuntu On WindowsのGPU利用は(現時点では)できないそうです   "
+	"content": "  created at November 20, 2016, last modified at August 25, 2019 Bash On Ubuntu On WindowsのGPU利用は(現時点では)できないそうです   "
 },
 {
 	"uri": "http://iimuz.github.io/scrapbook/programming/cpp/cpplogger/",
@@ -697,7 +697,7 @@
 	"title": "Hugo",
 	"tags": [],
 	"description": "",
-	"content": "  created at November 15, 2016, last modified at August 5, 2019 Hugoで数式を導入します   created at October 29, 2016, last modified at August 5, 2019 Hugoの初期設定   "
+	"content": "  created at November 15, 2016, last modified at August 25, 2019 Hugoで数式を導入します   created at October 29, 2016, last modified at August 25, 2019 Hugoの初期設定   "
 },
 {
 	"uri": "http://iimuz.github.io/scrapbook/softwaretool/hugo/hugotex/",
@@ -767,7 +767,7 @@
 	"title": "heroku",
 	"tags": [],
 	"description": "",
-	"content": "  created at November 11, 2015, last modified at August 5, 2019 HerokuのFreeプランでアプリを最大限起動しっぱなしにする方法(1日18時間まで)   created at November 3, 2015, last modified at August 5, 2019 Herokuアカウントの作成方法   created at November 3, 2015, last modified at August 5, 2019 HubotをHerokuで動かすまで   "
+	"content": "  created at November 11, 2015, last modified at August 25, 2019 HerokuのFreeプランでアプリを最大限起動しっぱなしにする方法(1日18時間まで)   created at November 3, 2015, last modified at August 25, 2019 Herokuアカウントの作成方法   created at November 3, 2015, last modified at August 25, 2019 HubotをHerokuで動かすまで   "
 },
 {
 	"uri": "http://iimuz.github.io/scrapbook/softwaretool/heroku/herokusignup/",
@@ -816,7 +816,7 @@
 	"title": "Minecraft",
 	"tags": [],
 	"description": "",
-	"content": "  created at October 20, 2015, last modified at August 5, 2019 Minecraftのmod作成環境を構築した時のメモ(Mac編)   created at October 7, 2015, last modified at August 5, 2019 Minecraft 1.8のmod構成メモ   created at September 21, 2015, last modified at August 5, 2019 Minecracft 1.7.10にmodを導入   created at May 2, 2015, last modified at August 5, 2019 Minecraftで侵略mod   created at April 22, 2015, last modified at August 5, 2019 Minecraft DQM IVの導入   "
+	"content": "  created at October 20, 2015, last modified at August 25, 2019 Minecraftのmod作成環境を構築した時のメモ(Mac編)   created at October 7, 2015, last modified at August 25, 2019 Minecraft 1.8のmod構成メモ   created at September 21, 2015, last modified at August 25, 2019 Minecracft 1.7.10にmodを導入   created at May 2, 2015, last modified at August 25, 2019 Minecraftで侵略mod   created at April 22, 2015, last modified at August 25, 2019 Minecraft DQM IVの導入   "
 },
 {
 	"uri": "http://iimuz.github.io/scrapbook/softwaretool/minecraft/envforminecraftmodcreator/",
@@ -879,7 +879,7 @@
 	"title": "homebrew",
 	"tags": [],
 	"description": "",
-	"content": "  created at October 3, 2015, last modified at August 5, 2019 Homebrewでnot writableがでた時の対処方法   created at October 2, 2015, last modified at August 5, 2019 homebrewでインストールした時に自動でbrewfileを更新する方法   "
+	"content": "  created at October 3, 2015, last modified at August 25, 2019 Homebrewでnot writableがでた時の対処方法   created at October 2, 2015, last modified at August 25, 2019 homebrewでインストールした時に自動でbrewfileを更新する方法   "
 },
 {
 	"uri": "http://iimuz.github.io/scrapbook/tags/matplotlib/",
@@ -900,7 +900,7 @@
 	"title": "Atom",
 	"tags": [],
 	"description": "",
-	"content": "  created at October 2, 2015, last modified at August 5, 2019 Atomの設定をGitHubを利用して共有する方法   created at October 1, 2015, last modified at August 5, 2019 Windows環境のエディタをAtomに乗り換えようかと思ったのでメモ   "
+	"content": "  created at October 2, 2015, last modified at August 25, 2019 Atomの設定をGitHubを利用して共有する方法   created at October 1, 2015, last modified at August 25, 2019 Windows環境のエディタをAtomに乗り換えようかと思ったのでメモ   "
 },
 {
 	"uri": "http://iimuz.github.io/scrapbook/softwaretool/atom/shareatomsettings/",
@@ -942,7 +942,7 @@
 	"title": "Others",
 	"tags": [],
 	"description": "",
-	"content": "  created at September 14, 2015, last modified at August 5, 2019 近未来動画の寄せ集め   created at April 27, 2015, last modified at August 5, 2019 色々なリンク(素材集など)   "
+	"content": "  created at September 14, 2015, last modified at August 25, 2019 近未来動画の寄せ集め   created at April 27, 2015, last modified at August 25, 2019 色々なリンク(素材集など)   "
 },
 {
 	"uri": "http://iimuz.github.io/scrapbook/others/futurevisionmovie/",
@@ -956,14 +956,14 @@
 	"title": "Java",
 	"tags": [],
 	"description": "",
-	"content": "  created at September 3, 2015, last modified at August 5, 2019 macにjava環境を構築した時のメモ   "
+	"content": "  created at September 3, 2015, last modified at August 25, 2019 macにjava環境を構築した時のメモ   "
 },
 {
 	"uri": "http://iimuz.github.io/scrapbook/skill/others/",
 	"title": "Others",
 	"tags": [],
 	"description": "",
-	"content": "  created at September 3, 2015, last modified at August 5, 2019 今後学ぼうと考えているプログラム言語をまとめてみる   "
+	"content": "  created at September 3, 2015, last modified at August 25, 2019 今後学ぼうと考えているプログラム言語をまとめてみる   "
 },
 {
 	"uri": "http://iimuz.github.io/scrapbook/tags/java/",
@@ -1019,7 +1019,7 @@
 	"title": "Ruby",
 	"tags": [],
 	"description": "",
-	"content": "  created at August 29, 2015, last modified at August 5, 2019 ruby環境   "
+	"content": "  created at August 29, 2015, last modified at August 25, 2019 ruby環境   "
 },
 {
 	"uri": "http://iimuz.github.io/scrapbook/tags/ruby/",
@@ -1061,7 +1061,7 @@
 	"title": "Others",
 	"tags": [],
 	"description": "",
-	"content": "  created at August 16, 2015, last modified at August 5, 2019 外部バックアップ用HDDの比較   created at August 15, 2015, last modified at August 5, 2019 MacBookとMacBook Airの比較   created at May 26, 2015, last modified at August 5, 2019 Occulus Riftの入力デバイスを調べた時のメモ   created at May 24, 2015, last modified at August 5, 2019 Oculus Rift DK2 で試したコンテンツ   created at May 9, 2015, last modified at August 5, 2019 Oculus Rift DK2のセットアップ   created at May 5, 2015, last modified at August 5, 2019 サイクルコンピュータの買い替え   created at May 2, 2015, last modified at August 5, 2019 Oculus Rift DK2を注文した   "
+	"content": "  created at August 16, 2015, last modified at August 25, 2019 外部バックアップ用HDDの比較   created at August 15, 2015, last modified at August 25, 2019 MacBookとMacBook Airの比較   created at May 26, 2015, last modified at August 25, 2019 Occulus Riftの入力デバイスを調べた時のメモ   created at May 24, 2015, last modified at August 25, 2019 Oculus Rift DK2 で試したコンテンツ   created at May 9, 2015, last modified at August 25, 2019 Oculus Rift DK2のセットアップ   created at May 5, 2015, last modified at August 25, 2019 サイクルコンピュータの買い替え   created at May 2, 2015, last modified at August 25, 2019 Oculus Rift DK2を注文した   "
 },
 {
 	"uri": "http://iimuz.github.io/scrapbook/hardware/others/hddbackup/",
@@ -1110,7 +1110,7 @@
 	"title": "Blender",
 	"tags": [],
 	"description": "",
-	"content": "  created at May 6, 2015, last modified at August 5, 2019 Blenderで流体シミュレーション   created at May 5, 2015, last modified at August 5, 2019 UnityとBlenderハンズオンの第3章を進めてみる   created at April 29, 2015, last modified at August 5, 2019 UnityとBlenderハンズオンの第2章を進めてみる   created at April 27, 2015, last modified at August 5, 2019 UnityとBlenderハンズオンの第1章を進めてみる   created at April 25, 2015, last modified at August 5, 2019 BlenderでPythonスクリプトを利用する   created at April 25, 2015, last modified at August 5, 2019 Blenderコマンドの備忘録   created at April 14, 2015, last modified at August 5, 2019 Blenderの練習 000   "
+	"content": "  created at May 6, 2015, last modified at August 25, 2019 Blenderで流体シミュレーション   created at May 5, 2015, last modified at August 25, 2019 UnityとBlenderハンズオンの第3章を進めてみる   created at April 29, 2015, last modified at August 25, 2019 UnityとBlenderハンズオンの第2章を進めてみる   created at April 27, 2015, last modified at August 25, 2019 UnityとBlenderハンズオンの第1章を進めてみる   created at April 25, 2015, last modified at August 25, 2019 BlenderでPythonスクリプトを利用する   created at April 25, 2015, last modified at August 25, 2019 Blenderコマンドの備忘録   created at April 14, 2015, last modified at August 25, 2019 Blenderの練習 000   "
 },
 {
 	"uri": "http://iimuz.github.io/scrapbook/softwaretool/blender/blenderfluidsimulation/",
@@ -1131,7 +1131,7 @@
 	"title": "Jekyll",
 	"tags": [],
 	"description": "",
-	"content": "  created at May 5, 2015, last modified at August 5, 2019 Jekyllでサイト内検索(Googleカスタム検索)を入れる   created at April 25, 2015, last modified at August 5, 2019 Jekyll Tips   created at April 23, 2015, last modified at August 5, 2019 Jekyllで\u0026#39;続きを読む\u0026#39;機能を導入   created at April 23, 2015, last modified at August 5, 2019 Jekyllのページネーション   created at April 21, 2015, last modified at August 5, 2019 Jekyllにタグクラウドをつける   created at April 21, 2015, last modified at August 5, 2019 Jekyllにプラグンインを導入する   "
+	"content": "  created at May 5, 2015, last modified at August 25, 2019 Jekyllでサイト内検索(Googleカスタム検索)を入れる   created at April 25, 2015, last modified at August 25, 2019 Jekyll Tips   created at April 23, 2015, last modified at August 25, 2019 Jekyllで\u0026#39;続きを読む\u0026#39;機能を導入   created at April 23, 2015, last modified at August 25, 2019 Jekyllのページネーション   created at April 21, 2015, last modified at August 25, 2019 Jekyllにタグクラウドをつける   created at April 21, 2015, last modified at August 25, 2019 Jekyllにプラグンインを導入する   "
 },
 {
 	"uri": "http://iimuz.github.io/scrapbook/softwaretool/jekyll/jekyllsearch/",
@@ -1264,7 +1264,7 @@
 	"title": "vim",
 	"tags": [],
 	"description": "",
-	"content": "  created at April 25, 2015, last modified at August 5, 2019 vimがun~ファイルを作るようになった   "
+	"content": "  created at April 25, 2015, last modified at August 25, 2019 vimがun~ファイルを作るようになった   "
 },
 {
 	"uri": "http://iimuz.github.io/scrapbook/softwaretool/vim/vimunfile/",
@@ -1320,7 +1320,7 @@
 	"title": "Markdown",
 	"tags": [],
 	"description": "",
-	"content": "  created at April 21, 2015, last modified at August 5, 2019 Markdown記法について   "
+	"content": "  created at April 21, 2015, last modified at August 25, 2019 Markdown記法について   "
 },
 {
 	"uri": "http://iimuz.github.io/scrapbook/programming/markdown/markdown/",
@@ -1467,5 +1467,5 @@
 	"title": "content",
 	"tags": [],
 	"description": "",
-	"content": "  created at August 13, 2019, last modified at August 5, 2019 Benchmarking Model-Based Reinforcement Learning   created at August 13, 2019, last modified at August 5, 2019 Machine Learning   created at August 8, 2019, last modified at August 5, 2019 スクラム開発用ツール   created at August 8, 2019, last modified at August 5, 2019 Software Development   created at July 28, 2019, last modified at August 5, 2019 VSCode の Remote development で locale 警告が発生したときの対処   created at July 28, 2019, last modified at August 5, 2019 RaspberryPi で cv2.imshow を利用したときに DBUS エラーが発生した場合の対処   created at June 9, 2019, last modified at August 5, 2019 RaspberryPiで静的IPを利用する   "
+	"content": "  created at August 13, 2019, last modified at August 25, 2019 Benchmarking Model-Based Reinforcement Learning   created at August 13, 2019, last modified at August 25, 2019 Machine Learning   created at August 8, 2019, last modified at August 25, 2019 スクラム開発用ツール   created at August 8, 2019, last modified at August 25, 2019 Software Development   created at July 28, 2019, last modified at August 25, 2019 VSCode の Remote development で locale 警告が発生したときの対処   created at July 28, 2019, last modified at August 25, 2019 RaspberryPi で cv2.imshow を利用したときに DBUS エラーが発生した場合の対処   created at June 9, 2019, last modified at August 25, 2019 RaspberryPiで静的IPを利用する   "
 }]
