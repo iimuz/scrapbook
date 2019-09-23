@@ -6,7 +6,7 @@
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <meta name="generator" content="Hugo 0.56.0-DEV" />
-<title>CUDA :: しさく</title>
+<title>複数の git リポジトリの履歴を残して単一のリポジトリに統合する :: しさく</title>
 <link rel="shortcut icon" href="/scrapbook/images/favicon.png" type="image/x-icon" />
 <link href="/scrapbook/css/font-awesome.min.css" rel="stylesheet">
 <link href="/scrapbook/css/nucleus.css" rel="stylesheet">
@@ -23,7 +23,7 @@
 
     
   </head>
-  <body data-url="/scrapbook/programming/cuda/">
+  <body data-url="/scrapbook/softwaretool/git/merge_git_repositories/">
     
       <header>
   <div class="logo">
@@ -219,18 +219,16 @@
     </li>
         </ul>
     </li>
-    <li data-nav-id="/scrapbook/programming/" class="dd-item parent haschildren
+    <li data-nav-id="/scrapbook/programming/" class="dd-item haschildren
         ">
       <div>
-      <a href="/scrapbook/programming/">Programming</a>
-            <i class="fa fa-angle-down fa-lg category-icon"></i>
+      <a href="/scrapbook/programming/">Programming</a><i class="fa fa-angle-right fa-lg category-icon"></i>
       </div>
         <ul>
-    <li data-nav-id="/scrapbook/programming/cuda/" class="dd-item parent active haschildren
+    <li data-nav-id="/scrapbook/programming/cuda/" class="dd-item haschildren
         ">
       <div>
-      <a href="/scrapbook/programming/cuda/">CUDA</a>
-            <i class="fa fa-angle-down fa-lg category-icon"></i>
+      <a href="/scrapbook/programming/cuda/">CUDA</a><i class="fa fa-angle-right fa-lg category-icon"></i>
       </div>
         <ul>
       <li data-nav-id="/scrapbook/programming/cuda/cuda_atomic_function/" class="dd-item">
@@ -574,19 +572,21 @@
     </li>
         </ul>
     </li>
-    <li data-nav-id="/scrapbook/softwaretool/" class="dd-item haschildren
+    <li data-nav-id="/scrapbook/softwaretool/" class="dd-item parent haschildren
         ">
       <div>
-      <a href="/scrapbook/softwaretool/">Software tools</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      <a href="/scrapbook/softwaretool/">Software tools</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
       </div>
         <ul>
-    <li data-nav-id="/scrapbook/softwaretool/git/" class="dd-item haschildren
+    <li data-nav-id="/scrapbook/softwaretool/git/" class="dd-item parent haschildren
         ">
       <div>
-      <a href="/scrapbook/softwaretool/git/">git</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      <a href="/scrapbook/softwaretool/git/">git</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
       </div>
         <ul>
-      <li data-nav-id="/scrapbook/softwaretool/git/merge_git_repositories/" class="dd-item">
+      <li data-nav-id="/scrapbook/softwaretool/git/merge_git_repositories/" class="dd-item active">
         <div>
           <a href="/scrapbook/softwaretool/git/merge_git_repositories/">
             複数の git リポジトリの履歴を残して単一のリポジトリに統合する
@@ -1313,56 +1313,85 @@
     <option value="/scrapbook/hardware/" >
    Hardware</option>
     <option value="/scrapbook/programming/" >
-   Programming</option> 
-    <option value="/scrapbook/programming/cuda/"  selected>
-  - 
-   CUDA</option> 
-      <option value="/scrapbook/programming/cuda/cuda_atomic_function/" >-- CUDA の atomic 関数</option>
-  
-    <option value="/scrapbook/programming/bash/" >
-  - 
-   Bash etc.</option>
-    <option value="/scrapbook/programming/powershell/" >
-  - 
-   Powershell</option>
-    <option value="/scrapbook/programming/go/" >
-  - 
-   Go</option>
-    <option value="/scrapbook/programming/python/" >
-  - 
-   python</option>
-    <option value="/scrapbook/programming/cpp/" >
-  - 
-   C/C&#43;&#43;</option>
-    <option value="/scrapbook/programming/js/" >
-  - 
-   JavaScript / HTML / CSS</option>
-    <option value="/scrapbook/programming/csharp/" >
-  - 
-   C#</option>
-    <option value="/scrapbook/programming/tensorflow/" >
-  - 
-   Tensorflow</option>
-    <option value="/scrapbook/programming/java/" >
-  - 
-   Java</option>
-    <option value="/scrapbook/programming/ruby/" >
-  - 
-   Ruby</option>
-    <option value="/scrapbook/programming/markdown/" >
-  - 
-   Markdown</option>
-    <option value="/scrapbook/programming/competitiveprogramming/" >
-  - 
-   Competitive Programming</option>
-    <option value="/scrapbook/programming/julia/" >
-  - 
-   Julia</option>
-  
+   Programming</option>
     <option value="/scrapbook/skill/" >
    Skills</option>
     <option value="/scrapbook/softwaretool/" >
-   Software tools</option>
+   Software tools</option> 
+    <option value="/scrapbook/softwaretool/git/" >
+  - 
+   git</option> 
+      <option value="/scrapbook/softwaretool/git/merge_git_repositories/"  selected>-- 複数の git リポジトリの履歴を残して単一のリポジトリに統合する</option>
+      <option value="/scrapbook/softwaretool/git/proxy-using-git-for-windows/" >-- Git for Windows で proxy を設定する</option>
+      <option value="/scrapbook/softwaretool/git/git-svn-for-strange-folder/" >-- svn のリポジトリ構成がデフォルトではない場合における git svn コマンド</option>
+      <option value="/scrapbook/softwaretool/git/git-config-include-if/" >-- プロジェクト単位で git config の設定を変更する</option>
+      <option value="/scrapbook/softwaretool/git/encoding-git-for-windows/" >-- git for windows の ターミナル出力で文字化けする場合の対処法</option>
+      <option value="/scrapbook/softwaretool/git/git-worktree/" >-- git worktree を用いた別作業ディレクトリの用意</option>
+      <option value="/scrapbook/softwaretool/git/stop-git-temp-diff/" >-- gitで一時的に変更の検出を止める</option>
+      <option value="/scrapbook/softwaretool/git/close-issues-when-merge/" >-- GitHub の Issue をコミットのマージ時に自動でクローズする</option>
+      <option value="/scrapbook/softwaretool/git/travis-ci-blog/" >-- Travis CIから更新する設定を行った時のメモ</option>
+      <option value="/scrapbook/softwaretool/git/gitcouldnotexecuteeditor/" >-- gitでCould Not Execute Editorと言われた時の対処法</option>
+      <option value="/scrapbook/softwaretool/git/githubssh/" >-- GitHubにSSHを利用して接続する</option>
+      <option value="/scrapbook/softwaretool/git/gitcommand/" >-- Gitのコマンド備忘録</option>
+      <option value="/scrapbook/softwaretool/git/gitpagesandjekyll/" >-- Jekyllでファイルを生成してGitHub Pagesにpush</option>
+      <option value="/scrapbook/softwaretool/git/git/" >-- Gitでyou are not humanと言われたら</option>
+      <option value="/scrapbook/softwaretool/git/gitpages/" >-- Git Pagesを使ってMarkdownでメモする環境構築</option>
+  
+    <option value="/scrapbook/softwaretool/vscode/" >
+  - 
+   VSCode</option>
+    <option value="/scrapbook/softwaretool/gcp/" >
+  - 
+   Google Cloud Platform</option>
+    <option value="/scrapbook/softwaretool/others/" >
+  - 
+   Others</option>
+    <option value="/scrapbook/softwaretool/visualstudio/" >
+  - 
+   Visual Studio</option>
+    <option value="/scrapbook/softwaretool/qt/" >
+  - 
+   Qt</option>
+    <option value="/scrapbook/softwaretool/hyper/" >
+  - 
+   Hyper</option>
+    <option value="/scrapbook/softwaretool/docker/" >
+  - 
+   Docker</option>
+    <option value="/scrapbook/softwaretool/jenkins/" >
+  - 
+   Jenkins</option>
+    <option value="/scrapbook/softwaretool/hugo/" >
+  - 
+   Hugo</option>
+    <option value="/scrapbook/softwaretool/heroku/" >
+  - 
+   heroku</option>
+    <option value="/scrapbook/softwaretool/minecraft/" >
+  - 
+   Minecraft</option>
+    <option value="/scrapbook/softwaretool/homebrew/" >
+  - 
+   homebrew</option>
+    <option value="/scrapbook/softwaretool/atom/" >
+  - 
+   Atom</option>
+    <option value="/scrapbook/softwaretool/blender/" >
+  - 
+   Blender</option>
+    <option value="/scrapbook/softwaretool/jekyll/" >
+  - 
+   Jekyll</option>
+    <option value="/scrapbook/softwaretool/vim/" >
+  - 
+   vim</option>
+    <option value="/scrapbook/softwaretool/colaboratory/" >
+  - 
+   Google Colaboratory</option>
+    <option value="/scrapbook/softwaretool/pointcloudlibrary/" >
+  - 
+   Point Cloud Library</option>
+  
 
 
 
@@ -1385,30 +1414,40 @@
       </div>
     
 
-    <h1>CUDA</h1>
+    <h1>複数の git リポジトリの履歴を残して単一のリポジトリに統合する</h1>
     
 
     
+    <p>当初は複数のリポジトリに分割して作成していたが、
+途中から単一のリポジトリでよくなる場合があります。
+その場合に、複数のリポジトリの履歴を残して一つのリポジトリに統合する方法です。</p>
 
+<p>変更前には、リポジトリ A, B, C がそれぞれ別にあるとします。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-txt" data-lang="txt">- repository A
+- repository B
+- repository C</code></pre></div>
+<p>最終的に、統合用に作ったリポジトリにリポジトリ A, B, C のフォルダと git の履歴を残すようにします。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-txt" data-lang="txt">- repository parent
+  |- repository A
+  |- repository B
+  |- repository C</code></pre></div>
+<p>下記のコマンドを順に実行することで実現できます。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#75715e"># 親リポジトリのクローン</span>
+$ git clone https://example.com/username/repository_parent.git
 
+<span style="color:#75715e"># 子リポジトリの取り込み(リポジトリ A の場合を記載するが、 B, C についても同じように行う)</span>
+$ git remote add repo_a https://example.com/username/repository_a.git
+$ git fetch repo_a
+$ git read-tree --prefix<span style="color:#f92672">=</span>repo_a/ repo_a/master
+$ git checkout -- .
+$ git add .
+$ git commit -m <span style="color:#e6db74">&#34;add repo_a&#34;</span>
+$ git merge -s subtree repo_a/master --allow-unrelated-histories</code></pre></div>
+<p>参考資料</p>
 
-
-
-
-
-
-
-<ul class="children children-li">
-  
-  <li>
-    <aside>created at April 8, 2019, last modified at September 23, 2019</aside>
-    <a href="http://iimuz.github.io/scrapbook/programming/cuda/cuda_atomic_function/">CUDA の atomic 関数</a>
-    
-  </li>
-  
+<ul>
+<li><a href="https://qiita.com/miutex/items/bad5021964f529d6f690">Qiita: 複数のGitリポジトリを一つにまとめる</a></li>
 </ul>
-
-
 
 
 

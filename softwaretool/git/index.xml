@@ -6,10 +6,23 @@
     <description>Recent content in git on しさく</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-JP</language>
-    <lastBuildDate>Sat, 02 Feb 2019 22:09:59 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 23 Sep 2019 06:26:52 +0000</lastBuildDate>
     
 	<atom:link href="http://iimuz.github.io/scrapbook/softwaretool/git/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>複数の git リポジトリの履歴を残して単一のリポジトリに統合する</title>
+      <link>http://iimuz.github.io/scrapbook/softwaretool/git/merge_git_repositories/</link>
+      <pubDate>Mon, 23 Sep 2019 06:26:52 +0000</pubDate>
+      
+      <guid>http://iimuz.github.io/scrapbook/softwaretool/git/merge_git_repositories/</guid>
+      <description>当初は複数のリポジトリに分割して作成していたが、 途中から単一のリポジトリでよくなる場合があります。 その場合に、複数のリポジトリの履歴を残して一つのリポジトリに統合する方法です。
+変更前には、リポジトリ A, B, C がそれぞれ別にあるとします。
+- repository A - repository B - repository C 最終的に、統合用に作ったリポジトリにリポジトリ A, B, C のフォルダと git の履歴を残すようにします。
+- repository parent |- repository A |- repository B |- repository C 下記のコマンドを順に実行することで実現できます。
+# 親リポジトリのクローン $ git clone https://example.com/username/repository_parent.git # 子リポジトリの取り込み(リポジトリ A の場合を記載するが、 B, C についても同じように行う) $ git remote add repo_a https://example.com/username/repository_a.git $ git fetch repo_a $ git read-tree --prefix=repo_a/ repo_a/master $ git checkout -- . $ git add .</description>
+    </item>
     
     <item>
       <title>Git for Windows で proxy を設定する</title>
