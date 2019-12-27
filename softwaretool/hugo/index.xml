@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Hugo on しさく</title>
-    <link>http://iimuz.github.io/scrapbook/softwaretool/hugo/</link>
+    <link>https://iimuz.github.io/scrapbook/softwaretool/hugo/</link>
     <description>Recent content in Hugo on しさく</description>
     <generator>Hugo -- gohugo.io</generator>
     
-	<atom:link href="http://iimuz.github.io/scrapbook/softwaretool/hugo/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://iimuz.github.io/scrapbook/softwaretool/hugo/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Hugoで数式を導入します</title>
-      <link>http://iimuz.github.io/scrapbook/softwaretool/hugo/hugotex/</link>
+      <link>https://iimuz.github.io/scrapbook/softwaretool/hugo/hugotex/</link>
       <pubDate>Tue, 15 Nov 2016 21:41:53 +0900</pubDate>
       
-      <guid>http://iimuz.github.io/scrapbook/softwaretool/hugo/hugotex/</guid>
+      <guid>https://iimuz.github.io/scrapbook/softwaretool/hugo/hugotex/</guid>
       <description>Hugo + Tex 私の場合メモするときは、PC使えるならばmarkdown型式のテキストで保存します。 ただ、よく数式をメモしたいときに書けなかったので、かける方法を探したところ、 markdown+Texができるようでしたので導入しました。 (Tex記法には慣れていないと書きにくいかもしれません)
 現在は、サイトジェネレーターとしてHugoを利用しており、今回はmathjaxを導入します。 (別にHugoでなくてもjsを読み込めば使えるはずです。) 導入すると下記のようにインラインと一行分の挿入の両方ができるようになります。
   インライン表示: $F(x) = \sum_{n=1}^{N} \frac{1}{N}$
@@ -29,10 +29,10 @@ $$F(x) = \sum_{n=1}^{N} \frac{1}{N}$$   加えて、Atomの場合は、パッケ
     
     <item>
       <title>Hugoの初期設定</title>
-      <link>http://iimuz.github.io/scrapbook/softwaretool/hugo/hugosetup/</link>
+      <link>https://iimuz.github.io/scrapbook/softwaretool/hugo/hugosetup/</link>
       <pubDate>Sat, 29 Oct 2016 19:49:51 +0900</pubDate>
       
-      <guid>http://iimuz.github.io/scrapbook/softwaretool/hugo/hugosetup/</guid>
+      <guid>https://iimuz.github.io/scrapbook/softwaretool/hugo/hugosetup/</guid>
       <description>&lt;p&gt;JekyllからHugoに環境を以降しました。
 その時に行った作業のメモになります。
 Macでの環境構築になりますが、

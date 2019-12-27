@@ -2,28 +2,28 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Google Cloud Platform on しさく</title>
-    <link>http://iimuz.github.io/scrapbook/softwaretool/gcp/</link>
+    <link>https://iimuz.github.io/scrapbook/softwaretool/gcp/</link>
     <description>Recent content in Google Cloud Platform on しさく</description>
     <generator>Hugo -- gohugo.io</generator>
     
-	<atom:link href="http://iimuz.github.io/scrapbook/softwaretool/gcp/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://iimuz.github.io/scrapbook/softwaretool/gcp/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Google Photoへの自動画像アップロード</title>
-      <link>http://iimuz.github.io/scrapbook/softwaretool/gcp/google_photos_api/</link>
+      <link>https://iimuz.github.io/scrapbook/softwaretool/gcp/google_photos_api/</link>
       <pubDate>Sun, 02 Jun 2019 13:51:11 +0900</pubDate>
       
-      <guid>http://iimuz.github.io/scrapbook/softwaretool/gcp/google_photos_api/</guid>
+      <guid>https://iimuz.github.io/scrapbook/softwaretool/gcp/google_photos_api/</guid>
       <description>メモ  Google APIを利用可能にする  Get Started with REST 方法は2つ紹介されているが、今回はプロジェクトの設定なども行うため後者(B)の手法を利用した。 おそらく、こっちの方法の方がめんどくさい。  Go to the Google API Console. From the menu bar, select a project or create a new project. To open the Google API Library, from the Navigation menu, select APIs &amp;amp; Services &amp;gt; Library. Search for &amp;ldquo;Google Photos Library API&amp;rdquo;. Select the correct result and click Enable.     OAuth2認証用のjsonを取得する  今回の場合は、認証用jsonを利用してブラウザ経由でアクセス権を付与する。 ここで、アクセス権の付与にはブラウザが必要だが、今回はコンソール上に認証用のURLを出力し、 URLへは別の環境でアクセスし、認証用のtokenだけをコンソールから入力するようにしている。 これは、Raspberry Piで利用することが前提のため、UI付きの環境ではない可能性があるため。 SSHなどで入っていても対応できるようにするためです。    参考資料  [追記あり] Google Photos APIsでアルバム作成と写真のアップロード Google Photos API を使用した画像の自動アップロード nasu-tomoyuki/mugencamera  </description>
     </item>
     
     <item>
       <title>GCP のインスタンス起動でエラーが発生する</title>
-      <link>http://iimuz.github.io/scrapbook/softwaretool/gcp/gcp-resource-error/</link>
+      <link>https://iimuz.github.io/scrapbook/softwaretool/gcp/gcp-resource-error/</link>
       <pubDate>Mon, 19 Nov 2018 06:41:46 +0900</pubDate>
       
-      <guid>http://iimuz.github.io/scrapbook/softwaretool/gcp/gcp-resource-error/</guid>
+      <guid>https://iimuz.github.io/scrapbook/softwaretool/gcp/gcp-resource-error/</guid>
       <description>GCP で作成したインスタンスを起動する場合に、 下記のようなエラーが発生する場合があります。
 Starting instance(s) ubuntu-dev...failed. ERROR: (gcloud.compute.instances.start) The zone &amp;#39;projects/hoge/zones/asia-northeast1-b&amp;#39; does not have enough resources available to fulfill the request. Try a different zone, or try again later. プリエンプティブインスタンスである場合に、 GCP 側で起動できないようにすることがあるようです。
 GCP(GCE)でプリエンプティブインスタンスが起動しない場合の対処法
@@ -32,10 +32,10 @@ GCP(GCE)でプリエンプティブインスタンスが起動しない場合の
     
     <item>
       <title>chrome のみで GCE にアクセスする環境構築した時のメモ</title>
-      <link>http://iimuz.github.io/scrapbook/softwaretool/gcp/gce_ssh_using_chrome/</link>
+      <link>https://iimuz.github.io/scrapbook/softwaretool/gcp/gce_ssh_using_chrome/</link>
       <pubDate>Wed, 06 Jun 2018 16:53:55 +0900</pubDate>
       
-      <guid>http://iimuz.github.io/scrapbook/softwaretool/gcp/gce_ssh_using_chrome/</guid>
+      <guid>https://iimuz.github.io/scrapbook/softwaretool/gcp/gce_ssh_using_chrome/</guid>
       <description>概要 アクセスするだけなら GCE は cloud console でできます。 ポートフォワードしたい場合は、 secure shell という chrome アプリを利用すればできます。
 フロー  GCE の cloud console でアクセス用のキーを作成(ssh-keygen)し、メタデータとして登録  本当はよくないかもしれないが、とりあえず動かしたいだけなら gce 用のキーがすでにあるのでそれで対応する。   secure shell では public キーと pvivate キーの両方が必要となるため、両方ダウンロード ssh client として chrome app の secure shell を利用する。 設定画面では、 user name と ip (外部IP)、port を指定する ID(Identify?)のところに pub と private の両方のキーを import する SSH 引数に -L 8888:localhost:8888 gce 側で何かport 8888で待ち受けさせる(適当なweb serverを立てる) client pc 側でブラウザから localhost:8888 にアクセス  所感 手元の端末の環境(Linux, Windows, Mac)によらず動かせるようにしたかったので試してみました。 これで chromebook とかの安いPCに移行することができるかもしれません。 (chromebook の開発者モードを利用するとかいろいろありそうですが、 できれば通常モードの範囲でやりくりしたいのです。)</description>
     </item>

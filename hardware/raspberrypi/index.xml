@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Raspberry Pi on しさく</title>
-    <link>http://iimuz.github.io/scrapbook/hardware/raspberrypi/</link>
+    <link>https://iimuz.github.io/scrapbook/hardware/raspberrypi/</link>
     <description>Recent content in Raspberry Pi on しさく</description>
     <generator>Hugo -- gohugo.io</generator>
     
-	<atom:link href="http://iimuz.github.io/scrapbook/hardware/raspberrypi/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://iimuz.github.io/scrapbook/hardware/raspberrypi/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>RaspberryPi で cv2.imshow を利用したときに DBUS エラーが発生した場合の対処</title>
-      <link>http://iimuz.github.io/scrapbook/hardware/raspberrypi/raspberrypy-cv2-dbuss-error/</link>
+      <link>https://iimuz.github.io/scrapbook/hardware/raspberrypi/raspberrypy-cv2-dbuss-error/</link>
       <pubDate>Sun, 28 Jul 2019 07:52:15 +0000</pubDate>
       
-      <guid>http://iimuz.github.io/scrapbook/hardware/raspberrypi/raspberrypy-cv2-dbuss-error/</guid>
+      <guid>https://iimuz.github.io/scrapbook/hardware/raspberrypi/raspberrypy-cv2-dbuss-error/</guid>
       <description>RaspberryPi の環境で cv2 の imshow 関数を利用したところ、下記のエラーが発生した。
 WARNING **: Error retrieving accessibility bus address: org.freedesktop.DBus.Error.ServiceUnknown: The name org.a11y.Bus was not provided by any .service files 対処法としては、下記のようにパッケージを追加すればよいようです。
 sudo apt-get install at-spi2-core  [solved ]Warning **: Error retrieving accessibility bus address  </description>
@@ -22,10 +22,10 @@ sudo apt-get install at-spi2-core  [solved ]Warning **: Error retrieving accessi
     
     <item>
       <title>RaspberryPiで静的IPを利用する</title>
-      <link>http://iimuz.github.io/scrapbook/hardware/raspberrypi/raspberrypi_static_ip/</link>
+      <link>https://iimuz.github.io/scrapbook/hardware/raspberrypi/raspberrypi_static_ip/</link>
       <pubDate>Sun, 09 Jun 2019 06:34:27 +0000</pubDate>
       
-      <guid>http://iimuz.github.io/scrapbook/hardware/raspberrypi/raspberrypi_static_ip/</guid>
+      <guid>https://iimuz.github.io/scrapbook/hardware/raspberrypi/raspberrypi_static_ip/</guid>
       <description>$ sudo vi /etc/dhcpcd.conf interface eth0 static ip_address=192.168.10.xxx/24 static domain_name_servers=8.8.8.8  デフォルトゲートウェイはroute -nで探す  参考資料  【Raspberry Pi 3B/3B+】スタティックなIPアドレス（固定IPアドレス）を設定する  </description>
     </item>
     

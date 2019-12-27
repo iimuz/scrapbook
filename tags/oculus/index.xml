@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>oculus on しさく</title>
-    <link>http://iimuz.github.io/scrapbook/tags/oculus/</link>
+    <link>https://iimuz.github.io/scrapbook/tags/oculus/</link>
     <description>Recent content in oculus on しさく</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Tue, 26 May 2015 00:00:00 +0900</lastBuildDate>
     
-	<atom:link href="http://iimuz.github.io/scrapbook/tags/oculus/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://iimuz.github.io/scrapbook/tags/oculus/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Occulus Riftの入力デバイスを調べた時のメモ</title>
-      <link>http://iimuz.github.io/scrapbook/hardware/others/vrinputdevice/</link>
+      <link>https://iimuz.github.io/scrapbook/hardware/others/vrinputdevice/</link>
       <pubDate>Tue, 26 May 2015 00:00:00 +0900</pubDate>
       
-      <guid>http://iimuz.github.io/scrapbook/hardware/others/vrinputdevice/</guid>
+      <guid>https://iimuz.github.io/scrapbook/hardware/others/vrinputdevice/</guid>
       <description>&lt;p&gt;Occulus Riftの入力デバイスを調べた時のメモ。
 ただし、Occulus RiftというよりVRとかARとかまで派生して、面白入力デバイスという感じ。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Oculus Rift DK2 で試したコンテンツ</title>
-      <link>http://iimuz.github.io/scrapbook/hardware/others/oculusriftshare/</link>
+      <link>https://iimuz.github.io/scrapbook/hardware/others/oculusriftshare/</link>
       <pubDate>Sun, 24 May 2015 00:00:00 +0900</pubDate>
       
-      <guid>http://iimuz.github.io/scrapbook/hardware/others/oculusriftshare/</guid>
+      <guid>https://iimuz.github.io/scrapbook/hardware/others/oculusriftshare/</guid>
       <description>Oculus rift dk2を利用して試したコンテンツ。
 コンテンツ とりあえず、個人的な感想で☆5つまでで評価。
  SightLine: The Chair ☆☆☆☆☆  綺麗だし、酔いにくいから面白い。 1回目より2回目のほうが、いろいろ動かせることがわかって面白い。
@@ -42,10 +42,10 @@
     
     <item>
       <title>Oculus Rift DK2のセットアップ</title>
-      <link>http://iimuz.github.io/scrapbook/hardware/others/oculusriftdk2setup/</link>
+      <link>https://iimuz.github.io/scrapbook/hardware/others/oculusriftdk2setup/</link>
       <pubDate>Sat, 09 May 2015 00:00:00 +0900</pubDate>
       
-      <guid>http://iimuz.github.io/scrapbook/hardware/others/oculusriftdk2setup/</guid>
+      <guid>https://iimuz.github.io/scrapbook/hardware/others/oculusriftdk2setup/</guid>
       <description>Oculus Rift DK2のセットアップをした時の導入手順メモ。
 Headsetの設定 説明書が入っているので、それに沿ってコネクタ類を接続する。
 PCの設定 Qiita: Oculus Rift DK2をセットアップする手順を参考に順に設定を進める。
@@ -63,10 +63,10 @@ Oculus Configuration UtilityでTools -&amp;gt; Display ModeをExtend Desktop to 
     
     <item>
       <title>Oculus Rift DK2を注文した</title>
-      <link>http://iimuz.github.io/scrapbook/hardware/others/oculusriftdk2/</link>
+      <link>https://iimuz.github.io/scrapbook/hardware/others/oculusriftdk2/</link>
       <pubDate>Sat, 02 May 2015 00:00:00 +0900</pubDate>
       
-      <guid>http://iimuz.github.io/scrapbook/hardware/others/oculusriftdk2/</guid>
+      <guid>https://iimuz.github.io/scrapbook/hardware/others/oculusriftdk2/</guid>
       <description>Oculus Rift DK2を注文したので、その経過をメモ。
 ⇒到着済み(2015.05.09)
 現状ステータス  2015/5/9: 受け取り完了。 2015/5/7: 一度配達されていることを確認。 2015/5/6: 日本に到着(FedExのログで確認)。  注文の流れ(2015/5/2) Oculus VRのページが日本語に対応しているので非常に簡単。 購入のページから一通り流されるままに記入して、支払うだけ。 以下のページの左上の購入から進む。

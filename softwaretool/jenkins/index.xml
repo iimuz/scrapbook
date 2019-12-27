@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Jenkins on しさく</title>
-    <link>http://iimuz.github.io/scrapbook/softwaretool/jenkins/</link>
+    <link>https://iimuz.github.io/scrapbook/softwaretool/jenkins/</link>
     <description>Recent content in Jenkins on しさく</description>
     <generator>Hugo -- gohugo.io</generator>
     
-	<atom:link href="http://iimuz.github.io/scrapbook/softwaretool/jenkins/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://iimuz.github.io/scrapbook/softwaretool/jenkins/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Jenkinsでのparallel処理</title>
-      <link>http://iimuz.github.io/scrapbook/softwaretool/jenkins/jenkins-parallel/</link>
+      <link>https://iimuz.github.io/scrapbook/softwaretool/jenkins/jenkins-parallel/</link>
       <pubDate>Wed, 14 Feb 2018 09:00:00 +0900</pubDate>
       
-      <guid>http://iimuz.github.io/scrapbook/softwaretool/jenkins/jenkins-parallel/</guid>
+      <guid>https://iimuz.github.io/scrapbook/softwaretool/jenkins/jenkins-parallel/</guid>
       <description>jenkinsでpallalelしたときの挙動に関してです。 きちんと調べればわかるのかもしれませんが、動作させたときに起こった現象をまとめておきます。
 下記のようにnodeの下にparallelを記載した場合は、同一ノード中で処理が並列で実施されるようです。
 pipeline {agent { node { label &amp;quot;slave&amp;quot; } }stages {stage (&#39;hoge&#39;) {pallalel {stage (&#39;p1&#39;) { step { hoge } }stage (&#39;p2&#39;) { step { hoge } }}}}}一方で、下記のようにステージにノードが含まれている場合は、複数ノードで並列で実施されるようです。
@@ -23,10 +23,10 @@ pipeline {agent nonestages {stage (&#39;hoge&#39;) {pallalel {stage (&#39;p
     
     <item>
       <title>DockerでJenkinsのmasterとslaveを用意</title>
-      <link>http://iimuz.github.io/scrapbook/softwaretool/jenkins/jenkins/</link>
+      <link>https://iimuz.github.io/scrapbook/softwaretool/jenkins/jenkins/</link>
       <pubDate>Sat, 12 Aug 2017 12:32:37 +0900</pubDate>
       
-      <guid>http://iimuz.github.io/scrapbook/softwaretool/jenkins/jenkins/</guid>
+      <guid>https://iimuz.github.io/scrapbook/softwaretool/jenkins/jenkins/</guid>
       <description>Jenkinsを利用したCI環境の構築 privateリポジトリなど個人用にCIを行うためにdockerを用いてjenkins環境を構築したときのメモです。
 master環境の構築 dockerhubに用意されているimageを利用しました。
 最終形のpluginと設定 pluginリスト

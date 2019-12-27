@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>java on しさく</title>
-    <link>http://iimuz.github.io/scrapbook/tags/java/</link>
+    <link>https://iimuz.github.io/scrapbook/tags/java/</link>
     <description>Recent content in java on しさく</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Thu, 03 Sep 2015 00:00:00 +0900</lastBuildDate>
     
-	<atom:link href="http://iimuz.github.io/scrapbook/tags/java/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://iimuz.github.io/scrapbook/tags/java/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>macにjava環境を構築した時のメモ</title>
-      <link>http://iimuz.github.io/scrapbook/programming/java/javaenvironment/</link>
+      <link>https://iimuz.github.io/scrapbook/programming/java/javaenvironment/</link>
       <pubDate>Thu, 03 Sep 2015 00:00:00 +0900</pubDate>
       
-      <guid>http://iimuz.github.io/scrapbook/programming/java/javaenvironment/</guid>
+      <guid>https://iimuz.github.io/scrapbook/programming/java/javaenvironment/</guid>
       <description>macにjava環境を構築した時のメモ。 まだ成功していない。
 概要 MacにJAVA環境を構築した時に行った作業一覧。 Eclipseを利用すれば早いし、環境としても良いのはしっているが、 Eclipseは重いという問題があるので、基本vimだけで動くことを目標として環境構築。
 インストールパッケージ   java

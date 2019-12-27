@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>hugo on しさく</title>
-    <link>http://iimuz.github.io/scrapbook/tags/hugo/</link>
+    <link>https://iimuz.github.io/scrapbook/tags/hugo/</link>
     <description>Recent content in hugo on しさく</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Sat, 26 Nov 2016 12:08:10 +0000</lastBuildDate>
     
-	<atom:link href="http://iimuz.github.io/scrapbook/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://iimuz.github.io/scrapbook/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>WindowsでDocker&#43;Hugoサーバを動作させる方法です</title>
-      <link>http://iimuz.github.io/scrapbook/softwaretool/docker/dockerwindows/</link>
+      <link>https://iimuz.github.io/scrapbook/softwaretool/docker/dockerwindows/</link>
       <pubDate>Sat, 26 Nov 2016 12:08:10 +0000</pubDate>
       
-      <guid>http://iimuz.github.io/scrapbook/softwaretool/docker/dockerwindows/</guid>
+      <guid>https://iimuz.github.io/scrapbook/softwaretool/docker/dockerwindows/</guid>
       <description>概要 Mac側でdockerを利用してhugoの実行環境を作成したのですが、 同じデータを共有しているwindows側でも ビルドとデプロイができるdocker環境を作成しました。 その際、windows側だと確認用のローカルhugoサーバを建てた時に、 接続IPの設定でハマったのでメモしておきます。
 結論 Docker toolboxの場合は、virtualboxを利用しているため、 virtualboxのIPも設定した上で、 hugoサーバのアドレス設定を適切にする必要がありました。 (Port番号は、どこがどこに繋がっているのか明確にするためにわざと変えています。 別に変える必要はないので、本当は全部1313(hugoのデフォルト)にしています。)
   virtualboxの設定画面(docker-machineに利用している仮想マシン) からネットワーク設定を開き、IPとポートを設定します。
@@ -28,10 +28,10 @@ $ hugo server -p 80 --baseURL=127.0.0.1 --bind=0.0.0.0 -w   windows側からブ�
     
     <item>
       <title>Hugoで数式を導入します</title>
-      <link>http://iimuz.github.io/scrapbook/softwaretool/hugo/hugotex/</link>
+      <link>https://iimuz.github.io/scrapbook/softwaretool/hugo/hugotex/</link>
       <pubDate>Tue, 15 Nov 2016 21:41:53 +0900</pubDate>
       
-      <guid>http://iimuz.github.io/scrapbook/softwaretool/hugo/hugotex/</guid>
+      <guid>https://iimuz.github.io/scrapbook/softwaretool/hugo/hugotex/</guid>
       <description>Hugo + Tex 私の場合メモするときは、PC使えるならばmarkdown型式のテキストで保存します。 ただ、よく数式をメモしたいときに書けなかったので、かける方法を探したところ、 markdown+Texができるようでしたので導入しました。 (Tex記法には慣れていないと書きにくいかもしれません)
 現在は、サイトジェネレーターとしてHugoを利用しており、今回はmathjaxを導入します。 (別にHugoでなくてもjsを読み込めば使えるはずです。) 導入すると下記のようにインラインと一行分の挿入の両方ができるようになります。
   インライン表示: $F(x) = \sum_{n=1}^{N} \frac{1}{N}$
@@ -46,10 +46,10 @@ $$F(x) = \sum_{n=1}^{N} \frac{1}{N}$$   加えて、Atomの場合は、パッケ
     
     <item>
       <title>Hugoの初期設定</title>
-      <link>http://iimuz.github.io/scrapbook/softwaretool/hugo/hugosetup/</link>
+      <link>https://iimuz.github.io/scrapbook/softwaretool/hugo/hugosetup/</link>
       <pubDate>Sat, 29 Oct 2016 19:49:51 +0900</pubDate>
       
-      <guid>http://iimuz.github.io/scrapbook/softwaretool/hugo/hugosetup/</guid>
+      <guid>https://iimuz.github.io/scrapbook/softwaretool/hugo/hugosetup/</guid>
       <description>&lt;p&gt;JekyllからHugoに環境を以降しました。
 その時に行った作業のメモになります。
 Macでの環境構築になりますが、

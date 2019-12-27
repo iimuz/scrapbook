@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>jekyll on しさく</title>
-    <link>http://iimuz.github.io/scrapbook/tags/jekyll/</link>
+    <link>https://iimuz.github.io/scrapbook/tags/jekyll/</link>
     <description>Recent content in jekyll on しさく</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Tue, 05 May 2015 00:00:00 +0900</lastBuildDate>
     
-	<atom:link href="http://iimuz.github.io/scrapbook/tags/jekyll/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://iimuz.github.io/scrapbook/tags/jekyll/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Jekyllでサイト内検索(Googleカスタム検索)を入れる</title>
-      <link>http://iimuz.github.io/scrapbook/softwaretool/jekyll/jekyllsearch/</link>
+      <link>https://iimuz.github.io/scrapbook/softwaretool/jekyll/jekyllsearch/</link>
       <pubDate>Tue, 05 May 2015 00:00:00 +0900</pubDate>
       
-      <guid>http://iimuz.github.io/scrapbook/softwaretool/jekyll/jekyllsearch/</guid>
+      <guid>https://iimuz.github.io/scrapbook/softwaretool/jekyll/jekyllsearch/</guid>
       <description>Jekyllでサイト内検索を作成するために、Googleカスタム検索を利用したのでメモ。 今のところ成功しておらず検索できない…。
 ⇒ Googleウェブマスターツールで処理してから、 一日程度ほったらかしにしといたら、きちんと全体のページから検索できるようになった。
 たぶん結論 Googleカスタム検索を設定して、 Googleのウェブマスターツールでサイトマップを登録してあげると、たぶん検索できるようになる。 (検索できるようになるまでには、若干(1~数日程度)必要っぽい。
@@ -35,47 +35,47 @@ Googleウェブマスターツールを利用する。 Google ウェブマスタ
     
     <item>
       <title>Jekyll Tips</title>
-      <link>http://iimuz.github.io/scrapbook/softwaretool/jekyll/jekylltips/</link>
+      <link>https://iimuz.github.io/scrapbook/softwaretool/jekyll/jekylltips/</link>
       <pubDate>Sat, 25 Apr 2015 00:00:00 +0900</pubDate>
       
-      <guid>http://iimuz.github.io/scrapbook/softwaretool/jekyll/jekylltips/</guid>
+      <guid>https://iimuz.github.io/scrapbook/softwaretool/jekyll/jekylltips/</guid>
       <description>&lt;p&gt;JekyllのTips。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Jekyllで&#39;続きを読む&#39;機能を導入</title>
-      <link>http://iimuz.github.io/scrapbook/softwaretool/jekyll/jekyllmorepost/</link>
+      <link>https://iimuz.github.io/scrapbook/softwaretool/jekyll/jekyllmorepost/</link>
       <pubDate>Thu, 23 Apr 2015 00:00:00 +0900</pubDate>
       
-      <guid>http://iimuz.github.io/scrapbook/softwaretool/jekyll/jekyllmorepost/</guid>
+      <guid>https://iimuz.github.io/scrapbook/softwaretool/jekyll/jekyllmorepost/</guid>
       <description>&lt;p&gt;最初のページに続きを読む機能を導入する方法。
 要は、↓のような機能。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Jekyllのページネーション</title>
-      <link>http://iimuz.github.io/scrapbook/softwaretool/jekyll/jekyllpaginate/</link>
+      <link>https://iimuz.github.io/scrapbook/softwaretool/jekyll/jekyllpaginate/</link>
       <pubDate>Thu, 23 Apr 2015 00:00:00 +0900</pubDate>
       
-      <guid>http://iimuz.github.io/scrapbook/softwaretool/jekyll/jekyllpaginate/</guid>
+      <guid>https://iimuz.github.io/scrapbook/softwaretool/jekyll/jekyllpaginate/</guid>
       <description>&lt;p&gt;Jekyllのページネーション機能を有効にする方法。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Jekyllにタグクラウドをつける</title>
-      <link>http://iimuz.github.io/scrapbook/softwaretool/jekyll/jekylltagcloud/</link>
+      <link>https://iimuz.github.io/scrapbook/softwaretool/jekyll/jekylltagcloud/</link>
       <pubDate>Tue, 21 Apr 2015 00:00:00 +0900</pubDate>
       
-      <guid>http://iimuz.github.io/scrapbook/softwaretool/jekyll/jekylltagcloud/</guid>
+      <guid>https://iimuz.github.io/scrapbook/softwaretool/jekyll/jekylltagcloud/</guid>
       <description>&lt;p&gt;Jekyllでタグクラウドを作成し、一覧を表示するために調べたことのまとめ。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Jekyllにプラグンインを導入する</title>
-      <link>http://iimuz.github.io/scrapbook/softwaretool/jekyll/jekyllplugins/</link>
+      <link>https://iimuz.github.io/scrapbook/softwaretool/jekyll/jekyllplugins/</link>
       <pubDate>Tue, 21 Apr 2015 00:00:00 +0900</pubDate>
       
-      <guid>http://iimuz.github.io/scrapbook/softwaretool/jekyll/jekyllplugins/</guid>
+      <guid>https://iimuz.github.io/scrapbook/softwaretool/jekyll/jekyllplugins/</guid>
       <description>&lt;p&gt;Jekyllで作成したデータをGitHub Pagesにpushする方法が自動化できたので、
 プラグインをいくつか導入する。&lt;/p&gt;</description>
     </item>

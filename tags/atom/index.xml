@@ -2,29 +2,29 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>atom on しさく</title>
-    <link>http://iimuz.github.io/scrapbook/tags/atom/</link>
+    <link>https://iimuz.github.io/scrapbook/tags/atom/</link>
     <description>Recent content in atom on しさく</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Fri, 02 Oct 2015 00:00:00 +0900</lastBuildDate>
     
-	<atom:link href="http://iimuz.github.io/scrapbook/tags/atom/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://iimuz.github.io/scrapbook/tags/atom/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Atomの設定をGitHubを利用して共有する方法</title>
-      <link>http://iimuz.github.io/scrapbook/softwaretool/atom/shareatomsettings/</link>
+      <link>https://iimuz.github.io/scrapbook/softwaretool/atom/shareatomsettings/</link>
       <pubDate>Fri, 02 Oct 2015 00:00:00 +0900</pubDate>
       
-      <guid>http://iimuz.github.io/scrapbook/softwaretool/atom/shareatomsettings/</guid>
+      <guid>https://iimuz.github.io/scrapbook/softwaretool/atom/shareatomsettings/</guid>
       <description>&lt;p&gt;Atomの設定をvimの.vimrcとかbundlesとかのように共有する方法を調べた時のメモ。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Windows環境のエディタをAtomに乗り換えようかと思ったのでメモ</title>
-      <link>http://iimuz.github.io/scrapbook/softwaretool/atom/atomeditor/</link>
+      <link>https://iimuz.github.io/scrapbook/softwaretool/atom/atomeditor/</link>
       <pubDate>Thu, 01 Oct 2015 00:00:00 +0900</pubDate>
       
-      <guid>http://iimuz.github.io/scrapbook/softwaretool/atom/atomeditor/</guid>
+      <guid>https://iimuz.github.io/scrapbook/softwaretool/atom/atomeditor/</guid>
       <description>&lt;p&gt;Windows環境ではVimが思ったよりも使いにくいので変更しようと思って&lt;a href=&#34;https://atom.io/&#34;&gt;Atom&lt;/a&gt;を試験的に導入したのでその時のメモ&lt;/p&gt;</description>
     </item>
     

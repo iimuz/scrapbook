@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>mac on しさく</title>
-    <link>http://iimuz.github.io/scrapbook/tags/mac/</link>
+    <link>https://iimuz.github.io/scrapbook/tags/mac/</link>
     <description>Recent content in mac on しさく</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Sun, 23 Aug 2015 00:00:00 +0900</lastBuildDate>
     
-	<atom:link href="http://iimuz.github.io/scrapbook/tags/mac/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://iimuz.github.io/scrapbook/tags/mac/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Macbook 12インチ(1.1GHz)の設定</title>
-      <link>http://iimuz.github.io/scrapbook/softwaretool/others/macsettings/</link>
+      <link>https://iimuz.github.io/scrapbook/softwaretool/others/macsettings/</link>
       <pubDate>Sun, 23 Aug 2015 00:00:00 +0900</pubDate>
       
-      <guid>http://iimuz.github.io/scrapbook/softwaretool/others/macsettings/</guid>
+      <guid>https://iimuz.github.io/scrapbook/softwaretool/others/macsettings/</guid>
       <description>macbookの設定をメモ。 初のmacbookなので設定がおかしいかもしれないが、おかしいのに気付いた時に直す。
 概要 macbookの設定で行ったことのまとめ。 ソフトウェアとか、設定の変更とか。
 ソフトウェア とりあえずApple Storeでインストールできるソフトは、AppStoreでインストールするが、 それ以外のソフトはHomebrewで管理することにした。
@@ -25,10 +25,10 @@
     
     <item>
       <title>MacBookとMacBook Airの比較</title>
-      <link>http://iimuz.github.io/scrapbook/hardware/others/macbook/</link>
+      <link>https://iimuz.github.io/scrapbook/hardware/others/macbook/</link>
       <pubDate>Sat, 15 Aug 2015 00:00:00 +0900</pubDate>
       
-      <guid>http://iimuz.github.io/scrapbook/hardware/others/macbook/</guid>
+      <guid>https://iimuz.github.io/scrapbook/hardware/others/macbook/</guid>
       <description>母艦となるWindowsマシン以外にも移動用PCがほしくなったのでその時のメモ。
 概要 メインとなるWindowsデスクトップPCを持っているが、 移動したときや自宅以外で作業することが可能なPCがなく不便な時があるので持ち運び用のPCがほしくなった。
  Windows PCのスペック  CPU: Intel Core i7-4770 3.40GHz(8 CPUs), 3.4GHz メモリ: 16GB GPU: NVIDIA GeForce GTX 770    選択基準としては、以下に示すようなこと。

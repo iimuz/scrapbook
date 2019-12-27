@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>blender on しさく</title>
-    <link>http://iimuz.github.io/scrapbook/tags/blender/</link>
+    <link>https://iimuz.github.io/scrapbook/tags/blender/</link>
     <description>Recent content in blender on しさく</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Wed, 06 May 2015 00:00:00 +0900</lastBuildDate>
     
-	<atom:link href="http://iimuz.github.io/scrapbook/tags/blender/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://iimuz.github.io/scrapbook/tags/blender/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Blenderで流体シミュレーション</title>
-      <link>http://iimuz.github.io/scrapbook/softwaretool/blender/blenderfluidsimulation/</link>
+      <link>https://iimuz.github.io/scrapbook/softwaretool/blender/blenderfluidsimulation/</link>
       <pubDate>Wed, 06 May 2015 00:00:00 +0900</pubDate>
       
-      <guid>http://iimuz.github.io/scrapbook/softwaretool/blender/blenderfluidsimulation/</guid>
+      <guid>https://iimuz.github.io/scrapbook/softwaretool/blender/blenderfluidsimulation/</guid>
       <description>Blenderで流体シミュレーションを試した時のメモ。
 概要 いろはメモ -Blender-: グラスに水を注いでみる 〈流体シミュレーション〉のページを参考に 流体シミュレーションの実験。
 泥水ぶちまけてる感じだが、きちんとマテリアルとかテクスチャとか勉強してないから。 レンダリングについては後回し。 シミュレーションできることが分かったので良い。
@@ -33,40 +33,40 @@ Blender: GitHub: fluidSimulation
     
     <item>
       <title>UnityとBlenderハンズオンの第3章を進めてみる</title>
-      <link>http://iimuz.github.io/scrapbook/softwaretool/blender/shizuokadevunityandblender03/</link>
+      <link>https://iimuz.github.io/scrapbook/softwaretool/blender/shizuokadevunityandblender03/</link>
       <pubDate>Tue, 05 May 2015 00:00:00 +0900</pubDate>
       
-      <guid>http://iimuz.github.io/scrapbook/softwaretool/blender/shizuokadevunityandblender03/</guid>
+      <guid>https://iimuz.github.io/scrapbook/softwaretool/blender/shizuokadevunityandblender03/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://yaju3d.hatenablog.jp/entry/2015/04/07/015641&#34;&gt;静岡Developers勉強会の「UnityとBlenderハンズオン第3章」の資料公開&lt;/a&gt;
 に沿って進めてみる。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>UnityとBlenderハンズオンの第2章を進めてみる</title>
-      <link>http://iimuz.github.io/scrapbook/softwaretool/blender/shizuokadevunityandblender02/</link>
+      <link>https://iimuz.github.io/scrapbook/softwaretool/blender/shizuokadevunityandblender02/</link>
       <pubDate>Wed, 29 Apr 2015 00:00:00 +0900</pubDate>
       
-      <guid>http://iimuz.github.io/scrapbook/softwaretool/blender/shizuokadevunityandblender02/</guid>
+      <guid>https://iimuz.github.io/scrapbook/softwaretool/blender/shizuokadevunityandblender02/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://yaju3d.hatenablog.jp/entry/2015/03/09/020956&#34;&gt;静岡Developers勉強会の「UnityとBlenderハンズオン第2章」の資料公開&lt;/a&gt;
 に沿って進めてみる。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>UnityとBlenderハンズオンの第1章を進めてみる</title>
-      <link>http://iimuz.github.io/scrapbook/softwaretool/blender/shizuokadevunityandblender01/</link>
+      <link>https://iimuz.github.io/scrapbook/softwaretool/blender/shizuokadevunityandblender01/</link>
       <pubDate>Mon, 27 Apr 2015 00:00:00 +0900</pubDate>
       
-      <guid>http://iimuz.github.io/scrapbook/softwaretool/blender/shizuokadevunityandblender01/</guid>
+      <guid>https://iimuz.github.io/scrapbook/softwaretool/blender/shizuokadevunityandblender01/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://www.slideshare.net/yaju88/unityblender1&#34;&gt;静岡Developers勉強会: UnityとBlenderハンズオン 第1章&lt;/a&gt;
 でUnityとBlenderの使い方を勉強する。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>BlenderでPythonスクリプトを利用する</title>
-      <link>http://iimuz.github.io/scrapbook/softwaretool/blender/blenderpythonscript/</link>
+      <link>https://iimuz.github.io/scrapbook/softwaretool/blender/blenderpythonscript/</link>
       <pubDate>Sat, 25 Apr 2015 00:00:00 +0900</pubDate>
       
-      <guid>http://iimuz.github.io/scrapbook/softwaretool/blender/blenderpythonscript/</guid>
+      <guid>https://iimuz.github.io/scrapbook/softwaretool/blender/blenderpythonscript/</guid>
       <description>&lt;p&gt;BlenderでPythonを利用する。
 ついでに、Blenderの物理シミュレーションをpythonで作成する。
 作ったデータ: &lt;a href=&#34;https://github.com/iimuz/blenderTutorials/tree/develop/cubePhysicsEngine&#34;&gt;github: iimuz/blenderTutorials/cubePhysicsEngine&lt;/a&gt;&lt;/p&gt;</description>
@@ -74,19 +74,19 @@ Blender: GitHub: fluidSimulation
     
     <item>
       <title>Blenderコマンドの備忘録</title>
-      <link>http://iimuz.github.io/scrapbook/softwaretool/blender/blendersetting/</link>
+      <link>https://iimuz.github.io/scrapbook/softwaretool/blender/blendersetting/</link>
       <pubDate>Sat, 25 Apr 2015 00:00:00 +0900</pubDate>
       
-      <guid>http://iimuz.github.io/scrapbook/softwaretool/blender/blendersetting/</guid>
+      <guid>https://iimuz.github.io/scrapbook/softwaretool/blender/blendersetting/</guid>
       <description>&lt;p&gt;Blenderでのコマンド備忘録&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Blenderの練習 000</title>
-      <link>http://iimuz.github.io/scrapbook/softwaretool/blender/blender/</link>
+      <link>https://iimuz.github.io/scrapbook/softwaretool/blender/blender/</link>
       <pubDate>Tue, 14 Apr 2015 00:00:00 +0900</pubDate>
       
-      <guid>http://iimuz.github.io/scrapbook/softwaretool/blender/blender/</guid>
+      <guid>https://iimuz.github.io/scrapbook/softwaretool/blender/blender/</guid>
       <description>&lt;h2 id=&#34;heading&#34;&gt;目標&lt;/h2&gt;
 &lt;p&gt;とりあえず一週間位(実質初版完成まで2、3日)で、
 結婚式の余興のためにアニメーションを作成する必要がある。

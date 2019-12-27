@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Powershell on しさく</title>
-    <link>http://iimuz.github.io/scrapbook/programming/powershell/</link>
+    <link>https://iimuz.github.io/scrapbook/programming/powershell/</link>
     <description>Recent content in Powershell on しさく</description>
     <generator>Hugo -- gohugo.io</generator>
     
-	<atom:link href="http://iimuz.github.io/scrapbook/programming/powershell/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://iimuz.github.io/scrapbook/programming/powershell/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>powershell でファイルをダウンロードする</title>
-      <link>http://iimuz.github.io/scrapbook/programming/powershell/download-using-powershell/</link>
+      <link>https://iimuz.github.io/scrapbook/programming/powershell/download-using-powershell/</link>
       <pubDate>Wed, 30 Jan 2019 22:28:29 +0900</pubDate>
       
-      <guid>http://iimuz.github.io/scrapbook/programming/powershell/download-using-powershell/</guid>
+      <guid>https://iimuz.github.io/scrapbook/programming/powershell/download-using-powershell/</guid>
       <description>いろいろな方法を試しましたが、結局上記スクリプトでないとダウンロードできませんでした。
 Power Shell でファイルをダウンロードする で基本のダウンロードスクリプトが見つかったのですが、 https からのダウンロードのせいか SSL/TLS のチャネル生成失敗エラーが発生していました。
 &amp;#34;2&amp;#34; 個の引数を指定して &amp;#34;DownloadFile&amp;#34; を呼び出し中に例外が発生しました: &amp;#34;要求は中止されました: SSL/TLS のセキュリティで保護されているチャネルを作成できませんでした&amp;#34; SSL/TLS のセキュリティ用に Invoke-RestMethod、Invoke-WebRequestが失敗する の方法で SecurityProtocol の 2 行を追加する必要がありました。 SSL/TLS 関連では、 PowershellのInvoke-RestMethodをhttpsに実施すると失敗する の方法では失敗してしまいました。 よくわかっていないので求めていることが違ったのかもしれません。</description>
@@ -22,30 +22,30 @@ Power Shell でファイルをダウンロードする で基本のダウンロ�
     
     <item>
       <title>powershell でシンボリックリンクを生成する</title>
-      <link>http://iimuz.github.io/scrapbook/programming/powershell/ps1-symboliclink/</link>
+      <link>https://iimuz.github.io/scrapbook/programming/powershell/ps1-symboliclink/</link>
       <pubDate>Sun, 26 Aug 2018 17:46:01 +0900</pubDate>
       
-      <guid>http://iimuz.github.io/scrapbook/programming/powershell/ps1-symboliclink/</guid>
+      <guid>https://iimuz.github.io/scrapbook/programming/powershell/ps1-symboliclink/</guid>
       <description>powershellにおいてシンボリックリンクをpowershellのコマンドで作ることができるようです。 従来はcmdの mklink を利用していた部分を new-item で置き換えることができます。
 $ cmd /c mklink dst src # 従来のcmdによるコマンド $ New-Item -Type SymbolicLink -Path dst -Value src </description>
     </item>
     
     <item>
       <title>Enter-PSSession後のNew-PSDrive</title>
-      <link>http://iimuz.github.io/scrapbook/programming/powershell/new-psdrive/</link>
+      <link>https://iimuz.github.io/scrapbook/programming/powershell/new-psdrive/</link>
       <pubDate>Sun, 26 Aug 2018 17:39:35 +0900</pubDate>
       
-      <guid>http://iimuz.github.io/scrapbook/programming/powershell/new-psdrive/</guid>
+      <guid>https://iimuz.github.io/scrapbook/programming/powershell/new-psdrive/</guid>
       <description>windows環境ではsshのようなことが Enter-PSSession コマンドにより可能になります。 (ただし、リソース制限などいくつかできないことがあります。) Enter-PSSession 後の操作において New-PSDrive というネットワークドライブのマウント作業において、 権限情報が不足し使用できなくなります。 そのため、 New-PSDrive を Enter-PSSession 後に利用する場合は -Credential オプションを付与する必要があるみたいです。
 $ Enter-PSSession ip $ New-PSDrive DriveName -PSProvider FileSystem -Root \\remote-address -Credential domain@username 最後の -Credential オプションがないとマウントできなくなっています。</description>
     </item>
     
     <item>
       <title>powershell で tcp のテスト用にサーバとクライアントを用意する方法のメモ</title>
-      <link>http://iimuz.github.io/scrapbook/programming/powershell/powershell-tcp/</link>
+      <link>https://iimuz.github.io/scrapbook/programming/powershell/powershell-tcp/</link>
       <pubDate>Fri, 02 Mar 2018 21:56:07 +0900</pubDate>
       
-      <guid>http://iimuz.github.io/scrapbook/programming/powershell/powershell-tcp/</guid>
+      <guid>https://iimuz.github.io/scrapbook/programming/powershell/powershell-tcp/</guid>
       <description>powershellで、ncコマンドのようなことをするために調べたメモです。
 成果物 下記のようなpowershellスクリプトを用意し、実行することでncコマンドのようなことが実現できました。
  参考資料  bashでtcpや利用して文字列を送信する方法 ncコマンドの使い方 windowsでtcpのポート確認方法 powershellでnetcatスクリプト powershellで繰り返しバッファ送信  </description>
@@ -53,10 +53,10 @@ $ Enter-PSSession ip $ New-PSDrive DriveName -PSProvider FileSystem -Root \\remo
     
     <item>
       <title>powershellスクリプトを書くときのテンプレート</title>
-      <link>http://iimuz.github.io/scrapbook/programming/powershell/powershell-template/</link>
+      <link>https://iimuz.github.io/scrapbook/programming/powershell/powershell-template/</link>
       <pubDate>Sat, 13 Jan 2018 21:19:40 +0900</pubDate>
       
-      <guid>http://iimuz.github.io/scrapbook/programming/powershell/powershell-template/</guid>
+      <guid>https://iimuz.github.io/scrapbook/programming/powershell/powershell-template/</guid>
       <description>powershellスクリプトを書くときに、helpコメントやwhatifなどの標準機能を利用できるように調べたときのメモです。
 最終テンプレート  何ができるか 上記テンプレートに従って書いた場合に何ができるようになるかというと、下記の標準機能が利用できます。
 Get-Help ヘルプ表示をすることでスクリプトの処理内容をチェックすることができます。 また、引数などについても確認できるようになります。
@@ -69,10 +69,10 @@ for ($I = 0; $I -le 100; ++$I) { Write-Progress -Activity &amp;quot;Hoge Process
     
     <item>
       <title>windowsでネットワークドライブからsymlinkを有効にする</title>
-      <link>http://iimuz.github.io/scrapbook/programming/powershell/windows-symlink-from-remote/</link>
+      <link>https://iimuz.github.io/scrapbook/programming/powershell/windows-symlink-from-remote/</link>
       <pubDate>Mon, 29 May 2017 14:01:34 +0000</pubDate>
       
-      <guid>http://iimuz.github.io/scrapbook/programming/powershell/windows-symlink-from-remote/</guid>
+      <guid>https://iimuz.github.io/scrapbook/programming/powershell/windows-symlink-from-remote/</guid>
       <description>概要 windowsを利用していてネットワークドライブにあるsymlinkのディレクトリの情報を powershellから取得する方法を調べました。 セキュリティとしては甘くなるようです。
 # 現在の設定を確認する $ fsutil behavior query symlinkevaluation # リモートでのシンボリックリンクを有効にする $ fsutil behavior set symlinkevaluation r2r:1 r2l:1 </description>
     </item>

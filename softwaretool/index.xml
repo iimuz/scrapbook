@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Software tools on しさく</title>
-    <link>http://iimuz.github.io/scrapbook/softwaretool/</link>
+    <link>https://iimuz.github.io/scrapbook/softwaretool/</link>
     <description>Recent content in Software tools on しさく</description>
     <generator>Hugo -- gohugo.io</generator>
     
-	<atom:link href="http://iimuz.github.io/scrapbook/softwaretool/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://iimuz.github.io/scrapbook/softwaretool/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>

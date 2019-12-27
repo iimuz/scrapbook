@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>windows on しさく</title>
-    <link>http://iimuz.github.io/scrapbook/tags/windows/</link>
+    <link>https://iimuz.github.io/scrapbook/tags/windows/</link>
     <description>Recent content in windows on しさく</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Sat, 22 Dec 2018 12:06:17 +0900</lastBuildDate>
     
-	<atom:link href="http://iimuz.github.io/scrapbook/tags/windows/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://iimuz.github.io/scrapbook/tags/windows/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Windows で OpenSSH をドメイン環境下でインストール</title>
-      <link>http://iimuz.github.io/scrapbook/softwaretool/others/install-windows-openssh-under-domain/</link>
+      <link>https://iimuz.github.io/scrapbook/softwaretool/others/install-windows-openssh-under-domain/</link>
       <pubDate>Sat, 22 Dec 2018 12:06:17 +0900</pubDate>
       
-      <guid>http://iimuz.github.io/scrapbook/softwaretool/others/install-windows-openssh-under-domain/</guid>
+      <guid>https://iimuz.github.io/scrapbook/softwaretool/others/install-windows-openssh-under-domain/</guid>
       <description>Windows10 において、 &amp;ldquo;オプション機能の追加&amp;quot;から OpenSSH Server をインストールしたら失敗したので、 対処したときのメモです。
 結論としては、 WSUS (Windows Server Update System) が有効になっていて、 インストールできない場合があるようなので、 一時的に WSUS を無効にしてあげることで対応できるようです。
 OpenSSH Server のインストール手順 下記に手順を示します。

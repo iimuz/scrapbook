@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>git on しさく</title>
-    <link>http://iimuz.github.io/scrapbook/tags/git/</link>
+    <link>https://iimuz.github.io/scrapbook/tags/git/</link>
     <description>Recent content in git on しさく</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Tue, 29 Dec 2015 00:00:00 +0900</lastBuildDate>
     
-	<atom:link href="http://iimuz.github.io/scrapbook/tags/git/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://iimuz.github.io/scrapbook/tags/git/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>gitでCould Not Execute Editorと言われた時の対処法</title>
-      <link>http://iimuz.github.io/scrapbook/softwaretool/git/gitcouldnotexecuteeditor/</link>
+      <link>https://iimuz.github.io/scrapbook/softwaretool/git/gitcouldnotexecuteeditor/</link>
       <pubDate>Tue, 29 Dec 2015 00:00:00 +0900</pubDate>
       
-      <guid>http://iimuz.github.io/scrapbook/softwaretool/git/gitcouldnotexecuteeditor/</guid>
+      <guid>https://iimuz.github.io/scrapbook/softwaretool/git/gitcouldnotexecuteeditor/</guid>
       <description>gitを利用していたら突然Could Not Execute Editorと言われたので解決方法です。 原因はよくわかっていないので、本当の対処方法があると思います。
 対処方法は、.gitフォルダにあるconfigファイルに以下を記載します。
 [core] editor = /usr/local/bin/vim ここで記載するvimへのパスは、以下のコマンドで確認できます。
@@ -24,29 +24,29 @@ $ which vim </description>
     
     <item>
       <title>GitHubにSSHを利用して接続する</title>
-      <link>http://iimuz.github.io/scrapbook/softwaretool/git/githubssh/</link>
+      <link>https://iimuz.github.io/scrapbook/softwaretool/git/githubssh/</link>
       <pubDate>Sat, 25 Apr 2015 00:00:00 +0900</pubDate>
       
-      <guid>http://iimuz.github.io/scrapbook/softwaretool/git/githubssh/</guid>
+      <guid>https://iimuz.github.io/scrapbook/softwaretool/git/githubssh/</guid>
       <description>&lt;p&gt;GitHubのアクセスに毎回パスワードを利用してpushするのがめんどくさいので、
 sshキーを利用してアクセスする方法。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Gitのコマンド備忘録</title>
-      <link>http://iimuz.github.io/scrapbook/softwaretool/git/gitcommand/</link>
+      <link>https://iimuz.github.io/scrapbook/softwaretool/git/gitcommand/</link>
       <pubDate>Wed, 22 Apr 2015 00:00:00 +0900</pubDate>
       
-      <guid>http://iimuz.github.io/scrapbook/softwaretool/git/gitcommand/</guid>
+      <guid>https://iimuz.github.io/scrapbook/softwaretool/git/gitcommand/</guid>
       <description>&lt;p&gt;gitのコマンドをよく忘れるので、利用するときに調べたらここに記載する。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Jekyllでファイルを生成してGitHub Pagesにpush</title>
-      <link>http://iimuz.github.io/scrapbook/softwaretool/git/gitpagesandjekyll/</link>
+      <link>https://iimuz.github.io/scrapbook/softwaretool/git/gitpagesandjekyll/</link>
       <pubDate>Mon, 20 Apr 2015 00:00:00 +0900</pubDate>
       
-      <guid>http://iimuz.github.io/scrapbook/softwaretool/git/gitpagesandjekyll/</guid>
+      <guid>https://iimuz.github.io/scrapbook/softwaretool/git/gitpagesandjekyll/</guid>
       <description>&lt;p&gt;GitHub PagesにそのままpushしてJekyllの変換を利用していると
 plugin系が使えないらしいので、
 ローカルのJekyllでファイルを作成してGitHub Pagesにpushするまでのメモ。&lt;/p&gt;</description>
@@ -54,10 +54,10 @@ plugin系が使えないらしいので、
     
     <item>
       <title>Gitでyou are not humanと言われたら</title>
-      <link>http://iimuz.github.io/scrapbook/softwaretool/git/git/</link>
+      <link>https://iimuz.github.io/scrapbook/softwaretool/git/git/</link>
       <pubDate>Tue, 14 Apr 2015 00:00:00 +0900</pubDate>
       
-      <guid>http://iimuz.github.io/scrapbook/softwaretool/git/git/</guid>
+      <guid>https://iimuz.github.io/scrapbook/softwaretool/git/git/</guid>
       <description>&lt;h2 id=&#34;you-are-not-human&#34;&gt;You are not human&lt;/h2&gt;
 &lt;p&gt;GistBoxに登録して色々してたら、突然Gitに&lt;strong&gt;人間ではありません&lt;/strong&gt;と言われてしまった。
 原因は、GitsBoxから何度も消したり書いたりしたせいかもしれない。&lt;/p&gt;</description>
@@ -65,10 +65,10 @@ plugin系が使えないらしいので、
     
     <item>
       <title>Git Pagesを使ってMarkdownでメモする環境構築</title>
-      <link>http://iimuz.github.io/scrapbook/softwaretool/git/gitpages/</link>
+      <link>https://iimuz.github.io/scrapbook/softwaretool/git/gitpages/</link>
       <pubDate>Mon, 13 Apr 2015 00:00:00 +0900</pubDate>
       
-      <guid>http://iimuz.github.io/scrapbook/softwaretool/git/gitpages/</guid>
+      <guid>https://iimuz.github.io/scrapbook/softwaretool/git/gitpages/</guid>
       <description>&lt;h2 id=&#34;heading&#34;&gt;後で調べる&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;簡単な検索できない?

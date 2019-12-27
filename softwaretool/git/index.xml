@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>git on しさく</title>
-    <link>http://iimuz.github.io/scrapbook/softwaretool/git/</link>
+    <link>https://iimuz.github.io/scrapbook/softwaretool/git/</link>
     <description>Recent content in git on しさく</description>
     <generator>Hugo -- gohugo.io</generator>
     
-	<atom:link href="http://iimuz.github.io/scrapbook/softwaretool/git/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://iimuz.github.io/scrapbook/softwaretool/git/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>複数の git リポジトリの履歴を残して単一のリポジトリに統合する</title>
-      <link>http://iimuz.github.io/scrapbook/softwaretool/git/merge_git_repositories/</link>
+      <link>https://iimuz.github.io/scrapbook/softwaretool/git/merge_git_repositories/</link>
       <pubDate>Mon, 23 Sep 2019 06:26:52 +0000</pubDate>
       
-      <guid>http://iimuz.github.io/scrapbook/softwaretool/git/merge_git_repositories/</guid>
+      <guid>https://iimuz.github.io/scrapbook/softwaretool/git/merge_git_repositories/</guid>
       <description>当初は複数のリポジトリに分割して作成していたが、 途中から単一のリポジトリでよくなる場合があります。 その場合に、複数のリポジトリの履歴を残して一つのリポジトリに統合する方法です。
 変更前には、リポジトリ A, B, C がそれぞれ別にあるとします。
 - repository A - repository B - repository C 最終的に、統合用に作ったリポジトリにリポジトリ A, B, C のフォルダと git の履歴を残すようにします。
@@ -24,20 +24,20 @@
     
     <item>
       <title>Git for Windows で proxy を設定する</title>
-      <link>http://iimuz.github.io/scrapbook/softwaretool/git/proxy-using-git-for-windows/</link>
+      <link>https://iimuz.github.io/scrapbook/softwaretool/git/proxy-using-git-for-windows/</link>
       <pubDate>Sat, 02 Feb 2019 22:09:59 +0900</pubDate>
       
-      <guid>http://iimuz.github.io/scrapbook/softwaretool/git/proxy-using-git-for-windows/</guid>
+      <guid>https://iimuz.github.io/scrapbook/softwaretool/git/proxy-using-git-for-windows/</guid>
       <description>WSL がインストールできない環境で、 git for windows をインストールしたところ、 nc コマンドが使えず git の proxy 指定ができなかったので調べました。 nc コマンドの代わりに connect.exe が利用できるようです。
 ProxyCommand connect.exe -H hoge.proxy.jp:8080 %h %p 22番ポートが使えなくても、SSHでGitしたい！</description>
     </item>
     
     <item>
       <title>svn のリポジトリ構成がデフォルトではない場合における git svn コマンド</title>
-      <link>http://iimuz.github.io/scrapbook/softwaretool/git/git-svn-for-strange-folder/</link>
+      <link>https://iimuz.github.io/scrapbook/softwaretool/git/git-svn-for-strange-folder/</link>
       <pubDate>Wed, 30 Jan 2019 22:21:53 +0900</pubDate>
       
-      <guid>http://iimuz.github.io/scrapbook/softwaretool/git/git-svn-for-strange-folder/</guid>
+      <guid>https://iimuz.github.io/scrapbook/softwaretool/git/git-svn-for-strange-folder/</guid>
       <description>svn の中が歴史的経緯により複雑な環境となっている場合があります。 例えば、下記のような構成です。
 root |- trunk | |- project_a | |- project_b |- branches | |- project_a | |- project_b |- tags |- project_a_v1.0.0 |- project_b_v1.0.1 root の下にプロジェクトごとの trunk などがあるわけではなく、各プロジェクトの turnk が trunk ディレクトリの下に配置されています。
 この場合は、下記のようなコマンド群を使っていく必要があります。
@@ -47,10 +47,10 @@ git svn clone -T project_a svn://hoge/trunk/ trunk の直前までの URL を書
     
     <item>
       <title>プロジェクト単位で git config の設定を変更する</title>
-      <link>http://iimuz.github.io/scrapbook/softwaretool/git/git-config-include-if/</link>
+      <link>https://iimuz.github.io/scrapbook/softwaretool/git/git-config-include-if/</link>
       <pubDate>Wed, 17 Oct 2018 19:13:04 +0900</pubDate>
       
-      <guid>http://iimuz.github.io/scrapbook/softwaretool/git/git-config-include-if/</guid>
+      <guid>https://iimuz.github.io/scrapbook/softwaretool/git/git-config-include-if/</guid>
       <description>GitHub と GitLab に加えて、社内リポジトリで git の履歴にのこるユーザ名やメールを変更したい場合があります。 今までは、 git clone してから git config --local で設定をリポジトリ単位でしていました。 しかしながら、 Go 言語のディレクトリ構成をとっているため、 あるフォルダしたからは全て一定になります。 また、数が増えてくると設定し忘れることが良くあります。 どうしたら管理が楽になるか調べていたところ、 include に条件設定できることが分かりました。 これを用いれば解くてフォルダ下は全て任意の設定にできます。
 git 2.13.0 から git config の include で if が利用できます。 書き方は下記のようになります。
 [includeIf &amp;#34;&amp;lt;条件&amp;gt;&amp;#34;] path = &amp;lt;設定ファイル&amp;gt; GitHub と GitLab でユーザ名やメールアドレスが異なる場合は、下記のように設定します。 ghq を利用してディレクトリを管理していると想定します。
@@ -61,10 +61,10 @@ git 2.13.0 から git config の include で if が利用できます。 書き�
     
     <item>
       <title>git for windows の ターミナル出力で文字化けする場合の対処法</title>
-      <link>http://iimuz.github.io/scrapbook/softwaretool/git/encoding-git-for-windows/</link>
+      <link>https://iimuz.github.io/scrapbook/softwaretool/git/encoding-git-for-windows/</link>
       <pubDate>Wed, 17 Oct 2018 19:06:43 +0900</pubDate>
       
-      <guid>http://iimuz.github.io/scrapbook/softwaretool/git/encoding-git-for-windows/</guid>
+      <guid>https://iimuz.github.io/scrapbook/softwaretool/git/encoding-git-for-windows/</guid>
       <description>git for windows の bash を利用していて日本語文字列が文字化けする場合は、 エンコーディングを UTF-8 に変更すればよいそうです。 コマンドラインから利用する場合などでも同様に修正できるようです。
 変更方法は、下記のようになります。
 $ export LANG=ja_JP.UTF-8 恒常的に適用する場合は、 git for windows の場合の .bashrc は C:\Program Files\Git\etc\bash.bashrc になるので、 これに書いておけばよさそうです。
@@ -74,10 +74,10 @@ $ export LANG=ja_JP.UTF-8 恒常的に適用する場合は、 git for windows �
     
     <item>
       <title>git worktree を用いた別作業ディレクトリの用意</title>
-      <link>http://iimuz.github.io/scrapbook/softwaretool/git/git-worktree/</link>
+      <link>https://iimuz.github.io/scrapbook/softwaretool/git/git-worktree/</link>
       <pubDate>Sun, 26 Aug 2018 15:30:22 +0900</pubDate>
       
-      <guid>http://iimuz.github.io/scrapbook/softwaretool/git/git-worktree/</guid>
+      <guid>https://iimuz.github.io/scrapbook/softwaretool/git/git-worktree/</guid>
       <description>git で作業中に複数の作業を並行しなければならない場合があります。 例えば、バグを修正中に、別件の依頼を受けて別のバグ修正や動作確認をしなければならないような場合です。 そのような場合は、 git stash を利用していったん変更を保存して、必要な環境にcheckoutするという方法も可能です。 ただ、c++とかビルドする場合は、stashを利用してしまうと、ビルドの中間ファイルはコミット対象外なので、 戻ってきたときに一からビルドが必要になります。 一瞬でビルドが終わるようなプロジェクトならいいのですが、 一からビルドすると1時間以上かかるようなプロジェクトだとスイッチする気がうせてしまいます。 そのような場合に、 git worktree を利用することで、 もう一つ別のディレクトリを作成して作業ができるようになるので便利です。
 コマンドとしては、下記のような構文になります。
 $ git worktree add path/to/dir -b new/branch source/branch 上記のようにすると、 source/branch をもとにして new/branch を作成し、 path/to/dir に新規でファイルが作成されます。 作業ディレクトリが干渉しないため、非常に使いやすいです。
@@ -87,10 +87,10 @@ $ rm -rf path/to/dir $ git worktree prune </description>
     
     <item>
       <title>gitで一時的に変更の検出を止める</title>
-      <link>http://iimuz.github.io/scrapbook/softwaretool/git/stop-git-temp-diff/</link>
+      <link>https://iimuz.github.io/scrapbook/softwaretool/git/stop-git-temp-diff/</link>
       <pubDate>Fri, 03 Aug 2018 20:22:31 +0900</pubDate>
       
-      <guid>http://iimuz.github.io/scrapbook/softwaretool/git/stop-git-temp-diff/</guid>
+      <guid>https://iimuz.github.io/scrapbook/softwaretool/git/stop-git-temp-diff/</guid>
       <description>docker-composeを利用していたりすると環境変数ファイル(.env)とかに、 ローカル環境の変数をまとめていたりします。 その状態で、環境に合わせて環境変数ファイルを変更すると、 コミットしなくてよい変更が検出された状態になります。 add対象を慎重に選ぶという方法もあるのですが、 git statusとかで検出しないほうが楽なので、検出を停止する方法です。
 $ git update-index --assume-unchanged {ファイル名} # 除外 $ git update-index --no-assume-unchanged {ファイル名} # 解除 $ git ls-files -v | grep ^h # 設定ファイルの確認 注意点として、対象ファイルを本当に変更したときにコミット対象から外れていることに気づけないので、 そこは若干問題です。
 参考情報  A4 WORKS Official BLOG: Gitで一時的に”Changes not staged for commit”リストから外す  </description>
@@ -98,20 +98,20 @@ $ git update-index --assume-unchanged {ファイル名} # 除外 $ git update-in
     
     <item>
       <title>GitHub の Issue をコミットのマージ時に自動でクローズする</title>
-      <link>http://iimuz.github.io/scrapbook/softwaretool/git/close-issues-when-merge/</link>
+      <link>https://iimuz.github.io/scrapbook/softwaretool/git/close-issues-when-merge/</link>
       <pubDate>Thu, 07 Jun 2018 09:41:36 +0900</pubDate>
       
-      <guid>http://iimuz.github.io/scrapbook/softwaretool/git/close-issues-when-merge/</guid>
+      <guid>https://iimuz.github.io/scrapbook/softwaretool/git/close-issues-when-merge/</guid>
       <description>ブランチの最初で、下記のような空コミットを作成することで、 メインブランチへ取り込まれたときにクローズできます。
 $ git commit --allow-empty -m &amp;#34;resolve #id&amp;#34; また、このクローズ動作はGitHubの設定画面で指定したメインブランチに対してマージされたときに発生するようです。 そのため、例えばmasterブランチはCIなどによって自動でコミットされる対象となっている場合は、 可能ならばメインの開発ブランチ(developとか?)をメインブランチに設定しておくと対象のブランチにマージされた段階で発生します。</description>
     </item>
     
     <item>
       <title>Travis CIから更新する設定を行った時のメモ</title>
-      <link>http://iimuz.github.io/scrapbook/softwaretool/git/travis-ci-blog/</link>
+      <link>https://iimuz.github.io/scrapbook/softwaretool/git/travis-ci-blog/</link>
       <pubDate>Sat, 03 Mar 2018 12:56:02 +0900</pubDate>
       
-      <guid>http://iimuz.github.io/scrapbook/softwaretool/git/travis-ci-blog/</guid>
+      <guid>https://iimuz.github.io/scrapbook/softwaretool/git/travis-ci-blog/</guid>
       <description>このサイトを元記事をmarkdownで書いたらTravisCIでビルドするようにしたので、その際に行ったことのメモです。
 概要  TravisCIの登録 TravisCIから自動ビルド対象のリポジトリを設定 Travis Clientをインストールしてsshキーの暗号化 .travis.ymlからビルド方法を設定  sshキーの暗号化 TravisCIからpushするためには、sshを用いる設定としました。 この時、対象とするリポジトリのみに公開鍵を設定し、最悪秘密鍵が漏洩しても他には影響がないようにします。 また、秘密鍵はリポジトリに含める必要があるので、TravisClientを用いて暗号化します。
 暗号化するための環境 今回は、dockerを利用してtravis clientの環境を用意しました。 rubyが必要なので、ベースをrubyにして簡単に用意できます。
@@ -125,10 +125,10 @@ after_success: - openssl # ここに先ほどコピーした内容を記述し�
     
     <item>
       <title>gitでCould Not Execute Editorと言われた時の対処法</title>
-      <link>http://iimuz.github.io/scrapbook/softwaretool/git/gitcouldnotexecuteeditor/</link>
+      <link>https://iimuz.github.io/scrapbook/softwaretool/git/gitcouldnotexecuteeditor/</link>
       <pubDate>Tue, 29 Dec 2015 00:00:00 +0900</pubDate>
       
-      <guid>http://iimuz.github.io/scrapbook/softwaretool/git/gitcouldnotexecuteeditor/</guid>
+      <guid>https://iimuz.github.io/scrapbook/softwaretool/git/gitcouldnotexecuteeditor/</guid>
       <description>gitを利用していたら突然Could Not Execute Editorと言われたので解決方法です。 原因はよくわかっていないので、本当の対処方法があると思います。
 対処方法は、.gitフォルダにあるconfigファイルに以下を記載します。
 [core] editor = /usr/local/bin/vim ここで記載するvimへのパスは、以下のコマンドで確認できます。
@@ -137,29 +137,29 @@ $ which vim </description>
     
     <item>
       <title>GitHubにSSHを利用して接続する</title>
-      <link>http://iimuz.github.io/scrapbook/softwaretool/git/githubssh/</link>
+      <link>https://iimuz.github.io/scrapbook/softwaretool/git/githubssh/</link>
       <pubDate>Sat, 25 Apr 2015 00:00:00 +0900</pubDate>
       
-      <guid>http://iimuz.github.io/scrapbook/softwaretool/git/githubssh/</guid>
+      <guid>https://iimuz.github.io/scrapbook/softwaretool/git/githubssh/</guid>
       <description>&lt;p&gt;GitHubのアクセスに毎回パスワードを利用してpushするのがめんどくさいので、
 sshキーを利用してアクセスする方法。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Gitのコマンド備忘録</title>
-      <link>http://iimuz.github.io/scrapbook/softwaretool/git/gitcommand/</link>
+      <link>https://iimuz.github.io/scrapbook/softwaretool/git/gitcommand/</link>
       <pubDate>Wed, 22 Apr 2015 00:00:00 +0900</pubDate>
       
-      <guid>http://iimuz.github.io/scrapbook/softwaretool/git/gitcommand/</guid>
+      <guid>https://iimuz.github.io/scrapbook/softwaretool/git/gitcommand/</guid>
       <description>&lt;p&gt;gitのコマンドをよく忘れるので、利用するときに調べたらここに記載する。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Jekyllでファイルを生成してGitHub Pagesにpush</title>
-      <link>http://iimuz.github.io/scrapbook/softwaretool/git/gitpagesandjekyll/</link>
+      <link>https://iimuz.github.io/scrapbook/softwaretool/git/gitpagesandjekyll/</link>
       <pubDate>Mon, 20 Apr 2015 00:00:00 +0900</pubDate>
       
-      <guid>http://iimuz.github.io/scrapbook/softwaretool/git/gitpagesandjekyll/</guid>
+      <guid>https://iimuz.github.io/scrapbook/softwaretool/git/gitpagesandjekyll/</guid>
       <description>&lt;p&gt;GitHub PagesにそのままpushしてJekyllの変換を利用していると
 plugin系が使えないらしいので、
 ローカルのJekyllでファイルを作成してGitHub Pagesにpushするまでのメモ。&lt;/p&gt;</description>
@@ -167,10 +167,10 @@ plugin系が使えないらしいので、
     
     <item>
       <title>Gitでyou are not humanと言われたら</title>
-      <link>http://iimuz.github.io/scrapbook/softwaretool/git/git/</link>
+      <link>https://iimuz.github.io/scrapbook/softwaretool/git/git/</link>
       <pubDate>Tue, 14 Apr 2015 00:00:00 +0900</pubDate>
       
-      <guid>http://iimuz.github.io/scrapbook/softwaretool/git/git/</guid>
+      <guid>https://iimuz.github.io/scrapbook/softwaretool/git/git/</guid>
       <description>&lt;h2 id=&#34;you-are-not-human&#34;&gt;You are not human&lt;/h2&gt;
 &lt;p&gt;GistBoxに登録して色々してたら、突然Gitに&lt;strong&gt;人間ではありません&lt;/strong&gt;と言われてしまった。
 原因は、GitsBoxから何度も消したり書いたりしたせいかもしれない。&lt;/p&gt;</description>
@@ -178,10 +178,10 @@ plugin系が使えないらしいので、
     
     <item>
       <title>Git Pagesを使ってMarkdownでメモする環境構築</title>
-      <link>http://iimuz.github.io/scrapbook/softwaretool/git/gitpages/</link>
+      <link>https://iimuz.github.io/scrapbook/softwaretool/git/gitpages/</link>
       <pubDate>Mon, 13 Apr 2015 00:00:00 +0900</pubDate>
       
-      <guid>http://iimuz.github.io/scrapbook/softwaretool/git/gitpages/</guid>
+      <guid>https://iimuz.github.io/scrapbook/softwaretool/git/gitpages/</guid>
       <description>&lt;h2 id=&#34;heading&#34;&gt;後で調べる&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;簡単な検索できない?

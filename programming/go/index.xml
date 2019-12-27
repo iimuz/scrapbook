@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Go on しさく</title>
-    <link>http://iimuz.github.io/scrapbook/programming/go/</link>
+    <link>https://iimuz.github.io/scrapbook/programming/go/</link>
     <description>Recent content in Go on しさく</description>
     <generator>Hugo -- gohugo.io</generator>
     
-	<atom:link href="http://iimuz.github.io/scrapbook/programming/go/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://iimuz.github.io/scrapbook/programming/go/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Go 言語でテストカバレッジを可視化する</title>
-      <link>http://iimuz.github.io/scrapbook/programming/go/go-coverage/</link>
+      <link>https://iimuz.github.io/scrapbook/programming/go/go-coverage/</link>
       <pubDate>Sat, 22 Dec 2018 12:58:56 +0900</pubDate>
       
-      <guid>http://iimuz.github.io/scrapbook/programming/go/go-coverage/</guid>
+      <guid>https://iimuz.github.io/scrapbook/programming/go/go-coverage/</guid>
       <description>Go 言語を使っていて、テストカバレッジが簡単に 100% にならなかったので、 どこが通過させられていないのか調べるのに使いました。
 下記のコマンドでテスト実行時に、プロファイルを出力し、 html に変換できました。
 $ go test --cover ./... -coverprofile=./bin/cover.out $ go tool cover -html=./bin/cover.html 上記で出力先として、 bin フォルダを指定しているのは、 出力結果をトップディレクトリに作成したくなかったからです。 (git で変更履歴として検出されてしまうので) 別に出力先はどこでもよいと思います。
@@ -23,10 +23,10 @@ $ go test --cover ./... -coverprofile=./bin/cover.out $ go tool cover -html=./bi
     
     <item>
       <title>Golang でクロスビルドする Makefile の設定</title>
-      <link>http://iimuz.github.io/scrapbook/programming/go/golang-cross-build/</link>
+      <link>https://iimuz.github.io/scrapbook/programming/go/golang-cross-build/</link>
       <pubDate>Mon, 22 Oct 2018 18:44:17 +0900</pubDate>
       
-      <guid>http://iimuz.github.io/scrapbook/programming/go/golang-cross-build/</guid>
+      <guid>https://iimuz.github.io/scrapbook/programming/go/golang-cross-build/</guid>
       <description>Golang で一括で各プラットフォー用のバイナリを生成するコマンドの書き方を調べた時のメモです。 結論としては、下記のコードで一括でバイナリを生成できます。 対象のプラットフォームを増やす場合は、 for 文の要素を増やせばできます。
 一点だけ問題があり、 windows のみ実行ファイルの拡張子として .exe を付ける必要があります。 そのため、上記のままでは windows 側で実行ファイルとして認識してくれません。 リネームすればよいのですが、 簡単な if 文程度で分岐できないでしょうか。</description>
     </item>

@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Ruby on しさく</title>
-    <link>http://iimuz.github.io/scrapbook/programming/ruby/</link>
+    <link>https://iimuz.github.io/scrapbook/programming/ruby/</link>
     <description>Recent content in Ruby on しさく</description>
     <generator>Hugo -- gohugo.io</generator>
     
-	<atom:link href="http://iimuz.github.io/scrapbook/programming/ruby/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://iimuz.github.io/scrapbook/programming/ruby/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>ruby環境</title>
-      <link>http://iimuz.github.io/scrapbook/programming/ruby/rubyenvironment/</link>
+      <link>https://iimuz.github.io/scrapbook/programming/ruby/rubyenvironment/</link>
       <pubDate>Sat, 29 Aug 2015 00:00:00 +0900</pubDate>
       
-      <guid>http://iimuz.github.io/scrapbook/programming/ruby/rubyenvironment/</guid>
+      <guid>https://iimuz.github.io/scrapbook/programming/ruby/rubyenvironment/</guid>
       <description>&lt;p&gt;jekyllがMac環境でうまく動作しなくなったので、そのときに見直したRuby環境のメモ。&lt;/p&gt;</description>
     </item>
     

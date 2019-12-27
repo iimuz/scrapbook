@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>pandoc on しさく</title>
-    <link>http://iimuz.github.io/scrapbook/tags/pandoc/</link>
+    <link>https://iimuz.github.io/scrapbook/tags/pandoc/</link>
     <description>Recent content in pandoc on しさく</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Thu, 03 Sep 2015 00:00:00 +0900</lastBuildDate>
     
-	<atom:link href="http://iimuz.github.io/scrapbook/tags/pandoc/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://iimuz.github.io/scrapbook/tags/pandoc/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>macでpandocを利用してpdfに変換しようとした時のトラブルメモ</title>
-      <link>http://iimuz.github.io/scrapbook/softwaretool/others/macpandocpdf/</link>
+      <link>https://iimuz.github.io/scrapbook/softwaretool/others/macpandocpdf/</link>
       <pubDate>Thu, 03 Sep 2015 00:00:00 +0900</pubDate>
       
-      <guid>http://iimuz.github.io/scrapbook/softwaretool/others/macpandocpdf/</guid>
+      <guid>https://iimuz.github.io/scrapbook/softwaretool/others/macpandocpdf/</guid>
       <description>Macでpandocを利用してpdfに変換しようとしたら文字化けして変換できなかったので、 変換できるように設定した時のメモ。
 概要 macのutf-8が特殊みたいで、一回変換をかませてあげる必要があるみたい。 コマンドとしては、以下のようにしてあげると変換できる。 長いので.bashrcとかにaliasか関数定義する方が早いかもしれない。
 $ iconv -c -f UTF-8-MAC -t UTF-8 hoge.md | pandoc -o hoge.pdf -f markdown -V documentclass=ltjarticle --latex-engine=lualatex 必要パッケージの導入 homebrewを利用して以下のパッケージを導入する。

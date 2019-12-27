@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>python on しさく</title>
-    <link>http://iimuz.github.io/scrapbook/programming/python/</link>
+    <link>https://iimuz.github.io/scrapbook/programming/python/</link>
     <description>Recent content in python on しさく</description>
     <generator>Hugo -- gohugo.io</generator>
     
-	<atom:link href="http://iimuz.github.io/scrapbook/programming/python/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://iimuz.github.io/scrapbook/programming/python/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Qiita API を利用して記事を投稿する</title>
-      <link>http://iimuz.github.io/scrapbook/programming/python/post-from-qiita-api/</link>
+      <link>https://iimuz.github.io/scrapbook/programming/python/post-from-qiita-api/</link>
       <pubDate>Sun, 18 Nov 2018 15:33:13 +0900</pubDate>
       
-      <guid>http://iimuz.github.io/scrapbook/programming/python/post-from-qiita-api/</guid>
+      <guid>https://iimuz.github.io/scrapbook/programming/python/post-from-qiita-api/</guid>
       <description>はじめに Qiita API を利用してローカルの markdown ファイルを記事としてアップロードする python スクリプトを作成しました。作成したスクリプトのテストも兼ねて、作業内容をまとめてみます。
  投稿内容の作成 投稿用のヘッダ情報の作成 投稿処理 投稿後のレスポンス情報から ID 情報を取得 投稿内容が書かれたファイルのヘッダ部分に ID を追加  背景 以前から自分で書いたメモなどの単純なドキュメントファイルに関しては、一括して GitLab.com のプライベートリポジトリで管理していました。今回、 Qiita に投稿してみようと思ったのですが、 Qiita に投稿する内容は、都度書いて Qiita で管理するということも考えました。が、やはりローカル環境でテキストを書きたいということもあり、 Qiita API を活用して、ローカル環境から投稿するようにしました。まだまだ粗削りですが、とりあえず投稿して、記事を修正した場合は、修正版をコミットすることまではできました。
 $ python3 --version Python 3.6.6 投稿内容の作成 ローカルのファイル群は Hugo を活用しています。そのため、投稿する内容以外にヘッダ情報が付与されています。ここを活用して、 Qiita に投稿するヘッダ情報も管理するようにします。 今回は、下記のようなヘッダ情報と投稿内容を作成していると仮定します。
@@ -24,28 +24,28 @@ $ python3 --version Python 3.6.6 投稿内容の作成 ローカルのファイ�
     
     <item>
       <title>virtualenvを利用したpython環境の構築(Windows編)</title>
-      <link>http://iimuz.github.io/scrapbook/programming/python/pythonwindows/</link>
+      <link>https://iimuz.github.io/scrapbook/programming/python/pythonwindows/</link>
       <pubDate>Sun, 04 Oct 2015 00:00:00 +0900</pubDate>
       
-      <guid>http://iimuz.github.io/scrapbook/programming/python/pythonwindows/</guid>
+      <guid>https://iimuz.github.io/scrapbook/programming/python/pythonwindows/</guid>
       <description>&lt;p&gt;Windows環境でvirtualenv環境を構築したときのメモ。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>python3.4でmatplotlibを導入したらグラフ表示できない問題の対処法</title>
-      <link>http://iimuz.github.io/scrapbook/programming/python/matplotlib/</link>
+      <link>https://iimuz.github.io/scrapbook/programming/python/matplotlib/</link>
       <pubDate>Sat, 03 Oct 2015 00:00:00 +0900</pubDate>
       
-      <guid>http://iimuz.github.io/scrapbook/programming/python/matplotlib/</guid>
+      <guid>https://iimuz.github.io/scrapbook/programming/python/matplotlib/</guid>
       <description>&lt;p&gt;Mac(Yosemite)のvirtualenv環境でmatplotlibを導入したら、導入できたのに表示できなかったので対処法メモ。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Macでpython環境の構築</title>
-      <link>http://iimuz.github.io/scrapbook/programming/python/pythonenvironment/</link>
+      <link>https://iimuz.github.io/scrapbook/programming/python/pythonenvironment/</link>
       <pubDate>Sat, 29 Aug 2015 00:00:00 +0900</pubDate>
       
-      <guid>http://iimuz.github.io/scrapbook/programming/python/pythonenvironment/</guid>
+      <guid>https://iimuz.github.io/scrapbook/programming/python/pythonenvironment/</guid>
       <description>MacでPython環境を構築した時のメモ。
 概要 MacでPython環境を構築した時のメモ。
 pyenv-virtualenvの導入 homebrew導入済みと仮定して、以下のコマンドでpyenv-virtualenvを導入する。

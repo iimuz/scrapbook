@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Others on しさく</title>
-    <link>http://iimuz.github.io/scrapbook/skill/others/</link>
+    <link>https://iimuz.github.io/scrapbook/skill/others/</link>
     <description>Recent content in Others on しさく</description>
     <generator>Hugo -- gohugo.io</generator>
     
-	<atom:link href="http://iimuz.github.io/scrapbook/skill/others/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://iimuz.github.io/scrapbook/skill/others/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>今後学ぼうと考えているプログラム言語をまとめてみる</title>
-      <link>http://iimuz.github.io/scrapbook/skill/others/progrmlanguage/</link>
+      <link>https://iimuz.github.io/scrapbook/skill/others/progrmlanguage/</link>
       <pubDate>Thu, 03 Sep 2015 00:00:00 +0900</pubDate>
       
-      <guid>http://iimuz.github.io/scrapbook/skill/others/progrmlanguage/</guid>
+      <guid>https://iimuz.github.io/scrapbook/skill/others/progrmlanguage/</guid>
       <description>何をするのに一般的に利用されているか、まとめてみる。
 概要 用途によって利用する言語は変えれば良いと思うが、 いくつか比較してみると、とりあえず使えるようになっておけば良い言語は以下の感じかな。
  C / C++: 現時点で一番利用しているから放置 Java: Androidアプリ開発で利用する Objective-C (Swift): iPhone/macアプリ開発で利用する Python: 学術系では強い Ruby: ???  比較対象言語  julia go lang javascript java python c++ swift ruby or ruby on rails haskel c#  TOIBE TOIBEは以下のような感じ。 そこから主観的に抜き出しておく。

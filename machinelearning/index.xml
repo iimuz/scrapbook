@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Machine Learning on しさく</title>
-    <link>http://iimuz.github.io/scrapbook/machinelearning/</link>
+    <link>https://iimuz.github.io/scrapbook/machinelearning/</link>
     <description>Recent content in Machine Learning on しさく</description>
     <generator>Hugo -- gohugo.io</generator>
     
-	<atom:link href="http://iimuz.github.io/scrapbook/machinelearning/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://iimuz.github.io/scrapbook/machinelearning/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Benchmarking Model-Based Reinforcement Learning</title>
-      <link>http://iimuz.github.io/scrapbook/machinelearning/benchmarking-model-based-reinforcement-learning/</link>
+      <link>https://iimuz.github.io/scrapbook/machinelearning/benchmarking-model-based-reinforcement-learning/</link>
       <pubDate>Tue, 13 Aug 2019 23:34:25 +0000</pubDate>
       
-      <guid>http://iimuz.github.io/scrapbook/machinelearning/benchmarking-model-based-reinforcement-learning/</guid>
+      <guid>https://iimuz.github.io/scrapbook/machinelearning/benchmarking-model-based-reinforcement-learning/</guid>
       <description>論文情報  title: Benchmarking Model-Based Reinforcement Learning author: Tingwu Wang, Xuchan Bao, Ignasi Clavera, Jerrick Hoang, Yeming Wen, Eric Langlois, Shunshi Zhang, Guodong Zhang, Pieter Abbeel, Jimmy Ba year: 2019/7/3 arxiv issue vanity Google Translate: vanity 比較データなど  どんなものか 強化学習の 14 手法に関して、同一のデータセットを利用して性能を比較した。
    Figure 3: The relative performance with different planning horizon.         先行研究と比べてどこがすごいのか 従来は、各手法で優位性を述べており、同一のデータセットで比較し、 相対的な性能の優位性を適切に述べているものがなかった。
 技術や手法のキモどこか OpenAI Gym という強化学習用のデータセットを利用して、 15 の環境で評価している。 また、ノイズを加えた状態も評価している。</description>
@@ -22,10 +22,10 @@
     
     <item>
       <title>Unsupervised Anomaly Detection with Generative Adversarial Networks to Guide Marker Discovery を読んで</title>
-      <link>http://iimuz.github.io/scrapbook/machinelearning/unsupervisedanomalydetectionwithgenerativeadversarialnetworkstoguidemarkerdiscovery/</link>
+      <link>https://iimuz.github.io/scrapbook/machinelearning/unsupervisedanomalydetectionwithgenerativeadversarialnetworkstoguidemarkerdiscovery/</link>
       <pubDate>Sun, 02 Sep 2018 11:27:34 +0900</pubDate>
       
-      <guid>http://iimuz.github.io/scrapbook/machinelearning/unsupervisedanomalydetectionwithgenerativeadversarialnetworkstoguidemarkerdiscovery/</guid>
+      <guid>https://iimuz.github.io/scrapbook/machinelearning/unsupervisedanomalydetectionwithgenerativeadversarialnetworkstoguidemarkerdiscovery/</guid>
       <description>arXivTimes で見つけた論文です。 GAN を利用した異常検知技術を調べていた時に見つけました。
 AnoGAN というネットワークを提案しています。 医療用画像を対象に、正常画像のみから、 GAN で学習していくようです。 このとき、 Generator は潜在空間から画像生成されると仮定します。 面白いのは、 GAN だけで完結しており、 検査時の入力画像は Auto Encoder のように再構成せず、 Generator から近い画像を生成するようにしているようです。 GAN は、潜在空間から画像は生成できるが、画像から潜在空間は変換できないはずです。 そこで、潜在空間は連続的に変化することから最初はランダムランプリングで潜在空間から画像を生成し、 近い画像へ潜在空間上を移動させるという処理を行うようです。 そのため、検査時に時間がかかる可能性はあるように思います。 また、残差誤差だけでなく、 Descriminator 側の出力も考慮して異常スコアを算出しているようです。
  実装例: LeeDoYup/AnoGAN 日本語で解説してくれている記事です。  GANによる医療画像の異常検知 【論文読み】GANを利用した異常検知まとめ   その他に、論文を読んでいるときに調べながら見つけた論文  Unsupervised Adversarial Anomaly Detection using One-Class Support Vector Machines One-Class Adversarial Nets for Fraud Detection    </description>

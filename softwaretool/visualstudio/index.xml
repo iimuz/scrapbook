@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Visual Studio on しさく</title>
-    <link>http://iimuz.github.io/scrapbook/softwaretool/visualstudio/</link>
+    <link>https://iimuz.github.io/scrapbook/softwaretool/visualstudio/</link>
     <description>Recent content in Visual Studio on しさく</description>
     <generator>Hugo -- gohugo.io</generator>
     
-	<atom:link href="http://iimuz.github.io/scrapbook/softwaretool/visualstudio/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://iimuz.github.io/scrapbook/softwaretool/visualstudio/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>VS2010 のデバッグ時に例外発生時で中断する方法</title>
-      <link>http://iimuz.github.io/scrapbook/softwaretool/visualstudio/debugexception/</link>
+      <link>https://iimuz.github.io/scrapbook/softwaretool/visualstudio/debugexception/</link>
       <pubDate>Fri, 05 Apr 2019 08:38:16 +0000</pubDate>
       
-      <guid>http://iimuz.github.io/scrapbook/softwaretool/visualstudio/debugexception/</guid>
+      <guid>https://iimuz.github.io/scrapbook/softwaretool/visualstudio/debugexception/</guid>
       <description>Visual Studio 2010 でデバッグ実行時に例外が発生したときに、 発生した時点で中断する設定です。 例外は発生したところがわからないとデバッグしにくく調べました。
 &amp;ldquo;デバッグ&amp;rdquo; -&amp;gt; &amp;ldquo;例外&amp;rdquo; をクリックし、 出てきたウィンドウでチェックを ON にすれば例外発生時に中断できます。
    例外設定画面         </description>

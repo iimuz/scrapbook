@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Others on しさく</title>
-    <link>http://iimuz.github.io/scrapbook/softwaretool/others/</link>
+    <link>https://iimuz.github.io/scrapbook/softwaretool/others/</link>
     <description>Recent content in Others on しさく</description>
     <generator>Hugo -- gohugo.io</generator>
     
-	<atom:link href="http://iimuz.github.io/scrapbook/softwaretool/others/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://iimuz.github.io/scrapbook/softwaretool/others/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Speaker Deck のスライド埋め込み (Embed) でサイズ指定</title>
-      <link>http://iimuz.github.io/scrapbook/softwaretool/others/speaker_deck_slide_size/</link>
+      <link>https://iimuz.github.io/scrapbook/softwaretool/others/speaker_deck_slide_size/</link>
       <pubDate>Sun, 21 Apr 2019 11:06:02 +0900</pubDate>
       
-      <guid>http://iimuz.github.io/scrapbook/softwaretool/others/speaker_deck_slide_size/</guid>
+      <guid>https://iimuz.github.io/scrapbook/softwaretool/others/speaker_deck_slide_size/</guid>
       <description>Speaker Deck の Embed リンクをそのまま利用すると、 横幅を全て使うようにスライドが埋め込まれます。 その結果、非常に巨大な資料が埋め込まれる場合があります。 資料のサイズは、親の要素に影響を受けているようですので、 下記のように div 要素でサイズを指定して囲むことでサイズ指定が可能となります。
 &amp;lt;div style=&amp;#34;width: 50%&amp;#34;&amp;gt; &amp;lt;script async class=&amp;#34;speakerdeck-embed&amp;#34; data-id=&amp;#34;55cac880f4d34c31b145afeffba11a77&amp;#34; data-ratio=&amp;#34;1.33333333333333&amp;#34; src=&amp;#34;//speakerdeck.com/assets/embed.js&amp;#34;&amp;gt;&amp;lt;/script&amp;gt; &amp;lt;div&amp;gt; 資料は、ちょうど読んでいたスライドを使わせていただいております。
 サイズ指定しない場合の埋め込み &amp;lt;script async class=&amp;#34;speakerdeck-embed&amp;#34; data-id=&amp;#34;55cac880f4d34c31b145afeffba11a77&amp;#34; data-ratio=&amp;#34;1.33333333333333&amp;#34; src=&amp;#34;//speakerdeck.com/assets/embed.js&amp;#34;&amp;gt;&amp;lt;/script&amp;gt; サイズ指定した場合の埋め込み &amp;lt;div style=&amp;#34;width: 50%&amp;#34;&amp;gt; &amp;lt;script async class=&amp;#34;speakerdeck-embed&amp;#34; data-id=&amp;#34;55cac880f4d34c31b145afeffba11a77&amp;#34; data-ratio=&amp;#34;1.33333333333333&amp;#34; src=&amp;#34;//speakerdeck.com/assets/embed.js&amp;#34;&amp;gt;&amp;lt;/script&amp;gt; &amp;lt;div&amp;gt; </description>
@@ -22,10 +22,10 @@
     
     <item>
       <title>Windows に SPICE のクライアントをインストールする</title>
-      <link>http://iimuz.github.io/scrapbook/softwaretool/others/install-spice-win/</link>
+      <link>https://iimuz.github.io/scrapbook/softwaretool/others/install-spice-win/</link>
       <pubDate>Wed, 06 Feb 2019 21:40:13 +0900</pubDate>
       
-      <guid>http://iimuz.github.io/scrapbook/softwaretool/others/install-spice-win/</guid>
+      <guid>https://iimuz.github.io/scrapbook/softwaretool/others/install-spice-win/</guid>
       <description>kvm で構築し GPU Passthrough した windows 環境で、 OpenGL を利用したソフトウェアを動かしました。 そのとき、 Spice というリモート接続するソフトウェアを利用したのですが、 windows 版のインストーラのダウンロード方法が分かりにくかったので、メモしておきます。
 windows の SPICE クライアントインストールは、なぜか virt viewer のインストールで行います。 (わかる人には分かるのでしょうが、インストールも SPICE Client とかの名称なら直感的に分かったのですが。) virt viewer というソフトウェアがそのまま spice のクライアントになります。 そのため、インストールには下記の手順でたどった先のファイルをダウンロードする必要があります。
  SPICE へ行く &amp;ldquo;Download&amp;rdquo; を開く 下記画像中(SPICE ダウンロードページ)の &amp;ldquo;virt-manager download page&amp;rdquo; を開く 下記画像中(Virt Manager ダウンロードページ)の &amp;ldquo;Win64 MSI&amp;rdquo; をクリックしてダウンロード     SPICE ダウンロードページ Virt Manager ダウンロードページ          </description>
@@ -33,10 +33,10 @@ windows の SPICE クライアントインストールは、なぜか virt viewe
     
     <item>
       <title>Colabratory に Cabocha をインストールする</title>
-      <link>http://iimuz.github.io/scrapbook/softwaretool/others/install-cabocha-in-colaboratory/</link>
+      <link>https://iimuz.github.io/scrapbook/softwaretool/others/install-cabocha-in-colaboratory/</link>
       <pubDate>Sun, 03 Feb 2019 21:58:03 +0900</pubDate>
       
-      <guid>http://iimuz.github.io/scrapbook/softwaretool/others/install-cabocha-in-colaboratory/</guid>
+      <guid>https://iimuz.github.io/scrapbook/softwaretool/others/install-cabocha-in-colaboratory/</guid>
       <description>概要 現在、 自然言語処理 100 本ノック に取り組んでいます。その中で、構文解析に CaboCha を使う必要がありました。実行環境には Google Colaboratory を使っています。 Ubuntu 環境へのインストール方法などは、見つかったのですが Colaboratory 用のインストール方法が見つかりませんでした。もしかしたら、どこかに記載があるのかもしれませんが、今回は覚書のためにも残しておきます。 Ubuntu などへのインストールでは、ソースコードの修正が必要と書かれていましたが、私が試したバージョンと環境では不要でした。手順としては、下記のようになります。
  MeCab のインストール CRF++ のインストール Cabocha のインストール  MeCab をインストールする 最初に MeCab をインストールします。ここまでは、色々な所にインストール方法が記載されていました。ただ、後半で swig が必要となるため、ここでインストールしてしまっています。
 !apt install -y \ curl \ file \ git \ libmecab-dev \ make \ mecab \ mecab-ipadic-utf8 \ swig \ xz-utils !pip install mecab-python3 CRF++ をインストールする 次に、 Cabocha の依存パッケージである CRF++ をインストールします。最新版の CRF++ はダウンロードページ(Google Drive)から取得できます。
@@ -45,10 +45,10 @@ import os filename_crfpp = &amp;#39;crfpp.</description>
     
     <item>
       <title>Windows で OpenSSH をドメイン環境下でインストール</title>
-      <link>http://iimuz.github.io/scrapbook/softwaretool/others/install-windows-openssh-under-domain/</link>
+      <link>https://iimuz.github.io/scrapbook/softwaretool/others/install-windows-openssh-under-domain/</link>
       <pubDate>Sat, 22 Dec 2018 12:06:17 +0900</pubDate>
       
-      <guid>http://iimuz.github.io/scrapbook/softwaretool/others/install-windows-openssh-under-domain/</guid>
+      <guid>https://iimuz.github.io/scrapbook/softwaretool/others/install-windows-openssh-under-domain/</guid>
       <description>Windows10 において、 &amp;ldquo;オプション機能の追加&amp;quot;から OpenSSH Server をインストールしたら失敗したので、 対処したときのメモです。
 結論としては、 WSUS (Windows Server Update System) が有効になっていて、 インストールできない場合があるようなので、 一時的に WSUS を無効にしてあげることで対応できるようです。
 OpenSSH Server のインストール手順 下記に手順を示します。
@@ -63,10 +63,10 @@ $ Get-WindowsCapability -Online | ? { $_.Name -like &amp;#39;OpenSSH*&amp;#39; }
     
     <item>
       <title>Hugo で baseurl を有効にする</title>
-      <link>http://iimuz.github.io/scrapbook/softwaretool/others/hugo-baseurl/</link>
+      <link>https://iimuz.github.io/scrapbook/softwaretool/others/hugo-baseurl/</link>
       <pubDate>Mon, 19 Nov 2018 06:51:02 +0900</pubDate>
       
-      <guid>http://iimuz.github.io/scrapbook/softwaretool/others/hugo-baseurl/</guid>
+      <guid>https://iimuz.github.io/scrapbook/softwaretool/others/hugo-baseurl/</guid>
       <description>Hugo で baseurl を有効にする場合の設定です。 root のみで運用する場合は、 baseURL を設定するだけでよいそうですが、 baseurl にサブディレクトリを指定する場合は、追加の設定が必要になります。
 Issue when baseurl have subdirectory によると、 config.toml において、 baseURL の指定に加えて、 RelativeURLs と CanonifyURLs を有効にする必要があります。
 baseURL = https://example.com/ RelativeURLs = true CanonifyURLs = true Using Hugo によると、 server モードの起動時に設定する場合は下記のようなコマンドになります。
@@ -75,10 +75,10 @@ $ hugo server --baseURL=http://yoursite.org/ \  --port=80 \  --appendPort=false 
     
     <item>
       <title>windows10 環境で cuda &#43; visual studio integration のインストールが失敗する</title>
-      <link>http://iimuz.github.io/scrapbook/softwaretool/others/cuda-vs-integration/</link>
+      <link>https://iimuz.github.io/scrapbook/softwaretool/others/cuda-vs-integration/</link>
       <pubDate>Mon, 17 Sep 2018 15:33:53 +0900</pubDate>
       
-      <guid>http://iimuz.github.io/scrapbook/softwaretool/others/cuda-vs-integration/</guid>
+      <guid>https://iimuz.github.io/scrapbook/softwaretool/others/cuda-vs-integration/</guid>
       <description>いったんは、下記の手順で CUDA をインストールできることを確認しました。 ただ、その後、バージョンアップなどでもインストールに失敗したので、 OS のクリーンインストールを行い、 windows ドライバのアップデートを初期に切ってから行うと、 アップデートなども正常にできるようになりました。 たぶん、他にも影響がある項目があるのだと思いますが、 詳細は分かっていないです。 できれば最初に windows のデバイスドライバの自動アップデートを 切ってしまったほうが楽だと思います。
 解決策としては、下記に記載の方法をとりました。
  CUDA 9.1 cannot install due to failed Visual Studio Integration  上記のうち実行したのは下記のような手順です。
@@ -87,20 +87,20 @@ $ hugo server --baseURL=http://yoursite.org/ \  --port=80 \  --appendPort=false 
     
     <item>
       <title>VS Code 上で vim キーバインドの実現</title>
-      <link>http://iimuz.github.io/scrapbook/softwaretool/others/vscode-vim/</link>
+      <link>https://iimuz.github.io/scrapbook/softwaretool/others/vscode-vim/</link>
       <pubDate>Sun, 02 Sep 2018 16:38:04 +0900</pubDate>
       
-      <guid>http://iimuz.github.io/scrapbook/softwaretool/others/vscode-vim/</guid>
+      <guid>https://iimuz.github.io/scrapbook/softwaretool/others/vscode-vim/</guid>
       <description>VS Code 上で vim キーバインドが使えないか調べたら、 GitHub: VSCodeVim/Vim というのがありました。 ほかのキーバインドとかぶったり、いくつか挙動が怪しかったりしますが、 モードの切り替えができるようになったので楽になりました。 本格的な作業自体は、 vim を使うのでちょっとした編集とかができれば十分なので、 これで問題ないような気がします。
 一点だけちょっと使いにくかったのが、 w での単語移動が日本語が続いていると次の行まで行ってしまいます。 多分半角スペースとか改行で判定されています。 せめて、ひらがなとかカタカナ、漢字の変わり目で止まってくれると嬉しいのですが。</description>
     </item>
     
     <item>
       <title>windows のプロダクトキーを変更する</title>
-      <link>http://iimuz.github.io/scrapbook/softwaretool/others/change_windows_product_key/</link>
+      <link>https://iimuz.github.io/scrapbook/softwaretool/others/change_windows_product_key/</link>
       <pubDate>Sun, 02 Sep 2018 12:50:12 +0900</pubDate>
       
-      <guid>http://iimuz.github.io/scrapbook/softwaretool/others/change_windows_product_key/</guid>
+      <guid>https://iimuz.github.io/scrapbook/softwaretool/others/change_windows_product_key/</guid>
       <description>MSDN のサブスクリプションとかに登録していると windows キーが複数手に入るのですが、 どの環境にどのキーを入れているかわからなくなって、 位置から対応させたくなったので、 windows のプロダクトキーを修正する方法です。 基本的には、下記のコマンドで登録・削除などができるようです。
  参考情報
  （違法じゃなく）無理やりプロダクトキーを変更する方法  </description>
@@ -108,19 +108,19 @@ $ hugo server --baseURL=http://yoursite.org/ \  --port=80 \  --appendPort=false 
     
     <item>
       <title>chrome のテキスト入力をローカルのエディタで行う</title>
-      <link>http://iimuz.github.io/scrapbook/softwaretool/others/ghosttext/</link>
+      <link>https://iimuz.github.io/scrapbook/softwaretool/others/ghosttext/</link>
       <pubDate>Sun, 02 Sep 2018 12:19:27 +0900</pubDate>
       
-      <guid>http://iimuz.github.io/scrapbook/softwaretool/others/ghosttext/</guid>
+      <guid>https://iimuz.github.io/scrapbook/softwaretool/others/ghosttext/</guid>
       <description>chrome でテキスト入力が多くなってくると、ローカルのエディタで編集したくなってきたので、 Chrome拡張のGhostText導入手順(Visual Studio Code編) に書いてあった GhostText と VSCode で実現できることを確認しました。 Chrome と VSCode のそれぞれにプラグインを導入すると chrome 側でテキスト入力したいときに、 Ctrl + K + L を押すと下記のような青枠がついた状態となって、 VSCode にテキストが同期されます。 すでに入力済みのテキストがあっても動作するので楽です。</description>
     </item>
     
     <item>
       <title>Gmailで&#43;付きのメールアドレスから送信する方法</title>
-      <link>http://iimuz.github.io/scrapbook/softwaretool/others/gmail-alias/</link>
+      <link>https://iimuz.github.io/scrapbook/softwaretool/others/gmail-alias/</link>
       <pubDate>Sun, 28 Jan 2018 15:49:46 +0900</pubDate>
       
-      <guid>http://iimuz.github.io/scrapbook/softwaretool/others/gmail-alias/</guid>
+      <guid>https://iimuz.github.io/scrapbook/softwaretool/others/gmail-alias/</guid>
       <description>結論 送信アドレスを直接設定できないのでGMailのアドレスに追加する。
 方法 GMailのページをPC環境で開き、設定から &amp;ldquo;アカウントとインポート&amp;rdquo; -&amp;gt; &amp;ldquo;名前&amp;rdquo; -&amp;gt; &amp;ldquo;他のメールアドレスを追加&amp;rdquo; で任意のアドレスを追加する。
 例 hoge@gmail.com の追加パターン hoge+geho@gmail.com を追加すると、送信アドレスに hoge+geho@gmail.com が追加される。
@@ -129,10 +129,10 @@ $ hugo server --baseURL=http://yoursite.org/ \  --port=80 \  --appendPort=false 
     
     <item>
       <title>windowsのコマンドプロンプトでdokcer &#43; vimを利用すると日本語を含む行で適切に表示されない</title>
-      <link>http://iimuz.github.io/scrapbook/softwaretool/others/cmd-vim-strange-cursor/</link>
+      <link>https://iimuz.github.io/scrapbook/softwaretool/others/cmd-vim-strange-cursor/</link>
       <pubDate>Sun, 03 Dec 2017 21:28:02 +0900</pubDate>
       
-      <guid>http://iimuz.github.io/scrapbook/softwaretool/others/cmd-vim-strange-cursor/</guid>
+      <guid>https://iimuz.github.io/scrapbook/softwaretool/others/cmd-vim-strange-cursor/</guid>
       <description>現象 日本語を含む行では、なぜか行末の位置を適切に表示できなくなり、編集などをすると表示とは別の位置に表示される。
 対処方法 コマンドプロンプトをutf-8にしていることが問題でした。 下記コマンドで、cp932に変更することで正常に動作することを確認しました。
 $ chcp 932 詳細 windows 7 + conemu + コマンドプロンプト + docker + vim で日本語表示した時に問題が発生していました。 他の環境での設定もあり、utf8にコマンドプロンプトの出力を変更していました。
@@ -143,10 +143,10 @@ $ chcp 65001 utf-8ファイルのgit diff出力などは、こうしておかな
     
     <item>
       <title>DockerでFessを動かします</title>
-      <link>http://iimuz.github.io/scrapbook/softwaretool/others/dockerfess/</link>
+      <link>https://iimuz.github.io/scrapbook/softwaretool/others/dockerfess/</link>
       <pubDate>Sun, 04 Dec 2016 12:56:10 +0000</pubDate>
       
-      <guid>http://iimuz.github.io/scrapbook/softwaretool/others/dockerfess/</guid>
+      <guid>https://iimuz.github.io/scrapbook/softwaretool/others/dockerfess/</guid>
       <description>概要 dockerでfess環境を構築します。 ただ、どうやってローカルのファイル検索結果を開くようにするかが問題です。 単純にダウンロードなら動作させられますが、 直接開きたいのです。(セキュリティ上Web利用だとしにくいのはわかっているのですが。)
 手順   docker hubからcodelib/fessのイメージをpullします。
   下記コマンドで実行します。
@@ -157,29 +157,29 @@ nginxのreverse proxy用設定 イメージをそのまま利用すると、loca
     
     <item>
       <title>Mac環境へのElectron導入方法</title>
-      <link>http://iimuz.github.io/scrapbook/softwaretool/others/electronenv/</link>
+      <link>https://iimuz.github.io/scrapbook/softwaretool/others/electronenv/</link>
       <pubDate>Mon, 28 Dec 2015 00:00:00 +0900</pubDate>
       
-      <guid>http://iimuz.github.io/scrapbook/softwaretool/others/electronenv/</guid>
+      <guid>https://iimuz.github.io/scrapbook/softwaretool/others/electronenv/</guid>
       <description>&lt;p&gt;Mac(El Capitan)へのElectron + coffee-script環境の導入手順。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>HubotのHello Worldスクリプトの作成方法</title>
-      <link>http://iimuz.github.io/scrapbook/softwaretool/others/hubotscripttutorial/</link>
+      <link>https://iimuz.github.io/scrapbook/softwaretool/others/hubotscripttutorial/</link>
       <pubDate>Tue, 03 Nov 2015 00:00:00 +0900</pubDate>
       
-      <guid>http://iimuz.github.io/scrapbook/softwaretool/others/hubotscripttutorial/</guid>
+      <guid>https://iimuz.github.io/scrapbook/softwaretool/others/hubotscripttutorial/</guid>
       <description>&lt;p&gt;HubotをSlackと接続するところまでできたので、自分用にカスタマイズするためにスクリプトを作ろうと思う。
 プログラムの練習をするのときの定番であるHello Worldを表示するまでの記録です。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Gmailにはない開発環境を求めて</title>
-      <link>http://iimuz.github.io/scrapbook/softwaretool/others/platformforit/</link>
+      <link>https://iimuz.github.io/scrapbook/softwaretool/others/platformforit/</link>
       <pubDate>Sun, 01 Nov 2015 00:00:00 +0900</pubDate>
       
-      <guid>http://iimuz.github.io/scrapbook/softwaretool/others/platformforit/</guid>
+      <guid>https://iimuz.github.io/scrapbook/softwaretool/others/platformforit/</guid>
       <description>&lt;p&gt;複数人でのソフトウェアの開発や在宅ワークなど働き方が多様化している中で、コミュニケーションツールとして旧来までのメールシステムに代わりチャットツールがある。
 メールシステムにも良さはあるもののフロー型のツールとしてはチャットツールの方が優れている点も多い。
 そこで、今回はチャットツールで最近(といっても結構経つが)ホットなSlackを導入し、Windows、Mac、Androidで共通の環境を利用できるまでの方法についてまとめる。&lt;/p&gt;</description>
@@ -187,19 +187,19 @@ nginxのreverse proxy用設定 イメージをそのまま利用すると、loca
     
     <item>
       <title>Windowsのパッケージ管理にchocolateyを導入したときのメモ</title>
-      <link>http://iimuz.github.io/scrapbook/softwaretool/others/chocolatey/</link>
+      <link>https://iimuz.github.io/scrapbook/softwaretool/others/chocolatey/</link>
       <pubDate>Sat, 03 Oct 2015 00:00:00 +0900</pubDate>
       
-      <guid>http://iimuz.github.io/scrapbook/softwaretool/others/chocolatey/</guid>
+      <guid>https://iimuz.github.io/scrapbook/softwaretool/others/chocolatey/</guid>
       <description>&lt;p&gt;Windowsのパッケージ管理にchocolateyを利用することにしてみたので、導入メモ。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>macでpandocを利用してpdfに変換しようとした時のトラブルメモ</title>
-      <link>http://iimuz.github.io/scrapbook/softwaretool/others/macpandocpdf/</link>
+      <link>https://iimuz.github.io/scrapbook/softwaretool/others/macpandocpdf/</link>
       <pubDate>Thu, 03 Sep 2015 00:00:00 +0900</pubDate>
       
-      <guid>http://iimuz.github.io/scrapbook/softwaretool/others/macpandocpdf/</guid>
+      <guid>https://iimuz.github.io/scrapbook/softwaretool/others/macpandocpdf/</guid>
       <description>Macでpandocを利用してpdfに変換しようとしたら文字化けして変換できなかったので、 変換できるように設定した時のメモ。
 概要 macのutf-8が特殊みたいで、一回変換をかませてあげる必要があるみたい。 コマンドとしては、以下のようにしてあげると変換できる。 長いので.bashrcとかにaliasか関数定義する方が早いかもしれない。
 $ iconv -c -f UTF-8-MAC -t UTF-8 hoge.md | pandoc -o hoge.pdf -f markdown -V documentclass=ltjarticle --latex-engine=lualatex 必要パッケージの導入 homebrewを利用して以下のパッケージを導入する。
@@ -212,10 +212,10 @@ $ pandoc -o hoge.</description>
     
     <item>
       <title>Macbook 12インチ(1.1GHz)の設定</title>
-      <link>http://iimuz.github.io/scrapbook/softwaretool/others/macsettings/</link>
+      <link>https://iimuz.github.io/scrapbook/softwaretool/others/macsettings/</link>
       <pubDate>Sun, 23 Aug 2015 00:00:00 +0900</pubDate>
       
-      <guid>http://iimuz.github.io/scrapbook/softwaretool/others/macsettings/</guid>
+      <guid>https://iimuz.github.io/scrapbook/softwaretool/others/macsettings/</guid>
       <description>macbookの設定をメモ。 初のmacbookなので設定がおかしいかもしれないが、おかしいのに気付いた時に直す。
 概要 macbookの設定で行ったことのまとめ。 ソフトウェアとか、設定の変更とか。
 ソフトウェア とりあえずApple Storeでインストールできるソフトは、AppStoreでインストールするが、 それ以外のソフトはHomebrewで管理することにした。
@@ -225,10 +225,10 @@ $ pandoc -o hoge.</description>
     
     <item>
       <title>メモ環境</title>
-      <link>http://iimuz.github.io/scrapbook/softwaretool/others/memoenvironment/</link>
+      <link>https://iimuz.github.io/scrapbook/softwaretool/others/memoenvironment/</link>
       <pubDate>Sun, 23 Aug 2015 00:00:00 +0900</pubDate>
       
-      <guid>http://iimuz.github.io/scrapbook/softwaretool/others/memoenvironment/</guid>
+      <guid>https://iimuz.github.io/scrapbook/softwaretool/others/memoenvironment/</guid>
       <description>クロスプラットフォームでメモ環境を構築しようとした時のメモ書き。
 概要 論文とかもmarkdown記法でテキストで書いてしまえる気がする。 長文も短文も全て書きだしをスムーズにしたいから、メモして行く方法を確立できないだろうか。
 メモ とりあえず、書き始めを基本はgoogle keepにする。 そして、そこから長くなってきたら後悔しても問題ない範囲ならgithubにしてしまえばどこからでも確認できる。 後悔したくないデータは、Dropboxに入れる。
@@ -242,19 +242,19 @@ Dropbox 一応プライベートな(ネットに繋がっている時点でプ�
     
     <item>
       <title>Unity導入</title>
-      <link>http://iimuz.github.io/scrapbook/softwaretool/others/unitytutorial/</link>
+      <link>https://iimuz.github.io/scrapbook/softwaretool/others/unitytutorial/</link>
       <pubDate>Sun, 26 Apr 2015 00:00:00 +0900</pubDate>
       
-      <guid>http://iimuz.github.io/scrapbook/softwaretool/others/unitytutorial/</guid>
+      <guid>https://iimuz.github.io/scrapbook/softwaretool/others/unitytutorial/</guid>
       <description>&lt;p&gt;Unityの環境を構築するまで。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Google Photosの画像URLを原画像サイズで取得する方法</title>
-      <link>http://iimuz.github.io/scrapbook/softwaretool/others/googlephotslink/</link>
+      <link>https://iimuz.github.io/scrapbook/softwaretool/others/googlephotslink/</link>
       <pubDate>Sat, 25 Apr 2015 00:00:00 +0900</pubDate>
       
-      <guid>http://iimuz.github.io/scrapbook/softwaretool/others/googlephotslink/</guid>
+      <guid>https://iimuz.github.io/scrapbook/softwaretool/others/googlephotslink/</guid>
       <description>&lt;p&gt;Google Photosの画像をJekyllで貼り付ける際に、
 画像サイズが勝手にリサイズされて小さくなっていたので、
 原画像サイズで取得して貼り付ける方法。&lt;/p&gt;</description>
