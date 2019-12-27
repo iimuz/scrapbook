@@ -1,7 +1,7 @@
 {
 	"version": 3,
 	"file": "styles.css",
-	"sourceRoot": "/workspace/notes",
+	"sourceRoot": "/workspace/scrapbook",
 	"sources": [
 		"themes/hugo-swift-theme/assets/sass/main.sass",
 		"assets/sass/_variables.sass",
