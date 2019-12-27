@@ -1,11 +1,10 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>git on しさく</title>
     <link>http://iimuz.github.io/scrapbook/tags/git/</link>
     <description>Recent content in git on しさく</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>ja-JP</language>
     <lastBuildDate>Tue, 29 Dec 2015 00:00:00 +0900</lastBuildDate>
     
 	<atom:link href="http://iimuz.github.io/scrapbook/tags/git/index.xml" rel="self" type="application/rss+xml" />
@@ -19,8 +18,8 @@
       <guid>http://iimuz.github.io/scrapbook/softwaretool/git/gitcouldnotexecuteeditor/</guid>
       <description>gitを利用していたら突然Could Not Execute Editorと言われたので解決方法です。 原因はよくわかっていないので、本当の対処方法があると思います。
 対処方法は、.gitフォルダにあるconfigファイルに以下を記載します。
-[core] editor = /usr/local/bin/vim  ここで記載するvimへのパスは、以下のコマンドで確認できます。
-$ which vim</description>
+[core] editor = /usr/local/bin/vim ここで記載するvimへのパスは、以下のコマンドで確認できます。
+$ which vim </description>
     </item>
     
     <item>
@@ -60,7 +59,6 @@ plugin系が使えないらしいので、
       
       <guid>http://iimuz.github.io/scrapbook/softwaretool/git/git/</guid>
       <description>&lt;h2 id=&#34;you-are-not-human&#34;&gt;You are not human&lt;/h2&gt;
-
 &lt;p&gt;GistBoxに登録して色々してたら、突然Gitに&lt;strong&gt;人間ではありません&lt;/strong&gt;と言われてしまった。
 原因は、GitsBoxから何度も消したり書いたりしたせいかもしれない。&lt;/p&gt;</description>
     </item>
@@ -71,17 +69,16 @@ plugin系が使えないらしいので、
       <pubDate>Mon, 13 Apr 2015 00:00:00 +0900</pubDate>
       
       <guid>http://iimuz.github.io/scrapbook/softwaretool/git/gitpages/</guid>
-      <description>&lt;h2 id=&#34;後で調べる&#34;&gt;後で調べる&lt;/h2&gt;
-
+      <description>&lt;h2 id=&#34;heading&#34;&gt;後で調べる&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;簡単な検索できない?
-
 &lt;ul&gt;
-&lt;li&gt;Googleカスタム検索?&lt;br /&gt;
+&lt;li&gt;Googleカスタム検索?&lt;br&gt;
 ⇒TOPのindex.htmlのみは検索に成功。それ以外ができない…。&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
 &lt;li&gt;ページの作成日だけでなく、更新日を自動でつけられない?&lt;/li&gt;
-&lt;li&gt;postした別のメモへのリンクは貼れないの?&lt;br /&gt;
+&lt;li&gt;postした別のメモへのリンクは貼れないの?&lt;br&gt;
 ⇒サイトの構成さえ知っていれば付けれなくはないが、どっかで置換したほうが確実な気がする。&lt;/li&gt;
 &lt;li&gt;タグのところに記事の件数を追加できない?&lt;/li&gt;
 &lt;li&gt;引用の文字が巨大すぎるんだけど直せないか?&lt;/li&gt;

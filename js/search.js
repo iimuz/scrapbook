@@ -1,91 +1,69 @@
-var lunrIndex, pagesIndex;
+var lunrIndex, $results, pagesIndex;
 
-function endsWith(str, suffix) {
-    return str.indexOf(suffix, str.length - suffix.length) !== -1;
-}
-
-// Initialize lunrjs using our generated index file
 function initLunr() {
-    if (!endsWith(baseurl,"/")){
-        baseurl = baseurl+'/'
-    };
-
-    // First retrieve the index file
-    $.getJSON(baseurl +"index.json")
-        .done(function(index) {
-            pagesIndex =   index;
-            // Set up lunrjs by declaring the fields we use
-            // Also provide their boost level for the ranking
-            lunrIndex = new lunr.Index
-            lunrIndex.ref("uri");
-            lunrIndex.field('title', {
-                boost: 15
-            });
-            lunrIndex.field('tags', {
-                boost: 10
-            });
-            lunrIndex.field("content", {
-                boost: 5
-            });
-
-            // Feed lunr with each file and let lunr actually index them
-            pagesIndex.forEach(function(page) {
-                lunrIndex.add(page);
-            });
-            lunrIndex.pipeline.remove(lunrIndex.stemmer)
-        })
-        .fail(function(jqxhr, textStatus, error) {
-            var err = textStatus + ", " + error;
-            console.error("Error getting Hugo index file:", err);
-        });
-}
-
-/**
- * Trigger a search in lunr and transform the result
- *
- * @param  {String} query
- * @return {Array}  results
- */
-function search(query) {
-    // Find the item in our index corresponding to the lunr one to have more info
-    return lunrIndex.search(query).map(function(result) {
-            return pagesIndex.filter(function(page) {
-                return page.uri === result.ref;
-            })[0];
-        });
-}
-
-// Let's get started
-initLunr();
-$( document ).ready(function() {
-    var searchList = new autoComplete({
-        /* selector for the search box element */
-        selector: $("#search-by").get(0),
-        /* source is the callback to perform the search */
-        source: function(term, response) {
-            response(search(term));
-        },
-        /* renderItem displays individual search results */
-        renderItem: function(item, term) {
-            var numContextWords = 2;
-            var text = item.content.match(
-                "(?:\\s?(?:[\\w]+)\\s?){0,"+numContextWords+"}" +
-                    term+"(?:\\s?(?:[\\w]+)\\s?){0,"+numContextWords+"}");
-            item.context = text;
-            return '<div class="autocomplete-suggestion" ' +
-                'data-term="' + term + '" ' +
-                'data-title="' + item.title + '" ' +
-                'data-uri="'+ item.uri + '" ' +
-                'data-context="' + item.context + '">' +
-                '» ' + item.title +
-                '<div class="context">' +
-                (item.context || '') +'</div>' +
-                '</div>';
-        },
-        /* onSelect callback fires when a search suggestion is chosen */
-        onSelect: function(e, term, item) {
-            console.log(item.getAttribute('data-val'));
-            location.href = item.getAttribute('data-uri');
-        }
+  $.getJSON("../index.json").done(function(index) {
+    pagesIndex = index;
+    lunrIndex = lunr(function() {
+      var lunrConfig = this;
+      lunrConfig.use(lunr.multiLanguage('en', 'jp'));
+      lunrConfig.ref("href");
+      lunrConfig.field("title", { boost: 10 });
+      lunrConfig.field("contents");
+      pagesIndex.forEach(function(page) {
+        lunrConfig.add(page);
+      });
     });
-});
+  })
+  .fail(function(jqxhr, textStatus, error) {
+    var err = textStatus + ", " + error;
+    console.error("Error getting Hugo index flie:", err);
+  });
+}
+
+function search(){
+  $results = $("#results");
+  $results.empty();
+  var query = document.getElementById('search-query').value;
+  if (query.length < 2) {
+    return;
+  }
+  renderResults(results(query));
+}
+
+function results(query) {
+  return lunrIndex.search(`*${query}*`).map(function(result) {
+    return pagesIndex.filter(function(page) {
+        return page.href === result.ref;
+    })[0];
+  });
+}
+
+function renderResults(results) {
+  if (!results.length) {
+    $results.append('<p>No matches found</p>');
+    return;
+  }
+
+  results = results.sort((x, y) => x.date > y.date)
+  results.forEach(function(result) {
+    var $result = $("<li>", { class: "post_search_item" });
+
+    var $excerpt = $("<div>", { class: "excerpt" });
+
+    var $title = $("<a>", { href: result.href });
+    $title.append($("<h3>", { class: "post_link", text: result.title }));
+    $excerpt.append($title);
+
+    $excerpt.append($("<p>", { text: result.date }));
+
+    length = 100;
+    if (length > result.contents.length) { length = result.contents.length; }
+    $excerpt.append($("<p>", { text: result.contents.slice(0, length) + " ..." }));
+
+    $result.append($excerpt);
+    $results.append($result);
+  });
+}
+
+initLunr();
+

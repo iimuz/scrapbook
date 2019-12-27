@@ -1,12 +1,10 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Raspberry Pi on しさく</title>
     <link>http://iimuz.github.io/scrapbook/hardware/raspberrypi/</link>
     <description>Recent content in Raspberry Pi on しさく</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>ja-JP</language>
-    <lastBuildDate>Sun, 28 Jul 2019 07:52:15 +0000</lastBuildDate>
     
 	<atom:link href="http://iimuz.github.io/scrapbook/hardware/raspberrypi/index.xml" rel="self" type="application/rss+xml" />
     
@@ -28,7 +26,7 @@ sudo apt-get install at-spi2-core  [solved ]Warning **: Error retrieving accessi
       <pubDate>Sun, 09 Jun 2019 06:34:27 +0000</pubDate>
       
       <guid>http://iimuz.github.io/scrapbook/hardware/raspberrypi/raspberrypi_static_ip/</guid>
-      <description> $ sudo vi /etc/dhcpcd.conf interface eth0 static ip_address=192.168.10.xxx/24 static domain_name_servers=8.8.8.8  デフォルトゲートウェイはroute -nで探す  参考資料  【Raspberry Pi 3B/3B+】スタティックなIPアドレス（固定IPアドレス）を設定する  </description>
+      <description>$ sudo vi /etc/dhcpcd.conf interface eth0 static ip_address=192.168.10.xxx/24 static domain_name_servers=8.8.8.8  デフォルトゲートウェイはroute -nで探す  参考資料  【Raspberry Pi 3B/3B+】スタティックなIPアドレス（固定IPアドレス）を設定する  </description>
     </item>
     
   </channel>

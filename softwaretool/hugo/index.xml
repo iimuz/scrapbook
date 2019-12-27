@@ -1,12 +1,10 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Hugo on しさく</title>
     <link>http://iimuz.github.io/scrapbook/softwaretool/hugo/</link>
     <description>Recent content in Hugo on しさく</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>ja-JP</language>
-    <lastBuildDate>Tue, 15 Nov 2016 21:41:53 +0900</lastBuildDate>
     
 	<atom:link href="http://iimuz.github.io/scrapbook/softwaretool/hugo/index.xml" rel="self" type="application/rss+xml" />
     
@@ -19,14 +17,14 @@
       <guid>http://iimuz.github.io/scrapbook/softwaretool/hugo/hugotex/</guid>
       <description>Hugo + Tex 私の場合メモするときは、PC使えるならばmarkdown型式のテキストで保存します。 ただ、よく数式をメモしたいときに書けなかったので、かける方法を探したところ、 markdown+Texができるようでしたので導入しました。 (Tex記法には慣れていないと書きにくいかもしれません)
 現在は、サイトジェネレーターとしてHugoを利用しており、今回はmathjaxを導入します。 (別にHugoでなくてもjsを読み込めば使えるはずです。) 導入すると下記のようにインラインと一行分の挿入の両方ができるようになります。
- インライン表示: $F(x) = \sum_{n=1}^{N} \frac{1}{N}$
+  インライン表示: $F(x) = \sum_{n=1}^{N} \frac{1}{N}$
 Markdownでは、$を一つ利用して下記のように記述しています。
-$F(x) = \sum_{n=1}^{N} \frac{1}{N}$ 一行表示 $$ F(x) = \sum_{n=1}^{N} \frac{1}{N} $$
+$F(x) = \sum_{n=1}^{N} \frac{1}{N}$   一行表示 $$ F(x) = \sum_{n=1}^{N} \frac{1}{N} $$
 Markdownでは、$を二つ利用して下記のように記述しています。
-$$F(x) = \sum_{n=1}^{N} \frac{1}{N}$$  加えて、Atomの場合は、パッケージを追加することでプレビューしながら編集できます。
+$$F(x) = \sum_{n=1}^{N} \frac{1}{N}$$   加えて、Atomの場合は、パッケージを追加することでプレビューしながら編集できます。
 設定方法 Hugo編 設定方法については、下記の2つのページを参考にしています。
  HuGo に Mathjax を入れて数式を表示できるようにした MathJax の導入  違いとしては、header.htmlではなくfooter.htmlに記載しました。 前半のスクリプトでインライン表示ができるようになります。
-&amp;lt;!-- tex --&amp;gt; &amp;lt;script type=&amp;#34;text/x-mathjax-config&amp;#34;&amp;gt; MathJax.Hub.Config({ tex2jax: { inlineMath: [[&amp;#39;$&amp;#39;,&amp;#39;$&amp;#39;], [&amp;#34;\\(&amp;#34;,&amp;#34;\\)&amp;#34;]] } }); &amp;lt;/script&amp;gt; &amp;lt;script type=&amp;#34;text/javascript&amp;#34; src=&amp;#34;https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML&amp;#34; /&amp;gt; &amp;lt;/script&amp;gt; Atom編 追加するパッケージは、markdown-preview-plusとmathjax-wrapperになります。 markdown-preview-plusがインストールできた段階で、 インストール済みのパッケージからmarkdown-previewをdiableにします。</description>
+&amp;lt;!--tex --&amp;gt; &amp;lt;script type=&amp;#34;text/x-mathjax-config&amp;#34;&amp;gt; MathJax.Hub.Config({ tex2jax: { inlineMath: [[&amp;#39;$&amp;#39;,&amp;#39;$&amp;#39;], [&amp;#34;\\(&amp;#34;,&amp;#34;\\)&amp;#34;]] } }); &amp;lt;/script&amp;gt; &amp;lt;script type=&amp;#34;text/javascript&amp;#34; src=&amp;#34;https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML&amp;#34; /&amp;gt; &amp;lt;/script&amp;gt; Atom編 追加するパッケージは、markdown-preview-plusとmathjax-wrapperになります。 markdown-preview-plusがインストールできた段階で、 インストール済みのパッケージからmarkdown-previewをdiableにします。</description>
     </item>
     
     <item>
@@ -41,41 +39,43 @@ Macでの環境構築になりますが、
 基本的にhugoをインストールしてthemeを設定しただけになります。
 jekyllではread moreをプラグインで挿入しなければなりませんでしたが、
 hugoでは標準で装備されていたりと設定が楽でした。&lt;/p&gt;
-
 &lt;p&gt;(2016/11/20追記)
 Bash On Ubuntu On Windowsを利用して、Hugo環境を構築した時のメモを追記しました。
 基本的にUbuntuでのインストール方法と同じになります。
 (今回はバイナリを公式サイトからダウンロードしてインストールする方法を利用しました。)&lt;/p&gt;
-
-&lt;h2 id=&#34;作業手順&#34;&gt;作業手順&lt;/h2&gt;
-
+&lt;h2 id=&#34;heading&#34;&gt;作業手順&lt;/h2&gt;
 &lt;ol&gt;
-&lt;li&gt;&lt;p&gt;Hugoをインストールします。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ brew file brew install hugo&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Ubuntuの場合は、.debファイルをダウンロードしてきてインストールします。
+&lt;li&gt;
+&lt;p&gt;Hugoをインストールします。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ brew file brew install hugo
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Ubuntuの場合は、.debファイルをダウンロードしてきてインストールします。
 (環境に合わせて適切なファイルをダウンロードして下しさい。)&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ sudo dpkg -i hugo_0.17-64bit.deb&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Hugoを利用して新規サイトを作成します。
- 今回の例では、新しくhoge-siteを作成する例になります。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ hugo new site hoge-site&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Hugoのテーマを設定します。
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ sudo dpkg -i hugo_0.17-64bit.deb
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Hugoを利用して新規サイトを作成します。
+今回の例では、新しくhoge-siteを作成する例になります。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ hugo new site hoge-site
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Hugoのテーマを設定します。
 今回は、&lt;a href=&#34;http://themes.gohugo.io&#34;&gt;Hugo Theme Site&lt;/a&gt;さんから
 &lt;a href=&#34;https://github.com/yoshiharuyamashita/blackburn&#34;&gt;BLACKBURN&lt;/a&gt;を選択しました。
 理由は、シンプルな構成であることとcssのみで構成されており軽そうなことです。&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ cd hoge-site
 $ mkdir themes
 $ cd themes
-$ git clone git@github.com:yoshiharuyamashita/blackburn.git blackburn&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Themeが適用されてサイトが構築できるかサーバーを建てて確認します。
+$ git clone git@github.com:yoshiharuyamashita/blackburn.git blackburn
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Themeが適用されてサイトが構築できるかサーバーを建てて確認します。
 今回は、blackburnのthemeになりますが、
 任意のthemeを利用した場合はblackburnの部分を設定したthemeに変えてください。&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ cd ..
-$ hugo server -t blackburn&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;サイトの設定を記載します。&lt;/p&gt;
+$ hugo server -t blackburn
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;サイトの設定を記載します。&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-toml&#34; data-lang=&#34;toml&#34;&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;title&lt;/span&gt; = &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;hoge&amp;#34;&lt;/span&gt;
 &lt;span style=&#34;color:#a6e22e&#34;&gt;baseurl&lt;/span&gt; = &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt;
 &lt;span style=&#34;color:#a6e22e&#34;&gt;languageCode&lt;/span&gt; = &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;ja-jp&amp;#34;&lt;/span&gt;
@@ -88,7 +88,8 @@ $ hugo server -t blackburn&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
 
 [&lt;span style=&#34;color:#a6e22e&#34;&gt;taxonomies&lt;/span&gt;]
   &lt;span style=&#34;color:#a6e22e&#34;&gt;category&lt;/span&gt; = &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;categories&amp;#34;&lt;/span&gt;
-  &lt;span style=&#34;color:#a6e22e&#34;&gt;tag&lt;/span&gt; = &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;tags&amp;#34;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+  &lt;span style=&#34;color:#a6e22e&#34;&gt;tag&lt;/span&gt; = &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;tags&amp;#34;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
 &lt;/ol&gt;</description>
     </item>
     

@@ -1,11 +1,10 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>oculus on しさく</title>
     <link>http://iimuz.github.io/scrapbook/tags/oculus/</link>
     <description>Recent content in oculus on しさく</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>ja-JP</language>
     <lastBuildDate>Tue, 26 May 2015 00:00:00 +0900</lastBuildDate>
     
 	<atom:link href="http://iimuz.github.io/scrapbook/tags/oculus/index.xml" rel="self" type="application/rss+xml" />
@@ -27,7 +26,7 @@
       <pubDate>Sun, 24 May 2015 00:00:00 +0900</pubDate>
       
       <guid>http://iimuz.github.io/scrapbook/hardware/others/oculusriftshare/</guid>
-      <description> Oculus rift dk2を利用して試したコンテンツ。
+      <description>Oculus rift dk2を利用して試したコンテンツ。
 コンテンツ とりあえず、個人的な感想で☆5つまでで評価。
  SightLine: The Chair ☆☆☆☆☆  綺麗だし、酔いにくいから面白い。 1回目より2回目のほうが、いろいろ動かせることがわかって面白い。
  Mona Lisa Room ☆☆☆  美術館の1部屋分を再現した感じなのかな?モナリザを見に行ったことがないから、わからない。
@@ -47,7 +46,7 @@
       <pubDate>Sat, 09 May 2015 00:00:00 +0900</pubDate>
       
       <guid>http://iimuz.github.io/scrapbook/hardware/others/oculusriftdk2setup/</guid>
-      <description> Oculus Rift DK2のセットアップをした時の導入手順メモ。
+      <description>Oculus Rift DK2のセットアップをした時の導入手順メモ。
 Headsetの設定 説明書が入っているので、それに沿ってコネクタ類を接続する。
 PCの設定 Qiita: Oculus Rift DK2をセットアップする手順を参考に順に設定を進める。
 Oculus VRでのアカウント作成 最初に公式サイトでアカウント作成を行う。
@@ -72,12 +71,12 @@ Oculus Configuration UtilityでTools -&amp;gt; Display ModeをExtend Desktop to 
 ⇒到着済み(2015.05.09)
 現状ステータス  2015/5/9: 受け取り完了。 2015/5/7: 一度配達されていることを確認。 2015/5/6: 日本に到着(FedExのログで確認)。  注文の流れ(2015/5/2) Oculus VRのページが日本語に対応しているので非常に簡単。 購入のページから一通り流されるままに記入して、支払うだけ。 以下のページの左上の購入から進む。
  Oculus VR  全部半角英数字での入力が必要となる。 英語表記だと県とか市とかどう表現するのが適切知らないので、全部日本語表記(Tokyotoなど)する。 ContryのみJapanとしておけば、日本にたどり着いてからは日本語が読める人が対応するはずだし、 そうすればローマ字表記は読めるはず。
-注文が成功すれば、入力したメールアドレスに&amp;rdquo;注文ありがとう&amp;rdquo;といったメールが来る。
+注文が成功すれば、入力したメールアドレスに&amp;quot;注文ありがとう&amp;quot;といったメールが来る。
  Oculus VR: ご注文ありがとうございます / ご注文番号 [xxxxxxxx]
 Thanks for your pre-order!
  確認と発送(2015/5/4) 発送が開始されてカードで請求できたら、以下のメールが来た。
  Oculus VR: Payment received for your pre-order
-You&amp;rsquo;re receiving this email because your Oculus Order xxxxx is about to ship, and we&amp;rsquo;ve charged the remaining balance to the credit card on file.</description>
+You&#39;re receiving this email because your Oculus Order xxxxx is about to ship, and we&#39;ve charged the remaining balance to the credit card on file.</description>
     </item>
     
   </channel>

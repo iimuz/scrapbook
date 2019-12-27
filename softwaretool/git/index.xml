@@ -1,12 +1,10 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>git on しさく</title>
     <link>http://iimuz.github.io/scrapbook/softwaretool/git/</link>
     <description>Recent content in git on しさく</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>ja-JP</language>
-    <lastBuildDate>Mon, 23 Sep 2019 06:26:52 +0000</lastBuildDate>
     
 	<atom:link href="http://iimuz.github.io/scrapbook/softwaretool/git/index.xml" rel="self" type="application/rss+xml" />
     
@@ -84,7 +82,7 @@ $ export LANG=ja_JP.UTF-8 恒常的に適用する場合は、 git for windows �
 コマンドとしては、下記のような構文になります。
 $ git worktree add path/to/dir -b new/branch source/branch 上記のようにすると、 source/branch をもとにして new/branch を作成し、 path/to/dir に新規でファイルが作成されます。 作業ディレクトリが干渉しないため、非常に使いやすいです。
 作業が終わったら作成したディレクトリは削除して、pruneすることでworktreeは削除できます。
-$ rm -rf path/to/dir $ git worktree prune</description>
+$ rm -rf path/to/dir $ git worktree prune </description>
     </item>
     
     <item>
@@ -93,7 +91,7 @@ $ rm -rf path/to/dir $ git worktree prune</description>
       <pubDate>Fri, 03 Aug 2018 20:22:31 +0900</pubDate>
       
       <guid>http://iimuz.github.io/scrapbook/softwaretool/git/stop-git-temp-diff/</guid>
-      <description> docker-composeを利用していたりすると環境変数ファイル(.env)とかに、 ローカル環境の変数をまとめていたりします。 その状態で、環境に合わせて環境変数ファイルを変更すると、 コミットしなくてよい変更が検出された状態になります。 add対象を慎重に選ぶという方法もあるのですが、 git statusとかで検出しないほうが楽なので、検出を停止する方法です。
+      <description>docker-composeを利用していたりすると環境変数ファイル(.env)とかに、 ローカル環境の変数をまとめていたりします。 その状態で、環境に合わせて環境変数ファイルを変更すると、 コミットしなくてよい変更が検出された状態になります。 add対象を慎重に選ぶという方法もあるのですが、 git statusとかで検出しないほうが楽なので、検出を停止する方法です。
 $ git update-index --assume-unchanged {ファイル名} # 除外 $ git update-index --no-assume-unchanged {ファイル名} # 解除 $ git ls-files -v | grep ^h # 設定ファイルの確認 注意点として、対象ファイルを本当に変更したときにコミット対象から外れていることに気づけないので、 そこは若干問題です。
 参考情報  A4 WORKS Official BLOG: Gitで一時的に”Changes not staged for commit”リストから外す  </description>
     </item>
@@ -117,7 +115,7 @@ $ git commit --allow-empty -m &amp;#34;resolve #id&amp;#34; また、このク�
       <description>このサイトを元記事をmarkdownで書いたらTravisCIでビルドするようにしたので、その際に行ったことのメモです。
 概要  TravisCIの登録 TravisCIから自動ビルド対象のリポジトリを設定 Travis Clientをインストールしてsshキーの暗号化 .travis.ymlからビルド方法を設定  sshキーの暗号化 TravisCIからpushするためには、sshを用いる設定としました。 この時、対象とするリポジトリのみに公開鍵を設定し、最悪秘密鍵が漏洩しても他には影響がないようにします。 また、秘密鍵はリポジトリに含める必要があるので、TravisClientを用いて暗号化します。
 暗号化するための環境 今回は、dockerを利用してtravis clientの環境を用意しました。 rubyが必要なので、ベースをrubyにして簡単に用意できます。
-FROMruby:2.5.0-stretchRUN gem install travis -v 1.8.8 --no-rdoc --no-ri 上記で作成したイメージを利用して、下記のように起動すればtravisコマンドが利用できる環境が使えます。
+FROMruby:2.5.0-stretchRUN gem install travis -v 1.8.8 --no-rdoc --no-ri上記で作成したイメージを利用して、下記のように起動すればtravisコマンドが利用できる環境が使えます。
 $ docker run --rm -it -v $(pwd):/src:rw localhost:travis-client bash 暗号化方法 travisコマンドを利用して暗号化します。
 $ travis login $ ssh-keygen -f travis_key $ travis encrypt-file travis_key 出来上がった.encファイルをコミットします。 また、作成時に openssl ... という行が出力されるのでコピーしておきます。 これは.travis.ymlに記載します。
 travis_key.pubはgithubに登録したら消してしまっていいと思います。 また、travis_keyはコミットせずに消去します。
@@ -133,8 +131,8 @@ after_success: - openssl # ここに先ほどコピーした内容を記述し�
       <guid>http://iimuz.github.io/scrapbook/softwaretool/git/gitcouldnotexecuteeditor/</guid>
       <description>gitを利用していたら突然Could Not Execute Editorと言われたので解決方法です。 原因はよくわかっていないので、本当の対処方法があると思います。
 対処方法は、.gitフォルダにあるconfigファイルに以下を記載します。
-[core] editor = /usr/local/bin/vim  ここで記載するvimへのパスは、以下のコマンドで確認できます。
-$ which vim</description>
+[core] editor = /usr/local/bin/vim ここで記載するvimへのパスは、以下のコマンドで確認できます。
+$ which vim </description>
     </item>
     
     <item>
@@ -174,7 +172,6 @@ plugin系が使えないらしいので、
       
       <guid>http://iimuz.github.io/scrapbook/softwaretool/git/git/</guid>
       <description>&lt;h2 id=&#34;you-are-not-human&#34;&gt;You are not human&lt;/h2&gt;
-
 &lt;p&gt;GistBoxに登録して色々してたら、突然Gitに&lt;strong&gt;人間ではありません&lt;/strong&gt;と言われてしまった。
 原因は、GitsBoxから何度も消したり書いたりしたせいかもしれない。&lt;/p&gt;</description>
     </item>
@@ -185,17 +182,16 @@ plugin系が使えないらしいので、
       <pubDate>Mon, 13 Apr 2015 00:00:00 +0900</pubDate>
       
       <guid>http://iimuz.github.io/scrapbook/softwaretool/git/gitpages/</guid>
-      <description>&lt;h2 id=&#34;後で調べる&#34;&gt;後で調べる&lt;/h2&gt;
-
+      <description>&lt;h2 id=&#34;heading&#34;&gt;後で調べる&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;簡単な検索できない?
-
 &lt;ul&gt;
-&lt;li&gt;Googleカスタム検索?&lt;br /&gt;
+&lt;li&gt;Googleカスタム検索?&lt;br&gt;
 ⇒TOPのindex.htmlのみは検索に成功。それ以外ができない…。&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
 &lt;li&gt;ページの作成日だけでなく、更新日を自動でつけられない?&lt;/li&gt;
-&lt;li&gt;postした別のメモへのリンクは貼れないの?&lt;br /&gt;
+&lt;li&gt;postした別のメモへのリンクは貼れないの?&lt;br&gt;
 ⇒サイトの構成さえ知っていれば付けれなくはないが、どっかで置換したほうが確実な気がする。&lt;/li&gt;
 &lt;li&gt;タグのところに記事の件数を追加できない?&lt;/li&gt;
 &lt;li&gt;引用の文字が巨大すぎるんだけど直せないか?&lt;/li&gt;

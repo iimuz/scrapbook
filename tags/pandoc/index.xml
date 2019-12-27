@@ -1,11 +1,10 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>pandoc on しさく</title>
     <link>http://iimuz.github.io/scrapbook/tags/pandoc/</link>
     <description>Recent content in pandoc on しさく</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>ja-JP</language>
     <lastBuildDate>Thu, 03 Sep 2015 00:00:00 +0900</lastBuildDate>
     
 	<atom:link href="http://iimuz.github.io/scrapbook/tags/pandoc/index.xml" rel="self" type="application/rss+xml" />
@@ -17,14 +16,14 @@
       <pubDate>Thu, 03 Sep 2015 00:00:00 +0900</pubDate>
       
       <guid>http://iimuz.github.io/scrapbook/softwaretool/others/macpandocpdf/</guid>
-      <description> Macでpandocを利用してpdfに変換しようとしたら文字化けして変換できなかったので、 変換できるように設定した時のメモ。
+      <description>Macでpandocを利用してpdfに変換しようとしたら文字化けして変換できなかったので、 変換できるように設定した時のメモ。
 概要 macのutf-8が特殊みたいで、一回変換をかませてあげる必要があるみたい。 コマンドとしては、以下のようにしてあげると変換できる。 長いので.bashrcとかにaliasか関数定義する方が早いかもしれない。
 $ iconv -c -f UTF-8-MAC -t UTF-8 hoge.md | pandoc -o hoge.pdf -f markdown -V documentclass=ltjarticle --latex-engine=lualatex 必要パッケージの導入 homebrewを利用して以下のパッケージを導入する。
- pandoc  今回の変換のためには、pandocが必要なので導入する。 pandoc自体は結構いろんな形式に変換できる。  mactex  pandocでpdfに変換するためには、 一旦texに変換して、それをpdfに変換する必要がある。   コマンドとしては以下でインストールされるはず。
+ pandoc  今回の変換のためには、pandocが必要なので導入する。 pandoc自体は結構いろんな形式に変換できる。   mactex  pandocでpdfに変換するためには、 一旦texに変換して、それをpdfに変換する必要がある。    コマンドとしては以下でインストールされるはず。
 $ brew install pandoc $ brew cask install mactex pdf変換コマンドの説明 文字エンコードの変更(UTF-8-MAC to UTF-8) texへ変換する前に、macのutf-8を普通のutf-8に変換する。 ただし、以下のコマンドを実行するだけでは、単にコマンドラインにutf-8の文字列が出力されるだけ。 長い文章のファイルに対して行うと結構ずらっとでるので注意。
 たまに変換エラーがでるので、変換できなくても無視して続けるようにするために、-cオプションを追加しておく。
 $ iconv -c -f UTF-8-MAC -t UTF-8 hoge.md texからpdfへ ファイル形式がmarkdownのファイルを、texを利用してpdfに変換する。
-$ pandoc -o hoge.pdf -f markdown, -V documentclass=ltjarticle --latex-engine=lualatex  -f markdown  マークダウンファイルを変換  -V documentclass=ltjarticle --latex-engine=lualatex  lualatexを利用して変換する   </description>
+$ pandoc -o hoge.</description>
     </item>
     
   </channel>

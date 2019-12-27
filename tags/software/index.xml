@@ -1,11 +1,10 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>software on しさく</title>
     <link>http://iimuz.github.io/scrapbook/tags/software/</link>
     <description>Recent content in software on しさく</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>ja-JP</language>
     <lastBuildDate>Fri, 05 Apr 2019 08:38:16 +0000</lastBuildDate>
     
 	<atom:link href="http://iimuz.github.io/scrapbook/tags/software/index.xml" rel="self" type="application/rss+xml" />
@@ -42,8 +41,8 @@ windows の SPICE クライアントインストールは、なぜか virt viewe
       <description>Qt Creator を利用した場合にリモートデバッグを行うこと自体は公式に方法がああります。
 Launching the Debugger
 サンプルの OpenGL を利用していると思われるプロジェクトでリモートデバッグできることを確認しました。 下記のような用語を用いるとします。
- ホスト PC: 開発した exe を実行する PC  exe の実行に必要なバイナリやインストールのみを実行  サーバ PC: 開発用環境を構築した PC  ビルドするために QtCreator や Visual Studio をインストール   事前条件として下記の作業を行っています。
- ホスト PC  Visual Studio Professional 2013 Update5 のインストール QtCreator 5.6.4 のインストール Windows SDK のインストール(他のチェックボックスはすべて外しています。)  サーバ PC  Windows SDK の Remote Debugger ツールをインストール(他のチェックボックスはすべて外しています。) サーバ PC の qtcreatorcdbext.dll (32bit or 64bit) を任意のディレクトリ (qtlib) へコピー   その上で下記のような手順でデバッガを起動します。</description>
+ ホスト PC: 開発した exe を実行する PC  exe の実行に必要なバイナリやインストールのみを実行   サーバ PC: 開発用環境を構築した PC  ビルドするために QtCreator や Visual Studio をインストール    事前条件として下記の作業を行っています。
+ ホスト PC  Visual Studio Professional 2013 Update5 のインストール QtCreator 5.6.4 のインストール Windows SDK のインストール(他のチェックボックスはすべて外しています。)   サーバ PC  Windows SDK の Remote Debugger ツールをインストール(他のチェックボックスはすべて外しています。) サーバ PC の qtcreatorcdbext.dll (32bit or 64bit) を任意のディレクトリ (qtlib) へコピー    その上で下記のような手順でデバッガを起動します。</description>
     </item>
     
     <item>
@@ -67,7 +66,7 @@ cdb/Windbgの使い方のメモ にまとめられていました。
 コマンド一覧の取得は単純に ? でできます。
 0:000&amp;gt; ?  実行関連
 順にgdbにおけるcontinue、nexti（関数の中に入らない）、stepi（関数の中に入る）、finish（リターンするまで進める）に対応する。
- 0:000&amp;gt; g 0:000&amp;gt; p 0:000&amp;gt; t 0:000&amp;gt; gu</description>
+ 0:000&amp;gt; g 0:000&amp;gt; p 0:000&amp;gt; t 0:000&amp;gt; gu </description>
     </item>
     
     <item>
@@ -100,12 +99,16 @@ git svn clone -T project_a svn://hoge/trunk/ trunk の直前までの URL を書
       <pubDate>Sat, 22 Dec 2018 12:06:17 +0900</pubDate>
       
       <guid>http://iimuz.github.io/scrapbook/softwaretool/others/install-windows-openssh-under-domain/</guid>
-      <description>Windows10 において、 &amp;ldquo;オプション機能の追加&amp;rdquo;から OpenSSH Server をインストールしたら失敗したので、 対処したときのメモです。
+      <description>Windows10 において、 &amp;ldquo;オプション機能の追加&amp;quot;から OpenSSH Server をインストールしたら失敗したので、 対処したときのメモです。
 結論としては、 WSUS (Windows Server Update System) が有効になっていて、 インストールできない場合があるようなので、 一時的に WSUS を無効にしてあげることで対応できるようです。
 OpenSSH Server のインストール手順 下記に手順を示します。
- Win + R を押して、 regedit で OK を押す。 管理者権限に昇格してレジストリエディタを開く。 HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\AU に移動する。 UseWUServer の値を 0 とする。 WSUS を再起動する。
-$ net stop wuauserv &amp;amp;&amp;amp; net start wuauserv OpenSSH Server をインストールする。
-$ Get-WindowsCapability -Online | ? { $_.Name -like &amp;#39;OpenSSH*&amp;#39; } $ Add-WindowsCapability -Online -Name &amp;#39;OpenSSH.Server~~~~0.0.1.0&amp;#39; Firewall から 22 番ポートを開放する</description>
+  Win + R を押して、 regedit で OK を押す。
+  管理者権限に昇格してレジストリエディタを開く。
+  HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\AU に移動する。
+  UseWUServer の値を 0 とする。
+  WSUS を再起動する。
+$ net stop wuauserv &amp;amp;&amp;amp; net start wuauserv   OpenSSH Server をインストールする。
+$ Get-WindowsCapability -Online | ? { $_.Name -like &amp;#39;OpenSSH*&amp;#39; } $ Add-WindowsCapability -Online -Name &amp;#39;OpenSSH.</description>
     </item>
     
   </channel>

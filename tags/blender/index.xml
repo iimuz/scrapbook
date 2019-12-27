@@ -1,11 +1,10 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>blender on しさく</title>
     <link>http://iimuz.github.io/scrapbook/tags/blender/</link>
     <description>Recent content in blender on しさく</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>ja-JP</language>
     <lastBuildDate>Wed, 06 May 2015 00:00:00 +0900</lastBuildDate>
     
 	<atom:link href="http://iimuz.github.io/scrapbook/tags/blender/index.xml" rel="self" type="application/rss+xml" />
@@ -88,19 +87,17 @@ Blender: GitHub: fluidSimulation
       <pubDate>Tue, 14 Apr 2015 00:00:00 +0900</pubDate>
       
       <guid>http://iimuz.github.io/scrapbook/softwaretool/blender/blender/</guid>
-      <description>&lt;h2 id=&#34;目標&#34;&gt;目標&lt;/h2&gt;
-
+      <description>&lt;h2 id=&#34;heading&#34;&gt;目標&lt;/h2&gt;
 &lt;p&gt;とりあえず一週間位(実質初版完成まで2、3日)で、
 結婚式の余興のためにアニメーションを作成する必要がある。
 前回は、Adobe After Effects(?)で作成したが体験版の期間が終わったので、
 利用できなくなった。
 そこで、今回はBlenderのみでアニメーション作成したい。
 作りたいイメージは、以下のような感じ。&lt;/p&gt;
-
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=wtKILj--9XY&amp;amp;feature=youtu.be&#34;&gt;Motion graphics line performance in Japan&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=dUB5gH41Qg0&amp;amp;feature=youtu.be&#34;&gt;映画風オープニングムービー・動画制作・動画素材・タイトル動画 0019&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=hriQaGUAJLU&amp;amp;feature=youtu.be&#34;&gt;『SMAP LIVE Opening』1991&amp;rsquo;97&amp;rsquo;98&amp;rsquo;99&amp;rsquo;00&amp;rsquo;01&amp;rsquo;02&amp;rsquo;03&amp;rsquo;05&amp;rsquo;06&amp;rsquo;08&amp;rsquo;10&amp;rsquo;12&amp;rsquo;ver&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=hriQaGUAJLU&amp;amp;feature=youtu.be&#34;&gt;『SMAP LIVE Opening』1991&#39;97&#39;98&#39;99&#39;00&#39;01&#39;02&#39;03&#39;05&#39;06&#39;08&#39;10&#39;12&#39;ver&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</description>
     </item>
     

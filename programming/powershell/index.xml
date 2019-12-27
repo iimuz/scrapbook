@@ -1,12 +1,10 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Powershell on しさく</title>
     <link>http://iimuz.github.io/scrapbook/programming/powershell/</link>
     <description>Recent content in Powershell on しさく</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>ja-JP</language>
-    <lastBuildDate>Wed, 30 Jan 2019 22:28:29 +0900</lastBuildDate>
     
 	<atom:link href="http://iimuz.github.io/scrapbook/programming/powershell/index.xml" rel="self" type="application/rss+xml" />
     
@@ -29,7 +27,7 @@ Power Shell でファイルをダウンロードする で基本のダウンロ�
       
       <guid>http://iimuz.github.io/scrapbook/programming/powershell/ps1-symboliclink/</guid>
       <description>powershellにおいてシンボリックリンクをpowershellのコマンドで作ることができるようです。 従来はcmdの mklink を利用していた部分を new-item で置き換えることができます。
-$ cmd /c mklink dst src # 従来のcmdによるコマンド $ New-Item -Type SymbolicLink -Path dst -Value src</description>
+$ cmd /c mklink dst src # 従来のcmdによるコマンド $ New-Item -Type SymbolicLink -Path dst -Value src </description>
     </item>
     
     <item>
@@ -48,7 +46,7 @@ $ Enter-PSSession ip $ New-PSDrive DriveName -PSProvider FileSystem -Root \\remo
       <pubDate>Fri, 02 Mar 2018 21:56:07 +0900</pubDate>
       
       <guid>http://iimuz.github.io/scrapbook/programming/powershell/powershell-tcp/</guid>
-      <description> powershellで、ncコマンドのようなことをするために調べたメモです。
+      <description>powershellで、ncコマンドのようなことをするために調べたメモです。
 成果物 下記のようなpowershellスクリプトを用意し、実行することでncコマンドのようなことが実現できました。
  参考資料  bashでtcpや利用して文字列を送信する方法 ncコマンドの使い方 windowsでtcpのポート確認方法 powershellでnetcatスクリプト powershellで繰り返しバッファ送信  </description>
     </item>
@@ -62,11 +60,11 @@ $ Enter-PSSession ip $ New-PSDrive DriveName -PSProvider FileSystem -Root \\remo
       <description>powershellスクリプトを書くときに、helpコメントやwhatifなどの標準機能を利用できるように調べたときのメモです。
 最終テンプレート  何ができるか 上記テンプレートに従って書いた場合に何ができるようになるかというと、下記の標準機能が利用できます。
 Get-Help ヘルプ表示をすることでスクリプトの処理内容をチェックすることができます。 また、引数などについても確認できるようになります。
-# Helpの取得 $ Get-Help hoge.ps1 # 使用例などを含めてHelpを取得 $ Get-Hellp hoge.ps1 -detailed # 全てのヘルプとピックを取得 $ Get-Help hoge.ps1 -full  WhatIf 実行時にdryrunをするためには、powershellコマンドの場合はWhatIfが使われますが、 このWhatIfをスクリプト内に伝搬することが可能になります。 そのため、下記のようにスクリプトを実行すると、dryrunが実現できます。
-$ .\hoge.ps1 -WhatIf  その他のスクリプトを書くときの注意点 標準出力系 powershellの場合、出力に関しては下記のパターンが用意されているので、使った方がデバッグが楽に行えると思います。
+# Helpの取得 $ Get-Help hoge.ps1 # 使用例などを含めてHelpを取得 $ Get-Hellp hoge.ps1 -detailed # 全てのヘルプとピックを取得 $ Get-Help hoge.ps1 -full WhatIf 実行時にdryrunをするためには、powershellコマンドの場合はWhatIfが使われますが、 このWhatIfをスクリプト内に伝搬することが可能になります。 そのため、下記のようにスクリプトを実行すると、dryrunが実現できます。
+$ .\hoge.ps1 -WhatIf その他のスクリプトを書くときの注意点 標準出力系 powershellの場合、出力に関しては下記のパターンが用意されているので、使った方がデバッグが楽に行えると思います。
  Write-Verbose Write-Host Write-Warning Write-Error Write-Debug  上記のうち、Host、Warnng、Errorは何もしなくても出力されます。 一方、VerboseとDebugは下記のようにスクリプトを実行すれば、実行時のみ出力することができます。 注意点として、Debugフラグをつけた場合はInquireになるため、メッセージの場所で続行するか否かの選択肢が毎回発生します。
-# output verbose message $ .\hoge.ps1 -Verbose # output debug message(inquire) $ .\hoge.ps1 -Debug  進捗バー 処理量が多い時などは、下記のように進捗バーを出すことが簡単にできます。
-for ($I = 0; $I -le 100; ++$I) { Write-Progress -Activity &amp;quot;Hoge Process&amp;quot; -Status &amp;quot;Hoge $I&amp;quot; -PercentComplete $I }  -PercentComplete は、100分率で記載すれば良いようです。</description>
+# output verbose message $ .\hoge.ps1 -Verbose # output debug message(inquire) $ .\hoge.ps1 -Debug 進捗バー 処理量が多い時などは、下記のように進捗バーを出すことが簡単にできます。
+for ($I = 0; $I -le 100; ++$I) { Write-Progress -Activity &amp;quot;Hoge Process&amp;quot; -Status &amp;quot;Hoge $I&amp;quot; -PercentComplete $I } -PercentComplete は、100分率で記載すれば良いようです。</description>
     </item>
     
     <item>
@@ -75,8 +73,8 @@ for ($I = 0; $I -le 100; ++$I) { Write-Progress -Activity &amp;quot;Hoge Process
       <pubDate>Mon, 29 May 2017 14:01:34 +0000</pubDate>
       
       <guid>http://iimuz.github.io/scrapbook/programming/powershell/windows-symlink-from-remote/</guid>
-      <description> 概要 windowsを利用していてネットワークドライブにあるsymlinkのディレクトリの情報を powershellから取得する方法を調べました。 セキュリティとしては甘くなるようです。
-# 現在の設定を確認する $ fsutil behavior query symlinkevaluation # リモートでのシンボリックリンクを有効にする $ fsutil behavior set symlinkevaluation r2r:1 r2l:1</description>
+      <description>概要 windowsを利用していてネットワークドライブにあるsymlinkのディレクトリの情報を powershellから取得する方法を調べました。 セキュリティとしては甘くなるようです。
+# 現在の設定を確認する $ fsutil behavior query symlinkevaluation # リモートでのシンボリックリンクを有効にする $ fsutil behavior set symlinkevaluation r2r:1 r2l:1 </description>
     </item>
     
   </channel>

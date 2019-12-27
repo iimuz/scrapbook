@@ -1,12 +1,10 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Go on しさく</title>
     <link>http://iimuz.github.io/scrapbook/programming/go/</link>
     <description>Recent content in Go on しさく</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>ja-JP</language>
-    <lastBuildDate>Sat, 22 Dec 2018 12:58:56 +0900</lastBuildDate>
     
 	<atom:link href="http://iimuz.github.io/scrapbook/programming/go/index.xml" rel="self" type="application/rss+xml" />
     
@@ -30,7 +28,7 @@ $ go test --cover ./... -coverprofile=./bin/cover.out $ go tool cover -html=./bi
       
       <guid>http://iimuz.github.io/scrapbook/programming/go/golang-cross-build/</guid>
       <description>Golang で一括で各プラットフォー用のバイナリを生成するコマンドの書き方を調べた時のメモです。 結論としては、下記のコードで一括でバイナリを生成できます。 対象のプラットフォームを増やす場合は、 for 文の要素を増やせばできます。
- 一点だけ問題があり、 windows のみ実行ファイルの拡張子として .exe を付ける必要があります。 そのため、上記のままでは windows 側で実行ファイルとして認識してくれません。 リネームすればよいのですが、 簡単な if 文程度で分岐できないでしょうか。</description>
+一点だけ問題があり、 windows のみ実行ファイルの拡張子として .exe を付ける必要があります。 そのため、上記のままでは windows 側で実行ファイルとして認識してくれません。 リネームすればよいのですが、 簡単な if 文程度で分岐できないでしょうか。</description>
     </item>
     
   </channel>

@@ -1,11 +1,10 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>python on しさく</title>
     <link>http://iimuz.github.io/scrapbook/tags/python/</link>
     <description>Recent content in python on しさく</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>ja-JP</language>
     <lastBuildDate>Sun, 18 Nov 2018 15:33:13 +0900</lastBuildDate>
     
 	<atom:link href="http://iimuz.github.io/scrapbook/tags/python/index.xml" rel="self" type="application/rss+xml" />
@@ -31,13 +30,13 @@ $ python3 --version Python 3.6.6 投稿内容の作成 ローカルのファイ�
       
       <guid>http://iimuz.github.io/scrapbook/softwaretool/docker/pythonenvwithdocker/</guid>
       <description>目標 深層学習の勉強で実際に実行できる環境を整えようと思ったのですが、 以前から入っているpython環境とは別にしたいのでDockerで構築してみました。
-pythonにインストールするライブラリは、 O&amp;rsquo;REILLY ゼロから作るDeep Learningが動作する環境です。 したがって、下記の環境になります。
+pythonにインストールするライブラリは、 O&#39;REILLY ゼロから作るDeep Learningが動作する環境です。 したがって、下記の環境になります。
  Python 3.x NumPy Matplotlib  結論 python環境を構築するdockerファイルは下記になりました。 もはやdockerfile必要なのかというレベルで何も書いていないです。(楽すぎます)
-FROMpython:3.5.2RUN pip install numpy matplotlib 理由 python環境であればpyenvとか利用すれば、環境は分離できるのですが、 利用しているPCがMacとWindowsの両方あります(Macの方が性能が低いです)、 Macの方がプログラミングはしやすいのですが、 深層学習には軽い実験をするのにもマシンパワーが必要となるため、 実行だけはWindowsでやりたいわけです。 MacとWindowsで同じように動く環境を構築するのがめんどくさいという理由です。
+FROMpython:3.5.2RUN pip install numpy matplotlib理由 python環境であればpyenvとか利用すれば、環境は分離できるのですが、 利用しているPCがMacとWindowsの両方あります(Macの方が性能が低いです)、 Macの方がプログラミングはしやすいのですが、 深層学習には軽い実験をするのにもマシンパワーが必要となるため、 実行だけはWindowsでやりたいわけです。 MacとWindowsで同じように動く環境を構築するのがめんどくさいという理由です。
 注意 Dokcerと深層学習のフレームワーク Tensorflowを利用するならばDockerに公式があります TensorflowのDockerイメージは、Docker Hubにあります。
 PUBLIC REPOSITORY:tensorflow/tensorflow
 上記イメージは、python2.7になります。 python3系のdockerイメージは公開されていないそうです。 python3系でTensorFlowを利用したい場合は、 公式からForkしてPython3対応を公開されている方がいらっしゃいましたので、 以下を利用すれば良いと思います。
- khm/tensorflow: branch/feature-py3 TensorFlow の Docker Image を Python3 で動かす  その他  Docker Habに公式イメージがあるフレームワーク  PUBLIC | AUTOMATED BUILD chainer/chainer  公式が見つからなかったフレームワーク  Caffe DeepDream   MacとWindowsではGPUの利用はできません 深層学習で遊ぶためにはGPGPUを利用した方が高速に処理できます。 (場合によってはCPUでは現実時間で終わりません。) ただし、MacかWindowsでDockerを利用する場合、GPUデバイスにアクセスできないため、 CPU実行しかできません。 必要に応じてLinux環境が純粋に入っているPCを用意する必要がありそうです。</description>
+ khm/tensorflow: branch/feature-py3 TensorFlow の Docker Image を Python3 で動かす  その他  Docker Habに公式イメージがあるフレームワーク  PUBLIC | AUTOMATED BUILD chainer/chainer   公式が見つからなかったフレームワーク  Caffe DeepDream    MacとWindowsではGPUの利用はできません 深層学習で遊ぶためにはGPGPUを利用した方が高速に処理できます。 (場合によってはCPUでは現実時間で終わりません。) ただし、MacかWindowsでDockerを利用する場合、GPUデバイスにアクセスできないため、 CPU実行しかできません。 必要に応じてLinux環境が純粋に入っているPCを用意する必要がありそうです。</description>
     </item>
     
     <item>
@@ -68,13 +67,13 @@ PUBLIC REPOSITORY:tensorflow/tensorflow
 概要 MacでPython環境を構築した時のメモ。
 pyenv-virtualenvの導入 homebrew導入済みと仮定して、以下のコマンドでpyenv-virtualenvを導入する。
 $ homebrew update $ homebrew install pyenv-virtualenv ついでに、.bash_profileに以下を記述して、パスを通す。
-export PYENV_ROOT=&amp;quot;${HOME}/.pyenv&amp;quot; if [ -d &amp;quot;${PYENV_ROOT}&amp;quot; ]; then export PATH=${PYENV_ROOT}/bin:$PATH eval &amp;quot;$(pyenv init -)&amp;quot; fi  pythonのインストールは、バージョン確認して好きなのを選択すれば良い。
+export PYENV_ROOT=&amp;quot;${HOME}/.pyenv&amp;quot; if [ -d &amp;quot;${PYENV_ROOT}&amp;quot; ]; then export PATH=${PYENV_ROOT}/bin:$PATH eval &amp;quot;$(pyenv init -)&amp;quot; fi pythonのインストールは、バージョン確認して好きなのを選択すれば良い。
 $ pyenv install 3.4.3 以下のエラーがでた時はXCodeを導入すれば良いので、追加でXCodeのインストールコマンドも行う。
  ERROR: The Python ssl extension was not compiled. Missing the OpenSSL lib?
  $ xcode-select --install 利用するバージョンを変更するために以下のコマンドを実行する。
 $ pyenv global 3.4.3 $ pyenv rehash virtualenvの利用方法 virutalenvは、pythonの環境を構築できる。 pyenvがバージョンの管理とすると、virtualenvはライブラリなどの環境管理が可能。 pyenvの3.4.3に対して、インストールするライブラリを変更して用意することができる。
 環境を新しく作る方法は、以下のコマンドを利用する。
-$ pyenv virtualenv 3.4.3 3.</description>
+$ pyenv virtualenv 3.4.3 3.4.3-develop 環境の切り替えは、pyenvでそのままできる。</description>
     </item>
     
     <item>

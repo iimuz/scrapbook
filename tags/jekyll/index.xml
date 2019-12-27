@@ -1,11 +1,10 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>jekyll on しさく</title>
     <link>http://iimuz.github.io/scrapbook/tags/jekyll/</link>
     <description>Recent content in jekyll on しさく</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>ja-JP</language>
     <lastBuildDate>Tue, 05 May 2015 00:00:00 +0900</lastBuildDate>
     
 	<atom:link href="http://iimuz.github.io/scrapbook/tags/jekyll/index.xml" rel="self" type="application/rss+xml" />
@@ -17,21 +16,21 @@
       <pubDate>Tue, 05 May 2015 00:00:00 +0900</pubDate>
       
       <guid>http://iimuz.github.io/scrapbook/softwaretool/jekyll/jekyllsearch/</guid>
-      <description> Jekyllでサイト内検索を作成するために、Googleカスタム検索を利用したのでメモ。 今のところ成功しておらず検索できない…。
+      <description>Jekyllでサイト内検索を作成するために、Googleカスタム検索を利用したのでメモ。 今のところ成功しておらず検索できない…。
 ⇒ Googleウェブマスターツールで処理してから、 一日程度ほったらかしにしといたら、きちんと全体のページから検索できるようになった。
 たぶん結論 Googleカスタム検索を設定して、 Googleのウェブマスターツールでサイトマップを登録してあげると、たぶん検索できるようになる。 (検索できるようになるまでには、若干(1~数日程度)必要っぽい。
 ウェブマスターツールのサイトマップも、登録後は勝手に更新されてる。
 Googleカスタム検索を作成する Googleカスタム検索のページで、適当に検索したい検索クエリを作成する。
-作成した検索クエリの&amp;rdquo;コードを取得&amp;rdquo;からHTMLに貼り付けるスクリプトを取得し、 default.htmlに記載しておく(別にここである必要はない)。
+作成した検索クエリの&amp;quot;コードを取得&amp;quot;からHTMLに貼り付けるスクリプトを取得し、 default.htmlに記載しておく(別にここである必要はない)。
 検索できるか試してみたができず…。
 サイトマップを作成する とりあえず関連してそうなサイトマップなるものを作成する。 サイトマップは、検索エンジンに検索させるために必要らしい。 GitHub: Jekyll Plugin: Sitemap.sml Generatorを利用する。
 config.ymlに以下を記述する。
-url: https://iimuz.github.io sitemap: file: &amp;quot;/sitemap.xml&amp;quot; include_posts: - &amp;quot;/index.html&amp;quot; change_frequency_name: &amp;quot;change_frequency&amp;quot; priority_name: &amp;quot;priority&amp;quot;  やっぱり検索できない…。
+url: https://iimuz.github.iositemap:file: &amp;quot;/sitemap.xml&amp;quot;include_posts:- &amp;quot;/index.html&amp;quot;change_frequency_name: &amp;quot;change_frequency&amp;quot;priority_name: &amp;quot;priority&amp;quot;やっぱり検索できない…。
 Googleウェブマスターツールを利用する。 Google ウェブマスターツールのページからアクセスできるか確認したが、 データがありませんと表示される。 HELPには、しばらく待ってくださいとあったので、とりあえず放置してみる。
 サイトマップを送信 とりあえずやってみた。
 一部検索できるようになった! TOPページのみ検索可能になった。意味ないけどちょっと進歩。 なぜ下位のページが検索されないのか、こっちが本題なのに。
 検索式を変更 検索式を正規表現っぽくiimuz.github.io/*に変更してみた。
-参考資料  takemikami&amp;rsquo;s note: blog用にjekyllを設定したメモ Googleカスタム検索 GitHub: Jekyll Plugin: Sitemap.sml Generator Google ウェブマスターツール  </description>
+参考資料  takemikami&#39;s note: blog用にjekyllを設定したメモ Googleカスタム検索 GitHub: Jekyll Plugin: Sitemap.sml Generator Google ウェブマスターツール  </description>
     </item>
     
     <item>

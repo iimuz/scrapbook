@@ -1,11 +1,10 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>bash on しさく</title>
     <link>http://iimuz.github.io/scrapbook/tags/bash/</link>
     <description>Recent content in bash on しさく</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>ja-JP</language>
     <lastBuildDate>Sat, 06 Apr 2019 14:30:50 +0900</lastBuildDate>
     
 	<atom:link href="http://iimuz.github.io/scrapbook/tags/bash/index.xml" rel="self" type="application/rss+xml" />
@@ -32,7 +31,7 @@ Ubuntu 18.04 Server の場合 Ubuntu 18.04 Server の場合は、 /etc/resolv.co
       <pubDate>Sat, 25 Apr 2015 00:00:00 +0900</pubDate>
       
       <guid>http://iimuz.github.io/scrapbook/programming/bash/bashcommand/</guid>
-      <description> bash コマンドの備忘録。
+      <description>bash コマンドの備忘録。
  再帰 ls: find -type f ディレクトリ以下の再帰で指定したファイルを削除する: rm $(find -type f | grep hoge); ntp を使わず http で時刻合わせ: sudo date --set @&amp;quot;$(wget -q https://ntp-a1.nict.go.jp/cgi-bin/jst -O - | sed -n 4p | cut -d. -f1)&amp;quot;  参考資料  俺的備忘録 ~なんかいろいろ~: ls コマンドで覚えておきたい使い方 16 個(+2 個) ntp を使わずに時刻を合わせるワンライナー（Proxy 環境下でも安心）  </description>
     </item>
     

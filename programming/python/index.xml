@@ -1,12 +1,10 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>python on しさく</title>
     <link>http://iimuz.github.io/scrapbook/programming/python/</link>
     <description>Recent content in python on しさく</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>ja-JP</language>
-    <lastBuildDate>Sun, 18 Nov 2018 15:33:13 +0900</lastBuildDate>
     
 	<atom:link href="http://iimuz.github.io/scrapbook/programming/python/index.xml" rel="self" type="application/rss+xml" />
     
@@ -52,13 +50,13 @@ $ python3 --version Python 3.6.6 投稿内容の作成 ローカルのファイ�
 概要 MacでPython環境を構築した時のメモ。
 pyenv-virtualenvの導入 homebrew導入済みと仮定して、以下のコマンドでpyenv-virtualenvを導入する。
 $ homebrew update $ homebrew install pyenv-virtualenv ついでに、.bash_profileに以下を記述して、パスを通す。
-export PYENV_ROOT=&amp;quot;${HOME}/.pyenv&amp;quot; if [ -d &amp;quot;${PYENV_ROOT}&amp;quot; ]; then export PATH=${PYENV_ROOT}/bin:$PATH eval &amp;quot;$(pyenv init -)&amp;quot; fi  pythonのインストールは、バージョン確認して好きなのを選択すれば良い。
+export PYENV_ROOT=&amp;quot;${HOME}/.pyenv&amp;quot; if [ -d &amp;quot;${PYENV_ROOT}&amp;quot; ]; then export PATH=${PYENV_ROOT}/bin:$PATH eval &amp;quot;$(pyenv init -)&amp;quot; fi pythonのインストールは、バージョン確認して好きなのを選択すれば良い。
 $ pyenv install 3.4.3 以下のエラーがでた時はXCodeを導入すれば良いので、追加でXCodeのインストールコマンドも行う。
  ERROR: The Python ssl extension was not compiled. Missing the OpenSSL lib?
  $ xcode-select --install 利用するバージョンを変更するために以下のコマンドを実行する。
 $ pyenv global 3.4.3 $ pyenv rehash virtualenvの利用方法 virutalenvは、pythonの環境を構築できる。 pyenvがバージョンの管理とすると、virtualenvはライブラリなどの環境管理が可能。 pyenvの3.4.3に対して、インストールするライブラリを変更して用意することができる。
 環境を新しく作る方法は、以下のコマンドを利用する。
-$ pyenv virtualenv 3.4.3 3.</description>
+$ pyenv virtualenv 3.4.3 3.4.3-develop 環境の切り替えは、pyenvでそのままできる。</description>
     </item>
     
   </channel>

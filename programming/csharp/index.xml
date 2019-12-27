@@ -1,12 +1,10 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>C# on しさく</title>
     <link>http://iimuz.github.io/scrapbook/programming/csharp/</link>
     <description>Recent content in C# on しさく</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>ja-JP</language>
-    <lastBuildDate>Sun, 26 Aug 2018 12:31:00 +0900</lastBuildDate>
     
 	<atom:link href="http://iimuz.github.io/scrapbook/programming/csharp/index.xml" rel="self" type="application/rss+xml" />
     
@@ -29,10 +27,10 @@
       <guid>http://iimuz.github.io/scrapbook/programming/csharp/cs-async-await/</guid>
       <description>C#でasyncとawaitを利用して並列処理を行ったので、その時のメモです。 結構簡単に並列処理を記述できた感じがします。
 最終的なコードの雛形 複数のタスクが完了した段階で次のタスクを起動する場合の書き方です。
-public async Task methodAsync() { var task1 = Task.Run(() =&amp;gt; { // 何か処理1  }); var task2 = Task.Run(() =&amp;gt; { // 何か処理2  }); var taskAll = Task.WhenAll(task1, task2).ContinueWith(() =&amp;gt; { // 何か処理3  }); return await taskAll.ConfigureAwait(false); }  Task Taskは、一連の処理をひとまとまりにした単位になるようです。 また、Taskは呼び出した際に別スレッドで実行されるようになっているようで、 連続で記述した場合は、どんどん別スレッドで並列処理されるようになっているようです。
+public async Task methodAsync() { var task1 = Task.Run(() =&amp;gt; { // 何か処理1  }); var task2 = Task.Run(() =&amp;gt; { // 何か処理2  }); var taskAll = Task.WhenAll(task1, task2).ContinueWith(() =&amp;gt; { // 何か処理3  }); return await taskAll.ConfigureAwait(false); } Task Taskは、一連の処理をひとまとまりにした単位になるようです。 また、Taskは呼び出した際に別スレッドで実行されるようになっているようで、 連続で記述した場合は、どんどん別スレッドで並列処理されるようになっているようです。
 Task.WhenAll と ContinueWith TaskはContinueWith関数を利用して、その後の処理を連続して実行できるようです。 そのため、2つ以上の関数を実行して、両方が終わった場合に続きの処理を書く場合は、 ContinueWithを利用するか、awaitで全て終了するのを待つかの2パターンありそうです。
 (パターン1)
-var task1 = Task.Run(() =&amp;gt; { // 何か処理  }); var task2 = Task.</description>
+var task1 = Task.Run(() =&amp;gt; { // 何か処理  }); var task2 = Task.Run(() =&amp;gt; { // 何か処理  }); var taskAll = Task.</description>
     </item>
     
     <item>

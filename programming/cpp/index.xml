@@ -1,12 +1,10 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>C/C&#43;&#43; on しさく</title>
     <link>http://iimuz.github.io/scrapbook/programming/cpp/</link>
     <description>Recent content in C/C&#43;&#43; on しさく</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>ja-JP</language>
-    <lastBuildDate>Tue, 16 Oct 2018 21:30:34 +0900</lastBuildDate>
     
 	<atom:link href="http://iimuz.github.io/scrapbook/programming/cpp/index.xml" rel="self" type="application/rss+xml" />
     
@@ -28,7 +26,7 @@
       <pubDate>Sat, 08 Sep 2018 14:25:09 +0900</pubDate>
       
       <guid>http://iimuz.github.io/scrapbook/programming/cpp/cpp-windows-memory-usage/</guid>
-      <description> windows 環境において、 コード中の特定位置で現在のプロセスが利用しているメモリ使用量を取得したかったので、 調べた時のメモです。
+      <description>windows 環境において、 コード中の特定位置で現在のプロセスが利用しているメモリ使用量を取得したかったので、 調べた時のメモです。
 結論 windows.h と psapi.h を利用して、 PROCESS_MEMORY_COUNTERS_EX という構造体にメモリ使用量が取得できます。 psapi.h は psapi.lib をリンクする必要がありましたが、 下記のようなコードで構造体中にメモリ使用量を取得できます。
  GetProcessMemoryInfo メモリを取得する際には、 GetProcessMemoryInfo という関数を利用します。 GetProcessMemoryInfo は、プロセスのハンドルを渡す必要があります。 実際に作った exe を動かし、その時のメモリ情報を必要とする場合は、 GetCurrentProcess で取得できます。
 一方で、他のプロセスのハンドルを取得すれば、そのプロセスのメモリを取得することも可能です。 ただ、多くの場合はリソースモニタとかで取得したり記録しておけば十分な気もします。
@@ -60,7 +58,7 @@ std::unique_ptr, deleters and the Win32 API によると、 CreateHandle のよ�
       <pubDate>Wed, 16 Nov 2016 23:51:59 +0900</pubDate>
       
       <guid>http://iimuz.github.io/scrapbook/programming/cpp/cpplogger/</guid>
-      <description>利用できそうなLogger  Plog - portable and simple log for C++  ヘッダファイルのみで構成されているLoggerです。 License: Mozilla Public Lisense 2.0  log4cxx glog Boost.Log EasyLogging++ spdlog  License: MIT License   各Loggerのちょっとしたメモ Plog 2016/11/16現在でも更新されています。 ヘッダファイルだけで構成されているため、cloneしてパスを通せば利用できそうです。 利用方法については、Qiitaで記事が書かれていたので、こちらを参照してください。
+      <description>利用できそうなLogger  Plog - portable and simple log for C++  ヘッダファイルのみで構成されているLoggerです。 License: Mozilla Public Lisense 2.0   log4cxx glog Boost.Log EasyLogging++ spdlog  License: MIT License    各Loggerのちょっとしたメモ Plog 2016/11/16現在でも更新されています。 ヘッダファイルだけで構成されているため、cloneしてパスを通せば利用できそうです。 利用方法については、Qiitaで記事が書かれていたので、こちらを参照してください。
 spdlog 2016/11/16現在も更新されています。 Plog同様にヘッダファイルのみで構成されているようです。 処理速度重視のようです。 利用方法については、ブログに記事がありましたので、こちらを参照してください。</description>
     </item>
     
