@@ -1,42 +1,11 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>mac on しさく</title>
-    <link>https://iimuz.github.io/scrapbook/tags/mac/</link>
-    <description>Recent content in mac on しさく</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 23 Aug 2015 00:00:00 +0900</lastBuildDate>
-    
-	<atom:link href="https://iimuz.github.io/scrapbook/tags/mac/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>Macbook 12インチ(1.1GHz)の設定</title>
-      <link>https://iimuz.github.io/scrapbook/softwaretool/others/macsettings/</link>
-      <pubDate>Sun, 23 Aug 2015 00:00:00 +0900</pubDate>
-      
-      <guid>https://iimuz.github.io/scrapbook/softwaretool/others/macsettings/</guid>
-      <description>macbookの設定をメモ。 初のmacbookなので設定がおかしいかもしれないが、おかしいのに気付いた時に直す。
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>mac on しさく</title><link>https://iimuz.github.io/scrapbook/tags/mac/</link><description>Recent content in mac on しさく</description><generator>Hugo -- gohugo.io</generator><lastBuildDate>Sun, 23 Aug 2015 00:00:00 +0900</lastBuildDate><atom:link href="https://iimuz.github.io/scrapbook/tags/mac/index.xml" rel="self" type="application/rss+xml"/><item><title>Macbook 12インチ(1.1GHz)の設定</title><link>https://iimuz.github.io/scrapbook/softwaretool/others/macsettings/</link><pubDate>Sun, 23 Aug 2015 00:00:00 +0900</pubDate><guid>https://iimuz.github.io/scrapbook/softwaretool/others/macsettings/</guid><description>macbookの設定をメモ。 初のmacbookなので設定がおかしいかもしれないが、おかしいのに気付いた時に直す。
 概要 macbookの設定で行ったことのまとめ。 ソフトウェアとか、設定の変更とか。
 ソフトウェア とりあえずApple Storeでインストールできるソフトは、AppStoreでインストールするが、 それ以外のソフトはHomebrewで管理することにした。
 デフォルト 初期から入っていたソフト
- Safari メール カレンダー 連絡先 リマインダー メモ マップ メッセージ FaceTime Photo Boose iMovie 写真 Game Center iTunes iBooks App Store Pages Numbers KeyNote プレビュー  App Storeでインストールしたソフト  XCode  Homebrewでインストールしたソフト Brewfileで管理しているので、Brewfileが最新版になっているはず。</description>
-    </item>
-    
-    <item>
-      <title>MacBookとMacBook Airの比較</title>
-      <link>https://iimuz.github.io/scrapbook/hardware/others/macbook/</link>
-      <pubDate>Sat, 15 Aug 2015 00:00:00 +0900</pubDate>
-      
-      <guid>https://iimuz.github.io/scrapbook/hardware/others/macbook/</guid>
-      <description>母艦となるWindowsマシン以外にも移動用PCがほしくなったのでその時のメモ。
+Safari メール カレンダー 連絡先 リマインダー メモ マップ メッセージ FaceTime Photo Boose iMovie 写真 Game Center iTunes iBooks App Store Pages Numbers KeyNote プレビュー App Storeでインストールしたソフト XCode Homebrewでインストールしたソフト Brewfileで管理しているので、Brewfileが最新版になっているはず。</description></item><item><title>MacBookとMacBook Airの比較</title><link>https://iimuz.github.io/scrapbook/hardware/others/macbook/</link><pubDate>Sat, 15 Aug 2015 00:00:00 +0900</pubDate><guid>https://iimuz.github.io/scrapbook/hardware/others/macbook/</guid><description>母艦となるWindowsマシン以外にも移動用PCがほしくなったのでその時のメモ。
 概要 メインとなるWindowsデスクトップPCを持っているが、 移動したときや自宅以外で作業することが可能なPCがなく不便な時があるので持ち運び用のPCがほしくなった。
- Windows PCのスペック  CPU: Intel Core i7-4770 3.40GHz(8 CPUs), 3.4GHz メモリ: 16GB GPU: NVIDIA GeForce GTX 770    選択基準としては、以下に示すようなこと。
- メインはWindowsPCであり、あくまでもサブ機。 持ち運びに便利である。(既にあるA4サイズまでしか入らないバッグに入ること) プログラミング(3D関連の重い作業はメインで行うのでそれ以外)、動画鑑賞ができること。 サブ機なので、比較的安価であること。  これらを踏まえて、いくつかのPCを比較した結論は、 買うならMacBook Air 11インチ(early 2015)になると思う。
+Windows PCのスペック CPU: Intel Core i7-4770 3.40GHz(8 CPUs), 3.4GHz メモリ: 16GB GPU: NVIDIA GeForce GTX 770 選択基準としては、以下に示すようなこと。
+メインはWindowsPCであり、あくまでもサブ機。 持ち運びに便利である。(既にあるA4サイズまでしか入らないバッグに入ること) プログラミング(3D関連の重い作業はメインで行うのでそれ以外)、動画鑑賞ができること。 サブ機なので、比較的安価であること。 これらを踏まえて、いくつかのPCを比較した結論は、 買うならMacBook Air 11インチ(early 2015)になると思う。
 ⇒ 結局誘惑に勝てなかったので、macbook 12インチ(1.1GHz)を購入した。
-候補  New MacBook  用途としては十分性能が満たしていると思うが、さすがに1.1GHzはないので、1.3GHzのほうにしたい。 1.3GHzの場合は、\178,800-となり高すぎる。
-⇒ と思ったが、用途的に1.1GHzでも十分かもしれない。 たぶん利用する目的の一番重い処理が、動画閲覧になると思うから。 それなら、1.1GHzで\148,800-で差額が1万円なら許容範囲か? Retinaディスプレイは良い。 サイズは一番小さい。 最も軽い(920g)。 プログラミングは、動かさなければ一通りできる気がする。コンパイルが少し遅いか? スペック1  CPU: 1.3GHzデュアルコアIntel Core M メモリ: 8GB GPU: Intel HD Graphics 5300 解像度: 2304x1440 pix(16:10)   スペック2  CPU: 1.</description>
-    </item>
-    
-  </channel>
-</rss>
+候補 New MacBook 用途としては十分性能が満たしていると思うが、さすがに1.1GHzはないので、1.3GHzのほうにしたい。 1.3GHzの場合は、\178,800-となり高すぎる。
+⇒ と思ったが、用途的に1.1GHzでも十分かもしれない。 たぶん利用する目的の一番重い処理が、動画閲覧になると思うから。 それなら、1.1GHzで\148,800-で差額が1万円なら許容範囲か? Retinaディスプレイは良い。 サイズは一番小さい。 最も軽い(920g)。 プログラミングは、動かさなければ一通りできる気がする。コンパイルが少し遅いか? スペック1 CPU: 1.3GHzデュアルコアIntel Core M メモリ: 8GB GPU: Intel HD Graphics 5300 解像度: 2304x1440 pix(16:10) スペック2 CPU: 1.</description></item></channel></rss>

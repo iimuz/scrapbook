@@ -1,48 +1,8 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>C# on しさく</title>
-    <link>https://iimuz.github.io/scrapbook/programming/csharp/</link>
-    <description>Recent content in C# on しさく</description>
-    <generator>Hugo -- gohugo.io</generator>
-    
-	<atom:link href="https://iimuz.github.io/scrapbook/programming/csharp/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>C#でキャンセル処理を利用したタイムアウトの実現</title>
-      <link>https://iimuz.github.io/scrapbook/programming/csharp/cs-cancellation-task/</link>
-      <pubDate>Sun, 26 Aug 2018 12:31:00 +0900</pubDate>
-      
-      <guid>https://iimuz.github.io/scrapbook/programming/csharp/cs-cancellation-task/</guid>
-      <description>C#で一定時間内に処理が終わらなければ終了する中断する処理を書きたかったので、調べた時のメモです。 タスクを起動し、キャンセル処理を一定時間後に起動するようにします。 本来のタスクとキャンセル処理のいずれかが完了した時点で、処理を終了するようにすることで、 タイムアウト処理が実現できるようです。
- </description>
-    </item>
-    
-    <item>
-      <title>C#におけるAysncとAwaitの動作に関して調べたときのメモ</title>
-      <link>https://iimuz.github.io/scrapbook/programming/csharp/cs-async-await/</link>
-      <pubDate>Fri, 02 Mar 2018 19:43:56 +0900</pubDate>
-      
-      <guid>https://iimuz.github.io/scrapbook/programming/csharp/cs-async-await/</guid>
-      <description>C#でasyncとawaitを利用して並列処理を行ったので、その時のメモです。 結構簡単に並列処理を記述できた感じがします。
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>C# on しさく</title><link>https://iimuz.github.io/scrapbook/programming/csharp/</link><description>Recent content in C# on しさく</description><generator>Hugo -- gohugo.io</generator><atom:link href="https://iimuz.github.io/scrapbook/programming/csharp/index.xml" rel="self" type="application/rss+xml"/><item><title>C#でキャンセル処理を利用したタイムアウトの実現</title><link>https://iimuz.github.io/scrapbook/programming/csharp/cs-cancellation-task/</link><pubDate>Sun, 26 Aug 2018 12:31:00 +0900</pubDate><guid>https://iimuz.github.io/scrapbook/programming/csharp/cs-cancellation-task/</guid><description>C#で一定時間内に処理が終わらなければ終了する中断する処理を書きたかったので、調べた時のメモです。 タスクを起動し、キャンセル処理を一定時間後に起動するようにします。 本来のタスクとキャンセル処理のいずれかが完了した時点で、処理を終了するようにすることで、 タイムアウト処理が実現できるようです。</description></item><item><title>C#におけるAysncとAwaitの動作に関して調べたときのメモ</title><link>https://iimuz.github.io/scrapbook/programming/csharp/cs-async-await/</link><pubDate>Fri, 02 Mar 2018 19:43:56 +0900</pubDate><guid>https://iimuz.github.io/scrapbook/programming/csharp/cs-async-await/</guid><description>C#でasyncとawaitを利用して並列処理を行ったので、その時のメモです。 結構簡単に並列処理を記述できた感じがします。
 最終的なコードの雛形 複数のタスクが完了した段階で次のタスクを起動する場合の書き方です。
-public async Task methodAsync() { var task1 = Task.Run(() =&amp;gt; { // 何か処理1  }); var task2 = Task.Run(() =&amp;gt; { // 何か処理2  }); var taskAll = Task.WhenAll(task1, task2).ContinueWith(() =&amp;gt; { // 何か処理3  }); return await taskAll.ConfigureAwait(false); } Task Taskは、一連の処理をひとまとまりにした単位になるようです。 また、Taskは呼び出した際に別スレッドで実行されるようになっているようで、 連続で記述した場合は、どんどん別スレッドで並列処理されるようになっているようです。
+public async Task methodAsync() { var task1 = Task.Run(() =&amp;gt; { // 何か処理1 }); var task2 = Task.Run(() =&amp;gt; { // 何か処理2 }); var taskAll = Task.WhenAll(task1, task2).ContinueWith(() =&amp;gt; { // 何か処理3 }); return await taskAll.ConfigureAwait(false); } Task Taskは、一連の処理をひとまとまりにした単位になるようです。 また、Taskは呼び出した際に別スレッドで実行されるようになっているようで、 連続で記述した場合は、どんどん別スレッドで並列処理されるようになっているようです。
 Task.WhenAll と ContinueWith TaskはContinueWith関数を利用して、その後の処理を連続して実行できるようです。 そのため、2つ以上の関数を実行して、両方が終わった場合に続きの処理を書く場合は、 ContinueWithを利用するか、awaitで全て終了するのを待つかの2パターンありそうです。
 (パターン1)
-var task1 = Task.Run(() =&amp;gt; { // 何か処理  }); var task2 = Task.Run(() =&amp;gt; { // 何か処理  }); var taskAll = Task.</description>
-    </item>
-    
-    <item>
-      <title>C#においてTCPClientを利用したときのメモ</title>
-      <link>https://iimuz.github.io/scrapbook/programming/csharp/cs-tcp-client/</link>
-      <pubDate>Fri, 02 Mar 2018 19:43:39 +0900</pubDate>
-      
-      <guid>https://iimuz.github.io/scrapbook/programming/csharp/cs-tcp-client/</guid>
-      <description>C#でTCP Clientを実際に利用したので、その際に作成したコードの雛形をメモしておきます。 本当は、色々と追加で必要な処理とかがあるのかもしれませんが、今回は下記のコードで十分でした。
+var task1 = Task.Run(() =&amp;gt; { // 何か処理 }); var task2 = Task.Run(() =&amp;gt; { // 何か処理 }); var taskAll = Task.</description></item><item><title>C#においてTCPClientを利用したときのメモ</title><link>https://iimuz.github.io/scrapbook/programming/csharp/cs-tcp-client/</link><pubDate>Fri, 02 Mar 2018 19:43:39 +0900</pubDate><guid>https://iimuz.github.io/scrapbook/programming/csharp/cs-tcp-client/</guid><description>C#でTCP Clientを実際に利用したので、その際に作成したコードの雛形をメモしておきます。 本当は、色々と追加で必要な処理とかがあるのかもしれませんが、今回は下記のコードで十分でした。
 成果物 下記のコードでクライアントとしてサーバに接続し、文字列送信することが可能です。
- 注意点 実際には、接続失敗した場合の処理などが別途必要です。 また、このサンプルで利用では Connect 関数を利用していますが、 同期関数となるため接続が完了するまでスレッドが停止してしまいます。 停止させるのが問題になる場合は、 ConnectAsync 関数を利用するか、 Taskなどを利用して非同期に実行する必要があります。</description>
-    </item>
-    
-  </channel>
-</rss>
+注意点 実際には、接続失敗した場合の処理などが別途必要です。 また、このサンプルで利用では Connect 関数を利用していますが、 同期関数となるため接続が完了するまでスレッドが停止してしまいます。 停止させるのが問題になる場合は、 ConnectAsync 関数を利用するか、 Taskなどを利用して非同期に実行する必要があります。</description></item></channel></rss>

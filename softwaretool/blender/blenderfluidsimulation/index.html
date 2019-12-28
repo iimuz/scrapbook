@@ -1,272 +1,35 @@
-<!DOCTYPE html>
-<html lang='en'><head>
-  <title>Blenderで流体シミュレーション | しさく</title>
-  <meta charset='utf-8'>
-  <meta name="generator" content="Hugo 0.60.1" />
-  <meta name = 'viewport' content = 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no'>
-  <meta http-equiv = 'X-UA-Compatible' content = 'IE=edge'>
-<meta property = 'og:locale' content = 'en_US' />
-<meta property="og:type" content="article">
-<meta property = 'og:title' content = 'Blenderで流体シミュレーション' />
-<meta name="description" content="Blenderで流体シミュレーションを試した時のメモ。
+<!doctype html><html lang=en><head><title>Blenderで流体シミュレーション | しさく</title><meta charset=utf-8><meta name=generator content="Hugo 0.60.1"><meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"><meta http-equiv=x-ua-compatible content="IE=edge"><meta property="og:locale" content="en_US"><meta property="og:type" content="article"><meta property="og:title" content="Blenderで流体シミュレーション"><meta name=description content="Blenderで流体シミュレーションを試した時のメモ。
 概要 いろはメモ -Blender-: グラスに水を注いでみる 〈流体シミュレーション〉のページを参考に 流体シミュレーションの実験。
-泥水ぶちまけてる感じだが、きちんとマテリアルとかテクスチャとか勉強してないから。 レンダリングについては後回し。 シミュレーショ …">
-<meta property = 'og:description' content = 'Blenderで流体シミュレーションを試した時のメモ。
+泥水ぶちまけてる感じだが、きちんとマテリアルとかテクスチャとか勉強してないから。 レンダリングについては後回し。 シミュレーショ …"><meta property="og:description" content="Blenderで流体シミュレーションを試した時のメモ。
 概要 いろはメモ -Blender-: グラスに水を注いでみる 〈流体シミュレーション〉のページを参考に 流体シミュレーションの実験。
-泥水ぶちまけてる感じだが、きちんとマテリアルとかテクスチャとか勉強してないから。 レンダリングについては後回し。 シミュレーショ …'>
-<meta property = 'og:url' content = 'https://iimuz.github.io/scrapbook/softwaretool/blender/blenderfluidsimulation/' />
-<meta property = 'og:image' content = 'images/%!s()'/>
-<meta name = 'twitter:card' content = 'summary_large_image' />
-<meta name = 'twitter:creator' content = ''>
-<meta name = 'twitter:title' content = 'Blenderで流体シミュレーション' />
-<meta property = 'twitter:description'  content = 'Blenderで流体シミュレーションを試した時のメモ。
+泥水ぶちまけてる感じだが、きちんとマテリアルとかテクスチャとか勉強してないから。 レンダリングについては後回し。 シミュレーショ …"><meta property="og:url" content="https://iimuz.github.io/scrapbook/softwaretool/blender/blenderfluidsimulation/"><meta property="og:image" content="images/%!s()"><meta name=twitter:card content="summary_large_image"><meta name=twitter:creator content><meta name=twitter:title content="Blenderで流体シミュレーション"><meta property="twitter:description" content="Blenderで流体シミュレーションを試した時のメモ。
 概要 いろはメモ -Blender-: グラスに水を注いでみる 〈流体シミュレーション〉のページを参考に 流体シミュレーションの実験。
-泥水ぶちまけてる感じだが、きちんとマテリアルとかテクスチャとか勉強してないから。 レンダリングについては後回し。 シミュレーショ …'/>
-<meta name = 'twitter:image' content = 'images/%!s()' />
-<link rel='apple-touch-icon' sizes='180x180' href='https://iimuz.github.io/scrapbook/images/icons/apple-touch-icon.png'>
-<link rel='icon' type='image/png' sizes='32x32' href='https://iimuz.github.io/scrapbook/images/icons/favicon-32x32.png'>
-<link rel='icon' type='image/png' sizes='16x16' href='https://iimuz.github.io/scrapbook/images/icons/favicon-16x16.png'>
-<link rel='manifest' href='https://iimuz.github.io/scrapbook/images/icons/site.webmanifest'>
-
-  <link rel='canonical' href='https://iimuz.github.io/scrapbook/softwaretool/blender/blenderfluidsimulation/'>
-  <link rel = 'stylesheet' href = 'https://iimuz.github.io/scrapbook/css/styles.f95ea6b308573243e51a075c5efaf605fe1950268a99f0a2427e5262d11465d0036a6169952dee35760d783dc0ff485221df3ed26a15748d824a97e65b5d7c9e.css' integrity = 'sha512-&#43;V6mswhXMkPlGgdcXvr2Bf4ZUCaKmfCiQn5SYtEUZdADamFplS3uNXYNeD3A/0hSId8&#43;0moVdI2CSpfmW118ng=='>
-</head>
-
-  <body><div class = 'nav-drop'>
-  <div class = 'nav-body'>
-      <a href = 'https://iimuz.github.io/scrapbook/search/' class = 'nav_item'>search</a>
-      <a href = 'https://iimuz.github.io/scrapbook/tags/' class = 'nav_item'>tags</a>
-      <a href = 'https://iimuz.github.io/scrapbook/categories/' class = 'nav_item'>categories</a>
-    <div class = 'nav-close'></div>
-  </div>
-</div><header class = 'nav' >
-  <nav class = 'nav-menu'>
-    <a href='https://iimuz.github.io/scrapbook/' class = 'nav-brand nav_item'>しさく</a>
-    <div class = 'nav_bar-wrap'>
-      <div class = 'nav_bar'></div>
-    </div>
-  </nav>
-</header>
-
-
-
-    <main>
-  
-<section class = 'post_header' style = 'background-image:url(https://iimuz.github.io/scrapbook/images/thumbnail.svg);'>
-  <h1 class='post_title'>Blenderで流体シミュレーション</h1>
-</section>
-<div class = 'post'>
-  <article class='post_content'><p>Blenderで流体シミュレーションを試した時のメモ。</p>
-<h2 id="heading">概要</h2>
-<p><a href="http://3d-memo.blog.jp/archives/1004692853.html">いろはメモ -Blender-: グラスに水を注いでみる 〈流体シミュレーション〉</a>のページを参考に
-流体シミュレーションの実験。</p>
-<p>泥水ぶちまけてる感じだが、きちんとマテリアルとかテクスチャとか勉強してないから。
+泥水ぶちまけてる感じだが、きちんとマテリアルとかテクスチャとか勉強してないから。 レンダリングについては後回し。 シミュレーショ …"><meta name=twitter:image content="images/%!s()"><link rel=apple-touch-icon sizes=180x180 href=https://iimuz.github.io/scrapbook/images/icons/apple-touch-icon.png><link rel=icon type=image/png sizes=32x32 href=https://iimuz.github.io/scrapbook/images/icons/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=https://iimuz.github.io/scrapbook/images/icons/favicon-16x16.png><link rel=manifest href=https://iimuz.github.io/scrapbook/images/icons/site.webmanifest><link rel=canonical href=https://iimuz.github.io/scrapbook/softwaretool/blender/blenderfluidsimulation/><link rel=stylesheet href=https://iimuz.github.io/scrapbook/css/styles.a1e1a9f0e58a84cfca79c98c11b9e900971b61f840c5fbe7f3ddad8ebcd9798517a0ea30089562091e9105239ce941ccc4953d8c3a0c08a2f5082ace791f0186.css integrity="sha512-oeGp8OWKhM/KecmMEbnpAJcbYfhAxfvn892tjrzZeYUXoOowCJViCR6RBSOc6UHMxJU9jDoMCKL1CCrOeR8Bhg=="><link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css></head><body><div class=nav-drop><div class=nav-body><a href=https://iimuz.github.io/scrapbook/search/ class=nav_item>search</a>
+<a href=https://iimuz.github.io/scrapbook/tags/ class=nav_item>tags</a>
+<a href=https://iimuz.github.io/scrapbook/categories/ class=nav_item>categories</a><div class=nav-close></div></div></div><header class=nav><nav class=nav-menu><a href=https://iimuz.github.io/scrapbook/ class="nav-brand nav_item">しさく</a><div class=nav_bar-wrap><div class=nav_bar></div></div></nav></header><main><section class=post_header style=background-image:url(https://iimuz.github.io/scrapbook/images/thumbnail.svg)><h1 class=post_title>Blenderで流体シミュレーション</h1></section><div class=post><article class=post_content><div><i class="far fa-calendar-check"></i>2015-05-06 00:00:00 +0900 +0900
+<i class="far fa-edit"></i>2019-12-28 05:39:31 +0000 UTC</div><p>Blenderで流体シミュレーションを試した時のメモ。</p><h2 id=heading>概要</h2><p><a href=http://3d-memo.blog.jp/archives/1004692853.html>いろはメモ -Blender-: グラスに水を注いでみる 〈流体シミュレーション〉</a>のページを参考に
+流体シミュレーションの実験。</p><p>泥水ぶちまけてる感じだが、きちんとマテリアルとかテクスチャとか勉強してないから。
 レンダリングについては後回し。
-シミュレーションできることが分かったので良い。</p>
-<p><a href="https://lh5.googleusercontent.com/-vWfmfFrJmVw/VUnUAIHtN1I/AAAAAAAAN94/xe1qbjU1NZk/w1580-h889-no/20150506_fluidSimulation.png"><img src="https://lh5.googleusercontent.com/-vWfmfFrJmVw/VUnUAIHtN1I/AAAAAAAAN94/xe1qbjU1NZk/w1580-h889-no/20150506_fluidSimulation.png" alt="imageFluidSimuation"></a></p>
-<p>Blender: <a href="https://github.com/iimuz/blenderTutorials/tree/master/fluidSimulation">GitHub: fluidSimulation</a></p>
-<h2 id="heading1">流体シミュレーションの準備</h2>
-<p>とりあえず液体を注ぐものを作成する。</p>
-<p>法線方向を確認するためには、Edit modeでNキーで表示されるPropertiesから
-Mesh display -&gt; Normals -&gt; Display face normals as linesをONにする。</p>
-<p><a href="https://lh6.googleusercontent.com/-aNfEVA-am48/VUmMJMgwy4I/AAAAAAAAN8w/hOQ34aqB3rM/s0/20150506_blenderMeshNormals.png"><img src="https://lh6.googleusercontent.com/-aNfEVA-am48/VUmMJMgwy4I/AAAAAAAAN8w/hOQ34aqB3rM/s0/20150506_blenderMeshNormals.png" alt="imageNormals"></a></p>
-<h2 id="heading2">流体の注ぎ口を作成</h2>
-<p>UV球を作成する。(これが水の発生源になる。)
-作成したUV球に物理演算から流体を設定する。</p>
-<p><a href="https://lh4.googleusercontent.com/-j6F6c6JbDig/VUmOj-86d0I/AAAAAAAAN88/IQgZcy_cWpc/s0/20150506_blenderPhysicsEngine.png"><img src="https://lh4.googleusercontent.com/-j6F6c6JbDig/VUmOj-86d0I/AAAAAAAAN88/IQgZcy_cWpc/s0/20150506_blenderPhysicsEngine.png" alt="imagePhysicsEngine"></a></p>
-<p>設定としては、以下の感じ。</p>
-<ul>
-<li>タイプ: 流入口</li>
-<li>ボリュームの初期化: 両方</li>
-<li>流入速度: 適当に注ぎたい方向へ向ける</li>
-</ul>
-<p><a href="http://3d-memo.blog.jp/archives/1004692853.html">いろはメモ -Blender-: グラスに水を注いでみる 〈流体シミュレーション〉</a>によると、
-各項目の説明は以下。</p>
-<blockquote>
-<p>【流体のタイプ】
+シミュレーションできることが分かったので良い。</p><p><a href=https://lh5.googleusercontent.com/-vWfmfFrJmVw/VUnUAIHtN1I/AAAAAAAAN94/xe1qbjU1NZk/w1580-h889-no/20150506_fluidSimulation.png><img src=https://lh5.googleusercontent.com/-vWfmfFrJmVw/VUnUAIHtN1I/AAAAAAAAN94/xe1qbjU1NZk/w1580-h889-no/20150506_fluidSimulation.png alt=imageFluidSimuation></a></p><p>Blender: <a href=https://github.com/iimuz/blenderTutorials/tree/master/fluidSimulation>GitHub: fluidSimulation</a></p><h2 id=heading1>流体シミュレーションの準備</h2><p>とりあえず液体を注ぐものを作成する。</p><p>法線方向を確認するためには、Edit modeでNキーで表示されるPropertiesから
+Mesh display -> Normals -> Display face normals as linesをONにする。</p><p><a href=https://lh6.googleusercontent.com/-aNfEVA-am48/VUmMJMgwy4I/AAAAAAAAN8w/hOQ34aqB3rM/s0/20150506_blenderMeshNormals.png><img src=https://lh6.googleusercontent.com/-aNfEVA-am48/VUmMJMgwy4I/AAAAAAAAN8w/hOQ34aqB3rM/s0/20150506_blenderMeshNormals.png alt=imageNormals></a></p><h2 id=heading2>流体の注ぎ口を作成</h2><p>UV球を作成する。(これが水の発生源になる。)
+作成したUV球に物理演算から流体を設定する。</p><p><a href=https://lh4.googleusercontent.com/-j6F6c6JbDig/VUmOj-86d0I/AAAAAAAAN88/IQgZcy_cWpc/s0/20150506_blenderPhysicsEngine.png><img src=https://lh4.googleusercontent.com/-j6F6c6JbDig/VUmOj-86d0I/AAAAAAAAN88/IQgZcy_cWpc/s0/20150506_blenderPhysicsEngine.png alt=imagePhysicsEngine></a></p><p>設定としては、以下の感じ。</p><ul><li>タイプ: 流入口</li><li>ボリュームの初期化: 両方</li><li>流入速度: 適当に注ぎたい方向へ向ける</li></ul><p><a href=http://3d-memo.blog.jp/archives/1004692853.html>いろはメモ -Blender-: グラスに水を注いでみる 〈流体シミュレーション〉</a>によると、
+各項目の説明は以下。</p><blockquote><p>【流体のタイプ】
 　コントロール(Control) ： 流体の形状を変形させるようコントロール。
 　パーティクル(Particle) ： 飛沫。しずく・浮かぶ泡・トレーサー（霧みたいなもの）の3タイプがある。
 　流入口(Inflow) ： 液体が出てくる。給水栓。
 　流出口(Outflow) ： 液体が吸収されてなくなる。排水口。流入口とセットで使うとよいみたい。
 　障害物(Obstacle) ： 障害物。表面の滑り方（粘つき）を、滑る・滑らない・部分的に滑るの3タイプから選ぶ。
 　液体(Fluid) ： そこにあるだけの液体。流入口のように生成はされない。
-　ドメイン(Domain) ： 液体シミュレーションの領域。必ず必要。</p>
-<p>【ボリュームの初期化】
+　ドメイン(Domain) ： 液体シミュレーションの領域。必ず必要。</p><p>【ボリュームの初期化】
 　ボリューム：オブジェクトの内部を液体にする。閉じたメッシュのみ有効。
 　外殻：メッシュの表面が薄い液体。開いたメッシュでも有効。
-　両方：オブジェクト＋外殻。よくわからないときは、とりあえずこれで。</p>
-<p>【流入速度】
+　両方：オブジェクト＋外殻。よくわからないときは、とりあえずこれで。</p><p>【流入速度】
 　水が発生する方向と速度。単位はメートル/秒。
 　数値が高いほど勢いよく放水される。
-　Z方向を＋の数値にすると上空に噴射する。下に落としたいときは－で。</p>
-</blockquote>
-<h2 id="heading3">グラスの設定</h2>
-<p>グラスを障害物に設定することで、水がそこにとどまるようになる。
-注ぎ口と同様にグラスに流体を設定し、タイプは障害物とする。</p>
-<h2 id="heading4">ドメインの指定</h2>
-<p>流体シミュレーションが行われる範囲を指定する。
-ドメインは常に立方体で扱われるため、作成には&quot;立方体&quot;を使えばよい。
-今回は、流入口とグラスの両方が含まれる範囲を指定する。</p>
-<p>作成した立方体に対して、流体を設定し、タイプをドメインとする。</p>
-<h2 id="heading5">シミュレーションの実行</h2>
-<p>ドメインのベイクからシミュレーションが開始される。
-シミュレーション終了後は、アニメーションの開始からシミュレーション結果を確認できる。</p>
-<h2 id="heading6">色々</h2>
-<h3 id="heading7">シミュレーションを実行したら、水がグラスの外側に。</h3>
-<p>とりあえずシミュレーションしてみたらグラスから水は漏れないが、
-外側に盛りだすという現象が発生した。</p>
-<p><a href="https://lh6.googleusercontent.com/-yXkWDnldt5c/VUmTirDg_SI/AAAAAAAAN9Q/iJCVH9xaCUU/w368-h470-no/20150506_blenderWaterOut.png"><img src="https://lh6.googleusercontent.com/-yXkWDnldt5c/VUmTirDg_SI/AAAAAAAAN9Q/iJCVH9xaCUU/w368-h470-no/20150506_blenderWaterOut.png" alt="imageWaterOut"></a></p>
-<p>⇒今のところ修正方法が不明。</p>
-<h3 id="heading8">プレビューだと飛沫が確認できない</h3>
-<p>飛沫の設定をしてみたが、プレビュー状態だと確認できなかった。
-レンダリングするときちんと描画されている。</p>
-<h3 id="heading9">流体のマテリアル設定</h3>
-<p>流体のマテリアル設定は、流入口のほうではなく、ドメインに行う。</p>
-<h2 id="heading10">参考資料</h2>
-<ul>
-<li><a href="http://3d-memo.blog.jp/archives/1004692853.html">いろはメモ -Blender-: グラスに水を注いでみる 〈流体シミュレーション〉</a></li>
-<li><a href="http://cycles.wiki.fc2.com/wiki/%E3%82%AA%E3%83%96%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88%E3%81%AE%E6%B3%95%E7%B7%9A%E6%96%B9%E5%90%91%E3%81%AE%E7%A2%BA%E8%AA%8D%E6%96%B9%E6%B3%95">Blender Cycles memo: オブジェクトの法線方向の確認方法</a></li>
-</ul>
-
-    <div class = 'post_extra'><div class = 'copy' data-share = 'Share Story' data-copied = 'Link Copied'>
-  <svg>
-    <use xlink:href="#copy"></use>
-  </svg>  
-</div>
-
-    </div>
-
-  </article>
-  
-
-
-
-  <aside>
-<h3>Referenced from</h3>
-<ul class='posts aside'>
-</ul>
-
-<h3>More from しさく</h3>
-<ul class='posts aside'>
-<li class = 'post_item'>
-  <a class = 'post_card' href='/scrapbook/softwaretool/blender/shizuokadevunityandblender03/' title = 'UnityとBlenderハンズオンの第3章を進めてみる' style = 'background-image: url(https://iimuz.github.io/scrapbook/images/thumbnail.svg);'>
-  </a>
-  <div class = 'excerpt'>
-    <div class = 'excerpt_meta'>
-      <a href = 'https://iimuz.github.io/scrapbook/tags/blender' class = 'post_tag'>blender
-      </a><div class = 'copy' data-share = 'Share Story' data-copied = 'Link Copied'>
-  <svg>
-    <use xlink:href="#copy"></use>
-  </svg>  
-</div>
-
-    </div>
-    <h3 class = 'post_link'>
-      <a href='/scrapbook/softwaretool/blender/shizuokadevunityandblender03/'>UnityとBlenderハンズオンの第3章を進めてみる</a>
-    </h3>
-  </div>
-</li>
-
-<li class = 'post_item'>
-  <a class = 'post_card' href='/scrapbook/softwaretool/blender/shizuokadevunityandblender02/' title = 'UnityとBlenderハンズオンの第2章を進めてみる' style = 'background-image: url(https://iimuz.github.io/scrapbook/images/thumbnail.svg);'>
-  </a>
-  <div class = 'excerpt'>
-    <div class = 'excerpt_meta'>
-      <a href = 'https://iimuz.github.io/scrapbook/tags/blender' class = 'post_tag'>blender
-      </a><div class = 'copy' data-share = 'Share Story' data-copied = 'Link Copied'>
-  <svg>
-    <use xlink:href="#copy"></use>
-  </svg>  
-</div>
-
-    </div>
-    <h3 class = 'post_link'>
-      <a href='/scrapbook/softwaretool/blender/shizuokadevunityandblender02/'>UnityとBlenderハンズオンの第2章を進めてみる</a>
-    </h3>
-  </div>
-</li>
-
-<li class = 'post_item'>
-  <a class = 'post_card' href='/scrapbook/softwaretool/blender/shizuokadevunityandblender01/' title = 'UnityとBlenderハンズオンの第1章を進めてみる' style = 'background-image: url(https://iimuz.github.io/scrapbook/images/thumbnail.svg);'>
-  </a>
-  <div class = 'excerpt'>
-    <div class = 'excerpt_meta'>
-      <a href = 'https://iimuz.github.io/scrapbook/tags/blender' class = 'post_tag'>blender
-      </a><div class = 'copy' data-share = 'Share Story' data-copied = 'Link Copied'>
-  <svg>
-    <use xlink:href="#copy"></use>
-  </svg>  
-</div>
-
-    </div>
-    <h3 class = 'post_link'>
-      <a href='/scrapbook/softwaretool/blender/shizuokadevunityandblender01/'>UnityとBlenderハンズオンの第1章を進めてみる</a>
-    </h3>
-  </div>
-</li>
-
-<li class = 'post_item'>
-  <a class = 'post_card' href='/scrapbook/softwaretool/blender/blendersetting/' title = 'Blenderコマンドの備忘録' style = 'background-image: url(https://iimuz.github.io/scrapbook/images/thumbnail.svg);'>
-  </a>
-  <div class = 'excerpt'>
-    <div class = 'excerpt_meta'>
-      <a href = 'https://iimuz.github.io/scrapbook/tags/blender' class = 'post_tag'>blender
-      </a><div class = 'copy' data-share = 'Share Story' data-copied = 'Link Copied'>
-  <svg>
-    <use xlink:href="#copy"></use>
-  </svg>  
-</div>
-
-    </div>
-    <h3 class = 'post_link'>
-      <a href='/scrapbook/softwaretool/blender/blendersetting/'>Blenderコマンドの備忘録</a>
-    </h3>
-  </div>
-</li>
-
-<li class = 'post_item'>
-  <a class = 'post_card' href='/scrapbook/softwaretool/blender/blenderpythonscript/' title = 'BlenderでPythonスクリプトを利用する' style = 'background-image: url(https://iimuz.github.io/scrapbook/images/thumbnail.svg);'>
-  </a>
-  <div class = 'excerpt'>
-    <div class = 'excerpt_meta'>
-      <a href = 'https://iimuz.github.io/scrapbook/tags/blender' class = 'post_tag'>blender
-      </a><div class = 'copy' data-share = 'Share Story' data-copied = 'Link Copied'>
-  <svg>
-    <use xlink:href="#copy"></use>
-  </svg>  
-</div>
-
-    </div>
-    <h3 class = 'post_link'>
-      <a href='/scrapbook/softwaretool/blender/blenderpythonscript/'>BlenderでPythonスクリプトを利用する</a>
-    </h3>
-  </div>
-</li>
-
-</ul>
-
-
-  </aside>
-</div>
-<script src = 'https://iimuz.github.io/scrapbook/js/autosize.min.js'></script>
-<script src = 'https://iimuz.github.io/scrapbook/js/timeago.js'></script>
-    </main><svg width="0" height="0" class="hidden">
-  <symbol viewBox="0 0 699.428 699.428" xmlns="http://www.w3.org/2000/svg" id="copy">
-    <path d="M502.714 0H240.428C194.178 0 153 42.425 153 87.429l-25.267.59c-46.228 0-84.019 41.834-84.019 86.838V612c0 45.004 41.179 87.428 87.429 87.428H459c46.249 0 87.428-42.424 87.428-87.428h21.857c46.25 0 87.429-42.424 87.429-87.428v-349.19zM459 655.715H131.143c-22.95 0-43.714-21.441-43.714-43.715V174.857c0-22.272 18.688-42.993 41.638-42.993l23.933-.721v393.429C153 569.576 194.178 612 240.428 612h262.286c0 22.273-20.765 43.715-43.714 43.715zm153-131.143c0 22.271-20.765 43.713-43.715 43.713H240.428c-22.95 0-43.714-21.441-43.714-43.713V87.429c0-22.272 20.764-43.714 43.714-43.714H459c-.351 50.337 0 87.975 0 87.975 0 45.419 40.872 86.882 87.428 86.882H612zm-65.572-349.715c-23.277 0-43.714-42.293-43.714-64.981V44.348L612 174.857zm-43.714 131.537H306c-12.065 0-21.857 9.77-21.857 21.835s9.792 21.835 21.857 21.835h196.714c12.065 0 21.857-9.771 21.857-21.835 0-12.065-9.792-21.835-21.857-21.835zm0 109.176H306c-12.065 0-21.857 9.77-21.857 21.834 0 12.066 9.792 21.836 21.857 21.836h196.714c12.065 0 21.857-9.77 21.857-21.836 0-12.064-9.792-21.834-21.857-21.834z"
-    ></path>
-  </symbol>
-  <symbol viewBox="0 0 60.015 60.015" xmlns="http://www.w3.org/2000/svg" id="reply">
-    <path d="M42.007 0h-24c-9.925 0-18 8.075-18 18v14c0 9.59 7.538 17.452 17 17.973v8.344a1.694 1.694 0 0 0 1.699 1.698c.44 0 .873-.173 1.198-.498l1.876-1.876C26.708 52.713 33.259 50 40.227 50h1.78c9.925 0 18-8.075 18-18V18c0-9.925-8.075-18-18-18zm16 32c0 8.822-7.178 16-16 16h-1.78c-7.502 0-14.556 2.921-19.86 8.226l-1.359 1.359V44a1 1 0 1 0-2 0v3.949c-8.356-.52-15-7.465-15-15.949V18c0-8.822 7.178-16 16-16h24c8.822 0 16 7.178 16 16v14z"></path>
-  </symbol>
-</svg>
-<footer class = 'footer'>
-  <div class = 'footer_inner wrap pale'>
-    <p>&copy; <span class = 'year'></span> しさく</p>
-    <p>Designed by  <a href = '<no value>' title = 'Linkedin Profile'><no value></a></p>
-  </div>
-</footer>
-
-<script src = 'https://iimuz.github.io/scrapbook/js/index.js'></script>
-
-  </body>
-</html>
+　Z方向を＋の数値にすると上空に噴射する。下に落としたいときは－で。</p></blockquote><h2 id=heading3>グラスの設定</h2><p>グラスを障害物に設定することで、水がそこにとどまるようになる。
+注ぎ口と同様にグラスに流体を設定し、タイプは障害物とする。</p><h2 id=heading4>ドメインの指定</h2><p>流体シミュレーションが行われる範囲を指定する。
+ドメインは常に立方体で扱われるため、作成には"立方体"を使えばよい。
+今回は、流入口とグラスの両方が含まれる範囲を指定する。</p><p>作成した立方体に対して、流体を設定し、タイプをドメインとする。</p><h2 id=heading5>シミュレーションの実行</h2><p>ドメインのベイクからシミュレーションが開始される。
+シミュレーション終了後は、アニメーションの開始からシミュレーション結果を確認できる。</p><h2 id=heading6>色々</h2><h3 id=heading7>シミュレーションを実行したら、水がグラスの外側に。</h3><p>とりあえずシミュレーションしてみたらグラスから水は漏れないが、
+外側に盛りだすという現象が発生した。</p><p><a href=https://lh6.googleusercontent.com/-yXkWDnldt5c/VUmTirDg_SI/AAAAAAAAN9Q/iJCVH9xaCUU/w368-h470-no/20150506_blenderWaterOut.png><img src=https://lh6.googleusercontent.com/-yXkWDnldt5c/VUmTirDg_SI/AAAAAAAAN9Q/iJCVH9xaCUU/w368-h470-no/20150506_blenderWaterOut.png alt=imageWaterOut></a></p><p>⇒今のところ修正方法が不明。</p><h3 id=heading8>プレビューだと飛沫が確認できない</h3><p>飛沫の設定をしてみたが、プレビュー状態だと確認できなかった。
+レンダリングするときちんと描画されている。</p><h3 id=heading9>流体のマテリアル設定</h3><p>流体のマテリアル設定は、流入口のほうではなく、ドメインに行う。</p><h2 id=heading10>参考資料</h2><ul><li><a href=http://3d-memo.blog.jp/archives/1004692853.html>いろはメモ -Blender-: グラスに水を注いでみる 〈流体シミュレーション〉</a></li><li><a href=http://cycles.wiki.fc2.com/wiki/%E3%82%AA%E3%83%96%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88%E3%81%AE%E6%B3%95%E7%B7%9A%E6%96%B9%E5%90%91%E3%81%AE%E7%A2%BA%E8%AA%8D%E6%96%B9%E6%B3%95>Blender Cycles memo: オブジェクトの法線方向の確認方法</a></li></ul><div class=post_extra><div class=copy data-share="Share Story" data-copied="Link Copied"><svg><use xlink:href="#copy"/></svg></div></div></article><aside><h3>Referenced from</h3><ul class="posts aside"></ul><h3>More from しさく</h3><ul class="posts aside"><li class=post_item><a class=post_card href=/scrapbook/softwaretool/blender/shizuokadevunityandblender03/ title=UnityとBlenderハンズオンの第3章を進めてみる style=background-image:url(https://iimuz.github.io/scrapbook/images/thumbnail.svg)></a><div class=excerpt><div class=excerpt_meta><a href=https://iimuz.github.io/scrapbook/tags/blender class=post_tag>blender</a><div class=copy data-share="Share Story" data-copied="Link Copied"><svg><use xlink:href="#copy"/></svg></div></div><h3 class=post_link><a href=/scrapbook/softwaretool/blender/shizuokadevunityandblender03/>UnityとBlenderハンズオンの第3章を進めてみる</a></h3><div class=post_link><div><i class="far fa-edit"></i>2019-12-28 05:39:31 +0000 UTC</div></div></div></li><li class=post_item><a class=post_card href=/scrapbook/softwaretool/blender/shizuokadevunityandblender02/ title=UnityとBlenderハンズオンの第2章を進めてみる style=background-image:url(https://iimuz.github.io/scrapbook/images/thumbnail.svg)></a><div class=excerpt><div class=excerpt_meta><a href=https://iimuz.github.io/scrapbook/tags/blender class=post_tag>blender</a><div class=copy data-share="Share Story" data-copied="Link Copied"><svg><use xlink:href="#copy"/></svg></div></div><h3 class=post_link><a href=/scrapbook/softwaretool/blender/shizuokadevunityandblender02/>UnityとBlenderハンズオンの第2章を進めてみる</a></h3><div class=post_link><div><i class="far fa-edit"></i>2019-12-28 05:39:31 +0000 UTC</div></div></div></li><li class=post_item><a class=post_card href=/scrapbook/softwaretool/blender/shizuokadevunityandblender01/ title=UnityとBlenderハンズオンの第1章を進めてみる style=background-image:url(https://iimuz.github.io/scrapbook/images/thumbnail.svg)></a><div class=excerpt><div class=excerpt_meta><a href=https://iimuz.github.io/scrapbook/tags/blender class=post_tag>blender</a><div class=copy data-share="Share Story" data-copied="Link Copied"><svg><use xlink:href="#copy"/></svg></div></div><h3 class=post_link><a href=/scrapbook/softwaretool/blender/shizuokadevunityandblender01/>UnityとBlenderハンズオンの第1章を進めてみる</a></h3><div class=post_link><div><i class="far fa-edit"></i>2019-12-28 05:39:31 +0000 UTC</div></div></div></li><li class=post_item><a class=post_card href=/scrapbook/softwaretool/blender/blenderpythonscript/ title=BlenderでPythonスクリプトを利用する style=background-image:url(https://iimuz.github.io/scrapbook/images/thumbnail.svg)></a><div class=excerpt><div class=excerpt_meta><a href=https://iimuz.github.io/scrapbook/tags/blender class=post_tag>blender</a><div class=copy data-share="Share Story" data-copied="Link Copied"><svg><use xlink:href="#copy"/></svg></div></div><h3 class=post_link><a href=/scrapbook/softwaretool/blender/blenderpythonscript/>BlenderでPythonスクリプトを利用する</a></h3><div class=post_link><div><i class="far fa-edit"></i>2019-12-28 05:39:31 +0000 UTC</div></div></div></li><li class=post_item><a class=post_card href=/scrapbook/softwaretool/blender/blendersetting/ title=Blenderコマンドの備忘録 style=background-image:url(https://iimuz.github.io/scrapbook/images/thumbnail.svg)></a><div class=excerpt><div class=excerpt_meta><a href=https://iimuz.github.io/scrapbook/tags/blender class=post_tag>blender</a><div class=copy data-share="Share Story" data-copied="Link Copied"><svg><use xlink:href="#copy"/></svg></div></div><h3 class=post_link><a href=/scrapbook/softwaretool/blender/blendersetting/>Blenderコマンドの備忘録</a></h3><div class=post_link><div><i class="far fa-edit"></i>2019-12-28 05:39:31 +0000 UTC</div></div></div></li></ul></aside></div><script src=https://iimuz.github.io/scrapbook/js/autosize.min.js></script><script src=https://iimuz.github.io/scrapbook/js/timeago.js></script></main><svg width="0" height="0" class="hidden"><symbol viewBox="0 0 699.428 699.428" xmlns="http://www.w3.org/2000/svg" id="copy"><path d="M502.714.0H240.428C194.178.0 153 42.425 153 87.429l-25.267.59c-46.228.0-84.019 41.834-84.019 86.838V612c0 45.004 41.179 87.428 87.429 87.428H459c46.249.0 87.428-42.424 87.428-87.428h21.857c46.25.0 87.429-42.424 87.429-87.428v-349.19zM459 655.715H131.143c-22.95.0-43.714-21.441-43.714-43.715V174.857c0-22.272 18.688-42.993 41.638-42.993l23.933-.721v393.429C153 569.576 194.178 612 240.428 612h262.286c0 22.273-20.765 43.715-43.714 43.715zm153-131.143c0 22.271-20.765 43.713-43.715 43.713H240.428c-22.95.0-43.714-21.441-43.714-43.713V87.429c0-22.272 20.764-43.714 43.714-43.714H459c-.351 50.337.0 87.975.0 87.975.0 45.419 40.872 86.882 87.428 86.882H612zm-65.572-349.715c-23.277.0-43.714-42.293-43.714-64.981V44.348L612 174.857zm-43.714 131.537H306c-12.065.0-21.857 9.77-21.857 21.835s9.792 21.835 21.857 21.835h196.714c12.065.0 21.857-9.771 21.857-21.835.0-12.065-9.792-21.835-21.857-21.835zm0 109.176H306c-12.065.0-21.857 9.77-21.857 21.834.0 12.066 9.792 21.836 21.857 21.836h196.714c12.065.0 21.857-9.77 21.857-21.836.0-12.064-9.792-21.834-21.857-21.834z"/></symbol><symbol viewBox="0 0 60.015 60.015" xmlns="http://www.w3.org/2000/svg" id="reply"><path d="M42.007.0h-24c-9.925.0-18 8.075-18 18v14c0 9.59 7.538 17.452 17 17.973v8.344a1.694 1.694.0 001.699 1.698c.44.0.873-.173 1.198-.498l1.876-1.876C26.708 52.713 33.259 50 40.227 50h1.78c9.925.0 18-8.075 18-18V18c0-9.925-8.075-18-18-18zm16 32c0 8.822-7.178 16-16 16h-1.78c-7.502.0-14.556 2.921-19.86 8.226l-1.359 1.359V44a1 1 0 10-2 0v3.949c-8.356-.52-15-7.465-15-15.949V18c0-8.822 7.178-16 16-16h24c8.822.0 16 7.178 16 16v14z"/></symbol></svg><footer class=footer><div class="footer_inner wrap pale"><p>&copy; <span class=year></span>しさく</p><p>Designed by <a href="<no value>" title="Linkedin Profile"><no value></a></p></div></footer><script src=https://iimuz.github.io/scrapbook/js/index.js></script></body></html>

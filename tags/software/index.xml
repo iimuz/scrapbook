@@ -1,115 +1,30 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>software on しさく</title>
-    <link>https://iimuz.github.io/scrapbook/tags/software/</link>
-    <description>Recent content in software on しさく</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 05 Apr 2019 08:38:16 +0000</lastBuildDate>
-    
-	<atom:link href="https://iimuz.github.io/scrapbook/tags/software/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>VS2010 のデバッグ時に例外発生時で中断する方法</title>
-      <link>https://iimuz.github.io/scrapbook/softwaretool/visualstudio/debugexception/</link>
-      <pubDate>Fri, 05 Apr 2019 08:38:16 +0000</pubDate>
-      
-      <guid>https://iimuz.github.io/scrapbook/softwaretool/visualstudio/debugexception/</guid>
-      <description>Visual Studio 2010 でデバッグ実行時に例外が発生したときに、 発生した時点で中断する設定です。 例外は発生したところがわからないとデバッグしにくく調べました。
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>software on しさく</title><link>https://iimuz.github.io/scrapbook/tags/software/</link><description>Recent content in software on しさく</description><generator>Hugo -- gohugo.io</generator><lastBuildDate>Fri, 05 Apr 2019 08:38:16 +0000</lastBuildDate><atom:link href="https://iimuz.github.io/scrapbook/tags/software/index.xml" rel="self" type="application/rss+xml"/><item><title>VS2010 のデバッグ時に例外発生時で中断する方法</title><link>https://iimuz.github.io/scrapbook/softwaretool/visualstudio/debugexception/</link><pubDate>Fri, 05 Apr 2019 08:38:16 +0000</pubDate><guid>https://iimuz.github.io/scrapbook/softwaretool/visualstudio/debugexception/</guid><description>Visual Studio 2010 でデバッグ実行時に例外が発生したときに、 発生した時点で中断する設定です。 例外は発生したところがわからないとデバッグしにくく調べました。
 &amp;ldquo;デバッグ&amp;rdquo; -&amp;gt; &amp;ldquo;例外&amp;rdquo; をクリックし、 出てきたウィンドウでチェックを ON にすれば例外発生時に中断できます。
-   例外設定画面         </description>
-    </item>
-    
-    <item>
-      <title>Windows に SPICE のクライアントをインストールする</title>
-      <link>https://iimuz.github.io/scrapbook/softwaretool/others/install-spice-win/</link>
-      <pubDate>Wed, 06 Feb 2019 21:40:13 +0900</pubDate>
-      
-      <guid>https://iimuz.github.io/scrapbook/softwaretool/others/install-spice-win/</guid>
-      <description>kvm で構築し GPU Passthrough した windows 環境で、 OpenGL を利用したソフトウェアを動かしました。 そのとき、 Spice というリモート接続するソフトウェアを利用したのですが、 windows 版のインストーラのダウンロード方法が分かりにくかったので、メモしておきます。
+例外設定画面</description></item><item><title>Windows に SPICE のクライアントをインストールする</title><link>https://iimuz.github.io/scrapbook/softwaretool/others/install-spice-win/</link><pubDate>Wed, 06 Feb 2019 21:40:13 +0900</pubDate><guid>https://iimuz.github.io/scrapbook/softwaretool/others/install-spice-win/</guid><description>kvm で構築し GPU Passthrough した windows 環境で、 OpenGL を利用したソフトウェアを動かしました。 そのとき、 Spice というリモート接続するソフトウェアを利用したのですが、 windows 版のインストーラのダウンロード方法が分かりにくかったので、メモしておきます。
 windows の SPICE クライアントインストールは、なぜか virt viewer のインストールで行います。 (わかる人には分かるのでしょうが、インストールも SPICE Client とかの名称なら直感的に分かったのですが。) virt viewer というソフトウェアがそのまま spice のクライアントになります。 そのため、インストールには下記の手順でたどった先のファイルをダウンロードする必要があります。
- SPICE へ行く &amp;ldquo;Download&amp;rdquo; を開く 下記画像中(SPICE ダウンロードページ)の &amp;ldquo;virt-manager download page&amp;rdquo; を開く 下記画像中(Virt Manager ダウンロードページ)の &amp;ldquo;Win64 MSI&amp;rdquo; をクリックしてダウンロード     SPICE ダウンロードページ Virt Manager ダウンロードページ          </description>
-    </item>
-    
-    <item>
-      <title>Qt におけるリモートデバッグ</title>
-      <link>https://iimuz.github.io/scrapbook/softwaretool/qt/qt-remote-debug/</link>
-      <pubDate>Wed, 06 Feb 2019 21:38:27 +0900</pubDate>
-      
-      <guid>https://iimuz.github.io/scrapbook/softwaretool/qt/qt-remote-debug/</guid>
-      <description>Qt Creator を利用した場合にリモートデバッグを行うこと自体は公式に方法がああります。
+SPICE へ行く &amp;ldquo;Download&amp;rdquo; を開く 下記画像中(SPICE ダウンロードページ)の &amp;ldquo;virt-manager download page&amp;rdquo; を開く 下記画像中(Virt Manager ダウンロードページ)の &amp;ldquo;Win64 MSI&amp;rdquo; をクリックしてダウンロード SPICE ダウンロードページ Virt Manager ダウンロードページ</description></item><item><title>Qt におけるリモートデバッグ</title><link>https://iimuz.github.io/scrapbook/softwaretool/qt/qt-remote-debug/</link><pubDate>Wed, 06 Feb 2019 21:38:27 +0900</pubDate><guid>https://iimuz.github.io/scrapbook/softwaretool/qt/qt-remote-debug/</guid><description>Qt Creator を利用した場合にリモートデバッグを行うこと自体は公式に方法がああります。
 Launching the Debugger
 サンプルの OpenGL を利用していると思われるプロジェクトでリモートデバッグできることを確認しました。 下記のような用語を用いるとします。
- ホスト PC: 開発した exe を実行する PC  exe の実行に必要なバイナリやインストールのみを実行   サーバ PC: 開発用環境を構築した PC  ビルドするために QtCreator や Visual Studio をインストール    事前条件として下記の作業を行っています。
- ホスト PC  Visual Studio Professional 2013 Update5 のインストール QtCreator 5.6.4 のインストール Windows SDK のインストール(他のチェックボックスはすべて外しています。)   サーバ PC  Windows SDK の Remote Debugger ツールをインストール(他のチェックボックスはすべて外しています。) サーバ PC の qtcreatorcdbext.dll (32bit or 64bit) を任意のディレクトリ (qtlib) へコピー    その上で下記のような手順でデバッガを起動します。</description>
-    </item>
-    
-    <item>
-      <title>Git for Windows で proxy を設定する</title>
-      <link>https://iimuz.github.io/scrapbook/softwaretool/git/proxy-using-git-for-windows/</link>
-      <pubDate>Sat, 02 Feb 2019 22:09:59 +0900</pubDate>
-      
-      <guid>https://iimuz.github.io/scrapbook/softwaretool/git/proxy-using-git-for-windows/</guid>
-      <description>WSL がインストールできない環境で、 git for windows をインストールしたところ、 nc コマンドが使えず git の proxy 指定ができなかったので調べました。 nc コマンドの代わりに connect.exe が利用できるようです。
-ProxyCommand connect.exe -H hoge.proxy.jp:8080 %h %p 22番ポートが使えなくても、SSHでGitしたい！</description>
-    </item>
-    
-    <item>
-      <title>CDB の使い方を調べた時のメモ</title>
-      <link>https://iimuz.github.io/scrapbook/softwaretool/qt/cdb-debug/</link>
-      <pubDate>Sat, 02 Feb 2019 21:45:10 +0900</pubDate>
-      
-      <guid>https://iimuz.github.io/scrapbook/softwaretool/qt/cdb-debug/</guid>
-      <description>Qt で開発されているソフトウェアのデバッグ作業で調べたので、メモしておきます。 単にデバッグ実行するだけであれば、 Qt の開発環境をデバッグ実行するだけなので、意識する事はないと思います。 今回は開発環境が入っている PC では実行できなかったため、 リモート PC で実行して開発環境からチェックするということを行いました。 Visual Studio だと、開発環境からリモートの操作ができるのですが、 Qt 開発環境の場合は、リモート PC のコマンドラインからステップ実行などをする必要がありました。 ブレークポイントの設定などは Qt 環境からできますが、 なぜか、一回止めると、再度進めるためにはコマンドラインの入力待ちになってしまいました。 変数のチェックとかは、 Qt 開発環境からできます。
+ホスト PC: 開発した exe を実行する PC exe の実行に必要なバイナリやインストールのみを実行 サーバ PC: 開発用環境を構築した PC ビルドするために QtCreator や Visual Studio をインストール 事前条件として下記の作業を行っています。
+ホスト PC Visual Studio Professional 2013 Update5 のインストール QtCreator 5.6.4 のインストール Windows SDK のインストール(他のチェックボックスはすべて外しています。) サーバ PC Windows SDK の Remote Debugger ツールをインストール(他のチェックボックスはすべて外しています。) サーバ PC の qtcreatorcdbext.dll (32bit or 64bit) を任意のディレクトリ (qtlib) へコピー その上で下記のような手順でデバッガを起動します。</description></item><item><title>Git for Windows で proxy を設定する</title><link>https://iimuz.github.io/scrapbook/softwaretool/git/proxy-using-git-for-windows/</link><pubDate>Sat, 02 Feb 2019 22:09:59 +0900</pubDate><guid>https://iimuz.github.io/scrapbook/softwaretool/git/proxy-using-git-for-windows/</guid><description>WSL がインストールできない環境で、 git for windows をインストールしたところ、 nc コマンドが使えず git の proxy 指定ができなかったので調べました。 nc コマンドの代わりに connect.exe が利用できるようです。
+ProxyCommand connect.exe -H hoge.proxy.jp:8080 %h %p 22番ポートが使えなくても、SSHでGitしたい！</description></item><item><title>CDB の使い方を調べた時のメモ</title><link>https://iimuz.github.io/scrapbook/softwaretool/qt/cdb-debug/</link><pubDate>Sat, 02 Feb 2019 21:45:10 +0900</pubDate><guid>https://iimuz.github.io/scrapbook/softwaretool/qt/cdb-debug/</guid><description>Qt で開発されているソフトウェアのデバッグ作業で調べたので、メモしておきます。 単にデバッグ実行するだけであれば、 Qt の開発環境をデバッグ実行するだけなので、意識する事はないと思います。 今回は開発環境が入っている PC では実行できなかったため、 リモート PC で実行して開発環境からチェックするということを行いました。 Visual Studio だと、開発環境からリモートの操作ができるのですが、 Qt 開発環境の場合は、リモート PC のコマンドラインからステップ実行などをする必要がありました。 ブレークポイントの設定などは Qt 環境からできますが、 なぜか、一回止めると、再度進めるためにはコマンドラインの入力待ちになってしまいました。 変数のチェックとかは、 Qt 開発環境からできます。
 cdb/Windbgの使い方のメモ にまとめられていました。
 コマンド一覧の取得は単純に ? でできます。
-0:000&amp;gt; ?  実行関連
+0:000&amp;gt; ? 実行関連
 順にgdbにおけるcontinue、nexti（関数の中に入らない）、stepi（関数の中に入る）、finish（リターンするまで進める）に対応する。
- 0:000&amp;gt; g 0:000&amp;gt; p 0:000&amp;gt; t 0:000&amp;gt; gu </description>
-    </item>
-    
-    <item>
-      <title>powershell でファイルをダウンロードする</title>
-      <link>https://iimuz.github.io/scrapbook/programming/powershell/download-using-powershell/</link>
-      <pubDate>Wed, 30 Jan 2019 22:28:29 +0900</pubDate>
-      
-      <guid>https://iimuz.github.io/scrapbook/programming/powershell/download-using-powershell/</guid>
-      <description>いろいろな方法を試しましたが、結局上記スクリプトでないとダウンロードできませんでした。
+0:000&amp;gt; g 0:000&amp;gt; p 0:000&amp;gt; t 0:000&amp;gt; gu</description></item><item><title>powershell でファイルをダウンロードする</title><link>https://iimuz.github.io/scrapbook/programming/powershell/download-using-powershell/</link><pubDate>Wed, 30 Jan 2019 22:28:29 +0900</pubDate><guid>https://iimuz.github.io/scrapbook/programming/powershell/download-using-powershell/</guid><description>いろいろな方法を試しましたが、結局上記スクリプトでないとダウンロードできませんでした。
 Power Shell でファイルをダウンロードする で基本のダウンロードスクリプトが見つかったのですが、 https からのダウンロードのせいか SSL/TLS のチャネル生成失敗エラーが発生していました。
-&amp;#34;2&amp;#34; 個の引数を指定して &amp;#34;DownloadFile&amp;#34; を呼び出し中に例外が発生しました: &amp;#34;要求は中止されました: SSL/TLS のセキュリティで保護されているチャネルを作成できませんでした&amp;#34; SSL/TLS のセキュリティ用に Invoke-RestMethod、Invoke-WebRequestが失敗する の方法で SecurityProtocol の 2 行を追加する必要がありました。 SSL/TLS 関連では、 PowershellのInvoke-RestMethodをhttpsに実施すると失敗する の方法では失敗してしまいました。 よくわかっていないので求めていることが違ったのかもしれません。</description>
-    </item>
-    
-    <item>
-      <title>svn のリポジトリ構成がデフォルトではない場合における git svn コマンド</title>
-      <link>https://iimuz.github.io/scrapbook/softwaretool/git/git-svn-for-strange-folder/</link>
-      <pubDate>Wed, 30 Jan 2019 22:21:53 +0900</pubDate>
-      
-      <guid>https://iimuz.github.io/scrapbook/softwaretool/git/git-svn-for-strange-folder/</guid>
-      <description>svn の中が歴史的経緯により複雑な環境となっている場合があります。 例えば、下記のような構成です。
+&amp;#34;2&amp;#34; 個の引数を指定して &amp;#34;DownloadFile&amp;#34; を呼び出し中に例外が発生しました: &amp;#34;要求は中止されました: SSL/TLS のセキュリティで保護されているチャネルを作成できませんでした&amp;#34; SSL/TLS のセキュリティ用に Invoke-RestMethod、Invoke-WebRequestが失敗する の方法で SecurityProtocol の 2 行を追加する必要がありました。 SSL/TLS 関連では、 PowershellのInvoke-RestMethodをhttpsに実施すると失敗する の方法では失敗してしまいました。 よくわかっていないので求めていることが違ったのかもしれません。</description></item><item><title>svn のリポジトリ構成がデフォルトではない場合における git svn コマンド</title><link>https://iimuz.github.io/scrapbook/softwaretool/git/git-svn-for-strange-folder/</link><pubDate>Wed, 30 Jan 2019 22:21:53 +0900</pubDate><guid>https://iimuz.github.io/scrapbook/softwaretool/git/git-svn-for-strange-folder/</guid><description>svn の中が歴史的経緯により複雑な環境となっている場合があります。 例えば、下記のような構成です。
 root |- trunk | |- project_a | |- project_b |- branches | |- project_a | |- project_b |- tags |- project_a_v1.0.0 |- project_b_v1.0.1 root の下にプロジェクトごとの trunk などがあるわけではなく、各プロジェクトの turnk が trunk ディレクトリの下に配置されています。
 この場合は、下記のようなコマンド群を使っていく必要があります。
 git svn clone -T project_a svn://hoge/trunk/ trunk の直前までの URL を書き、最後の trunk フォルダ名を -T オプションにつなげます。 branches とかの取得方法もあるのかもしれませんが、あきらめました。
-上記方法論だと、 branch は取り込め無いのが問題ですが、とりあえず trunk だけは移行できます。</description>
-    </item>
-    
-    <item>
-      <title>Windows で OpenSSH をドメイン環境下でインストール</title>
-      <link>https://iimuz.github.io/scrapbook/softwaretool/others/install-windows-openssh-under-domain/</link>
-      <pubDate>Sat, 22 Dec 2018 12:06:17 +0900</pubDate>
-      
-      <guid>https://iimuz.github.io/scrapbook/softwaretool/others/install-windows-openssh-under-domain/</guid>
-      <description>Windows10 において、 &amp;ldquo;オプション機能の追加&amp;quot;から OpenSSH Server をインストールしたら失敗したので、 対処したときのメモです。
+上記方法論だと、 branch は取り込め無いのが問題ですが、とりあえず trunk だけは移行できます。</description></item><item><title>Windows で OpenSSH をドメイン環境下でインストール</title><link>https://iimuz.github.io/scrapbook/softwaretool/others/install-windows-openssh-under-domain/</link><pubDate>Sat, 22 Dec 2018 12:06:17 +0900</pubDate><guid>https://iimuz.github.io/scrapbook/softwaretool/others/install-windows-openssh-under-domain/</guid><description>Windows10 において、 &amp;ldquo;オプション機能の追加&amp;quot;から OpenSSH Server をインストールしたら失敗したので、 対処したときのメモです。
 結論としては、 WSUS (Windows Server Update System) が有効になっていて、 インストールできない場合があるようなので、 一時的に WSUS を無効にしてあげることで対応できるようです。
 OpenSSH Server のインストール手順 下記に手順を示します。
-  Win + R を押して、 regedit で OK を押す。
-  管理者権限に昇格してレジストリエディタを開く。
-  HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\AU に移動する。
-  UseWUServer の値を 0 とする。
-  WSUS を再起動する。
-$ net stop wuauserv &amp;amp;&amp;amp; net start wuauserv   OpenSSH Server をインストールする。
-$ Get-WindowsCapability -Online | ? { $_.Name -like &amp;#39;OpenSSH*&amp;#39; } $ Add-WindowsCapability -Online -Name &amp;#39;OpenSSH.</description>
-    </item>
-    
-  </channel>
-</rss>
+Win + R を押して、 regedit で OK を押す。
+管理者権限に昇格してレジストリエディタを開く。
+HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\AU に移動する。
+UseWUServer の値を 0 とする。
+WSUS を再起動する。
+$ net stop wuauserv &amp;amp;&amp;amp; net start wuauserv OpenSSH Server をインストールする。
+$ Get-WindowsCapability -Online | ? { $_.Name -like &amp;#39;OpenSSH*&amp;#39; } $ Add-WindowsCapability -Online -Name &amp;#39;OpenSSH.</description></item></channel></rss>

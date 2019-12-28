@@ -1,91 +1,24 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>python on しさく</title>
-    <link>https://iimuz.github.io/scrapbook/tags/python/</link>
-    <description>Recent content in python on しさく</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 18 Nov 2018 15:33:13 +0900</lastBuildDate>
-    
-	<atom:link href="https://iimuz.github.io/scrapbook/tags/python/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>Qiita API を利用して記事を投稿する</title>
-      <link>https://iimuz.github.io/scrapbook/programming/python/post-from-qiita-api/</link>
-      <pubDate>Sun, 18 Nov 2018 15:33:13 +0900</pubDate>
-      
-      <guid>https://iimuz.github.io/scrapbook/programming/python/post-from-qiita-api/</guid>
-      <description>はじめに Qiita API を利用してローカルの markdown ファイルを記事としてアップロードする python スクリプトを作成しました。作成したスクリプトのテストも兼ねて、作業内容をまとめてみます。
- 投稿内容の作成 投稿用のヘッダ情報の作成 投稿処理 投稿後のレスポンス情報から ID 情報を取得 投稿内容が書かれたファイルのヘッダ部分に ID を追加  背景 以前から自分で書いたメモなどの単純なドキュメントファイルに関しては、一括して GitLab.com のプライベートリポジトリで管理していました。今回、 Qiita に投稿してみようと思ったのですが、 Qiita に投稿する内容は、都度書いて Qiita で管理するということも考えました。が、やはりローカル環境でテキストを書きたいということもあり、 Qiita API を活用して、ローカル環境から投稿するようにしました。まだまだ粗削りですが、とりあえず投稿して、記事を修正した場合は、修正版をコミットすることまではできました。
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>python on しさく</title><link>https://iimuz.github.io/scrapbook/tags/python/</link><description>Recent content in python on しさく</description><generator>Hugo -- gohugo.io</generator><lastBuildDate>Sun, 18 Nov 2018 15:33:13 +0900</lastBuildDate><atom:link href="https://iimuz.github.io/scrapbook/tags/python/index.xml" rel="self" type="application/rss+xml"/><item><title>Qiita API を利用して記事を投稿する</title><link>https://iimuz.github.io/scrapbook/programming/python/post-from-qiita-api/</link><pubDate>Sun, 18 Nov 2018 15:33:13 +0900</pubDate><guid>https://iimuz.github.io/scrapbook/programming/python/post-from-qiita-api/</guid><description>はじめに Qiita API を利用してローカルの markdown ファイルを記事としてアップロードする python スクリプトを作成しました。作成したスクリプトのテストも兼ねて、作業内容をまとめてみます。
+投稿内容の作成 投稿用のヘッダ情報の作成 投稿処理 投稿後のレスポンス情報から ID 情報を取得 投稿内容が書かれたファイルのヘッダ部分に ID を追加 背景 以前から自分で書いたメモなどの単純なドキュメントファイルに関しては、一括して GitLab.com のプライベートリポジトリで管理していました。今回、 Qiita に投稿してみようと思ったのですが、 Qiita に投稿する内容は、都度書いて Qiita で管理するということも考えました。が、やはりローカル環境でテキストを書きたいということもあり、 Qiita API を活用して、ローカル環境から投稿するようにしました。まだまだ粗削りですが、とりあえず投稿して、記事を修正した場合は、修正版をコミットすることまではできました。
 $ python3 --version Python 3.6.6 投稿内容の作成 ローカルのファイル群は Hugo を活用しています。そのため、投稿する内容以外にヘッダ情報が付与されています。ここを活用して、 Qiita に投稿するヘッダ情報も管理するようにします。 今回は、下記のようなヘッダ情報と投稿内容を作成していると仮定します。
 (hoge.md)
-+++ title = &amp;#34;テスト投稿&amp;#34; draft = true tags = [&amp;#34;test&amp;#34;] [qiita] coediting = false gist = false tweet = false id = &amp;#34;&amp;#34; +++ hogehoge 投稿用のヘッダ情報の作成 上記で作成した hoge.</description>
-    </item>
-    
-    <item>
-      <title>Python開発環境をDockerで構築します</title>
-      <link>https://iimuz.github.io/scrapbook/softwaretool/docker/pythonenvwithdocker/</link>
-      <pubDate>Wed, 23 Nov 2016 21:17:23 +0900</pubDate>
-      
-      <guid>https://iimuz.github.io/scrapbook/softwaretool/docker/pythonenvwithdocker/</guid>
-      <description>目標 深層学習の勉強で実際に実行できる環境を整えようと思ったのですが、 以前から入っているpython環境とは別にしたいのでDockerで構築してみました。
-pythonにインストールするライブラリは、 O&#39;REILLY ゼロから作るDeep Learningが動作する環境です。 したがって、下記の環境になります。
- Python 3.x NumPy Matplotlib  結論 python環境を構築するdockerファイルは下記になりました。 もはやdockerfile必要なのかというレベルで何も書いていないです。(楽すぎます)
++++ title = &amp;#34;テスト投稿&amp;#34; draft = true tags = [&amp;#34;test&amp;#34;] [qiita] coediting = false gist = false tweet = false id = &amp;#34;&amp;#34; +++ hogehoge 投稿用のヘッダ情報の作成 上記で作成した hoge.</description></item><item><title>Python開発環境をDockerで構築します</title><link>https://iimuz.github.io/scrapbook/softwaretool/docker/pythonenvwithdocker/</link><pubDate>Wed, 23 Nov 2016 21:17:23 +0900</pubDate><guid>https://iimuz.github.io/scrapbook/softwaretool/docker/pythonenvwithdocker/</guid><description>目標 深層学習の勉強で実際に実行できる環境を整えようと思ったのですが、 以前から入っているpython環境とは別にしたいのでDockerで構築してみました。
+pythonにインストールするライブラリは、 O'REILLY ゼロから作るDeep Learningが動作する環境です。 したがって、下記の環境になります。
+Python 3.x NumPy Matplotlib 結論 python環境を構築するdockerファイルは下記になりました。 もはやdockerfile必要なのかというレベルで何も書いていないです。(楽すぎます)
 FROMpython:3.5.2RUN pip install numpy matplotlib理由 python環境であればpyenvとか利用すれば、環境は分離できるのですが、 利用しているPCがMacとWindowsの両方あります(Macの方が性能が低いです)、 Macの方がプログラミングはしやすいのですが、 深層学習には軽い実験をするのにもマシンパワーが必要となるため、 実行だけはWindowsでやりたいわけです。 MacとWindowsで同じように動く環境を構築するのがめんどくさいという理由です。
 注意 Dokcerと深層学習のフレームワーク Tensorflowを利用するならばDockerに公式があります TensorflowのDockerイメージは、Docker Hubにあります。
 PUBLIC REPOSITORY:tensorflow/tensorflow
 上記イメージは、python2.7になります。 python3系のdockerイメージは公開されていないそうです。 python3系でTensorFlowを利用したい場合は、 公式からForkしてPython3対応を公開されている方がいらっしゃいましたので、 以下を利用すれば良いと思います。
- khm/tensorflow: branch/feature-py3 TensorFlow の Docker Image を Python3 で動かす  その他  Docker Habに公式イメージがあるフレームワーク  PUBLIC | AUTOMATED BUILD chainer/chainer   公式が見つからなかったフレームワーク  Caffe DeepDream    MacとWindowsではGPUの利用はできません 深層学習で遊ぶためにはGPGPUを利用した方が高速に処理できます。 (場合によってはCPUでは現実時間で終わりません。) ただし、MacかWindowsでDockerを利用する場合、GPUデバイスにアクセスできないため、 CPU実行しかできません。 必要に応じてLinux環境が純粋に入っているPCを用意する必要がありそうです。</description>
-    </item>
-    
-    <item>
-      <title>virtualenvを利用したpython環境の構築(Windows編)</title>
-      <link>https://iimuz.github.io/scrapbook/programming/python/pythonwindows/</link>
-      <pubDate>Sun, 04 Oct 2015 00:00:00 +0900</pubDate>
-      
-      <guid>https://iimuz.github.io/scrapbook/programming/python/pythonwindows/</guid>
-      <description>&lt;p&gt;Windows環境でvirtualenv環境を構築したときのメモ。&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>python3.4でmatplotlibを導入したらグラフ表示できない問題の対処法</title>
-      <link>https://iimuz.github.io/scrapbook/programming/python/matplotlib/</link>
-      <pubDate>Sat, 03 Oct 2015 00:00:00 +0900</pubDate>
-      
-      <guid>https://iimuz.github.io/scrapbook/programming/python/matplotlib/</guid>
-      <description>&lt;p&gt;Mac(Yosemite)のvirtualenv環境でmatplotlibを導入したら、導入できたのに表示できなかったので対処法メモ。&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Macでpython環境の構築</title>
-      <link>https://iimuz.github.io/scrapbook/programming/python/pythonenvironment/</link>
-      <pubDate>Sat, 29 Aug 2015 00:00:00 +0900</pubDate>
-      
-      <guid>https://iimuz.github.io/scrapbook/programming/python/pythonenvironment/</guid>
-      <description>MacでPython環境を構築した時のメモ。
+khm/tensorflow: branch/feature-py3 TensorFlow の Docker Image を Python3 で動かす その他 Docker Habに公式イメージがあるフレームワーク PUBLIC | AUTOMATED BUILD chainer/chainer 公式が見つからなかったフレームワーク Caffe DeepDream MacとWindowsではGPUの利用はできません 深層学習で遊ぶためにはGPGPUを利用した方が高速に処理できます。 (場合によってはCPUでは現実時間で終わりません。) ただし、MacかWindowsでDockerを利用する場合、GPUデバイスにアクセスできないため、 CPU実行しかできません。 必要に応じてLinux環境が純粋に入っているPCを用意する必要がありそうです。</description></item><item><title>virtualenvを利用したpython環境の構築(Windows編)</title><link>https://iimuz.github.io/scrapbook/programming/python/pythonwindows/</link><pubDate>Sun, 04 Oct 2015 00:00:00 +0900</pubDate><guid>https://iimuz.github.io/scrapbook/programming/python/pythonwindows/</guid><description>&lt;p>Windows環境でvirtualenv環境を構築したときのメモ。&lt;/p></description></item><item><title>python3.4でmatplotlibを導入したらグラフ表示できない問題の対処法</title><link>https://iimuz.github.io/scrapbook/programming/python/matplotlib/</link><pubDate>Sat, 03 Oct 2015 00:00:00 +0900</pubDate><guid>https://iimuz.github.io/scrapbook/programming/python/matplotlib/</guid><description>&lt;p>Mac(Yosemite)のvirtualenv環境でmatplotlibを導入したら、導入できたのに表示できなかったので対処法メモ。&lt;/p></description></item><item><title>Macでpython環境の構築</title><link>https://iimuz.github.io/scrapbook/programming/python/pythonenvironment/</link><pubDate>Sat, 29 Aug 2015 00:00:00 +0900</pubDate><guid>https://iimuz.github.io/scrapbook/programming/python/pythonenvironment/</guid><description>MacでPython環境を構築した時のメモ。
 概要 MacでPython環境を構築した時のメモ。
 pyenv-virtualenvの導入 homebrew導入済みと仮定して、以下のコマンドでpyenv-virtualenvを導入する。
 $ homebrew update $ homebrew install pyenv-virtualenv ついでに、.bash_profileに以下を記述して、パスを通す。
 export PYENV_ROOT=&amp;quot;${HOME}/.pyenv&amp;quot; if [ -d &amp;quot;${PYENV_ROOT}&amp;quot; ]; then export PATH=${PYENV_ROOT}/bin:$PATH eval &amp;quot;$(pyenv init -)&amp;quot; fi pythonのインストールは、バージョン確認して好きなのを選択すれば良い。
 $ pyenv install 3.4.3 以下のエラーがでた時はXCodeを導入すれば良いので、追加でXCodeのインストールコマンドも行う。
- ERROR: The Python ssl extension was not compiled. Missing the OpenSSL lib?
- $ xcode-select --install 利用するバージョンを変更するために以下のコマンドを実行する。
+ERROR: The Python ssl extension was not compiled. Missing the OpenSSL lib?
+$ xcode-select --install 利用するバージョンを変更するために以下のコマンドを実行する。
 $ pyenv global 3.4.3 $ pyenv rehash virtualenvの利用方法 virutalenvは、pythonの環境を構築できる。 pyenvがバージョンの管理とすると、virtualenvはライブラリなどの環境管理が可能。 pyenvの3.4.3に対して、インストールするライブラリを変更して用意することができる。
 環境を新しく作る方法は、以下のコマンドを利用する。
-$ pyenv virtualenv 3.4.3 3.4.3-develop 環境の切り替えは、pyenvでそのままできる。</description>
-    </item>
-    
-    <item>
-      <title>BlenderでPythonスクリプトを利用する</title>
-      <link>https://iimuz.github.io/scrapbook/softwaretool/blender/blenderpythonscript/</link>
-      <pubDate>Sat, 25 Apr 2015 00:00:00 +0900</pubDate>
-      
-      <guid>https://iimuz.github.io/scrapbook/softwaretool/blender/blenderpythonscript/</guid>
-      <description>&lt;p&gt;BlenderでPythonを利用する。
+$ pyenv virtualenv 3.4.3 3.4.3-develop 環境の切り替えは、pyenvでそのままできる。</description></item><item><title>BlenderでPythonスクリプトを利用する</title><link>https://iimuz.github.io/scrapbook/softwaretool/blender/blenderpythonscript/</link><pubDate>Sat, 25 Apr 2015 00:00:00 +0900</pubDate><guid>https://iimuz.github.io/scrapbook/softwaretool/blender/blenderpythonscript/</guid><description>&lt;p>BlenderでPythonを利用する。
 ついでに、Blenderの物理シミュレーションをpythonで作成する。
-作ったデータ: &lt;a href=&#34;https://github.com/iimuz/blenderTutorials/tree/develop/cubePhysicsEngine&#34;&gt;github: iimuz/blenderTutorials/cubePhysicsEngine&lt;/a&gt;&lt;/p&gt;</description>
-    </item>
-    
-  </channel>
-</rss>
+作ったデータ: &lt;a href="https://github.com/iimuz/blenderTutorials/tree/develop/cubePhysicsEngine">github: iimuz/blenderTutorials/cubePhysicsEngine&lt;/a>&lt;/p></description></item></channel></rss>

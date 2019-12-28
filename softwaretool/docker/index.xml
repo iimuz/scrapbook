@@ -1,86 +1,29 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Docker on しさく</title>
-    <link>https://iimuz.github.io/scrapbook/softwaretool/docker/</link>
-    <description>Recent content in Docker on しさく</description>
-    <generator>Hugo -- gohugo.io</generator>
-    
-	<atom:link href="https://iimuz.github.io/scrapbook/softwaretool/docker/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>docker 環境で KVM を利用する</title>
-      <link>https://iimuz.github.io/scrapbook/softwaretool/docker/docker-kvm-privileged/</link>
-      <pubDate>Mon, 17 Sep 2018 15:24:58 +0900</pubDate>
-      
-      <guid>https://iimuz.github.io/scrapbook/softwaretool/docker/docker-kvm-privileged/</guid>
-      <description>KVM + GPU Passthrough ができることまでは確認しました。 これに加えて、 docker を利用することで、 GPU の passthrough 設定のみしておけば、 package 類はインストールしなくても利用できました。
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Docker on しさく</title><link>https://iimuz.github.io/scrapbook/softwaretool/docker/</link><description>Recent content in Docker on しさく</description><generator>Hugo -- gohugo.io</generator><atom:link href="https://iimuz.github.io/scrapbook/softwaretool/docker/index.xml" rel="self" type="application/rss+xml"/><item><title>docker 環境で KVM を利用する</title><link>https://iimuz.github.io/scrapbook/softwaretool/docker/docker-kvm-privileged/</link><pubDate>Mon, 17 Sep 2018 15:24:58 +0900</pubDate><guid>https://iimuz.github.io/scrapbook/softwaretool/docker/docker-kvm-privileged/</guid><description>KVM + GPU Passthrough ができることまでは確認しました。 これに加えて、 docker を利用することで、 GPU の passthrough 設定のみしておけば、 package 類はインストールしなくても利用できました。
 docker image を生成する Dockerfile と、 docker-compose.yml のサンプルを下に置いておきました。
-GitHub: iimuz/docker-kvm</description>
-    </item>
-    
-    <item>
-      <title>KVM &#43; GPU Passthrough &#43; windows で仮想環境を構築</title>
-      <link>https://iimuz.github.io/scrapbook/softwaretool/docker/docker-kvm-windows/</link>
-      <pubDate>Mon, 17 Sep 2018 14:16:22 +0900</pubDate>
-      
-      <guid>https://iimuz.github.io/scrapbook/softwaretool/docker/docker-kvm-windows/</guid>
-      <description>windows 環境を仮想化し、 GPU を利用可能な環境を作成する方法です。 windows10 を利用した場合は、 GPU Passthrough が正常に動作することを確認しました。 一方で、 windows7 では GPU Passthrough が正常に動いていないです。
+GitHub: iimuz/docker-kvm</description></item><item><title>KVM + GPU Passthrough + windows で仮想環境を構築</title><link>https://iimuz.github.io/scrapbook/softwaretool/docker/docker-kvm-windows/</link><pubDate>Mon, 17 Sep 2018 14:16:22 +0900</pubDate><guid>https://iimuz.github.io/scrapbook/softwaretool/docker/docker-kvm-windows/</guid><description>windows 環境を仮想化し、 GPU を利用可能な環境を作成する方法です。 windows10 を利用した場合は、 GPU Passthrough が正常に動作することを確認しました。 一方で、 windows7 では GPU Passthrough が正常に動いていないです。
 あと、今回の試し範囲では GPU Passthgough した後に、 再起動なしで GPU をホスト PC で利用する方法が分かっていません。 そのため、 NVIDIA Docker などと使い分けができていないです。 多分、普通に使うなら GCP とかで GPU インスタンスを利用したほうが簡単です。
 環境構築手順 ハードウェア要件 GPU Passthrough するにあたり、ホスト PC には2つ以上の GPU が必要となります。 ひとつは、ホスト PC の UI を出力するためのグラフィックボードであり、 もうひとつはゲスト PC に Passthrough するグラフィックボードになります。 ホスト PC のグラフィックボードは、 CPU などに内蔵されているオンボード GPU でも可能です。
-その他に、 Intel VT や AMD-V などの仮想化に対応している CPU か マザーボードである必要があります。 また、 UEFI ブートに対応している必要もあります。 これらは BIOS の設定画面から有効化することができますが、 有効化できない場合は、そのホスト PC では GPU Passthrough した仮想環境を用意することができないことになります。</description>
-    </item>
-    
-    <item>
-      <title>WindowsでDocker&#43;Hugoサーバを動作させる方法です</title>
-      <link>https://iimuz.github.io/scrapbook/softwaretool/docker/dockerwindows/</link>
-      <pubDate>Sat, 26 Nov 2016 12:08:10 +0000</pubDate>
-      
-      <guid>https://iimuz.github.io/scrapbook/softwaretool/docker/dockerwindows/</guid>
-      <description>概要 Mac側でdockerを利用してhugoの実行環境を作成したのですが、 同じデータを共有しているwindows側でも ビルドとデプロイができるdocker環境を作成しました。 その際、windows側だと確認用のローカルhugoサーバを建てた時に、 接続IPの設定でハマったのでメモしておきます。
+その他に、 Intel VT や AMD-V などの仮想化に対応している CPU か マザーボードである必要があります。 また、 UEFI ブートに対応している必要もあります。 これらは BIOS の設定画面から有効化することができますが、 有効化できない場合は、そのホスト PC では GPU Passthrough した仮想環境を用意することができないことになります。</description></item><item><title>WindowsでDocker+Hugoサーバを動作させる方法です</title><link>https://iimuz.github.io/scrapbook/softwaretool/docker/dockerwindows/</link><pubDate>Sat, 26 Nov 2016 12:08:10 +0000</pubDate><guid>https://iimuz.github.io/scrapbook/softwaretool/docker/dockerwindows/</guid><description>概要 Mac側でdockerを利用してhugoの実行環境を作成したのですが、 同じデータを共有しているwindows側でも ビルドとデプロイができるdocker環境を作成しました。 その際、windows側だと確認用のローカルhugoサーバを建てた時に、 接続IPの設定でハマったのでメモしておきます。
 結論 Docker toolboxの場合は、virtualboxを利用しているため、 virtualboxのIPも設定した上で、 hugoサーバのアドレス設定を適切にする必要がありました。 (Port番号は、どこがどこに繋がっているのか明確にするためにわざと変えています。 別に変える必要はないので、本当は全部1313(hugoのデフォルト)にしています。)
-  virtualboxの設定画面(docker-machineに利用している仮想マシン) からネットワーク設定を開き、IPとポートを設定します。
- 例えば、ホストとゲストを下記のように設定します  ホスト: IP = 127.0.0.1, Port = 1313 ゲスト: IP = 0.0.0.0 Port = 8888      dockerデーモンを起動する時に、下記に記載するようにポートフォワードしておきます
-$ docker run -d -p 8888:80 -v source_volume:mount_dir hugo_image   dokcerデーモン内では下記のようにhugoサーバーが起動するようにします。
-$ hugo server -p 80 --baseURL=127.0.0.1 --bind=0.0.0.0 -w   windows側からブラウザで127.0.0.1:1313にアクセスすると観れます。
-  構成状況 結論部分で記載したように構成を組むと下記のように設定がなされます。
-(hugo: IP = 0.</description>
-    </item>
-    
-    <item>
-      <title>今更ながらにDockerについて調べてみました</title>
-      <link>https://iimuz.github.io/scrapbook/softwaretool/docker/docker/</link>
-      <pubDate>Wed, 23 Nov 2016 21:24:50 +0900</pubDate>
-      
-      <guid>https://iimuz.github.io/scrapbook/softwaretool/docker/docker/</guid>
-      <description>Dockerとは何ができるのでしょうか? 色々調べましたが、Dockerの構成などは説明されているのですが、 何ができるようになるのかをわかりやすく書いている文献を見つけられませんでした。
+virtualboxの設定画面(docker-machineに利用している仮想マシン) からネットワーク設定を開き、IPとポートを設定します。
+例えば、ホストとゲストを下記のように設定します ホスト: IP = 127.0.0.1, Port = 1313 ゲスト: IP = 0.0.0.0 Port = 8888 dockerデーモンを起動する時に、下記に記載するようにポートフォワードしておきます
+$ docker run -d -p 8888:80 -v source_volume:mount_dir hugo_image dokcerデーモン内では下記のようにhugoサーバーが起動するようにします。
+$ hugo server -p 80 --baseURL=127.0.0.1 --bind=0.0.0.0 -w windows側からブラウザで127.0.0.1:1313にアクセスすると観れます。
+構成状況 結論部分で記載したように構成を組むと下記のように設定がなされます。
+(hugo: IP = 0.</description></item><item><title>今更ながらにDockerについて調べてみました</title><link>https://iimuz.github.io/scrapbook/softwaretool/docker/docker/</link><pubDate>Wed, 23 Nov 2016 21:24:50 +0900</pubDate><guid>https://iimuz.github.io/scrapbook/softwaretool/docker/docker/</guid><description>Dockerとは何ができるのでしょうか? 色々調べましたが、Dockerの構成などは説明されているのですが、 何ができるようになるのかをわかりやすく書いている文献を見つけられませんでした。
 調べた範囲では、下記のようなことができるという感じでしょうか。 実運用でしているわけではないので本当のメリットは不明です。
- アプリケーションを実行する環境を構築できる 用意した実行環境が周りを汚さない(多分これは重要) 困ったら即消せる(まあ、環境構築してたら結構失敗するよね)  例えば、下記のようなサイトを参考にさせてもらいました。
- paiza開発日誌 いまさら聞けないDocker入門(1)   「Docker」とは、 Docker社（旧dotCloud）が開発するオープンソースの コンテナー管理ソフトウェアの1つです。
- ライセンスがオープンソースなのは使いやすいです。 githubのdocker/LICENSEによると、 Appache License2.0に従うようです。
+アプリケーションを実行する環境を構築できる 用意した実行環境が周りを汚さない(多分これは重要) 困ったら即消せる(まあ、環境構築してたら結構失敗するよね) 例えば、下記のようなサイトを参考にさせてもらいました。
+paiza開発日誌 いまさら聞けないDocker入門(1) 「Docker」とは、 Docker社（旧dotCloud）が開発するオープンソースの コンテナー管理ソフトウェアの1つです。
+ライセンスがオープンソースなのは使いやすいです。 githubのdocker/LICENSEによると、 Appache License2.0に従うようです。
 重要なこととして、 NVIDIA Dockerなるdockerイメージがあり、TensorFlowの環境構築に使えるそうです。 NVIDIA Docker
 sshによるdocker-machineのdefaultへのログイン 最初に作られたdocker-machineのdefaultへsshで入るときのIDとパスは下記になるそうです。 windowsの場合、 sshで入るにはgit-bashを利用するか(おそらくdockerインストール時に入っています。)、 Windows10であればBash on UBuntu on Windowsで入れます。 私の場合は、Bash on Windowsで入れることを確認しました。
 user: docker pass: tcuser Dockerのインストールと起動 Dokcer Toolboxをインストールしてpowershellから起動しようとすると、 いくつかエラーが発生しました。
 docker-machineでTLSエラー 下記のようなエラーが発生しました。
- Error checking TLS connection: Error checking and/or regenerating the certs: There was an error validating certificates for host &amp;ldquo;192.</description>
-    </item>
-    
-    <item>
-      <title>Python開発環境をDockerで構築します</title>
-      <link>https://iimuz.github.io/scrapbook/softwaretool/docker/pythonenvwithdocker/</link>
-      <pubDate>Wed, 23 Nov 2016 21:17:23 +0900</pubDate>
-      
-      <guid>https://iimuz.github.io/scrapbook/softwaretool/docker/pythonenvwithdocker/</guid>
-      <description>目標 深層学習の勉強で実際に実行できる環境を整えようと思ったのですが、 以前から入っているpython環境とは別にしたいのでDockerで構築してみました。
-pythonにインストールするライブラリは、 O&#39;REILLY ゼロから作るDeep Learningが動作する環境です。 したがって、下記の環境になります。
- Python 3.x NumPy Matplotlib  結論 python環境を構築するdockerファイルは下記になりました。 もはやdockerfile必要なのかというレベルで何も書いていないです。(楽すぎます)
+Error checking TLS connection: Error checking and/or regenerating the certs: There was an error validating certificates for host &amp;ldquo;192.</description></item><item><title>Python開発環境をDockerで構築します</title><link>https://iimuz.github.io/scrapbook/softwaretool/docker/pythonenvwithdocker/</link><pubDate>Wed, 23 Nov 2016 21:17:23 +0900</pubDate><guid>https://iimuz.github.io/scrapbook/softwaretool/docker/pythonenvwithdocker/</guid><description>目標 深層学習の勉強で実際に実行できる環境を整えようと思ったのですが、 以前から入っているpython環境とは別にしたいのでDockerで構築してみました。
+pythonにインストールするライブラリは、 O'REILLY ゼロから作るDeep Learningが動作する環境です。 したがって、下記の環境になります。
+Python 3.x NumPy Matplotlib 結論 python環境を構築するdockerファイルは下記になりました。 もはやdockerfile必要なのかというレベルで何も書いていないです。(楽すぎます)
 FROMpython:3.5.2RUN pip install numpy matplotlib理由 python環境であればpyenvとか利用すれば、環境は分離できるのですが、 利用しているPCがMacとWindowsの両方あります(Macの方が性能が低いです)、 Macの方がプログラミングはしやすいのですが、 深層学習には軽い実験をするのにもマシンパワーが必要となるため、 実行だけはWindowsでやりたいわけです。 MacとWindowsで同じように動く環境を構築するのがめんどくさいという理由です。
 注意 Dokcerと深層学習のフレームワーク Tensorflowを利用するならばDockerに公式があります TensorflowのDockerイメージは、Docker Hubにあります。
 PUBLIC REPOSITORY:tensorflow/tensorflow
 上記イメージは、python2.7になります。 python3系のdockerイメージは公開されていないそうです。 python3系でTensorFlowを利用したい場合は、 公式からForkしてPython3対応を公開されている方がいらっしゃいましたので、 以下を利用すれば良いと思います。
- khm/tensorflow: branch/feature-py3 TensorFlow の Docker Image を Python3 で動かす  その他  Docker Habに公式イメージがあるフレームワーク  PUBLIC | AUTOMATED BUILD chainer/chainer   公式が見つからなかったフレームワーク  Caffe DeepDream    MacとWindowsではGPUの利用はできません 深層学習で遊ぶためにはGPGPUを利用した方が高速に処理できます。 (場合によってはCPUでは現実時間で終わりません。) ただし、MacかWindowsでDockerを利用する場合、GPUデバイスにアクセスできないため、 CPU実行しかできません。 必要に応じてLinux環境が純粋に入っているPCを用意する必要がありそうです。</description>
-    </item>
-    
-  </channel>
-</rss>
+khm/tensorflow: branch/feature-py3 TensorFlow の Docker Image を Python3 で動かす その他 Docker Habに公式イメージがあるフレームワーク PUBLIC | AUTOMATED BUILD chainer/chainer 公式が見つからなかったフレームワーク Caffe DeepDream MacとWindowsではGPUの利用はできません 深層学習で遊ぶためにはGPGPUを利用した方が高速に処理できます。 (場合によってはCPUでは現実時間で終わりません。) ただし、MacかWindowsでDockerを利用する場合、GPUデバイスにアクセスできないため、 CPU実行しかできません。 必要に応じてLinux環境が純粋に入っているPCを用意する必要がありそうです。</description></item></channel></rss>

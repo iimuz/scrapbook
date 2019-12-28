@@ -1,24 +1,2 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>hubot on しさく</title>
-    <link>https://iimuz.github.io/scrapbook/tags/hubot/</link>
-    <description>Recent content in hubot on しさく</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 03 Nov 2015 00:00:00 +0900</lastBuildDate>
-    
-	<atom:link href="https://iimuz.github.io/scrapbook/tags/hubot/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>HubotのHello Worldスクリプトの作成方法</title>
-      <link>https://iimuz.github.io/scrapbook/softwaretool/others/hubotscripttutorial/</link>
-      <pubDate>Tue, 03 Nov 2015 00:00:00 +0900</pubDate>
-      
-      <guid>https://iimuz.github.io/scrapbook/softwaretool/others/hubotscripttutorial/</guid>
-      <description>&lt;p&gt;HubotをSlackと接続するところまでできたので、自分用にカスタマイズするためにスクリプトを作ろうと思う。
-プログラムの練習をするのときの定番であるHello Worldを表示するまでの記録です。&lt;/p&gt;</description>
-    </item>
-    
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>hubot on しさく</title><link>https://iimuz.github.io/scrapbook/tags/hubot/</link><description>Recent content in hubot on しさく</description><generator>Hugo -- gohugo.io</generator><lastBuildDate>Tue, 03 Nov 2015 00:00:00 +0900</lastBuildDate><atom:link href="https://iimuz.github.io/scrapbook/tags/hubot/index.xml" rel="self" type="application/rss+xml"/><item><title>HubotのHello Worldスクリプトの作成方法</title><link>https://iimuz.github.io/scrapbook/softwaretool/others/hubotscripttutorial/</link><pubDate>Tue, 03 Nov 2015 00:00:00 +0900</pubDate><guid>https://iimuz.github.io/scrapbook/softwaretool/others/hubotscripttutorial/</guid><description>&lt;p>HubotをSlackと接続するところまでできたので、自分用にカスタマイズするためにスクリプトを作ろうと思う。
+プログラムの練習をするのときの定番であるHello Worldを表示するまでの記録です。&lt;/p></description></item></channel></rss>

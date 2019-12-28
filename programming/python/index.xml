@@ -1,63 +1,15 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>python on しさく</title>
-    <link>https://iimuz.github.io/scrapbook/programming/python/</link>
-    <description>Recent content in python on しさく</description>
-    <generator>Hugo -- gohugo.io</generator>
-    
-	<atom:link href="https://iimuz.github.io/scrapbook/programming/python/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>Qiita API を利用して記事を投稿する</title>
-      <link>https://iimuz.github.io/scrapbook/programming/python/post-from-qiita-api/</link>
-      <pubDate>Sun, 18 Nov 2018 15:33:13 +0900</pubDate>
-      
-      <guid>https://iimuz.github.io/scrapbook/programming/python/post-from-qiita-api/</guid>
-      <description>はじめに Qiita API を利用してローカルの markdown ファイルを記事としてアップロードする python スクリプトを作成しました。作成したスクリプトのテストも兼ねて、作業内容をまとめてみます。
- 投稿内容の作成 投稿用のヘッダ情報の作成 投稿処理 投稿後のレスポンス情報から ID 情報を取得 投稿内容が書かれたファイルのヘッダ部分に ID を追加  背景 以前から自分で書いたメモなどの単純なドキュメントファイルに関しては、一括して GitLab.com のプライベートリポジトリで管理していました。今回、 Qiita に投稿してみようと思ったのですが、 Qiita に投稿する内容は、都度書いて Qiita で管理するということも考えました。が、やはりローカル環境でテキストを書きたいということもあり、 Qiita API を活用して、ローカル環境から投稿するようにしました。まだまだ粗削りですが、とりあえず投稿して、記事を修正した場合は、修正版をコミットすることまではできました。
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>python on しさく</title><link>https://iimuz.github.io/scrapbook/programming/python/</link><description>Recent content in python on しさく</description><generator>Hugo -- gohugo.io</generator><atom:link href="https://iimuz.github.io/scrapbook/programming/python/index.xml" rel="self" type="application/rss+xml"/><item><title>Qiita API を利用して記事を投稿する</title><link>https://iimuz.github.io/scrapbook/programming/python/post-from-qiita-api/</link><pubDate>Sun, 18 Nov 2018 15:33:13 +0900</pubDate><guid>https://iimuz.github.io/scrapbook/programming/python/post-from-qiita-api/</guid><description>はじめに Qiita API を利用してローカルの markdown ファイルを記事としてアップロードする python スクリプトを作成しました。作成したスクリプトのテストも兼ねて、作業内容をまとめてみます。
+投稿内容の作成 投稿用のヘッダ情報の作成 投稿処理 投稿後のレスポンス情報から ID 情報を取得 投稿内容が書かれたファイルのヘッダ部分に ID を追加 背景 以前から自分で書いたメモなどの単純なドキュメントファイルに関しては、一括して GitLab.com のプライベートリポジトリで管理していました。今回、 Qiita に投稿してみようと思ったのですが、 Qiita に投稿する内容は、都度書いて Qiita で管理するということも考えました。が、やはりローカル環境でテキストを書きたいということもあり、 Qiita API を活用して、ローカル環境から投稿するようにしました。まだまだ粗削りですが、とりあえず投稿して、記事を修正した場合は、修正版をコミットすることまではできました。
 $ python3 --version Python 3.6.6 投稿内容の作成 ローカルのファイル群は Hugo を活用しています。そのため、投稿する内容以外にヘッダ情報が付与されています。ここを活用して、 Qiita に投稿するヘッダ情報も管理するようにします。 今回は、下記のようなヘッダ情報と投稿内容を作成していると仮定します。
 (hoge.md)
-+++ title = &amp;#34;テスト投稿&amp;#34; draft = true tags = [&amp;#34;test&amp;#34;] [qiita] coediting = false gist = false tweet = false id = &amp;#34;&amp;#34; +++ hogehoge 投稿用のヘッダ情報の作成 上記で作成した hoge.</description>
-    </item>
-    
-    <item>
-      <title>virtualenvを利用したpython環境の構築(Windows編)</title>
-      <link>https://iimuz.github.io/scrapbook/programming/python/pythonwindows/</link>
-      <pubDate>Sun, 04 Oct 2015 00:00:00 +0900</pubDate>
-      
-      <guid>https://iimuz.github.io/scrapbook/programming/python/pythonwindows/</guid>
-      <description>&lt;p&gt;Windows環境でvirtualenv環境を構築したときのメモ。&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>python3.4でmatplotlibを導入したらグラフ表示できない問題の対処法</title>
-      <link>https://iimuz.github.io/scrapbook/programming/python/matplotlib/</link>
-      <pubDate>Sat, 03 Oct 2015 00:00:00 +0900</pubDate>
-      
-      <guid>https://iimuz.github.io/scrapbook/programming/python/matplotlib/</guid>
-      <description>&lt;p&gt;Mac(Yosemite)のvirtualenv環境でmatplotlibを導入したら、導入できたのに表示できなかったので対処法メモ。&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Macでpython環境の構築</title>
-      <link>https://iimuz.github.io/scrapbook/programming/python/pythonenvironment/</link>
-      <pubDate>Sat, 29 Aug 2015 00:00:00 +0900</pubDate>
-      
-      <guid>https://iimuz.github.io/scrapbook/programming/python/pythonenvironment/</guid>
-      <description>MacでPython環境を構築した時のメモ。
++++ title = &amp;#34;テスト投稿&amp;#34; draft = true tags = [&amp;#34;test&amp;#34;] [qiita] coediting = false gist = false tweet = false id = &amp;#34;&amp;#34; +++ hogehoge 投稿用のヘッダ情報の作成 上記で作成した hoge.</description></item><item><title>virtualenvを利用したpython環境の構築(Windows編)</title><link>https://iimuz.github.io/scrapbook/programming/python/pythonwindows/</link><pubDate>Sun, 04 Oct 2015 00:00:00 +0900</pubDate><guid>https://iimuz.github.io/scrapbook/programming/python/pythonwindows/</guid><description>&lt;p>Windows環境でvirtualenv環境を構築したときのメモ。&lt;/p></description></item><item><title>python3.4でmatplotlibを導入したらグラフ表示できない問題の対処法</title><link>https://iimuz.github.io/scrapbook/programming/python/matplotlib/</link><pubDate>Sat, 03 Oct 2015 00:00:00 +0900</pubDate><guid>https://iimuz.github.io/scrapbook/programming/python/matplotlib/</guid><description>&lt;p>Mac(Yosemite)のvirtualenv環境でmatplotlibを導入したら、導入できたのに表示できなかったので対処法メモ。&lt;/p></description></item><item><title>Macでpython環境の構築</title><link>https://iimuz.github.io/scrapbook/programming/python/pythonenvironment/</link><pubDate>Sat, 29 Aug 2015 00:00:00 +0900</pubDate><guid>https://iimuz.github.io/scrapbook/programming/python/pythonenvironment/</guid><description>MacでPython環境を構築した時のメモ。
 概要 MacでPython環境を構築した時のメモ。
 pyenv-virtualenvの導入 homebrew導入済みと仮定して、以下のコマンドでpyenv-virtualenvを導入する。
 $ homebrew update $ homebrew install pyenv-virtualenv ついでに、.bash_profileに以下を記述して、パスを通す。
 export PYENV_ROOT=&amp;quot;${HOME}/.pyenv&amp;quot; if [ -d &amp;quot;${PYENV_ROOT}&amp;quot; ]; then export PATH=${PYENV_ROOT}/bin:$PATH eval &amp;quot;$(pyenv init -)&amp;quot; fi pythonのインストールは、バージョン確認して好きなのを選択すれば良い。
 $ pyenv install 3.4.3 以下のエラーがでた時はXCodeを導入すれば良いので、追加でXCodeのインストールコマンドも行う。
- ERROR: The Python ssl extension was not compiled. Missing the OpenSSL lib?
- $ xcode-select --install 利用するバージョンを変更するために以下のコマンドを実行する。
+ERROR: The Python ssl extension was not compiled. Missing the OpenSSL lib?
+$ xcode-select --install 利用するバージョンを変更するために以下のコマンドを実行する。
 $ pyenv global 3.4.3 $ pyenv rehash virtualenvの利用方法 virutalenvは、pythonの環境を構築できる。 pyenvがバージョンの管理とすると、virtualenvはライブラリなどの環境管理が可能。 pyenvの3.4.3に対して、インストールするライブラリを変更して用意することができる。
 環境を新しく作る方法は、以下のコマンドを利用する。
-$ pyenv virtualenv 3.4.3 3.4.3-develop 環境の切り替えは、pyenvでそのままできる。</description>
-    </item>
-    
-  </channel>
-</rss>
+$ pyenv virtualenv 3.4.3 3.4.3-develop 環境の切り替えは、pyenvでそのままできる。</description></item></channel></rss>

@@ -1,33 +1,12 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Java on しさく</title>
-    <link>https://iimuz.github.io/scrapbook/programming/java/</link>
-    <description>Recent content in Java on しさく</description>
-    <generator>Hugo -- gohugo.io</generator>
-    
-	<atom:link href="https://iimuz.github.io/scrapbook/programming/java/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>macにjava環境を構築した時のメモ</title>
-      <link>https://iimuz.github.io/scrapbook/programming/java/javaenvironment/</link>
-      <pubDate>Thu, 03 Sep 2015 00:00:00 +0900</pubDate>
-      
-      <guid>https://iimuz.github.io/scrapbook/programming/java/javaenvironment/</guid>
-      <description>macにjava環境を構築した時のメモ。 まだ成功していない。
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Java on しさく</title><link>https://iimuz.github.io/scrapbook/programming/java/</link><description>Recent content in Java on しさく</description><generator>Hugo -- gohugo.io</generator><atom:link href="https://iimuz.github.io/scrapbook/programming/java/index.xml" rel="self" type="application/rss+xml"/><item><title>macにjava環境を構築した時のメモ</title><link>https://iimuz.github.io/scrapbook/programming/java/javaenvironment/</link><pubDate>Thu, 03 Sep 2015 00:00:00 +0900</pubDate><guid>https://iimuz.github.io/scrapbook/programming/java/javaenvironment/</guid><description>macにjava環境を構築した時のメモ。 まだ成功していない。
 概要 MacにJAVA環境を構築した時に行った作業一覧。 Eclipseを利用すれば早いし、環境としても良いのはしっているが、 Eclipseは重いという問題があるので、基本vimだけで動くことを目標として環境構築。
-インストールパッケージ   java
-$ brew cask install java   eclipse
+インストールパッケージ java
+$ brew cask install java eclipse
 $ brew cask install eclipse-java インストールしたらとりあえず、一回は起動しておく。
-  ant
+ant
 この後のNeoBundleでEclimをビルドするのに必要なので導入。 javaを利用したビルドツール(要はmakeツール)
-$ brew cask intall ant   vimパッケージ NeoBundle .vimrcに記述してNeoBundleで管理するパッケージ。
- ervandew/eclim   以下のコマンドを.vimrcに記載する。
-NeoBundleLazy &#39;ervandew/eclim&#39;, { \ &#39;build&#39;: \ {&#39;mac&#39;: &#39;ant -Declipse.home=/opt/homebrew-cask/Caskroom/eclipse-java/4.5/Eclipse.app/Contents/Eclipse -Dvim.files=&#39;.escape(expand(&#39;~/.vim/bundle/eclim&#39;), &#39;&#39;)}, \ } Declipse.home=の指す先は、brew cask install eclipseでインストールされたEclipseの場所。 -Dvim.files=の指す先は、vimのbundleを管理しているフォルダ。
+$ brew cask intall ant vimパッケージ NeoBundle .vimrcに記述してNeoBundleで管理するパッケージ。
+ervandew/eclim 以下のコマンドを.vimrcに記載する。
+NeoBundleLazy 'ervandew/eclim', { \ 'build': \ {'mac': 'ant -Declipse.home=/opt/homebrew-cask/Caskroom/eclipse-java/4.5/Eclipse.app/Contents/Eclipse -Dvim.files='.escape(expand('~/.vim/bundle/eclim'), '')}, \ } Declipse.home=の指す先は、brew cask install eclipseでインストールされたEclipseの場所。 -Dvim.files=の指す先は、vimのbundleを管理しているフォルダ。
 結局よくわからないので、自分でビルドしに行った。
-$ ant -Delipse.home=/opt/homebrew-cask/Caskroom/eclipse-java/4.5/Eclipse.app/Contents/Eclipse -Dvim.files=~/.vim/bundle/eclim 上記がエラーの原因だった。 ビルド時の出力みたらeclimフォルダの中にDvim.filesのパスが作成されていた。 この辺の挙動が不明で適当に書き換えているからエラーする。 とりあえず以下のように強引にeclimフォルダに出力されるようにビルドした。</description>
-    </item>
-    
-  </channel>
-</rss>
+$ ant -Delipse.home=/opt/homebrew-cask/Caskroom/eclipse-java/4.5/Eclipse.app/Contents/Eclipse -Dvim.files=~/.vim/bundle/eclim 上記がエラーの原因だった。 ビルド時の出力みたらeclimフォルダの中にDvim.filesのパスが作成されていた。 この辺の挙動が不明で適当に書き換えているからエラーする。 とりあえず以下のように強引にeclimフォルダに出力されるようにビルドした。</description></item></channel></rss>

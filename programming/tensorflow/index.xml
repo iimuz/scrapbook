@@ -1,27 +1,6 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Tensorflow on しさく</title>
-    <link>https://iimuz.github.io/scrapbook/programming/tensorflow/</link>
-    <description>Recent content in Tensorflow on しさく</description>
-    <generator>Hugo -- gohugo.io</generator>
-    
-	<atom:link href="https://iimuz.github.io/scrapbook/programming/tensorflow/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>Bash On Ubuntu On WindowsのGPU利用は(現時点では)できないそうです</title>
-      <link>https://iimuz.github.io/scrapbook/programming/tensorflow/bashonubuntuonwindows/</link>
-      <pubDate>Sun, 20 Nov 2016 18:36:25 +0900</pubDate>
-      
-      <guid>https://iimuz.github.io/scrapbook/programming/tensorflow/bashonubuntuonwindows/</guid>
-      <description>概要 Windows環境下でTensorFlowをGPU利用で動作させたかったので、 最近追加されたWindows機能である Bash On Ubuntu On Windowsを利用できないか調査しました。 結論としては、現時点ではBash On Ubuntu On WindowsからGPUは使えないそうです。
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Tensorflow on しさく</title><link>https://iimuz.github.io/scrapbook/programming/tensorflow/</link><description>Recent content in Tensorflow on しさく</description><generator>Hugo -- gohugo.io</generator><atom:link href="https://iimuz.github.io/scrapbook/programming/tensorflow/index.xml" rel="self" type="application/rss+xml"/><item><title>Bash On Ubuntu On WindowsのGPU利用は(現時点では)できないそうです</title><link>https://iimuz.github.io/scrapbook/programming/tensorflow/bashonubuntuonwindows/</link><pubDate>Sun, 20 Nov 2016 18:36:25 +0900</pubDate><guid>https://iimuz.github.io/scrapbook/programming/tensorflow/bashonubuntuonwindows/</guid><description>概要 Windows環境下でTensorFlowをGPU利用で動作させたかったので、 最近追加されたWindows機能である Bash On Ubuntu On Windowsを利用できないか調査しました。 結論としては、現時点ではBash On Ubuntu On WindowsからGPUは使えないそうです。
 WindowsでビルドしてGPUで動作させたい場合は、 cmakeに記載の方法を利用するしかなさそうです。
 GPU利用できないソース OpenCL &amp;amp; CUDA GPU supportによると、 今のところは対応してくれなさそうです。 (コメントを見る限りTensorFlowで使いたいという人もいるようです。) MSさん頑張って対応してとしか言えないですね。
- It’s on the backlog, but not currently planned.
+It’s on the backlog, but not currently planned.
 We know many of you would like to be able to accelerate your numerical analysis code via CUDA/OpenCL, etc.
-One thing to explore in the meantime is to try running your code in Windows. Windows actually has very powerful GPU-acceleration capabilities and you may well find that much of your existing code may well work already or require trivial effort to port to Windows itself.</description>
-    </item>
-    
-  </channel>
-</rss>
+One thing to explore in the meantime is to try running your code in Windows. Windows actually has very powerful GPU-acceleration capabilities and you may well find that much of your existing code may well work already or require trivial effort to port to Windows itself.</description></item></channel></rss>

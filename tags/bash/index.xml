@@ -1,39 +1,8 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>bash on しさく</title>
-    <link>https://iimuz.github.io/scrapbook/tags/bash/</link>
-    <description>Recent content in bash on しさく</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 06 Apr 2019 14:30:50 +0900</lastBuildDate>
-    
-	<atom:link href="https://iimuz.github.io/scrapbook/tags/bash/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>curl で Cloudn&#39;t resolve host エラーが出た時の対処法</title>
-      <link>https://iimuz.github.io/scrapbook/programming/bash/curl_cloud_not_resolve_host/</link>
-      <pubDate>Sat, 06 Apr 2019 14:30:50 +0900</pubDate>
-      
-      <guid>https://iimuz.github.io/scrapbook/programming/bash/curl_cloud_not_resolve_host/</guid>
-      <description>WSL 環境で突然に curl が通じなくなって、下記エラーが出ました。 直前まで使えていたので、理由が分からずだったので調べました。
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>bash on しさく</title><link>https://iimuz.github.io/scrapbook/tags/bash/</link><description>Recent content in bash on しさく</description><generator>Hugo -- gohugo.io</generator><lastBuildDate>Sat, 06 Apr 2019 14:30:50 +0900</lastBuildDate><atom:link href="https://iimuz.github.io/scrapbook/tags/bash/index.xml" rel="self" type="application/rss+xml"/><item><title>curl で Cloudn't resolve host エラーが出た時の対処法</title><link>https://iimuz.github.io/scrapbook/programming/bash/curl_cloud_not_resolve_host/</link><pubDate>Sat, 06 Apr 2019 14:30:50 +0900</pubDate><guid>https://iimuz.github.io/scrapbook/programming/bash/curl_cloud_not_resolve_host/</guid><description>WSL 環境で突然に curl が通じなくなって、下記エラーが出ました。 直前まで使えていたので、理由が分からずだったので調べました。
 curl: (6) Couldn&amp;#39;t resolve host &amp;#39;www.google.co.jp&amp;#39; 調べたところ、 /etc/resolv.conf の nameserver がおかしくなっていたようです。 下記の行を追加したところ、正常に curl が使えるようになりました。
 nameserver 8.8.8.8 8.8.8.8 は Google Public DNS です。 上記以外でも有効な DNS を指定すれば動作します。
 再起動の方法は、 sudo netplan apply でできます。
 Ubuntu 18.04 Server の場合 Ubuntu 18.04 Server の場合は、 /etc/resolv.conf には記載しておらず、 /etc/system.d/resolved.conf に下記のように記載する必要があります。
 [Resolve] DNS=8.8.8.8 そして再起動の方法は、 systemctl restart systemd-resolved になります。
-/etc/resolv.conf を修正した場合 WSL のように /etc/resolv.conf を修正し、 sudo netplan apply を利用した場合は、 設定をしても自動で書き換えられるため、有効な設定になりませんでした。</description>
-    </item>
-    
-    <item>
-      <title>bashコマンド</title>
-      <link>https://iimuz.github.io/scrapbook/programming/bash/bashcommand/</link>
-      <pubDate>Sat, 25 Apr 2015 00:00:00 +0900</pubDate>
-      
-      <guid>https://iimuz.github.io/scrapbook/programming/bash/bashcommand/</guid>
-      <description>bash コマンドの備忘録。
- 再帰 ls: find -type f ディレクトリ以下の再帰で指定したファイルを削除する: rm $(find -type f | grep hoge); ntp を使わず http で時刻合わせ: sudo date --set @&amp;quot;$(wget -q https://ntp-a1.nict.go.jp/cgi-bin/jst -O - | sed -n 4p | cut -d. -f1)&amp;quot;  参考資料  俺的備忘録 ~なんかいろいろ~: ls コマンドで覚えておきたい使い方 16 個(+2 個) ntp を使わずに時刻を合わせるワンライナー（Proxy 環境下でも安心）  </description>
-    </item>
-    
-  </channel>
-</rss>
+/etc/resolv.conf を修正した場合 WSL のように /etc/resolv.conf を修正し、 sudo netplan apply を利用した場合は、 設定をしても自動で書き換えられるため、有効な設定になりませんでした。</description></item><item><title>bashコマンド</title><link>https://iimuz.github.io/scrapbook/programming/bash/bashcommand/</link><pubDate>Sat, 25 Apr 2015 00:00:00 +0900</pubDate><guid>https://iimuz.github.io/scrapbook/programming/bash/bashcommand/</guid><description>bash コマンドの備忘録。
+再帰 ls: find -type f ディレクトリ以下の再帰で指定したファイルを削除する: rm $(find -type f | grep hoge); ntp を使わず http で時刻合わせ: sudo date --set @&amp;quot;$(wget -q https://ntp-a1.nict.go.jp/cgi-bin/jst -O - | sed -n 4p | cut -d. -f1)&amp;quot; 参考資料 俺的備忘録 ~なんかいろいろ~: ls コマンドで覚えておきたい使い方 16 個(+2 個) ntp を使わずに時刻を合わせるワンライナー（Proxy 環境下でも安心）</description></item></channel></rss>

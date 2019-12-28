@@ -1,28 +1,6 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>bicycle on しさく</title>
-    <link>https://iimuz.github.io/scrapbook/tags/bicycle/</link>
-    <description>Recent content in bicycle on しさく</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 05 May 2015 00:00:00 +0900</lastBuildDate>
-    
-	<atom:link href="https://iimuz.github.io/scrapbook/tags/bicycle/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>サイクルコンピュータの買い替え</title>
-      <link>https://iimuz.github.io/scrapbook/hardware/others/cyclocomputer/</link>
-      <pubDate>Tue, 05 May 2015 00:00:00 +0900</pubDate>
-      
-      <guid>https://iimuz.github.io/scrapbook/hardware/others/cyclocomputer/</guid>
-      <description>自転車のサイクルコンピュータが壊れたので買い替える時のメモ。
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>bicycle on しさく</title><link>https://iimuz.github.io/scrapbook/tags/bicycle/</link><description>Recent content in bicycle on しさく</description><generator>Hugo -- gohugo.io</generator><lastBuildDate>Tue, 05 May 2015 00:00:00 +0900</lastBuildDate><atom:link href="https://iimuz.github.io/scrapbook/tags/bicycle/index.xml" rel="self" type="application/rss+xml"/><item><title>サイクルコンピュータの買い替え</title><link>https://iimuz.github.io/scrapbook/hardware/others/cyclocomputer/</link><pubDate>Tue, 05 May 2015 00:00:00 +0900</pubDate><guid>https://iimuz.github.io/scrapbook/hardware/others/cyclocomputer/</guid><description>自転車のサイクルコンピュータが壊れたので買い替える時のメモ。
 条件 現在探しているのは、以下のような条件。
- 一般的な速度などが測れれば良い。
+一般的な速度などが測れれば良い。
 ケイデンスとかまではいらない。 スマホ連携がほしい。
-データを取り出して、その記録をどっかに残すことが簡易にできればそれでいい。 プラスアルファとしてGPSでコースを記録しておいてくれると尚よい。  比較 高すぎて手が出せないパターンは除外している。
- (外部センサーと表示部) CATEYE: マイクロワイヤレス = \4,377 (外部センサーとスマホのみ) センサー CATEYE ICS-12 + スマホホルダー SPA-HB10 = 6,048 + 3,770 = \9,818 (外部センサーとスマホのみ) センサー Wahoo Fitness + スマホホルダー SPA-HB10 = 7,091 + 3,770 = \10,861 (外部センサーとサイコンとスマホ) センサー CATEYE ICS-12 + SMART STRADA + スマホホルダー SPA-HB10 = 6,048 + 6,690 + 3,770 = \16,508 (上のパターンをCAT EYEで一括パッケージ買いの場合) = 12,092 + 3,770 = \15,862 (外部センサーとサイコンとスマホ) センサー Wahoo Fitness + SMART STRADA + スマホホルダー SPA-HB10 = 7,091 + 6,048 + 3,770 = \16,639 (外部センサーとサイコンとスマホ) センサー Wahoo Fitness + Wahoo RFLKT + スマホホルダー SPA-HB10 = 7,091 + 14,000 + 3,770 = \24,861  結論 センサー CATEYE ICS-12 + スマホホルダー SPA-HB10</description>
-    </item>
-    
-  </channel>
-</rss>
+データを取り出して、その記録をどっかに残すことが簡易にできればそれでいい。 プラスアルファとしてGPSでコースを記録しておいてくれると尚よい。 比較 高すぎて手が出せないパターンは除外している。
+(外部センサーと表示部) CATEYE: マイクロワイヤレス = \4,377 (外部センサーとスマホのみ) センサー CATEYE ICS-12 + スマホホルダー SPA-HB10 = 6,048 + 3,770 = \9,818 (外部センサーとスマホのみ) センサー Wahoo Fitness + スマホホルダー SPA-HB10 = 7,091 + 3,770 = \10,861 (外部センサーとサイコンとスマホ) センサー CATEYE ICS-12 + SMART STRADA + スマホホルダー SPA-HB10 = 6,048 + 6,690 + 3,770 = \16,508 (上のパターンをCAT EYEで一括パッケージ買いの場合) = 12,092 + 3,770 = \15,862 (外部センサーとサイコンとスマホ) センサー Wahoo Fitness + SMART STRADA + スマホホルダー SPA-HB10 = 7,091 + 6,048 + 3,770 = \16,639 (外部センサーとサイコンとスマホ) センサー Wahoo Fitness + Wahoo RFLKT + スマホホルダー SPA-HB10 = 7,091 + 14,000 + 3,770 = \24,861 結論 センサー CATEYE ICS-12 + スマホホルダー SPA-HB10</description></item></channel></rss>

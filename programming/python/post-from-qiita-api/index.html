@@ -1,76 +1,13 @@
-<!DOCTYPE html>
-<html lang='en'><head>
-  <title>Qiita a p i を利用して記事を投稿する | しさく</title>
-  <meta charset='utf-8'>
-  <meta name="generator" content="Hugo 0.60.1" />
-  <meta name = 'viewport' content = 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no'>
-  <meta http-equiv = 'X-UA-Compatible' content = 'IE=edge'>
-<meta property = 'og:locale' content = 'en_US' />
-<meta property="og:type" content="article">
-<meta property = 'og:title' content = 'Qiita API を利用して記事を投稿する' />
-<meta name="description" content="はじめに Qiita API を利用してローカルの markdown ファイルを記事としてアップロードする python スクリプトを作成しました。作成したスクリプトのテストも兼ねて、作業内容をまとめてみます。
- 投稿内容の作成 投稿用のヘッダ情報の作成 投稿処理 投稿後のレスポンス情報から ID 情報を取得 投稿内容 …">
-<meta property = 'og:description' content = 'はじめに Qiita API を利用してローカルの markdown ファイルを記事としてアップロードする python スクリプトを作成しました。作成したスクリプトのテストも兼ねて、作業内容をまとめてみます。
- 投稿内容の作成 投稿用のヘッダ情報の作成 投稿処理 投稿後のレスポンス情報から ID 情報を取得 投稿内容 …'>
-<meta property = 'og:url' content = 'https://iimuz.github.io/scrapbook/programming/python/post-from-qiita-api/' />
-<meta property = 'og:image' content = 'images/%!s()'/>
-<meta name = 'twitter:card' content = 'summary_large_image' />
-<meta name = 'twitter:creator' content = ''>
-<meta name = 'twitter:title' content = 'Qiita API を利用して記事を投稿する' />
-<meta property = 'twitter:description'  content = 'はじめに Qiita API を利用してローカルの markdown ファイルを記事としてアップロードする python スクリプトを作成しました。作成したスクリプトのテストも兼ねて、作業内容をまとめてみます。
- 投稿内容の作成 投稿用のヘッダ情報の作成 投稿処理 投稿後のレスポンス情報から ID 情報を取得 投稿内容 …'/>
-<meta name = 'twitter:image' content = 'images/%!s()' />
-<link rel='apple-touch-icon' sizes='180x180' href='https://iimuz.github.io/scrapbook/images/icons/apple-touch-icon.png'>
-<link rel='icon' type='image/png' sizes='32x32' href='https://iimuz.github.io/scrapbook/images/icons/favicon-32x32.png'>
-<link rel='icon' type='image/png' sizes='16x16' href='https://iimuz.github.io/scrapbook/images/icons/favicon-16x16.png'>
-<link rel='manifest' href='https://iimuz.github.io/scrapbook/images/icons/site.webmanifest'>
-
-  <link rel='canonical' href='https://iimuz.github.io/scrapbook/programming/python/post-from-qiita-api/'>
-  <link rel = 'stylesheet' href = 'https://iimuz.github.io/scrapbook/css/styles.f95ea6b308573243e51a075c5efaf605fe1950268a99f0a2427e5262d11465d0036a6169952dee35760d783dc0ff485221df3ed26a15748d824a97e65b5d7c9e.css' integrity = 'sha512-&#43;V6mswhXMkPlGgdcXvr2Bf4ZUCaKmfCiQn5SYtEUZdADamFplS3uNXYNeD3A/0hSId8&#43;0moVdI2CSpfmW118ng=='>
-</head>
-
-  <body><div class = 'nav-drop'>
-  <div class = 'nav-body'>
-      <a href = 'https://iimuz.github.io/scrapbook/search/' class = 'nav_item'>search</a>
-      <a href = 'https://iimuz.github.io/scrapbook/tags/' class = 'nav_item'>tags</a>
-      <a href = 'https://iimuz.github.io/scrapbook/categories/' class = 'nav_item'>categories</a>
-    <div class = 'nav-close'></div>
-  </div>
-</div><header class = 'nav' >
-  <nav class = 'nav-menu'>
-    <a href='https://iimuz.github.io/scrapbook/' class = 'nav-brand nav_item'>しさく</a>
-    <div class = 'nav_bar-wrap'>
-      <div class = 'nav_bar'></div>
-    </div>
-  </nav>
-</header>
-
-
-
-    <main>
-  
-<section class = 'post_header' style = 'background-image:url(https://iimuz.github.io/scrapbook/images/thumbnail.svg);'>
-  <h1 class='post_title'>Qiita API を利用して記事を投稿する</h1>
-</section>
-<div class = 'post'>
-  <article class='post_content'><h1 id="heading">はじめに</h1>
-<p><a href="https://qiita.com/api/v2/docs">Qiita API</a> を利用してローカルの markdown ファイルを記事としてアップロードする python スクリプトを作成しました。作成したスクリプトのテストも兼ねて、作業内容をまとめてみます。</p>
-<ol>
-<li>投稿内容の作成</li>
-<li>投稿用のヘッダ情報の作成</li>
-<li>投稿処理</li>
-<li>投稿後のレスポンス情報から ID 情報を取得</li>
-<li>投稿内容が書かれたファイルのヘッダ部分に ID を追加</li>
-</ol>
-<h1 id="heading1">背景</h1>
-<p>以前から自分で書いたメモなどの単純なドキュメントファイルに関しては、一括して <a href="https://gitlab.com/">GitLab.com</a> のプライベートリポジトリで管理していました。今回、 Qiita に投稿してみようと思ったのですが、 Qiita に投稿する内容は、都度書いて Qiita で管理するということも考えました。が、やはりローカル環境でテキストを書きたいということもあり、 Qiita API を活用して、ローカル環境から投稿するようにしました。まだまだ粗削りですが、とりあえず投稿して、記事を修正した場合は、修正版をコミットすることまではできました。</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">$ python3 --version
+<!doctype html><html lang=en><head><title>Qiita a p i を利用して記事を投稿する | しさく</title><meta charset=utf-8><meta name=generator content="Hugo 0.60.1"><meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"><meta http-equiv=x-ua-compatible content="IE=edge"><meta property="og:locale" content="en_US"><meta property="og:type" content="article"><meta property="og:title" content="Qiita API を利用して記事を投稿する"><meta name=description content="はじめに Qiita API を利用してローカルの markdown ファイルを記事としてアップロードする python スクリプトを作成しました。作成したスクリプトのテストも兼ねて、作業内容をまとめてみます。
+ 投稿内容の作成 投稿用のヘッダ情報の作成 投稿処理 投稿後のレスポンス情報から ID 情報を取得 投稿内容 …"><meta property="og:description" content="はじめに Qiita API を利用してローカルの markdown ファイルを記事としてアップロードする python スクリプトを作成しました。作成したスクリプトのテストも兼ねて、作業内容をまとめてみます。
+ 投稿内容の作成 投稿用のヘッダ情報の作成 投稿処理 投稿後のレスポンス情報から ID 情報を取得 投稿内容 …"><meta property="og:url" content="https://iimuz.github.io/scrapbook/programming/python/post-from-qiita-api/"><meta property="og:image" content="images/%!s()"><meta name=twitter:card content="summary_large_image"><meta name=twitter:creator content><meta name=twitter:title content="Qiita API を利用して記事を投稿する"><meta property="twitter:description" content="はじめに Qiita API を利用してローカルの markdown ファイルを記事としてアップロードする python スクリプトを作成しました。作成したスクリプトのテストも兼ねて、作業内容をまとめてみます。
+ 投稿内容の作成 投稿用のヘッダ情報の作成 投稿処理 投稿後のレスポンス情報から ID 情報を取得 投稿内容 …"><meta name=twitter:image content="images/%!s()"><link rel=apple-touch-icon sizes=180x180 href=https://iimuz.github.io/scrapbook/images/icons/apple-touch-icon.png><link rel=icon type=image/png sizes=32x32 href=https://iimuz.github.io/scrapbook/images/icons/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=https://iimuz.github.io/scrapbook/images/icons/favicon-16x16.png><link rel=manifest href=https://iimuz.github.io/scrapbook/images/icons/site.webmanifest><link rel=canonical href=https://iimuz.github.io/scrapbook/programming/python/post-from-qiita-api/><link rel=stylesheet href=https://iimuz.github.io/scrapbook/css/styles.a1e1a9f0e58a84cfca79c98c11b9e900971b61f840c5fbe7f3ddad8ebcd9798517a0ea30089562091e9105239ce941ccc4953d8c3a0c08a2f5082ace791f0186.css integrity="sha512-oeGp8OWKhM/KecmMEbnpAJcbYfhAxfvn892tjrzZeYUXoOowCJViCR6RBSOc6UHMxJU9jDoMCKL1CCrOeR8Bhg=="><link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css></head><body><div class=nav-drop><div class=nav-body><a href=https://iimuz.github.io/scrapbook/search/ class=nav_item>search</a>
+<a href=https://iimuz.github.io/scrapbook/tags/ class=nav_item>tags</a>
+<a href=https://iimuz.github.io/scrapbook/categories/ class=nav_item>categories</a><div class=nav-close></div></div></div><header class=nav><nav class=nav-menu><a href=https://iimuz.github.io/scrapbook/ class="nav-brand nav_item">しさく</a><div class=nav_bar-wrap><div class=nav_bar></div></div></nav></header><main><section class=post_header style=background-image:url(https://iimuz.github.io/scrapbook/images/thumbnail.svg)><h1 class=post_title>Qiita API を利用して記事を投稿する</h1></section><div class=post><article class=post_content><div><i class="far fa-calendar-check"></i>2018-11-18 15:33:13 +0900 +0900
+<i class="far fa-edit"></i>2019-12-28 05:39:31 +0000 UTC</div><h1 id=heading>はじめに</h1><p><a href=https://qiita.com/api/v2/docs>Qiita API</a> を利用してローカルの markdown ファイルを記事としてアップロードする python スクリプトを作成しました。作成したスクリプトのテストも兼ねて、作業内容をまとめてみます。</p><ol><li>投稿内容の作成</li><li>投稿用のヘッダ情報の作成</li><li>投稿処理</li><li>投稿後のレスポンス情報から ID 情報を取得</li><li>投稿内容が書かれたファイルのヘッダ部分に ID を追加</li></ol><h1 id=heading1>背景</h1><p>以前から自分で書いたメモなどの単純なドキュメントファイルに関しては、一括して <a href=https://gitlab.com/>GitLab.com</a> のプライベートリポジトリで管理していました。今回、 Qiita に投稿してみようと思ったのですが、 Qiita に投稿する内容は、都度書いて Qiita で管理するということも考えました。が、やはりローカル環境でテキストを書きたいということもあり、 Qiita API を活用して、ローカル環境から投稿するようにしました。まだまだ粗削りですが、とりあえず投稿して、記事を修正した場合は、修正版をコミットすることまではできました。</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sh data-lang=sh>$ python3 --version
 Python 3.6.6
-</code></pre></div><h1 id="heading2">投稿内容の作成</h1>
-<p>ローカルのファイル群は <a href="https://gohugo.io/">Hugo</a> を活用しています。そのため、投稿する内容以外にヘッダ情報が付与されています。ここを活用して、 Qiita に投稿するヘッダ情報も管理するようにします。
-今回は、下記のようなヘッダ情報と投稿内容を作成していると仮定します。</p>
-<p>(<code>hoge.md</code>)</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-md" data-lang="md">+++
+</code></pre></div><h1 id=heading2>投稿内容の作成</h1><p>ローカルのファイル群は <a href=https://gohugo.io/>Hugo</a> を活用しています。そのため、投稿する内容以外にヘッダ情報が付与されています。ここを活用して、 Qiita に投稿するヘッダ情報も管理するようにします。
+今回は、下記のようなヘッダ情報と投稿内容を作成していると仮定します。</p><p>(<code>hoge.md</code>)</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-md data-lang=md>+++
 title = &#34;テスト投稿&#34;
 draft = true
 tags = [&#34;test&#34;]
@@ -83,224 +20,62 @@ id = &#34;&#34;
 +++
 
 hogehoge
-</code></pre></div><h1 id="heading3">投稿用のヘッダ情報の作成</h1>
-<p>上記で作成した <code>hoge.md</code> からヘッダ部分を読み込み、投稿用のヘッダ情報を作成します。</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#f92672">import</span> re
-<span style="color:#f92672">import</span> toml
+</code></pre></div><h1 id=heading3>投稿用のヘッダ情報の作成</h1><p>上記で作成した <code>hoge.md</code> からヘッダ部分を読み込み、投稿用のヘッダ情報を作成します。</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-py data-lang=py><span style=color:#f92672>import</span> re
+<span style=color:#f92672>import</span> toml
 
-<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">load_file</span>(filepath):
-    <span style="color:#75715e"># ファイル内容の読み込み</span>
-    <span style="color:#66d9ef">with</span> open(filepath) <span style="color:#66d9ef">as</span> f:
-        buf <span style="color:#f92672">=</span> f<span style="color:#f92672">.</span>read()
+<span style=color:#66d9ef>def</span> <span style=color:#a6e22e>load_file</span>(filepath):
+    <span style=color:#75715e># ファイル内容の読み込み</span>
+    <span style=color:#66d9ef>with</span> open(filepath) <span style=color:#66d9ef>as</span> f:
+        buf <span style=color:#f92672>=</span> f<span style=color:#f92672>.</span>read()
 
-    <span style="color:#75715e"># ヘッダ部分と投稿する内容を分離します。</span>
-    <span style="color:#75715e"># ここでは、 &#39;+++&#39; がヘッダ部分の範囲を指定すると決め打ちしています。</span>
-    <span style="color:#75715e"># また、 hugo の関係上ヘッダが toml で記載されているので、</span>
-    <span style="color:#75715e"># toml パーサで内容を読み込んでいます。</span>
-    header <span style="color:#f92672">=</span> re<span style="color:#f92672">.</span>match(
-        <span style="color:#e6db74">r</span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">^</span><span style="color:#e6db74">\</span><span style="color:#e6db74">+</span><span style="color:#e6db74">\</span><span style="color:#e6db74">+</span><span style="color:#e6db74">\</span><span style="color:#e6db74">+$.+?^</span><span style="color:#e6db74">\</span><span style="color:#e6db74">+</span><span style="color:#e6db74">\</span><span style="color:#e6db74">+</span><span style="color:#e6db74">\</span><span style="color:#e6db74">+$</span><span style="color:#e6db74">&#39;</span>,
+    <span style=color:#75715e># ヘッダ部分と投稿する内容を分離します。</span>
+    <span style=color:#75715e># ここでは、 &#39;+++&#39; がヘッダ部分の範囲を指定すると決め打ちしています。</span>
+    <span style=color:#75715e># また、 hugo の関係上ヘッダが toml で記載されているので、</span>
+    <span style=color:#75715e># toml パーサで内容を読み込んでいます。</span>
+    header <span style=color:#f92672>=</span> re<span style=color:#f92672>.</span>match(
+        <span style=color:#e6db74>r</span><span style=color:#e6db74>&#39;</span><span style=color:#e6db74>^</span><span style=color:#e6db74>\</span><span style=color:#e6db74>+</span><span style=color:#e6db74>\</span><span style=color:#e6db74>+</span><span style=color:#e6db74>\</span><span style=color:#e6db74>+$.+?^</span><span style=color:#e6db74>\</span><span style=color:#e6db74>+</span><span style=color:#e6db74>\</span><span style=color:#e6db74>+</span><span style=color:#e6db74>\</span><span style=color:#e6db74>+$</span><span style=color:#e6db74>&#39;</span>,
         buf,
-        flags<span style="color:#f92672">=</span>(re<span style="color:#f92672">.</span>MULTILINE <span style="color:#f92672">|</span> re<span style="color:#f92672">.</span>DOTALL))
-    body <span style="color:#f92672">=</span> buf[header<span style="color:#f92672">.</span>end() <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>:]
-    header <span style="color:#f92672">=</span> buf[header<span style="color:#f92672">.</span>start() <span style="color:#f92672">+</span> <span style="color:#ae81ff">4</span>:header<span style="color:#f92672">.</span>end() <span style="color:#f92672">-</span> <span style="color:#ae81ff">4</span>]
-    header <span style="color:#f92672">=</span> toml<span style="color:#f92672">.</span>loads(header)
+        flags<span style=color:#f92672>=</span>(re<span style=color:#f92672>.</span>MULTILINE <span style=color:#f92672>|</span> re<span style=color:#f92672>.</span>DOTALL))
+    body <span style=color:#f92672>=</span> buf[header<span style=color:#f92672>.</span>end() <span style=color:#f92672>+</span> <span style=color:#ae81ff>1</span>:]
+    header <span style=color:#f92672>=</span> buf[header<span style=color:#f92672>.</span>start() <span style=color:#f92672>+</span> <span style=color:#ae81ff>4</span>:header<span style=color:#f92672>.</span>end() <span style=color:#f92672>-</span> <span style=color:#ae81ff>4</span>]
+    header <span style=color:#f92672>=</span> toml<span style=color:#f92672>.</span>loads(header)
 
-    <span style="color:#75715e"># ヘッダ情報から Qiita へ投稿するヘッダ情報へ修正します</span>
-    item <span style="color:#f92672">=</span> {
-        <span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">title</span><span style="color:#e6db74">&#39;</span>: header[<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">title</span><span style="color:#e6db74">&#39;</span>],
-        <span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">private</span><span style="color:#e6db74">&#39;</span>: header[<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">draft</span><span style="color:#e6db74">&#39;</span>],
-        <span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">tags</span><span style="color:#e6db74">&#39;</span>: [{<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">name</span><span style="color:#e6db74">&#39;</span>: tag} <span style="color:#66d9ef">for</span> tag <span style="color:#f92672">in</span> header[<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">tags</span><span style="color:#e6db74">&#39;</span>]],
-        <span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">coediting</span><span style="color:#e6db74">&#39;</span>: header[<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">qiita</span><span style="color:#e6db74">&#39;</span>][<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">coediting</span><span style="color:#e6db74">&#39;</span>],
-        <span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">gist</span><span style="color:#e6db74">&#39;</span>: header[<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">qiita</span><span style="color:#e6db74">&#39;</span>][<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">coediting</span><span style="color:#e6db74">&#39;</span>],
-        <span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">tweet</span><span style="color:#e6db74">&#39;</span>: header[<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">qiita</span><span style="color:#e6db74">&#39;</span>][<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">tweet</span><span style="color:#e6db74">&#39;</span>],
-        <span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">id</span><span style="color:#e6db74">&#39;</span>: header[<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">qiita</span><span style="color:#e6db74">&#39;</span>][<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">id</span><span style="color:#e6db74">&#39;</span>] <span style="color:#66d9ef">if</span> <span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">id</span><span style="color:#e6db74">&#39;</span> <span style="color:#f92672">in</span> header[<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">qiita</span><span style="color:#e6db74">&#39;</span>] <span style="color:#66d9ef">else</span> <span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">&#39;</span>,
+    <span style=color:#75715e># ヘッダ情報から Qiita へ投稿するヘッダ情報へ修正します</span>
+    item <span style=color:#f92672>=</span> {
+        <span style=color:#e6db74></span><span style=color:#e6db74>&#39;</span><span style=color:#e6db74>title</span><span style=color:#e6db74>&#39;</span>: header[<span style=color:#e6db74></span><span style=color:#e6db74>&#39;</span><span style=color:#e6db74>title</span><span style=color:#e6db74>&#39;</span>],
+        <span style=color:#e6db74></span><span style=color:#e6db74>&#39;</span><span style=color:#e6db74>private</span><span style=color:#e6db74>&#39;</span>: header[<span style=color:#e6db74></span><span style=color:#e6db74>&#39;</span><span style=color:#e6db74>draft</span><span style=color:#e6db74>&#39;</span>],
+        <span style=color:#e6db74></span><span style=color:#e6db74>&#39;</span><span style=color:#e6db74>tags</span><span style=color:#e6db74>&#39;</span>: [{<span style=color:#e6db74></span><span style=color:#e6db74>&#39;</span><span style=color:#e6db74>name</span><span style=color:#e6db74>&#39;</span>: tag} <span style=color:#66d9ef>for</span> tag <span style=color:#f92672>in</span> header[<span style=color:#e6db74></span><span style=color:#e6db74>&#39;</span><span style=color:#e6db74>tags</span><span style=color:#e6db74>&#39;</span>]],
+        <span style=color:#e6db74></span><span style=color:#e6db74>&#39;</span><span style=color:#e6db74>coediting</span><span style=color:#e6db74>&#39;</span>: header[<span style=color:#e6db74></span><span style=color:#e6db74>&#39;</span><span style=color:#e6db74>qiita</span><span style=color:#e6db74>&#39;</span>][<span style=color:#e6db74></span><span style=color:#e6db74>&#39;</span><span style=color:#e6db74>coediting</span><span style=color:#e6db74>&#39;</span>],
+        <span style=color:#e6db74></span><span style=color:#e6db74>&#39;</span><span style=color:#e6db74>gist</span><span style=color:#e6db74>&#39;</span>: header[<span style=color:#e6db74></span><span style=color:#e6db74>&#39;</span><span style=color:#e6db74>qiita</span><span style=color:#e6db74>&#39;</span>][<span style=color:#e6db74></span><span style=color:#e6db74>&#39;</span><span style=color:#e6db74>coediting</span><span style=color:#e6db74>&#39;</span>],
+        <span style=color:#e6db74></span><span style=color:#e6db74>&#39;</span><span style=color:#e6db74>tweet</span><span style=color:#e6db74>&#39;</span>: header[<span style=color:#e6db74></span><span style=color:#e6db74>&#39;</span><span style=color:#e6db74>qiita</span><span style=color:#e6db74>&#39;</span>][<span style=color:#e6db74></span><span style=color:#e6db74>&#39;</span><span style=color:#e6db74>tweet</span><span style=color:#e6db74>&#39;</span>],
+        <span style=color:#e6db74></span><span style=color:#e6db74>&#39;</span><span style=color:#e6db74>id</span><span style=color:#e6db74>&#39;</span>: header[<span style=color:#e6db74></span><span style=color:#e6db74>&#39;</span><span style=color:#e6db74>qiita</span><span style=color:#e6db74>&#39;</span>][<span style=color:#e6db74></span><span style=color:#e6db74>&#39;</span><span style=color:#e6db74>id</span><span style=color:#e6db74>&#39;</span>] <span style=color:#66d9ef>if</span> <span style=color:#e6db74></span><span style=color:#e6db74>&#39;</span><span style=color:#e6db74>id</span><span style=color:#e6db74>&#39;</span> <span style=color:#f92672>in</span> header[<span style=color:#e6db74></span><span style=color:#e6db74>&#39;</span><span style=color:#e6db74>qiita</span><span style=color:#e6db74>&#39;</span>] <span style=color:#66d9ef>else</span> <span style=color:#e6db74></span><span style=color:#e6db74>&#39;</span><span style=color:#e6db74>&#39;</span>,
     }
 
-    <span style="color:#75715e"># 投稿内容を格納</span>
-    item[<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">body</span><span style="color:#e6db74">&#39;</span>] <span style="color:#f92672">=</span> body
+    <span style=color:#75715e># 投稿内容を格納</span>
+    item[<span style=color:#e6db74></span><span style=color:#e6db74>&#39;</span><span style=color:#e6db74>body</span><span style=color:#e6db74>&#39;</span>] <span style=color:#f92672>=</span> body
 
-    <span style="color:#66d9ef">return</span> item
-</code></pre></div><h1 id="heading4">新規投稿の作成</h1>
-<p>Qiita API を利用して、 <code>load_file</code> 関数で取得する内容を投稿します。投稿には、 requests を利用して post 処理を行います。</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#f92672">import</span> requests
+    <span style=color:#66d9ef>return</span> item
+</code></pre></div><h1 id=heading4>新規投稿の作成</h1><p>Qiita API を利用して、 <code>load_file</code> 関数で取得する内容を投稿します。投稿には、 requests を利用して post 処理を行います。</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-py data-lang=py><span style=color:#f92672>import</span> requests
 
-<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">post</span>(item):
-    url <span style="color:#f92672">=</span> <span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">https://qiita.com/api/v2/items</span><span style="color:#e6db74">&#39;</span>
-    token <span style="color:#f92672">=</span> <span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</span><span style="color:#e6db74">&#39;</span>
-    headers <span style="color:#f92672">=</span> {<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">Authorization</span><span style="color:#e6db74">&#39;</span>: <span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">Bearer {}</span><span style="color:#e6db74">&#39;</span><span style="color:#f92672">.</span>format(token)}
+<span style=color:#66d9ef>def</span> <span style=color:#a6e22e>post</span>(item):
+    url <span style=color:#f92672>=</span> <span style=color:#e6db74></span><span style=color:#e6db74>&#39;</span><span style=color:#e6db74>https://qiita.com/api/v2/items</span><span style=color:#e6db74>&#39;</span>
+    token <span style=color:#f92672>=</span> <span style=color:#e6db74></span><span style=color:#e6db74>&#39;</span><span style=color:#e6db74>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</span><span style=color:#e6db74>&#39;</span>
+    headers <span style=color:#f92672>=</span> {<span style=color:#e6db74></span><span style=color:#e6db74>&#39;</span><span style=color:#e6db74>Authorization</span><span style=color:#e6db74>&#39;</span>: <span style=color:#e6db74></span><span style=color:#e6db74>&#39;</span><span style=color:#e6db74>Bearer {}</span><span style=color:#e6db74>&#39;</span><span style=color:#f92672>.</span>format(token)}
 
-    res <span style="color:#f92672">=</span> requests<span style="color:#f92672">.</span>post(url, headers<span style="color:#f92672">=</span>headers, json<span style="color:#f92672">=</span>item)
+    res <span style=color:#f92672>=</span> requests<span style=color:#f92672>.</span>post(url, headers<span style=color:#f92672>=</span>headers, json<span style=color:#f92672>=</span>item)
 
-    <span style="color:#66d9ef">return</span> res
-</code></pre></div><p>Qiita API を利用して新規の投稿を作成する場合は、アクセストークンが必要となります。 <code>token</code> の部分に自分で取得したアクセストークンを設定してください。</p>
-<h1 id="-id-">投稿したレスポンスから ID を取得しヘッダを更新</h1>
-<p>投稿に成功するとレスポンスに ID 情報が付与されます。この ID を自分のローカル環境にあるファイルのヘッダ情報に入れておけば、 Qiita の記事との対応関係が取れることになります。そこで、今回はレスポンスに入っている情報をもとに、ヘッダ部分を書き換えるようにしています。</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#f92672">import</span> toml
+    <span style=color:#66d9ef>return</span> res
+</code></pre></div><p>Qiita API を利用して新規の投稿を作成する場合は、アクセストークンが必要となります。 <code>token</code> の部分に自分で取得したアクセストークンを設定してください。</p><h1 id=-id->投稿したレスポンスから ID を取得しヘッダを更新</h1><p>投稿に成功するとレスポンスに ID 情報が付与されます。この ID を自分のローカル環境にあるファイルのヘッダ情報に入れておけば、 Qiita の記事との対応関係が取れることになります。そこで、今回はレスポンスに入っている情報をもとに、ヘッダ部分を書き換えるようにしています。</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-py data-lang=py><span style=color:#f92672>import</span> toml
 
-<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">add_qiita_id</span>(filepath, item, res):
-    item[<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">qiita</span><span style="color:#e6db74">&#39;</span>][<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">id</span><span style="color:#e6db74">&#39;</span>] <span style="color:#f92672">=</span> res<span style="color:#f92672">.</span>json()[<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">id</span><span style="color:#e6db74">&#39;</span>]
-    data <span style="color:#f92672">=</span> <span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">+++</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">{}+++</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">{}</span><span style="color:#e6db74">&#39;</span><span style="color:#f92672">.</span>format(toml<span style="color:#f92672">.</span>dumps(header), body)
+<span style=color:#66d9ef>def</span> <span style=color:#a6e22e>add_qiita_id</span>(filepath, item, res):
+    item[<span style=color:#e6db74></span><span style=color:#e6db74>&#39;</span><span style=color:#e6db74>qiita</span><span style=color:#e6db74>&#39;</span>][<span style=color:#e6db74></span><span style=color:#e6db74>&#39;</span><span style=color:#e6db74>id</span><span style=color:#e6db74>&#39;</span>] <span style=color:#f92672>=</span> res<span style=color:#f92672>.</span>json()[<span style=color:#e6db74></span><span style=color:#e6db74>&#39;</span><span style=color:#e6db74>id</span><span style=color:#e6db74>&#39;</span>]
+    data <span style=color:#f92672>=</span> <span style=color:#e6db74></span><span style=color:#e6db74>&#39;</span><span style=color:#e6db74>+++</span><span style=color:#ae81ff>\n</span><span style=color:#e6db74>{}+++</span><span style=color:#ae81ff>\n</span><span style=color:#e6db74>{}</span><span style=color:#e6db74>&#39;</span><span style=color:#f92672>.</span>format(toml<span style=color:#f92672>.</span>dumps(header), body)
 
-    <span style="color:#66d9ef">with</span> open(filepath, mode<span style="color:#f92672">=</span><span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">w</span><span style="color:#e6db74">&#39;</span>) <span style="color:#66d9ef">as</span> f:
-        f<span style="color:#f92672">.</span>write(item)
-</code></pre></div><p>Qiita から返ってくる ID を記録しておくと、後から記事を修正した場合に、ローカルの内容を同じ記事に反映することが可能となります。</p>
-<h1 id="heading5">処理フロー</h1>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#66d9ef">if</span> __name__ <span style="color:#f92672">==</span> <span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">__main__</span><span style="color:#e6db74">&#34;</span>:
-    filepath <span style="color:#f92672">=</span> <span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">hoge.md</span><span style="color:#e6db74">&#39;</span>
-    item <span style="color:#f92672">=</span> load_file(filepath)
-    res <span style="color:#f92672">=</span> post(item)
+    <span style=color:#66d9ef>with</span> open(filepath, mode<span style=color:#f92672>=</span><span style=color:#e6db74></span><span style=color:#e6db74>&#39;</span><span style=color:#e6db74>w</span><span style=color:#e6db74>&#39;</span>) <span style=color:#66d9ef>as</span> f:
+        f<span style=color:#f92672>.</span>write(item)
+</code></pre></div><p>Qiita から返ってくる ID を記録しておくと、後から記事を修正した場合に、ローカルの内容を同じ記事に反映することが可能となります。</p><h1 id=heading5>処理フロー</h1><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-py data-lang=py><span style=color:#66d9ef>if</span> __name__ <span style=color:#f92672>==</span> <span style=color:#e6db74></span><span style=color:#e6db74>&#34;</span><span style=color:#e6db74>__main__</span><span style=color:#e6db74>&#34;</span>:
+    filepath <span style=color:#f92672>=</span> <span style=color:#e6db74></span><span style=color:#e6db74>&#39;</span><span style=color:#e6db74>hoge.md</span><span style=color:#e6db74>&#39;</span>
+    item <span style=color:#f92672>=</span> load_file(filepath)
+    res <span style=color:#f92672>=</span> post(item)
     add_qiita_id(filepath, item, res)
-</code></pre></div><h1 id="heading6">最後に</h1>
-<p>これでローカル環境で書いた内容をそのまま投稿することができるようになりました。ただ、まだまだ課題はありますし、エラー処理やらアクセストークンの管理やら対応していない部分が多いです。ざっと考えられる課題を挙げておきます。</p>
-<ul>
-<li>アクセストークンの管理がテキストファイル想定</li>
-<li>タグがついていないとエラーする</li>
-<li>hoge.md に必要なヘッダ情報が抜けた場合のエラー処理</li>
-<li>toml を利用してしまったので標準環境以外が入ってしまった</li>
-<li>ローカル環境は改行を無視するが、 Qiita では改行が改行として扱われるので、表示形式が異なってしまう</li>
-<li>エラー処理が抜けている</li>
-<li>自動投稿への対応</li>
-</ul>
-
-    <div class = 'post_extra'><div class = 'copy' data-share = 'Share Story' data-copied = 'Link Copied'>
-  <svg>
-    <use xlink:href="#copy"></use>
-  </svg>  
-</div>
-
-    </div>
-
-  </article>
-  
-
-
-
-  <aside>
-<h3>Referenced from</h3>
-<ul class='posts aside'>
-</ul>
-
-<h3>More from しさく</h3>
-<ul class='posts aside'>
-<li class = 'post_item'>
-  <a class = 'post_card' href='/scrapbook/softwaretool/docker/pythonenvwithdocker/' title = 'Python開発環境をDockerで構築します' style = 'background-image: url(https://iimuz.github.io/scrapbook/images/thumbnail.svg);'>
-  </a>
-  <div class = 'excerpt'>
-    <div class = 'excerpt_meta'>
-      <a href = 'https://iimuz.github.io/scrapbook/tags/docker' class = 'post_tag'>docker
-      </a><div class = 'copy' data-share = 'Share Story' data-copied = 'Link Copied'>
-  <svg>
-    <use xlink:href="#copy"></use>
-  </svg>  
-</div>
-
-    </div>
-    <h3 class = 'post_link'>
-      <a href='/scrapbook/softwaretool/docker/pythonenvwithdocker/'>Python開発環境をDockerで構築します</a>
-    </h3>
-  </div>
-</li>
-
-<li class = 'post_item'>
-  <a class = 'post_card' href='/scrapbook/programming/python/pythonwindows/' title = 'virtualenvを利用したpython環境の構築(Windows編)' style = 'background-image: url(https://iimuz.github.io/scrapbook/images/thumbnail.svg);'>
-  </a>
-  <div class = 'excerpt'>
-    <div class = 'excerpt_meta'>
-      <a href = 'https://iimuz.github.io/scrapbook/tags/python' class = 'post_tag'>python
-      </a><div class = 'copy' data-share = 'Share Story' data-copied = 'Link Copied'>
-  <svg>
-    <use xlink:href="#copy"></use>
-  </svg>  
-</div>
-
-    </div>
-    <h3 class = 'post_link'>
-      <a href='/scrapbook/programming/python/pythonwindows/'>virtualenvを利用したpython環境の構築(Windows編)</a>
-    </h3>
-  </div>
-</li>
-
-<li class = 'post_item'>
-  <a class = 'post_card' href='/scrapbook/programming/python/matplotlib/' title = 'python3.4でmatplotlibを導入したらグラフ表示できない問題の対処法' style = 'background-image: url(https://iimuz.github.io/scrapbook/images/thumbnail.svg);'>
-  </a>
-  <div class = 'excerpt'>
-    <div class = 'excerpt_meta'>
-      <a href = 'https://iimuz.github.io/scrapbook/tags/python' class = 'post_tag'>python
-      </a><div class = 'copy' data-share = 'Share Story' data-copied = 'Link Copied'>
-  <svg>
-    <use xlink:href="#copy"></use>
-  </svg>  
-</div>
-
-    </div>
-    <h3 class = 'post_link'>
-      <a href='/scrapbook/programming/python/matplotlib/'>python3.4でmatplotlibを導入したらグラフ表示できない問題の対処法</a>
-    </h3>
-  </div>
-</li>
-
-<li class = 'post_item'>
-  <a class = 'post_card' href='/scrapbook/programming/python/pythonenvironment/' title = 'Macでpython環境の構築' style = 'background-image: url(https://iimuz.github.io/scrapbook/images/thumbnail.svg);'>
-  </a>
-  <div class = 'excerpt'>
-    <div class = 'excerpt_meta'>
-      <a href = 'https://iimuz.github.io/scrapbook/tags/python' class = 'post_tag'>python
-      </a><div class = 'copy' data-share = 'Share Story' data-copied = 'Link Copied'>
-  <svg>
-    <use xlink:href="#copy"></use>
-  </svg>  
-</div>
-
-    </div>
-    <h3 class = 'post_link'>
-      <a href='/scrapbook/programming/python/pythonenvironment/'>Macでpython環境の構築</a>
-    </h3>
-  </div>
-</li>
-
-<li class = 'post_item'>
-  <a class = 'post_card' href='/scrapbook/softwaretool/blender/blenderpythonscript/' title = 'BlenderでPythonスクリプトを利用する' style = 'background-image: url(https://iimuz.github.io/scrapbook/images/thumbnail.svg);'>
-  </a>
-  <div class = 'excerpt'>
-    <div class = 'excerpt_meta'>
-      <a href = 'https://iimuz.github.io/scrapbook/tags/blender' class = 'post_tag'>blender
-      </a><div class = 'copy' data-share = 'Share Story' data-copied = 'Link Copied'>
-  <svg>
-    <use xlink:href="#copy"></use>
-  </svg>  
-</div>
-
-    </div>
-    <h3 class = 'post_link'>
-      <a href='/scrapbook/softwaretool/blender/blenderpythonscript/'>BlenderでPythonスクリプトを利用する</a>
-    </h3>
-  </div>
-</li>
-
-</ul>
-
-
-  </aside>
-</div>
-<script src = 'https://iimuz.github.io/scrapbook/js/autosize.min.js'></script>
-<script src = 'https://iimuz.github.io/scrapbook/js/timeago.js'></script>
-    </main><svg width="0" height="0" class="hidden">
-  <symbol viewBox="0 0 699.428 699.428" xmlns="http://www.w3.org/2000/svg" id="copy">
-    <path d="M502.714 0H240.428C194.178 0 153 42.425 153 87.429l-25.267.59c-46.228 0-84.019 41.834-84.019 86.838V612c0 45.004 41.179 87.428 87.429 87.428H459c46.249 0 87.428-42.424 87.428-87.428h21.857c46.25 0 87.429-42.424 87.429-87.428v-349.19zM459 655.715H131.143c-22.95 0-43.714-21.441-43.714-43.715V174.857c0-22.272 18.688-42.993 41.638-42.993l23.933-.721v393.429C153 569.576 194.178 612 240.428 612h262.286c0 22.273-20.765 43.715-43.714 43.715zm153-131.143c0 22.271-20.765 43.713-43.715 43.713H240.428c-22.95 0-43.714-21.441-43.714-43.713V87.429c0-22.272 20.764-43.714 43.714-43.714H459c-.351 50.337 0 87.975 0 87.975 0 45.419 40.872 86.882 87.428 86.882H612zm-65.572-349.715c-23.277 0-43.714-42.293-43.714-64.981V44.348L612 174.857zm-43.714 131.537H306c-12.065 0-21.857 9.77-21.857 21.835s9.792 21.835 21.857 21.835h196.714c12.065 0 21.857-9.771 21.857-21.835 0-12.065-9.792-21.835-21.857-21.835zm0 109.176H306c-12.065 0-21.857 9.77-21.857 21.834 0 12.066 9.792 21.836 21.857 21.836h196.714c12.065 0 21.857-9.77 21.857-21.836 0-12.064-9.792-21.834-21.857-21.834z"
-    ></path>
-  </symbol>
-  <symbol viewBox="0 0 60.015 60.015" xmlns="http://www.w3.org/2000/svg" id="reply">
-    <path d="M42.007 0h-24c-9.925 0-18 8.075-18 18v14c0 9.59 7.538 17.452 17 17.973v8.344a1.694 1.694 0 0 0 1.699 1.698c.44 0 .873-.173 1.198-.498l1.876-1.876C26.708 52.713 33.259 50 40.227 50h1.78c9.925 0 18-8.075 18-18V18c0-9.925-8.075-18-18-18zm16 32c0 8.822-7.178 16-16 16h-1.78c-7.502 0-14.556 2.921-19.86 8.226l-1.359 1.359V44a1 1 0 1 0-2 0v3.949c-8.356-.52-15-7.465-15-15.949V18c0-8.822 7.178-16 16-16h24c8.822 0 16 7.178 16 16v14z"></path>
-  </symbol>
-</svg>
-<footer class = 'footer'>
-  <div class = 'footer_inner wrap pale'>
-    <p>&copy; <span class = 'year'></span> しさく</p>
-    <p>Designed by  <a href = '<no value>' title = 'Linkedin Profile'><no value></a></p>
-  </div>
-</footer>
-
-<script src = 'https://iimuz.github.io/scrapbook/js/index.js'></script>
-
-  </body>
-</html>
+</code></pre></div><h1 id=heading6>最後に</h1><p>これでローカル環境で書いた内容をそのまま投稿することができるようになりました。ただ、まだまだ課題はありますし、エラー処理やらアクセストークンの管理やら対応していない部分が多いです。ざっと考えられる課題を挙げておきます。</p><ul><li>アクセストークンの管理がテキストファイル想定</li><li>タグがついていないとエラーする</li><li>hoge.md に必要なヘッダ情報が抜けた場合のエラー処理</li><li>toml を利用してしまったので標準環境以外が入ってしまった</li><li>ローカル環境は改行を無視するが、 Qiita では改行が改行として扱われるので、表示形式が異なってしまう</li><li>エラー処理が抜けている</li><li>自動投稿への対応</li></ul><div class=post_extra><div class=copy data-share="Share Story" data-copied="Link Copied"><svg><use xlink:href="#copy"/></svg></div></div></article><aside><h3>Referenced from</h3><ul class="posts aside"></ul><h3>More from しさく</h3><ul class="posts aside"><li class=post_item><a class=post_card href=/scrapbook/softwaretool/docker/pythonenvwithdocker/ title=Python開発環境をDockerで構築します style=background-image:url(https://iimuz.github.io/scrapbook/images/thumbnail.svg)></a><div class=excerpt><div class=excerpt_meta><a href=https://iimuz.github.io/scrapbook/tags/docker class=post_tag>docker</a><div class=copy data-share="Share Story" data-copied="Link Copied"><svg><use xlink:href="#copy"/></svg></div></div><h3 class=post_link><a href=/scrapbook/softwaretool/docker/pythonenvwithdocker/>Python開発環境をDockerで構築します</a></h3><div class=post_link><div><i class="far fa-edit"></i>2019-12-28 05:39:31 +0000 UTC</div></div></div></li><li class=post_item><a class=post_card href=/scrapbook/programming/python/pythonwindows/ title=virtualenvを利用したpython環境の構築(Windows編) style=background-image:url(https://iimuz.github.io/scrapbook/images/thumbnail.svg)></a><div class=excerpt><div class=excerpt_meta><a href=https://iimuz.github.io/scrapbook/tags/python class=post_tag>python</a><div class=copy data-share="Share Story" data-copied="Link Copied"><svg><use xlink:href="#copy"/></svg></div></div><h3 class=post_link><a href=/scrapbook/programming/python/pythonwindows/>virtualenvを利用したpython環境の構築(Windows編)</a></h3><div class=post_link><div><i class="far fa-edit"></i>2019-12-28 05:39:31 +0000 UTC</div></div></div></li><li class=post_item><a class=post_card href=/scrapbook/programming/python/matplotlib/ title=python3.4でmatplotlibを導入したらグラフ表示できない問題の対処法 style=background-image:url(https://iimuz.github.io/scrapbook/images/thumbnail.svg)></a><div class=excerpt><div class=excerpt_meta><a href=https://iimuz.github.io/scrapbook/tags/python class=post_tag>python</a><div class=copy data-share="Share Story" data-copied="Link Copied"><svg><use xlink:href="#copy"/></svg></div></div><h3 class=post_link><a href=/scrapbook/programming/python/matplotlib/>python3.4でmatplotlibを導入したらグラフ表示できない問題の対処法</a></h3><div class=post_link><div><i class="far fa-edit"></i>2019-12-28 05:39:31 +0000 UTC</div></div></div></li><li class=post_item><a class=post_card href=/scrapbook/programming/python/pythonenvironment/ title=Macでpython環境の構築 style=background-image:url(https://iimuz.github.io/scrapbook/images/thumbnail.svg)></a><div class=excerpt><div class=excerpt_meta><a href=https://iimuz.github.io/scrapbook/tags/python class=post_tag>python</a><div class=copy data-share="Share Story" data-copied="Link Copied"><svg><use xlink:href="#copy"/></svg></div></div><h3 class=post_link><a href=/scrapbook/programming/python/pythonenvironment/>Macでpython環境の構築</a></h3><div class=post_link><div><i class="far fa-edit"></i>2019-12-28 05:39:31 +0000 UTC</div></div></div></li><li class=post_item><a class=post_card href=/scrapbook/softwaretool/blender/blenderpythonscript/ title=BlenderでPythonスクリプトを利用する style=background-image:url(https://iimuz.github.io/scrapbook/images/thumbnail.svg)></a><div class=excerpt><div class=excerpt_meta><a href=https://iimuz.github.io/scrapbook/tags/blender class=post_tag>blender</a><div class=copy data-share="Share Story" data-copied="Link Copied"><svg><use xlink:href="#copy"/></svg></div></div><h3 class=post_link><a href=/scrapbook/softwaretool/blender/blenderpythonscript/>BlenderでPythonスクリプトを利用する</a></h3><div class=post_link><div><i class="far fa-edit"></i>2019-12-28 05:39:31 +0000 UTC</div></div></div></li></ul></aside></div><script src=https://iimuz.github.io/scrapbook/js/autosize.min.js></script><script src=https://iimuz.github.io/scrapbook/js/timeago.js></script></main><svg width="0" height="0" class="hidden"><symbol viewBox="0 0 699.428 699.428" xmlns="http://www.w3.org/2000/svg" id="copy"><path d="M502.714.0H240.428C194.178.0 153 42.425 153 87.429l-25.267.59c-46.228.0-84.019 41.834-84.019 86.838V612c0 45.004 41.179 87.428 87.429 87.428H459c46.249.0 87.428-42.424 87.428-87.428h21.857c46.25.0 87.429-42.424 87.429-87.428v-349.19zM459 655.715H131.143c-22.95.0-43.714-21.441-43.714-43.715V174.857c0-22.272 18.688-42.993 41.638-42.993l23.933-.721v393.429C153 569.576 194.178 612 240.428 612h262.286c0 22.273-20.765 43.715-43.714 43.715zm153-131.143c0 22.271-20.765 43.713-43.715 43.713H240.428c-22.95.0-43.714-21.441-43.714-43.713V87.429c0-22.272 20.764-43.714 43.714-43.714H459c-.351 50.337.0 87.975.0 87.975.0 45.419 40.872 86.882 87.428 86.882H612zm-65.572-349.715c-23.277.0-43.714-42.293-43.714-64.981V44.348L612 174.857zm-43.714 131.537H306c-12.065.0-21.857 9.77-21.857 21.835s9.792 21.835 21.857 21.835h196.714c12.065.0 21.857-9.771 21.857-21.835.0-12.065-9.792-21.835-21.857-21.835zm0 109.176H306c-12.065.0-21.857 9.77-21.857 21.834.0 12.066 9.792 21.836 21.857 21.836h196.714c12.065.0 21.857-9.77 21.857-21.836.0-12.064-9.792-21.834-21.857-21.834z"/></symbol><symbol viewBox="0 0 60.015 60.015" xmlns="http://www.w3.org/2000/svg" id="reply"><path d="M42.007.0h-24c-9.925.0-18 8.075-18 18v14c0 9.59 7.538 17.452 17 17.973v8.344a1.694 1.694.0 001.699 1.698c.44.0.873-.173 1.198-.498l1.876-1.876C26.708 52.713 33.259 50 40.227 50h1.78c9.925.0 18-8.075 18-18V18c0-9.925-8.075-18-18-18zm16 32c0 8.822-7.178 16-16 16h-1.78c-7.502.0-14.556 2.921-19.86 8.226l-1.359 1.359V44a1 1 0 10-2 0v3.949c-8.356-.52-15-7.465-15-15.949V18c0-8.822 7.178-16 16-16h24c8.822.0 16 7.178 16 16v14z"/></symbol></svg><footer class=footer><div class="footer_inner wrap pale"><p>&copy; <span class=year></span>しさく</p><p>Designed by <a href="<no value>" title="Linkedin Profile"><no value></a></p></div></footer><script src=https://iimuz.github.io/scrapbook/js/index.js></script></body></html>

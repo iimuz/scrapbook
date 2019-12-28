@@ -1,25 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>JavaScript / HTML / CSS on しさく</title>
-    <link>https://iimuz.github.io/scrapbook/programming/js/</link>
-    <description>Recent content in JavaScript / HTML / CSS on しさく</description>
-    <generator>Hugo -- gohugo.io</generator>
-    
-	<atom:link href="https://iimuz.github.io/scrapbook/programming/js/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>httpsとSSLとTLSのメモ</title>
-      <link>https://iimuz.github.io/scrapbook/programming/js/https-ssl-tls/</link>
-      <pubDate>Sun, 26 Aug 2018 17:52:18 +0900</pubDate>
-      
-      <guid>https://iimuz.github.io/scrapbook/programming/js/https-ssl-tls/</guid>
-      <description>HTTPSとSSL、TLSで何が違うのかよくわかっていなかったので、簡単に調べた時のメモです。 結論としては、下記のような感じでしょうか。
- TLSは、暗号化などのセキュリティ機能を実現する方法の規約 TLSは、SSLのバージョンアップ版  SSL3.0は脆弱性が分かっているので、利用してはいけない wikipedia TLS#SSL3.0   HTTPS = HTTP + TLS  SSLとTLSはセキュア通信のための仕組みであり、SSLにはバージョンが1.0(非公開)、2.0、3.0とあった。 ただし、SSL3.0は脆弱性が見つかっているので利用してはいけないことになっている。 TLS1.0はSSLの進化系になる。 そのため、TLS1.0はSSL3.1と呼ばれることもあるとのことです。
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>JavaScript / HTML / CSS on しさく</title><link>https://iimuz.github.io/scrapbook/programming/js/</link><description>Recent content in JavaScript / HTML / CSS on しさく</description><generator>Hugo -- gohugo.io</generator><atom:link href="https://iimuz.github.io/scrapbook/programming/js/index.xml" rel="self" type="application/rss+xml"/><item><title>httpsとSSLとTLSのメモ</title><link>https://iimuz.github.io/scrapbook/programming/js/https-ssl-tls/</link><pubDate>Sun, 26 Aug 2018 17:52:18 +0900</pubDate><guid>https://iimuz.github.io/scrapbook/programming/js/https-ssl-tls/</guid><description>HTTPSとSSL、TLSで何が違うのかよくわかっていなかったので、簡単に調べた時のメモです。 結論としては、下記のような感じでしょうか。
+TLSは、暗号化などのセキュリティ機能を実現する方法の規約 TLSは、SSLのバージョンアップ版 SSL3.0は脆弱性が分かっているので、利用してはいけない wikipedia TLS#SSL3.0 HTTPS = HTTP + TLS SSLとTLSはセキュア通信のための仕組みであり、SSLにはバージョンが1.0(非公開)、2.0、3.0とあった。 ただし、SSL3.0は脆弱性が見つかっているので利用してはいけないことになっている。 TLS1.0はSSLの進化系になる。 そのため、TLS1.0はSSL3.1と呼ばれることもあるとのことです。
 TLSが提供する機能は主に下記のようになるそうです。
- 通信相手の認証 通信内容の暗号化 改竄の検出  現在の最新バージョンはTLS1.3であり、ネゴシエーションに利用するバージョンはSSL3.4になるそうです。</description>
-    </item>
-    
-  </channel>
-</rss>
+通信相手の認証 通信内容の暗号化 改竄の検出 現在の最新バージョンはTLS1.3であり、ネゴシエーションに利用するバージョンはSSL3.4になるそうです。</description></item></channel></rss>
