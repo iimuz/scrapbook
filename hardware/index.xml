@@ -1,6 +1,65 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Hardware on しさく</title><link>https://iimuz.github.io/scrapbook/hardware/</link><description>Recent content in Hardware on しさく</description><generator>Hugo -- gohugo.io</generator><atom:link href="https://iimuz.github.io/scrapbook/hardware/index.xml" rel="self" type="application/rss+xml"/><item><title>Raspberry Pi</title><link>https://iimuz.github.io/scrapbook/hardware/raspberrypi/</link><pubDate>Mon, 30 Dec 2019 03:18:01 +0900</pubDate><guid>https://iimuz.github.io/scrapbook/hardware/raspberrypi/</guid><description> RaspberryPi.org Wikipedia: Raspberry Pi</description></item><item><title>サイクルコンピュータの買い替え</title><link>https://iimuz.github.io/scrapbook/hardware/cyclocomputer/</link><pubDate>Tue, 05 May 2015 00:00:00 +0900</pubDate><guid>https://iimuz.github.io/scrapbook/hardware/cyclocomputer/</guid><description>自転車のサイクルコンピュータが壊れたので買い替える時のメモ。
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Hardwares on しさく</title><link>https://iimuz.github.io/scrapbook/hardware/</link><description>Recent content in Hardwares on しさく</description><generator>Hugo -- gohugo.io</generator><lastBuildDate>Thu, 02 Jan 2020 17:05:51 +0900</lastBuildDate><atom:link href="https://iimuz.github.io/scrapbook/hardware/index.xml" rel="self" type="application/rss+xml"/><item><title>Roomba</title><link>https://iimuz.github.io/scrapbook/hardware/roomba/</link><pubDate>Thu, 02 Jan 2020 17:05:51 +0900</pubDate><guid>https://iimuz.github.io/scrapbook/hardware/roomba/</guid><description> Wikipedia: ルンバ(掃除機)</description></item><item><title>Occulus Rift</title><link>https://iimuz.github.io/scrapbook/hardware/oculus-rift/</link><pubDate>Thu, 02 Jan 2020 16:56:41 +0900</pubDate><guid>https://iimuz.github.io/scrapbook/hardware/oculus-rift/</guid><description> Oculus Wikipedia: Oculus Rift</description></item><item><title>MacBook</title><link>https://iimuz.github.io/scrapbook/hardware/macbook/</link><pubDate>Thu, 02 Jan 2020 16:42:18 +0900</pubDate><guid>https://iimuz.github.io/scrapbook/hardware/macbook/</guid><description> Wikipedia: macbook</description></item><item><title>Raspberry Pi</title><link>https://iimuz.github.io/scrapbook/hardware/raspberrypi/</link><pubDate>Mon, 30 Dec 2019 03:18:01 +0900</pubDate><guid>https://iimuz.github.io/scrapbook/hardware/raspberrypi/</guid><description> RaspberryPi.org Wikipedia: Raspberry Pi</description></item><item><title>RaspberryPi で cv2.imshow を利用したときに DBUS エラーが発生した場合の対処</title><link>https://iimuz.github.io/scrapbook/hardware/raspberrypy-cv2-dbuss-error/</link><pubDate>Sun, 28 Jul 2019 07:52:15 +0000</pubDate><guid>https://iimuz.github.io/scrapbook/hardware/raspberrypy-cv2-dbuss-error/</guid><description>RaspberryPi の環境で cv2 の imshow 関数を利用したところ、下記のエラーが発生した。
+WARNING **: Error retrieving accessibility bus address: org.freedesktop.DBus.Error.ServiceUnknown: The name org.a11y.Bus was not provided by any .service files 対処法としては、下記のようにパッケージを追加すればよいようです。
+sudo apt-get install at-spi2-core [solved ]Warning **: Error retrieving accessibility bus address</description></item><item><title>RaspberryPiで静的IPを利用する</title><link>https://iimuz.github.io/scrapbook/hardware/raspberrypi_static_ip/</link><pubDate>Sun, 09 Jun 2019 06:34:27 +0000</pubDate><guid>https://iimuz.github.io/scrapbook/hardware/raspberrypi_static_ip/</guid><description>$ sudo vi /etc/dhcpcd.conf interface eth0 static ip_address=192.168.10.xxx/24 static domain_name_servers=8.8.8.8 デフォルトゲートウェイはroute -nで探す 参考資料 【Raspberry Pi 3B/3B+】スタティックなIPアドレス（固定IPアドレス）を設定する</description></item><item><title>洗濯機の比較</title><link>https://iimuz.github.io/scrapbook/hardware/washing_machine/</link><pubDate>Tue, 30 Apr 2019 11:23:57 +0900</pubDate><guid>https://iimuz.github.io/scrapbook/hardware/washing_machine/</guid><description>候補 パナソニック NA-VX9900L: 2018/10 243,728 パナソニック NA-VX9900: パナソニック 斜めドラム式洗濯機 Cuble NA-VG2300 日立 ビッグドラム BD-SX110CL: 2018/9 159,500 日立アプライアンス ビッグドラム BD-NX120C 東芝 ZABOON TW-127V7L: 2018/9 154,854 東芝 ライフスタイル ZABOON TW127X7 シャープ ES-W111-SL: 2018/11 208,591 コンパクトタイプ シャープ コンパクトドラム ES-S7C-WL: 2018/2 129,800 パナソニック Cuble NA-VG730L: 2018/11 170,700 日立アプライアンス ビッグドラム BD-SG100CL: 2018/9 132,800 《2019年》洗濯機おすすめ10選！乾燥機能、洗浄力が強いドラム式・縦型の“買い”はこれ!! 《2019年》洗濯機おすすめ10選！乾燥機能、洗浄力が強いドラム式・縦型の“買い”はこれ!!
+ドラム式の方が使用する水は少ないが、縦型の方が泥などは落とせる。 縦型の方が最上位モデルで 5 ~ 8 万円安い。 ドラム式には乾燥機能がある。 乾燥時間や電力使用量がドラム式の方が少なくて済む。 一般人で一日に発生する洗濯物の量は 1.</description></item><item><title>ルンバの調査</title><link>https://iimuz.github.io/scrapbook/hardware/comparison_roomba/</link><pubDate>Mon, 14 Jan 2019 19:51:53 +0900</pubDate><guid>https://iimuz.github.io/scrapbook/hardware/comparison_roomba/</guid><description>Rentio 社: もらえるレンタル Rentio 社、もらえるレンタル
+ルンバ 960
+月額レンタル料: 8,000 1 年間の支払額: 96,000 iRobot 社のレンタル iRobot レンタル
+Roomba 980: 7,000 2 週間 Roomba 885: 5,000 2 週間 価格.com 価格.com
+ルンバ 960: 81,696 ルンバ 980: 109,990 Amazon 価格 Roomba960: 87,000 Roomba980: 121,000 比較ブログ 【2018年最新比較】ルンバの違いと価格。おすすめはコレ！
+112畳以上の広いお家やオフィスをピカピカに掃除してほしい人はルンバ980。 小さなお子さんやペットがいるご家庭で、3部屋以上をまとめてルンバでピカピカに掃除したい人はルンバ885。 小さなお子さんやペットがいるご家庭で、1部屋ずつルンバを使って掃除したい人はルンバ875もしくはルンバ876。 とりあえずロボット掃除機に掃除してもらって、自分でも掃除する人はルンバ680。 価格に関して 2018年4月25日現在、Amazonでのルンバの価格を書いておきます。 値段は日によって変動しますので、あくまでも参考程度にお考えください。
+ルンバ980 114,815 ルンバ960 84,899 ルンバ880 79,980 ルンバ890 66,980 ルンバ885 64,092 ルンバ870 53,000 ルンバ876 52,150 ルンバ875 49,800 ルンバ690 46,980 ルンバ622 41,000 ルンバ680 38,800 900 シリーズと 800 シリーズの違い 900シリーズ（980/960）と800シリーズ（880/885/870/875/876/890）の違いは、掃除できる広さです。 900シリーズは112畳掃除できるのに対して、800シリーズが掃除できるのは25畳までです。</description></item><item><title>外部バックアップ用HDDの比較</title><link>https://iimuz.github.io/scrapbook/hardware/hddbackup/</link><pubDate>Sun, 16 Aug 2015 00:00:00 +0900</pubDate><guid>https://iimuz.github.io/scrapbook/hardware/hddbackup/</guid><description>外部バックアップをするのにHDDを内臓HDD+スタンド or 外付けHDDのどちらが良いか調べたの時のメモ。
+概要 バックアップを行うのに数TB程度のバックアップ環境を構築したくなったので、どうするか検討した。
+結論としては外付けHDDを購入したほうが安いということが分かった。 内臓HDDのみなら若干安いのだが、スタンドの費用がかさみ単価は外付けHDDのほうが安くなった。
+外付けHDD BUFFALO USB3.0 外付けハードディスク PC/家電対応 3TB HD-LC3.0U3/N [フラストレーションフリーパッケージ(FFP)] 2TB: \8,890-(\4,445-/1TB) 3TB: \10,880-(\3,627-/1TB) 4TB: \15,980-(\3,995-/1TB)
+6TB(2個): \21,760-(\3,627-/1TB)
+amazon
+内臓HDD利用 1TB: \11,292- 2TB: \12,768-(\6,384-/1TB) 3TB: \15,102-(\5,034-/1TB)
+6TB(3TB x 2枚): \26,244-(\4,374-/1TB)
+玄人志向 HDDスタンド USB3.0接続 KURO-DACHI/CLONE/U3 パソコンなしでHDDのまるごとコピー機能付き \3,960-
+amazon
+WD 内蔵HDD Green 3TB 3.5inch SATA3.0（SATA 6 Gb/s） 64MB Inteilipower 2年保証 1TB: \7,332- 2TB: \8,808-(\4,404-/1TB) 3TB: \11,142-(\3,714-/1TB)
+amazon</description></item><item><title>MacBookとMacBook Airの比較</title><link>https://iimuz.github.io/scrapbook/hardware/comparison-macbook/</link><pubDate>Sat, 15 Aug 2015 00:00:00 +0900</pubDate><guid>https://iimuz.github.io/scrapbook/hardware/comparison-macbook/</guid><description>母艦となるWindowsマシン以外にも移動用PCがほしくなったのでその時のメモ。
+概要 メインとなるWindowsデスクトップPCを持っているが、 移動したときや自宅以外で作業することが可能なPCがなく不便な時があるので持ち運び用のPCがほしくなった。
+Windows PCのスペック CPU: Intel Core i7-4770 3.40GHz(8 CPUs), 3.4GHz メモリ: 16GB GPU: NVIDIA GeForce GTX 770 選択基準としては、以下に示すようなこと。
+メインはWindowsPCであり、あくまでもサブ機。 持ち運びに便利である。(既にあるA4サイズまでしか入らないバッグに入ること) プログラミング(3D関連の重い作業はメインで行うのでそれ以外)、動画鑑賞ができること。 サブ機なので、比較的安価であること。 これらを踏まえて、いくつかのPCを比較した結論は、 買うならMacBook Air 11インチ(early 2015)になると思う。
+⇒ 結局誘惑に勝てなかったので、macbook 12インチ(1.1GHz)を購入した。
+候補 New MacBook 用途としては十分性能が満たしていると思うが、さすがに1.1GHzはないので、1.3GHzのほうにしたい。 1.3GHzの場合は、\178,800-となり高すぎる。
+⇒ と思ったが、用途的に1.1GHzでも十分かもしれない。 たぶん利用する目的の一番重い処理が、動画閲覧になると思うから。 それなら、1.1GHzで\148,800-で差額が1万円なら許容範囲か? Retinaディスプレイは良い。 サイズは一番小さい。 最も軽い(920g)。 プログラミングは、動かさなければ一通りできる気がする。コンパイルが少し遅いか? スペック1 CPU: 1.3GHzデュアルコアIntel Core M メモリ: 8GB GPU: Intel HD Graphics 5300 解像度: 2304x1440 pix(16:10) スペック2 CPU: 1.</description></item><item><title>Occulus Riftの入力デバイスを調べた時のメモ</title><link>https://iimuz.github.io/scrapbook/hardware/vrinputdevice/</link><pubDate>Tue, 26 May 2015 00:00:00 +0900</pubDate><guid>https://iimuz.github.io/scrapbook/hardware/vrinputdevice/</guid><description>&lt;p>Occulus Riftの入力デバイスを調べた時のメモ。
+ただし、Occulus RiftというよりVRとかARとかまで派生して、面白入力デバイスという感じ。&lt;/p></description></item><item><title>Oculus Rift DK2 で試したコンテンツ</title><link>https://iimuz.github.io/scrapbook/hardware/oculusriftshare/</link><pubDate>Sun, 24 May 2015 00:00:00 +0900</pubDate><guid>https://iimuz.github.io/scrapbook/hardware/oculusriftshare/</guid><description>Oculus rift dk2を利用して試したコンテンツ。
+コンテンツ とりあえず、個人的な感想で☆5つまでで評価。
+SightLine: The Chair ☆☆☆☆☆ 綺麗だし、酔いにくいから面白い。 1回目より2回目のほうが、いろいろ動かせることがわかって面白い。
+Mona Lisa Room ☆☆☆ 美術館の1部屋分を再現した感じなのかな?モナリザを見に行ったことがないから、わからない。
+上を見ようとしてマウスを動かしてしまう…(笑)Occulus利用している場合は、 見上げればいいだけなんだが、慣れとは恐ろしい。
+移動するときのペースが速いので結構酔いそうになる。 自分で動かせるから止まればいいけどちょっと気になる。
+これは、本当に高解像度で実現できるようになったら綺麗だろうと思う。
+Lollihop ☆☆☆☆ ステージクリア型(?)のアクションゲーム。 ただしゲームオーバーはないし、たぶん最後に終わりだよって書いてあるけど、 ゲームの中で終わる方法がよくわからなかった。
+今までのゲームを作るとこうなるのかってのがよくわかった。 没入感はあるし面白いと思う。けど、勝手にカメラを前後に動かされると酔う…。 ごく一部だし、すぐに抜けたから問題なかったけどね。
+Star Conflict Oculus Demo Dreadnought Battle Oculus Modeで利用できなかった…。理由はわからない。
+Vox Machine スムーズに動かせるロボットもの。コックピットからみるとこんな感じになるのか!!って感じで面白い。 ただ、めっちゃ酔う…。
+Virtual Desktop 参考資料 Oculus VR share SightLine: The Chair Mona Lisa Room Lollihop Star Conflict Oculus Demo Dreadnought Battle Virtual Desktop Vox Machine</description></item><item><title>Oculus Rift DK2のセットアップ</title><link>https://iimuz.github.io/scrapbook/hardware/oculusriftdk2setup/</link><pubDate>Sat, 09 May 2015 00:00:00 +0900</pubDate><guid>https://iimuz.github.io/scrapbook/hardware/oculusriftdk2setup/</guid><description>Oculus Rift DK2のセットアップをした時の導入手順メモ。
+Headsetの設定 説明書が入っているので、それに沿ってコネクタ類を接続する。
+PCの設定 Qiita: Oculus Rift DK2をセットアップする手順を参考に順に設定を進める。
+Oculus VRでのアカウント作成 最初に公式サイトでアカウント作成を行う。
+RuntimeとSDKのダウンロードとインストール 開発なども行うことを考えてRuntimeとSDKをダウンロードする。 SDKのみでよいかと思ったらRuntimeも必要だった…。 SDKがやたら軽いと思ったらSDKのReadmeに書かれてた。
+Oculus Runtime for Windows(現時点では0.5.0.1-beta) Oculus SDK for Windows(現時点では0.5.0.1-beta) Runtimeのインストールでは、以下2つのインストールを聞かれるが両方ともYesとした。
+Oculus VR, Incディスプレイアダプター Oculus VR 最後に再起動を聞かれるので、再起動する。
+Oculusの設定 タスクバーのOculusアイコンをダブルクリックし、Oculus Configuration Utilityを起動する。
+Oculus Configuration UtilityでTools -&amp;gt; Display ModeをExtend Desktop to the HMDにすると、 拡張デスクトップで画面が表示できる。
+この時、縦横が逆になっていて表示がおかしい。 Windowsのデスクトップから解像度の設定を行いOculus Riftの画面設定で方向を正しく設定する。 また、解像度を1920x1080にする。
+動作確認 Oculus VR shareで何かをダウンロードして動作を確認する。
+動作させるまでは非常に簡単。 ただ3D酔いが結構あるなぁ。一本確認したら酔ってしまった。
+参考資料 Oculus VR Oculus VR share Qiita: Oculus Rift DK2をセットアップする手順</description></item><item><title>サイクルコンピュータの買い替え</title><link>https://iimuz.github.io/scrapbook/hardware/cyclocomputer/</link><pubDate>Tue, 05 May 2015 00:00:00 +0900</pubDate><guid>https://iimuz.github.io/scrapbook/hardware/cyclocomputer/</guid><description>自転車のサイクルコンピュータが壊れたので買い替える時のメモ。
 条件 現在探しているのは、以下のような条件。
 一般的な速度などが測れれば良い。
 ケイデンスとかまではいらない。 スマホ連携がほしい。
 データを取り出して、その記録をどっかに残すことが簡易にできればそれでいい。 プラスアルファとしてGPSでコースを記録しておいてくれると尚よい。 比較 高すぎて手が出せないパターンは除外している。
-(外部センサーと表示部) CATEYE: マイクロワイヤレス = \4,377 (外部センサーとスマホのみ) センサー CATEYE ICS-12 + スマホホルダー SPA-HB10 = 6,048 + 3,770 = \9,818 (外部センサーとスマホのみ) センサー Wahoo Fitness + スマホホルダー SPA-HB10 = 7,091 + 3,770 = \10,861 (外部センサーとサイコンとスマホ) センサー CATEYE ICS-12 + SMART STRADA + スマホホルダー SPA-HB10 = 6,048 + 6,690 + 3,770 = \16,508 (上のパターンをCAT EYEで一括パッケージ買いの場合) = 12,092 + 3,770 = \15,862 (外部センサーとサイコンとスマホ) センサー Wahoo Fitness + SMART STRADA + スマホホルダー SPA-HB10 = 7,091 + 6,048 + 3,770 = \16,639 (外部センサーとサイコンとスマホ) センサー Wahoo Fitness + Wahoo RFLKT + スマホホルダー SPA-HB10 = 7,091 + 14,000 + 3,770 = \24,861 結論 センサー CATEYE ICS-12 + スマホホルダー SPA-HB10</description></item></channel></rss>
+(外部センサーと表示部) CATEYE: マイクロワイヤレス = \4,377 (外部センサーとスマホのみ) センサー CATEYE ICS-12 + スマホホルダー SPA-HB10 = 6,048 + 3,770 = \9,818 (外部センサーとスマホのみ) センサー Wahoo Fitness + スマホホルダー SPA-HB10 = 7,091 + 3,770 = \10,861 (外部センサーとサイコンとスマホ) センサー CATEYE ICS-12 + SMART STRADA + スマホホルダー SPA-HB10 = 6,048 + 6,690 + 3,770 = \16,508 (上のパターンをCAT EYEで一括パッケージ買いの場合) = 12,092 + 3,770 = \15,862 (外部センサーとサイコンとスマホ) センサー Wahoo Fitness + SMART STRADA + スマホホルダー SPA-HB10 = 7,091 + 6,048 + 3,770 = \16,639 (外部センサーとサイコンとスマホ) センサー Wahoo Fitness + Wahoo RFLKT + スマホホルダー SPA-HB10 = 7,091 + 14,000 + 3,770 = \24,861 結論 センサー CATEYE ICS-12 + スマホホルダー SPA-HB10</description></item><item><title>Oculus Rift DK2を注文した</title><link>https://iimuz.github.io/scrapbook/hardware/oculusriftdk2/</link><pubDate>Sat, 02 May 2015 00:00:00 +0900</pubDate><guid>https://iimuz.github.io/scrapbook/hardware/oculusriftdk2/</guid><description>Oculus Rift DK2を注文したので、その経過をメモ。
+⇒到着済み(2015.05.09)
+現状ステータス 2015/5/9: 受け取り完了。 2015/5/7: 一度配達されていることを確認。 2015/5/6: 日本に到着(FedExのログで確認)。 注文の流れ(2015/5/2) Oculus VRのページが日本語に対応しているので非常に簡単。 購入のページから一通り流されるままに記入して、支払うだけ。 以下のページの左上の購入から進む。
+Oculus VR 全部半角英数字での入力が必要となる。 英語表記だと県とか市とかどう表現するのが適切知らないので、全部日本語表記(Tokyotoなど)する。 ContryのみJapanとしておけば、日本にたどり着いてからは日本語が読める人が対応するはずだし、 そうすればローマ字表記は読めるはず。
+注文が成功すれば、入力したメールアドレスに&amp;quot;注文ありがとう&amp;quot;といったメールが来る。
+Oculus VR: ご注文ありがとうございます / ご注文番号 [xxxxxxxx]
+Thanks for your pre-order!
+確認と発送(2015/5/4) 発送が開始されてカードで請求できたら、以下のメールが来た。
+Oculus VR: Payment received for your pre-order
+You're receiving this email because your Oculus Order xxxxx is about to ship, and we've charged the remaining balance to the credit card on file.</description></item></channel></rss>
