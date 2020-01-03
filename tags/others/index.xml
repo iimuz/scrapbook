@@ -9,6 +9,14 @@ Microsoftは、カード型の端末がずっとメインに続いてる。 大�
 2013/05/16 data for smart society(NTT DATA future vision) 2013/06/12 2025 the future of ICT その他
 みんな、タブレットとスマホが大好きって感じ。 それ以外の面白デバイスは少ないなぁ。
 2015/05/10 Top 5 future Technology inventions: 2015 - 2050
-幾つかの動画からテクノロジーを集めてきた感じかな。</description></item><item><title>気になった言葉</title><link>https://iimuz.github.io/scrapbook/others/wiseremarks/</link><pubDate>Sat, 30 May 2015 00:00:00 +0900</pubDate><guid>https://iimuz.github.io/scrapbook/others/wiseremarks/</guid><description>何かしていて気になった言葉。
+幾つかの動画からテクノロジーを集めてきた感じかな。</description></item><item><title>メモ環境</title><link>https://iimuz.github.io/scrapbook/others/memoenvironment/</link><pubDate>Sun, 23 Aug 2015 00:00:00 +0900</pubDate><guid>https://iimuz.github.io/scrapbook/others/memoenvironment/</guid><description>クロスプラットフォームでメモ環境を構築しようとした時のメモ書き。
+概要 論文とかもmarkdown記法でテキストで書いてしまえる気がする。 長文も短文も全て書きだしをスムーズにしたいから、メモして行く方法を確立できないだろうか。
+メモ とりあえず、書き始めを基本はgoogle keepにする。 そして、そこから長くなってきたら後悔しても問題ない範囲ならgithubにしてしまえばどこからでも確認できる。 後悔したくないデータは、Dropboxに入れる。
+書き始め: google keep ⇒ markdown記法 公開可能: github ⇒ markdown記法(テキストファイル) ⇒ html 非公開: Dropbox ⇒ markdown記法(テキストファイル) ⇒ PDF Google keep Windows、Android、Mac(おそらくiOsも)で使えるクロスプラットフォームなメモ。 簡易メモとして非常に軽量で起動とメモの開始までが早いという特徴がある。
+ただし、macでsafariを使った時は、文字入力がかなり遅れるという問題があった。 chromeをインストールして、keepを利用したら速度が上がった。 基本は純正ソフトから使えということか?
+現在のところmarkdownで書いておけば、この後はコピペで適切な形式に変換できる。
+GitHub markdown記法で書いてjekyllでhtmlに変換しておけば、 どこからでもアクセスできる個人データベースの完成。 自分のページにgoogleの検索窓さえつけとけばgoogleの優秀な検索機能が利用できるので、非常に楽に検索機能が利用できる。
+Dropbox 一応プライベートな(ネットに繋がっている時点でプライベートか疑問だが)ファイルを保存できるので、 公開したくないメモはこちらに書いて、保存しておく。 ここもmarkdownで書いておけば、もし公開しても良い気がしたらGitHubに移動すればいいし、 最後までダメならそのまま置いておけばいい。
+ただ、書き終わったらテキストファイルも残しておくがPDFにしてしまえば見やすくなる。 PDFへの変換は、pandocを利用してしまえば、一発で変換される。</description></item><item><title>気になった言葉</title><link>https://iimuz.github.io/scrapbook/others/wiseremarks/</link><pubDate>Sat, 30 May 2015 00:00:00 +0900</pubDate><guid>https://iimuz.github.io/scrapbook/others/wiseremarks/</guid><description>何かしていて気になった言葉。
 今日は死ぬのにもってこいの日だ 師の跡を求めず、師の求めたるところを求めよ Yahoo! 知恵袋: 師の跡を求めず、師の求めたるところを求めよ
 サヨナラだけが人生だ だいせんじがけだらなよさ 立ち上がってたたみなさい、君の悲嘆の地図を 参考資料 Yahoo! 知恵袋: 師の跡を求めず、師の求めたるところを求めよ</description></item></channel></rss>

@@ -9,5 +9,4 @@ $ brew cask intall ant vimパッケージ NeoBundle .vimrcに記述してNeoBund
 ervandew/eclim 以下のコマンドを.vimrcに記載する。
 NeoBundleLazy 'ervandew/eclim', { \ 'build': \ {'mac': 'ant -Declipse.home=/opt/homebrew-cask/Caskroom/eclipse-java/4.5/Eclipse.app/Contents/Eclipse -Dvim.files='.escape(expand('~/.vim/bundle/eclim'), '')}, \ } Declipse.home=の指す先は、brew cask install eclipseでインストールされたEclipseの場所。 -Dvim.files=の指す先は、vimのbundleを管理しているフォルダ。
 結局よくわからないので、自分でビルドしに行った。
-$ ant -Delipse.home=/opt/homebrew-cask/Caskroom/eclipse-java/4.5/Eclipse.app/Contents/Eclipse -Dvim.files=~/.vim/bundle/eclim 上記がエラーの原因だった。 ビルド時の出力みたらeclimフォルダの中にDvim.filesのパスが作成されていた。 この辺の挙動が不明で適当に書き換えているからエラーする。 とりあえず以下のように強引にeclimフォルダに出力されるようにビルドした。</description></item><item><title>vimがun~ファイルを作るようになった</title><link>https://iimuz.github.io/scrapbook/softwaretool/vim/vimunfile/</link><pubDate>Sat, 25 Apr 2015 00:00:00 +0900</pubDate><guid>https://iimuz.github.io/scrapbook/softwaretool/vim/vimunfile/</guid><description>&lt;p>vimがun~ファイルを作成するようになったので、
-un~ファイルを一か所にまとめる方法。&lt;/p></description></item></channel></rss>
+$ ant -Delipse.home=/opt/homebrew-cask/Caskroom/eclipse-java/4.5/Eclipse.app/Contents/Eclipse -Dvim.files=~/.vim/bundle/eclim 上記がエラーの原因だった。 ビルド時の出力みたらeclimフォルダの中にDvim.filesのパスが作成されていた。 この辺の挙動が不明で適当に書き換えているからエラーする。 とりあえず以下のように強引にeclimフォルダに出力されるようにビルドした。</description></item></channel></rss>
