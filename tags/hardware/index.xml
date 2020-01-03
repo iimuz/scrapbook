@@ -18,7 +18,13 @@ amazon
 玄人志向 HDDスタンド USB3.0接続 KURO-DACHI/CLONE/U3 パソコンなしでHDDのまるごとコピー機能付き \3,960-
 amazon
 WD 内蔵HDD Green 3TB 3.5inch SATA3.0（SATA 6 Gb/s） 64MB Inteilipower 2年保証 1TB: \7,332- 2TB: \8,808-(\4,404-/1TB) 3TB: \11,142-(\3,714-/1TB)
-amazon</description></item><item><title>Occulus Riftの入力デバイスを調べた時のメモ</title><link>https://iimuz.github.io/scrapbook/hardware/vrinputdevice/</link><pubDate>Tue, 26 May 2015 00:00:00 +0900</pubDate><guid>https://iimuz.github.io/scrapbook/hardware/vrinputdevice/</guid><description>&lt;p>Occulus Riftの入力デバイスを調べた時のメモ。
+amazon</description></item><item><title>MacBookとMacBook Airの比較</title><link>https://iimuz.github.io/scrapbook/hardware/comparison-macbook/</link><pubDate>Sat, 15 Aug 2015 00:00:00 +0900</pubDate><guid>https://iimuz.github.io/scrapbook/hardware/comparison-macbook/</guid><description>母艦となるWindowsマシン以外にも移動用PCがほしくなったのでその時のメモ。
+概要 メインとなるWindowsデスクトップPCを持っているが、 移動したときや自宅以外で作業することが可能なPCがなく不便な時があるので持ち運び用のPCがほしくなった。
+Windows PCのスペック CPU: Intel Core i7-4770 3.40GHz(8 CPUs), 3.4GHz メモリ: 16GB GPU: NVIDIA GeForce GTX 770 選択基準としては、以下に示すようなこと。
+メインはWindowsPCであり、あくまでもサブ機。 持ち運びに便利である。(既にあるA4サイズまでしか入らないバッグに入ること) プログラミング(3D関連の重い作業はメインで行うのでそれ以外)、動画鑑賞ができること。 サブ機なので、比較的安価であること。 これらを踏まえて、いくつかのPCを比較した結論は、 買うならMacBook Air 11インチ(early 2015)になると思う。
+⇒ 結局誘惑に勝てなかったので、macbook 12インチ(1.1GHz)を購入した。
+候補 New MacBook 用途としては十分性能が満たしていると思うが、さすがに1.1GHzはないので、1.3GHzのほうにしたい。 1.3GHzの場合は、\178,800-となり高すぎる。
+⇒ と思ったが、用途的に1.1GHzでも十分かもしれない。 たぶん利用する目的の一番重い処理が、動画閲覧になると思うから。 それなら、1.1GHzで\148,800-で差額が1万円なら許容範囲か? Retinaディスプレイは良い。 サイズは一番小さい。 最も軽い(920g)。 プログラミングは、動かさなければ一通りできる気がする。コンパイルが少し遅いか? スペック1 CPU: 1.3GHzデュアルコアIntel Core M メモリ: 8GB GPU: Intel HD Graphics 5300 解像度: 2304x1440 pix(16:10) スペック2 CPU: 1.</description></item><item><title>Occulus Riftの入力デバイスを調べた時のメモ</title><link>https://iimuz.github.io/scrapbook/hardware/vrinputdevice/</link><pubDate>Tue, 26 May 2015 00:00:00 +0900</pubDate><guid>https://iimuz.github.io/scrapbook/hardware/vrinputdevice/</guid><description>&lt;p>Occulus Riftの入力デバイスを調べた時のメモ。
 ただし、Occulus RiftというよりVRとかARとかまで派生して、面白入力デバイスという感じ。&lt;/p></description></item><item><title>Oculus Rift DK2 で試したコンテンツ</title><link>https://iimuz.github.io/scrapbook/hardware/oculusriftshare/</link><pubDate>Sun, 24 May 2015 00:00:00 +0900</pubDate><guid>https://iimuz.github.io/scrapbook/hardware/oculusriftshare/</guid><description>Oculus rift dk2を利用して試したコンテンツ。
 コンテンツ とりあえず、個人的な感想で☆5つまでで評価。
 SightLine: The Chair ☆☆☆☆☆ 綺麗だし、酔いにくいから面白い。 1回目より2回目のほうが、いろいろ動かせることがわかって面白い。
@@ -42,7 +48,12 @@ Oculus Configuration UtilityでTools -&amp;gt; Display ModeをExtend Desktop to 
 この時、縦横が逆になっていて表示がおかしい。 Windowsのデスクトップから解像度の設定を行いOculus Riftの画面設定で方向を正しく設定する。 また、解像度を1920x1080にする。
 動作確認 Oculus VR shareで何かをダウンロードして動作を確認する。
 動作させるまでは非常に簡単。 ただ3D酔いが結構あるなぁ。一本確認したら酔ってしまった。
-参考資料 Oculus VR Oculus VR share Qiita: Oculus Rift DK2をセットアップする手順</description></item><item><title>Oculus Rift DK2を注文した</title><link>https://iimuz.github.io/scrapbook/hardware/oculusriftdk2/</link><pubDate>Sat, 02 May 2015 00:00:00 +0900</pubDate><guid>https://iimuz.github.io/scrapbook/hardware/oculusriftdk2/</guid><description>Oculus Rift DK2を注文したので、その経過をメモ。
+参考資料 Oculus VR Oculus VR share Qiita: Oculus Rift DK2をセットアップする手順</description></item><item><title>サイクルコンピュータの買い替え</title><link>https://iimuz.github.io/scrapbook/hardware/cyclocomputer/</link><pubDate>Tue, 05 May 2015 00:00:00 +0900</pubDate><guid>https://iimuz.github.io/scrapbook/hardware/cyclocomputer/</guid><description>自転車のサイクルコンピュータが壊れたので買い替える時のメモ。
+条件 現在探しているのは、以下のような条件。
+一般的な速度などが測れれば良い。
+ケイデンスとかまではいらない。 スマホ連携がほしい。
+データを取り出して、その記録をどっかに残すことが簡易にできればそれでいい。 プラスアルファとしてGPSでコースを記録しておいてくれると尚よい。 比較 高すぎて手が出せないパターンは除外している。
+(外部センサーと表示部) CATEYE: マイクロワイヤレス = \4,377 (外部センサーとスマホのみ) センサー CATEYE ICS-12 + スマホホルダー SPA-HB10 = 6,048 + 3,770 = \9,818 (外部センサーとスマホのみ) センサー Wahoo Fitness + スマホホルダー SPA-HB10 = 7,091 + 3,770 = \10,861 (外部センサーとサイコンとスマホ) センサー CATEYE ICS-12 + SMART STRADA + スマホホルダー SPA-HB10 = 6,048 + 6,690 + 3,770 = \16,508 (上のパターンをCAT EYEで一括パッケージ買いの場合) = 12,092 + 3,770 = \15,862 (外部センサーとサイコンとスマホ) センサー Wahoo Fitness + SMART STRADA + スマホホルダー SPA-HB10 = 7,091 + 6,048 + 3,770 = \16,639 (外部センサーとサイコンとスマホ) センサー Wahoo Fitness + Wahoo RFLKT + スマホホルダー SPA-HB10 = 7,091 + 14,000 + 3,770 = \24,861 結論 センサー CATEYE ICS-12 + スマホホルダー SPA-HB10</description></item><item><title>Oculus Rift DK2を注文した</title><link>https://iimuz.github.io/scrapbook/hardware/oculusriftdk2/</link><pubDate>Sat, 02 May 2015 00:00:00 +0900</pubDate><guid>https://iimuz.github.io/scrapbook/hardware/oculusriftdk2/</guid><description>Oculus Rift DK2を注文したので、その経過をメモ。
 ⇒到着済み(2015.05.09)
 現状ステータス 2015/5/9: 受け取り完了。 2015/5/7: 一度配達されていることを確認。 2015/5/6: 日本に到着(FedExのログで確認)。 注文の流れ(2015/5/2) Oculus VRのページが日本語に対応しているので非常に簡単。 購入のページから一通り流されるままに記入して、支払うだけ。 以下のページの左上の購入から進む。
 Oculus VR 全部半角英数字での入力が必要となる。 英語表記だと県とか市とかどう表現するのが適切知らないので、全部日本語表記(Tokyotoなど)する。 ContryのみJapanとしておけば、日本にたどり着いてからは日本語が読める人が対応するはずだし、 そうすればローマ字表記は読めるはず。
