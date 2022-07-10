@@ -2,13 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://iimuz.github.io/scrapbook/tags/bash/</loc>
+    <lastmod>2022-07-10T10:49:57+09:00</lastmod>
+  </url><url>
+    <loc>https://iimuz.github.io/scrapbook/zettelkasten/scrapbook-20220702144802/</loc>
+    <lastmod>2022-07-10T10:49:57+09:00</lastmod>
+  </url><url>
     <loc>https://iimuz.github.io/scrapbook/categories/</loc>
+    <lastmod>2022-07-10T10:49:57+09:00</lastmod>
+  </url><url>
+    <loc>https://iimuz.github.io/scrapbook/categories/development-environment/</loc>
+    <lastmod>2022-07-10T10:49:57+09:00</lastmod>
+  </url><url>
+    <loc>https://iimuz.github.io/scrapbook/tags/gcp/</loc>
+    <lastmod>2022-07-10T10:49:57+09:00</lastmod>
+  </url><url>
+    <loc>https://iimuz.github.io/scrapbook/zettelkasten/scrapbook-20220702151015/</loc>
+    <lastmod>2022-07-10T10:49:57+09:00</lastmod>
+  </url><url>
+    <loc>https://iimuz.github.io/scrapbook/categories/programming-language/</loc>
+    <lastmod>2022-07-10T10:49:57+09:00</lastmod>
+  </url><url>
+    <loc>https://iimuz.github.io/scrapbook/tags/</loc>
+    <lastmod>2022-07-10T10:49:57+09:00</lastmod>
+  </url><url>
+    <loc>https://iimuz.github.io/scrapbook/zettelkasten/</loc>
+    <lastmod>2022-07-10T10:49:57+09:00</lastmod>
+  </url><url>
+    <loc>https://iimuz.github.io/scrapbook/</loc>
+    <lastmod>2022-07-10T10:49:57+09:00</lastmod>
   </url><url>
     <loc>https://iimuz.github.io/scrapbook/search/</loc>
     <lastmod>2022-05-29T16:20:40+09:00</lastmod>
-  </url><url>
-    <loc>https://iimuz.github.io/scrapbook/tags/</loc>
-  </url><url>
-    <loc>https://iimuz.github.io/scrapbook/</loc>
   </url>
 </urlset>
