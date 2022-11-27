@@ -2,34 +2,46 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://iimuz.github.io/scrapbook/categories/</loc>
+    <lastmod>2022-11-27T22:38:52+09:00</lastmod>
+  </url><url>
+    <loc>https://iimuz.github.io/scrapbook/zettelkasten/scrapbook-20221127091453/</loc>
+    <lastmod>2022-11-27T22:38:52+09:00</lastmod>
+  </url><url>
+    <loc>https://iimuz.github.io/scrapbook/categories/scrapbook/</loc>
+    <lastmod>2022-11-27T22:38:52+09:00</lastmod>
+  </url><url>
+    <loc>https://iimuz.github.io/scrapbook/tags/software/</loc>
+    <lastmod>2022-11-27T22:38:52+09:00</lastmod>
+  </url><url>
+    <loc>https://iimuz.github.io/scrapbook/tags/</loc>
+    <lastmod>2022-11-27T22:38:52+09:00</lastmod>
+  </url><url>
+    <loc>https://iimuz.github.io/scrapbook/categories/til/</loc>
+    <lastmod>2022-11-27T22:38:52+09:00</lastmod>
+  </url><url>
+    <loc>https://iimuz.github.io/scrapbook/zettelkasten/</loc>
+    <lastmod>2022-11-27T22:38:52+09:00</lastmod>
+  </url><url>
+    <loc>https://iimuz.github.io/scrapbook/</loc>
+    <lastmod>2022-11-27T22:38:52+09:00</lastmod>
+  </url><url>
+    <loc>https://iimuz.github.io/scrapbook/zettelkasten/scrapbook-20220825214534/</loc>
+    <lastmod>2022-11-27T22:38:52+09:00</lastmod>
+  </url><url>
+    <loc>https://iimuz.github.io/scrapbook/zettelkasten/scrapbook-20220825214849/</loc>
+    <lastmod>2022-11-27T22:38:52+09:00</lastmod>
+  </url><url>
     <loc>https://iimuz.github.io/scrapbook/tags/bash/</loc>
     <lastmod>2022-07-21T11:04:53+09:00</lastmod>
   </url><url>
     <loc>https://iimuz.github.io/scrapbook/zettelkasten/scrapbook-20220702144802/</loc>
     <lastmod>2022-07-21T11:04:53+09:00</lastmod>
   </url><url>
-    <loc>https://iimuz.github.io/scrapbook/categories/</loc>
-    <lastmod>2022-07-21T11:04:53+09:00</lastmod>
-  </url><url>
     <loc>https://iimuz.github.io/scrapbook/tags/gcp/</loc>
     <lastmod>2022-07-21T11:04:53+09:00</lastmod>
   </url><url>
     <loc>https://iimuz.github.io/scrapbook/zettelkasten/scrapbook-20220702151015/</loc>
-    <lastmod>2022-07-21T11:04:53+09:00</lastmod>
-  </url><url>
-    <loc>https://iimuz.github.io/scrapbook/categories/scrapbook/</loc>
-    <lastmod>2022-07-21T11:04:53+09:00</lastmod>
-  </url><url>
-    <loc>https://iimuz.github.io/scrapbook/tags/</loc>
-    <lastmod>2022-07-21T11:04:53+09:00</lastmod>
-  </url><url>
-    <loc>https://iimuz.github.io/scrapbook/categories/til/</loc>
-    <lastmod>2022-07-21T11:04:53+09:00</lastmod>
-  </url><url>
-    <loc>https://iimuz.github.io/scrapbook/zettelkasten/</loc>
-    <lastmod>2022-07-21T11:04:53+09:00</lastmod>
-  </url><url>
-    <loc>https://iimuz.github.io/scrapbook/</loc>
     <lastmod>2022-07-21T11:04:53+09:00</lastmod>
   </url><url>
     <loc>https://iimuz.github.io/scrapbook/search/</loc>

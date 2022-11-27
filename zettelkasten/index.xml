@@ -5,7 +5,34 @@
     <link>https://iimuz.github.io/scrapbook/zettelkasten/</link>
     <description>Recent content in Zettelkastens on しさく</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 02 Jul 2022 00:00:00 +0900</lastBuildDate><atom:link href="https://iimuz.github.io/scrapbook/zettelkasten/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 27 Nov 2022 00:00:00 +0900</lastBuildDate><atom:link href="https://iimuz.github.io/scrapbook/zettelkasten/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Git Tips</title>
+      <link>https://iimuz.github.io/scrapbook/zettelkasten/scrapbook-20221127091453/</link>
+      <pubDate>Sun, 27 Nov 2022 00:00:00 +0900</pubDate>
+      
+      <guid>https://iimuz.github.io/scrapbook/zettelkasten/scrapbook-20221127091453/</guid>
+      <description>Git Tips</description>
+    </item>
+    
+    <item>
+      <title>Javascript Tips</title>
+      <link>https://iimuz.github.io/scrapbook/zettelkasten/scrapbook-20220825214534/</link>
+      <pubDate>Thu, 25 Aug 2022 00:00:00 +0900</pubDate>
+      
+      <guid>https://iimuz.github.io/scrapbook/zettelkasten/scrapbook-20220825214534/</guid>
+      <description>Javascript Tips</description>
+    </item>
+    
+    <item>
+      <title>Typescript Tips</title>
+      <link>https://iimuz.github.io/scrapbook/zettelkasten/scrapbook-20220825214849/</link>
+      <pubDate>Thu, 25 Aug 2022 00:00:00 +0900</pubDate>
+      
+      <guid>https://iimuz.github.io/scrapbook/zettelkasten/scrapbook-20220825214849/</guid>
+      <description>Typescript Tips</description>
+    </item>
+    
     <item>
       <title>Bash Tips</title>
       <link>https://iimuz.github.io/scrapbook/zettelkasten/scrapbook-20220702144802/</link>
