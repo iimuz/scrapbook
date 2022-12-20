@@ -5,7 +5,16 @@
     <link>https://iimuz.github.io/scrapbook/categories/til/</link>
     <description>Recent content in til on しさく</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 27 Nov 2022 00:00:00 +0900</lastBuildDate><atom:link href="https://iimuz.github.io/scrapbook/categories/til/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 18 Dec 2022 00:00:00 +0900</lastBuildDate><atom:link href="https://iimuz.github.io/scrapbook/categories/til/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Homebrew Tips</title>
+      <link>https://iimuz.github.io/scrapbook/zettelkasten/scrapbook-20221218142420/</link>
+      <pubDate>Sun, 18 Dec 2022 00:00:00 +0900</pubDate>
+      
+      <guid>https://iimuz.github.io/scrapbook/zettelkasten/scrapbook-20221218142420/</guid>
+      <description>Homebrew Tips. Homebrew is the package manager for macOS (or Linux)</description>
+    </item>
+    
     <item>
       <title>Git Tips</title>
       <link>https://iimuz.github.io/scrapbook/zettelkasten/scrapbook-20221127091453/</link>
