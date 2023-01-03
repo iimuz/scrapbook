@@ -5,7 +5,16 @@
     <link>https://iimuz.github.io/scrapbook/categories/til/</link>
     <description>Recent content in til on しさく</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 18 Dec 2022 00:00:00 +0900</lastBuildDate><atom:link href="https://iimuz.github.io/scrapbook/categories/til/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 19 Dec 2022 00:00:00 +0900</lastBuildDate><atom:link href="https://iimuz.github.io/scrapbook/categories/til/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Jupyter Tips</title>
+      <link>https://iimuz.github.io/scrapbook/zettelkasten/scrapbook-20221219094136/</link>
+      <pubDate>Mon, 19 Dec 2022 00:00:00 +0900</pubDate>
+      
+      <guid>https://iimuz.github.io/scrapbook/zettelkasten/scrapbook-20221219094136/</guid>
+      <description>Jupyter Tips. Juypter is free software, open standards, and web services for interactive computing across all programming languages.</description>
+    </item>
+    
     <item>
       <title>Homebrew Tips</title>
       <link>https://iimuz.github.io/scrapbook/zettelkasten/scrapbook-20221218142420/</link>
@@ -13,6 +22,24 @@
       
       <guid>https://iimuz.github.io/scrapbook/zettelkasten/scrapbook-20221218142420/</guid>
       <description>Homebrew Tips. Homebrew is the package manager for macOS (or Linux)</description>
+    </item>
+    
+    <item>
+      <title>Scoop Tips</title>
+      <link>https://iimuz.github.io/scrapbook/zettelkasten/scrapbook-20221217120338/</link>
+      <pubDate>Sat, 17 Dec 2022 00:00:00 +0900</pubDate>
+      
+      <guid>https://iimuz.github.io/scrapbook/zettelkasten/scrapbook-20221217120338/</guid>
+      <description>Scoop Tips. Scoop is a command-line installer for windows.</description>
+    </item>
+    
+    <item>
+      <title>PyTorch Tips</title>
+      <link>https://iimuz.github.io/scrapbook/zettelkasten/scrapbook-20221215132013/</link>
+      <pubDate>Thu, 15 Dec 2022 00:00:00 +0900</pubDate>
+      
+      <guid>https://iimuz.github.io/scrapbook/zettelkasten/scrapbook-20221215132013/</guid>
+      <description>PyTorch Tips</description>
     </item>
     
     <item>
