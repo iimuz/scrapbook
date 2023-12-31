@@ -1,0 +1,40 @@
+{
+  // エディタ設定
+  "editor.formatOnSave": true, // 基本はフォーマットする。
+  // === Extension: autoTimeStamp
+  "lpubsppop01.autoTimeStamp.filenamePattern": ".md",
+  "lpubsppop01.autoTimeStamp.lineLimit": 10,
+  "lpubsppop01.autoTimeStamp.modifiedTimeStart": "lastmod: ",
+  "lpubsppop01.autoTimeStamp.momentFormat": "YYYY-MM-DD",
+  // === Extension: Foam
+  "foam.files.ignore": [
+    // zettelkasntenディレクトリ以外は対象外
+    ".github/**/*",
+    ".vscode/**/*",
+    "archetypes/**/*",
+    "layouts/**/*",
+  ],
+  // === Extension: frontMatter
+  "frontMatter.content.autoUpdateDate": false, // autoTimeStamp拡張を利用する
+  "frontMatter.content.fmHighlight": false,
+  "frontMatter.dashboard.openOnStart": false,
+  // === Extension: insertDateString
+  "insertDateString.format": "YYYY-MM-DD hh:mm:ss",
+  "insertDateString.formatDate": "YYYY-MM-DD",
+  "insertDateString.formatTime": "hh:mm",
+  // Language: json
+  "[json][jsonc][jsonl]": {
+    "editor.defaultFormatter": "dprint.dprint",
+    "editor.formatOnSave": true
+  },
+  // === Language: markdown
+  "[markdown]": {
+    "editor.defaultFormatter": "dprint.dprint",
+    "editor.formatOnSave": true
+  },
+  // Language: yaml
+  "[yaml]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  }
+}
