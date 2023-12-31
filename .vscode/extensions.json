@@ -1,3 +1,17 @@
 {
-  "recommendations": []
+  "recommendations": [
+    // Editor
+    "EditorConfig.EditorConfig",
+    // Linter, Formatter
+    "dprint.dprint", // json, markdown, toml
+    "streetsidesoftware.code-spell-checker", // spell checker
+    // Markdown
+    "DavidAnson.vscode-markdownlint",
+    "eliostruyf.vscode-front-matter",
+    "lpubsppop01.vscode-auto-timestamp", // frontmatterの時刻の自動更新
+    // TOML
+    "be5invis.toml", // syntax highlight
+    // YAML
+    "redhat.vscode-yaml" // syntax highlight
+  ]
 }
