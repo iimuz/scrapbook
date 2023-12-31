@@ -5,6 +5,7 @@
     "autoreload",
     "blkid",
     "cmds",
+    "datetime",
     "dotenv",
     "dprint",
     "elif",
