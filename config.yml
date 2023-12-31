@@ -8,11 +8,6 @@ pygmentsStyle: "monokai"
 enableGitInfo: true
 resourceDir: "/tmp/hugo_resources"
 
-module:
-  mounts:
-    - source: content
-      target: content
-
 frontmatter:
   - lastmod
   - :git
