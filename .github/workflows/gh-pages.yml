@@ -1,0 +1,43 @@
+name: gh-pages
+on:
+  push:
+    branches: ["master"]
+  workflow_dispatch:
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          submodules: true
+          fetch-depth: 0
+      - name: Setup hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: "0.119.0"
+          extended: true
+      - name: Build
+        run: hugo --minify --config=config.yml
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: scrapbook
+          path: public
+      - name: Upload pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: public
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    permissions:
+      pages: write
+      id-token: write
+    steps:
+      - name: Deploy
+        uses: actions/deploy-pages@v4
+        id: deployment

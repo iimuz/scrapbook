@@ -1,0 +1,18 @@
+# hugo
+resources/
+public/
+.hugo_build.lock
+
+# environment
+.env
+
+# node
+node_modules/
+
+# python
+__pycache__/
+.ipynb_checkpoints/
+.mypy_cache/
+
+# temp
+tmp/
