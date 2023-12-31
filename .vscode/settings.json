@@ -8,11 +8,10 @@
   "lpubsppop01.autoTimeStamp.momentFormat": "YYYY-MM-DD",
   // === Extension: Foam
   "foam.files.ignore": [
-    // zettelkasntenディレクトリ以外は対象外
     ".github/**/*",
     ".vscode/**/*",
     "archetypes/**/*",
-    "layouts/**/*",
+    "layouts/**/*"
   ],
   // === Extension: frontMatter
   "frontMatter.content.autoUpdateDate": false, // autoTimeStamp拡張を利用する
