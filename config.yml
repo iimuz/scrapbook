@@ -82,9 +82,9 @@ menu:
 # Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
 pygmentsUseClasses: true
 markup:
-    highlight:
-        # anchorLineNos: true
-        codeFences: true
-        guessSyntax: true
-        lineNos: true
-        style: monokai
+  highlight:
+    # anchorLineNos: true
+    codeFences: true
+    guessSyntax: true
+    lineNos: true
+    style: monokai
